@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import { Mail, Lock, ArrowRight, Loader2 } from "lucide-react"
@@ -12,7 +12,20 @@ function Auth() {
   const [loading, setLoading] = useState(false)
   const [errorMsg, setErrorMsg] = useState("")
   const [successMsg, setSuccessMsg] = useState("")
+  const [checkingSession, setCheckingSession] = useState(true)
   const navigate = useNavigate()
+
+  useEffect(() => {
+    const checkExistingSession = async () => {
+      const { data } = await supabase.auth.getSession()
+      if (data?.session) {
+        navigate("/dashboard")
+      } else {
+        setCheckingSession(false)
+      }
+    }
+    checkExistingSession()
+  }, [navigate])
 
   const handleEmailAuth = async (e) => {
     e.preventDefault()
@@ -47,6 +60,10 @@ function Auth() {
         redirectTo: window.location.origin + "/dashboard",
       },
     })
+  }
+
+  if (checkingSession) {
+    return null
   }
 
   return (

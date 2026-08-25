@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { LogOut, User2, AlertTriangle } from "lucide-react"
+import { LogOut, User2, AlertTriangle, Compass, ArrowRight } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
 function Dashboard() {
@@ -75,11 +75,20 @@ function Dashboard() {
           </div>
         </div>
 
-        <div style={styles.placeholderCard}>
-          <h2>Career Roadmap Builder</h2>
-          <p style={styles.subtext}>
-            This is where you'll search for a career and get your personalized roadmap. Coming soon!
-          </p>
+        <div
+          style={styles.placeholderCard}
+          onClick={() => navigate("/careers")}
+        >
+          <div style={styles.placeholderIcon}>
+            <Compass size={26} color="#99f6ff" />
+          </div>
+          <div style={{ flex: 1 }}>
+            <h2 style={{ marginBottom: 6 }}>Explore Careers & Get Your Roadmap</h2>
+            <p style={styles.subtext}>
+              Search any career and see a personalized, step-by-step path to get there.
+            </p>
+          </div>
+          <ArrowRight size={20} color="#c7d2fe" />
         </div>
       </div>
 
@@ -167,9 +176,24 @@ const styles = {
     padding: "34px",
   },
   placeholderCard: {
-    background: "rgba(255,255,255,0.04)",
+    display: "flex",
+    alignItems: "center",
+    gap: "20px",
+    background: "rgba(255,255,255,0.045)",
     borderRadius: "22px",
-    padding: "34px",
+    padding: "30px 34px",
+    cursor: "pointer",
+    transition: "background 0.2s ease",
+  },
+  placeholderIcon: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "54px",
+    height: "54px",
+    borderRadius: "16px",
+    background: "rgba(34,211,238,0.14)",
+    flexShrink: 0,
   },
   subtext: {
     color: "#a9adc4",

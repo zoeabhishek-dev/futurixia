@@ -1,5 +1,7 @@
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { supabase } from "../supabaseClient"
 import "../App.css"
 import {
   Rocket,
@@ -25,6 +27,21 @@ import {
 } from "lucide-react"
 
 function Home() {
+  const navigate = useNavigate()
+  const [checkingSession, setCheckingSession] = useState(true)
+
+  useEffect(() => {
+    const checkExistingSession = async () => {
+      const { data } = await supabase.auth.getSession()
+      if (data?.session) {
+        navigate("/dashboard")
+      } else {
+        setCheckingSession(false)
+      }
+    }
+    checkExistingSession()
+  }, [navigate])
+
   const careers = [
     { icon: Rocket, label: "Entrepreneur" },
     { icon: Code2, label: "Software Engineer" },
@@ -69,6 +86,10 @@ function Home() {
     { icon: Plane, title: "Pilot", desc: "Fly commercial or private aircraft across the globe." },
     { icon: Shield, title: "IPS Officer", desc: "Lead law enforcement and public safety at scale." },
   ]
+
+  if (checkingSession) {
+    return null
+  }
 
   return (
     <div className="app">

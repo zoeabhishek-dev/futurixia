@@ -3,6 +3,8 @@ import Home from "./pages/Home"
 import Auth from "./pages/Auth"
 import Dashboard from "./pages/Dashboard"
 import CreateProfile from "./pages/CreateProfile"
+import CareerSearch from "./pages/CareerSearch"
+import RoadmapDetail from "./pages/RoadmapDetail"
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Route path="/login" element={<Auth />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/create-profile" element={<CreateProfile />} />
+      <Route path="/careers" element={<CareerSearch />} />
+      <Route path="/career/:slug" element={<RoadmapDetail />} />
     </Routes>
   )
 }
