@@ -10,7 +10,9 @@ import {
   FileCheck,
   Flag,
   CheckCircle2,
+  Circle,
   Wallet,
+  Trophy,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -35,17 +37,24 @@ const STEP_TYPE_COLORS = {
 function RoadmapDetail() {
   const { slug } = useParams()
   const navigate = useNavigate()
+  const [userId, setUserId] = useState(null)
   const [career, setCareer] = useState(null)
   const [steps, setSteps] = useState([])
+  const [completedStepIds, setCompletedStepIds] = useState(new Set())
   const [loading, setLoading] = useState(true)
+  const [savingStepId, setSavingStepId] = useState(null)
 
   useEffect(() => {
     const load = async () => {
       const { data: userData } = await supabase.auth.getUser()
-      if (!userData?.user) {
+      const user = userData?.user
+
+      if (!user) {
         navigate("/login")
         return
       }
+
+      setUserId(user.id)
 
       const { data: careerData, error: careerError } = await supabase
         .from("careers")
@@ -67,11 +76,50 @@ function RoadmapDetail() {
         .order("step_order")
 
       setSteps(stepsData || [])
+
+      const { data: progressData } = await supabase
+        .from("user_progress")
+        .select("step_id")
+        .eq("user_id", user.id)
+
+      if (progressData) {
+        setCompletedStepIds(new Set(progressData.map((p) => p.step_id)))
+      }
+
       setLoading(false)
     }
 
     load()
   }, [slug, navigate])
+
+  const toggleStep = async (stepId) => {
+    if (!userId || savingStepId) return
+    setSavingStepId(stepId)
+
+    const isCompleted = completedStepIds.has(stepId)
+
+    if (isCompleted) {
+      await supabase
+        .from("user_progress")
+        .delete()
+        .eq("user_id", userId)
+        .eq("step_id", stepId)
+
+      setCompletedStepIds((prev) => {
+        const next = new Set(prev)
+        next.delete(stepId)
+        return next
+      })
+    } else {
+      await supabase
+        .from("user_progress")
+        .insert({ user_id: userId, step_id: stepId })
+
+      setCompletedStepIds((prev) => new Set(prev).add(stepId))
+    }
+
+    setSavingStepId(null)
+  }
 
   if (loading) {
     return (
@@ -92,6 +140,9 @@ function RoadmapDetail() {
       </div>
     )
   }
+
+  const completedCount = steps.filter((s) => completedStepIds.has(s.id)).length
+  const progressPercent = steps.length > 0 ? Math.round((completedCount / steps.length) * 100) : 0
 
   return (
     <div style={styles.page}>
@@ -128,8 +179,26 @@ function RoadmapDetail() {
             </div>
           )}
 
-          <div style={styles.stepCountPill}>
-            {steps.length} steps to get there
+          <div style={styles.progressSection}>
+            <div style={styles.progressBarTrack}>
+              <motion.div
+                style={styles.progressBarFill}
+                initial={{ width: 0 }}
+                animate={{ width: `${progressPercent}%` }}
+                transition={{ duration: 0.5 }}
+              />
+            </div>
+            <div style={styles.progressLabelRow}>
+              <span style={styles.progressLabel}>
+                {completedCount} of {steps.length} steps completed
+              </span>
+              {progressPercent === 100 && steps.length > 0 && (
+                <span style={styles.completeBadge}>
+                  <Trophy size={13} />
+                  Roadmap Complete!
+                </span>
+              )}
+            </div>
           </div>
         </motion.div>
 
@@ -137,6 +206,7 @@ function RoadmapDetail() {
           {steps.map((step, i) => {
             const Icon = STEP_TYPE_ICONS[step.step_type] || CheckCircle2
             const color = STEP_TYPE_COLORS[step.step_type] || "#a5b4fc"
+            const isDone = completedStepIds.has(step.id)
 
             return (
               <motion.div
@@ -148,17 +218,59 @@ function RoadmapDetail() {
                 style={styles.stepRow}
               >
                 <div style={styles.stepLeft}>
-                  <div style={{ ...styles.stepIconCircle, background: `${color}2e`, color, boxShadow: `0 0 0 2px ${color}55` }}>
+                  <div
+                    style={{
+                      ...styles.stepIconCircle,
+                      background: isDone ? "rgba(34,197,94,0.25)" : `${color}2e`,
+                      color: isDone ? "#4ade80" : color,
+                      boxShadow: isDone
+                        ? "0 0 0 2px rgba(74,222,128,0.5)"
+                        : `0 0 0 2px ${color}55`,
+                    }}
+                  >
                     <Icon size={18} strokeWidth={2} />
                   </div>
-                  {i < steps.length - 1 && <div style={styles.stepLine} />}
+                  {i < steps.length - 1 && (
+                    <div
+                      style={{
+                        ...styles.stepLine,
+                        background: isDone ? "rgba(74,222,128,0.4)" : "rgba(255,255,255,0.15)",
+                      }}
+                    />
+                  )}
                 </div>
 
-                <div style={styles.stepCard}>
-                  <span style={{ ...styles.stepBadge, color }}>
-                    Step {step.step_order} · {step.step_type}
-                  </span>
-                  <h3 style={styles.stepTitle}>{step.title}</h3>
+                <div
+                  style={{
+                    ...styles.stepCard,
+                    opacity: isDone ? 0.75 : 1,
+                  }}
+                >
+                  <div style={styles.stepCardTop}>
+                    <span style={{ ...styles.stepBadge, color }}>
+                      Step {step.step_order} · {step.step_type}
+                    </span>
+                    <button
+                      style={{
+                        ...styles.checkBtn,
+                        background: isDone ? "rgba(34,197,94,0.18)" : "rgba(255,255,255,0.07)",
+                        color: isDone ? "#4ade80" : "#9599b0",
+                      }}
+                      onClick={() => toggleStep(step.id)}
+                      disabled={savingStepId === step.id}
+                    >
+                      {isDone ? <CheckCircle2 size={14} /> : <Circle size={14} />}
+                      {isDone ? "Done" : "Mark Done"}
+                    </button>
+                  </div>
+                  <h3
+                    style={{
+                      ...styles.stepTitle,
+                      textDecoration: isDone ? "line-through" : "none",
+                    }}
+                  >
+                    {step.title}
+                  </h3>
                   <p style={styles.stepDesc}>{step.description}</p>
                 </div>
               </motion.div>
@@ -274,11 +386,46 @@ const styles = {
     marginTop: "22px",
     boxShadow: "0 0 0 1px rgba(134,239,172,0.25)",
   },
-  stepCountPill: {
-    display: "block",
+  progressSection: {
+    marginTop: "28px",
+    maxWidth: "420px",
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+  progressBarTrack: {
+    width: "100%",
+    height: "10px",
+    background: "rgba(255,255,255,0.08)",
+    borderRadius: "10px",
+    overflow: "hidden",
+  },
+  progressBarFill: {
+    height: "100%",
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    borderRadius: "10px",
+  },
+  progressLabelRow: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "10px",
+    marginTop: "10px",
+    flexWrap: "wrap",
+  },
+  progressLabel: {
     color: "#9599b0",
     fontSize: "0.82rem",
-    marginTop: "14px",
+  },
+  completeBadge: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "5px",
+    background: "rgba(250,204,21,0.15)",
+    color: "#fde047",
+    padding: "4px 12px",
+    borderRadius: "20px",
+    fontSize: "0.75rem",
+    fontWeight: 700,
   },
   timeline: {
     display: "flex",
@@ -301,12 +448,13 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     flexShrink: 0,
+    transition: "background 0.2s ease, color 0.2s ease",
   },
   stepLine: {
     width: "2px",
     flex: 1,
-    background: "rgba(255,255,255,0.15)",
     margin: "6px 0",
+    transition: "background 0.2s ease",
   },
   stepCard: {
     flex: 1,
@@ -315,6 +463,26 @@ const styles = {
     padding: "22px 24px",
     marginBottom: "24px",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.09), 0 10px 30px rgba(0,0,0,0.35)",
+    transition: "opacity 0.2s ease",
+  },
+  stepCardTop: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: "10px",
+    flexWrap: "wrap",
+  },
+  checkBtn: {
+    display: "flex",
+    alignItems: "center",
+    gap: "6px",
+    border: "none",
+    padding: "6px 14px",
+    borderRadius: "20px",
+    fontSize: "0.75rem",
+    fontWeight: 700,
+    cursor: "pointer",
+    whiteSpace: "nowrap",
   },
   stepBadge: {
     fontSize: "0.72rem",
@@ -325,7 +493,7 @@ const styles = {
   stepTitle: {
     fontSize: "1.1rem",
     fontWeight: 700,
-    margin: "8px 0 8px",
+    margin: "10px 0 8px",
     color: "#ffffff",
   },
   stepDesc: {
