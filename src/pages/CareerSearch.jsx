@@ -14,11 +14,17 @@ import {
   ArrowRight,
   ArrowLeft,
   Briefcase,
+  BarChart3,
+  ShieldCheck,
+  Palette,
+  Cloud,
+  Smartphone,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
 const ICONS = {
   Code2, Stethoscope, Rocket, Scale, Plane, Shield, GraduationCap, Wrench,
+  BarChart3, ShieldCheck, Palette, Cloud, Smartphone,
 }
 
 function CareerSearch() {
