@@ -13,6 +13,8 @@ import {
   Circle,
   Wallet,
   Trophy,
+  Compass,
+  Map,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -39,7 +41,8 @@ function RoadmapDetail() {
   const navigate = useNavigate()
   const [userId, setUserId] = useState(null)
   const [career, setCareer] = useState(null)
-  const [steps, setSteps] = useState([])
+  const [introSteps, setIntroSteps] = useState([])
+  const [coreSteps, setCoreSteps] = useState([])
   const [completedStepIds, setCompletedStepIds] = useState(new Set())
   const [loading, setLoading] = useState(true)
   const [savingStepId, setSavingStepId] = useState(null)
@@ -55,6 +58,14 @@ function RoadmapDetail() {
       }
 
       setUserId(user.id)
+
+      const { data: profileData } = await supabase
+        .from("profiles")
+        .select("current_stage")
+        .eq("id", user.id)
+        .maybeSingle()
+
+      const studentStage = profileData?.current_stage || null
 
       const { data: careerData, error: careerError } = await supabase
         .from("careers")
@@ -75,7 +86,20 @@ function RoadmapDetail() {
         .eq("career_id", careerData.id)
         .order("step_order")
 
-      setSteps(stepsData || [])
+      const allSteps = stepsData || []
+
+      const matchedIntro = studentStage
+        ? allSteps
+            .filter((s) => s.phase === "intro" && s.stage === studentStage)
+            .sort((a, b) => a.step_order - b.step_order)
+        : []
+
+      const core = allSteps
+        .filter((s) => s.phase === "core")
+        .sort((a, b) => a.step_order - b.step_order)
+
+      setIntroSteps(matchedIntro)
+      setCoreSteps(core)
 
       const { data: progressData } = await supabase
         .from("user_progress")
@@ -141,8 +165,88 @@ function RoadmapDetail() {
     )
   }
 
-  const completedCount = steps.filter((s) => completedStepIds.has(s.id)).length
-  const progressPercent = steps.length > 0 ? Math.round((completedCount / steps.length) * 100) : 0
+  const combinedSteps = [...introSteps, ...coreSteps]
+  const completedCount = combinedSteps.filter((s) => completedStepIds.has(s.id)).length
+  const progressPercent =
+    combinedSteps.length > 0 ? Math.round((completedCount / combinedSteps.length) * 100) : 0
+
+  const renderStepCard = (step, displayNumber, isFirstCoreStep) => {
+    const Icon = STEP_TYPE_ICONS[step.step_type] || CheckCircle2
+    const color = STEP_TYPE_COLORS[step.step_type] || "#a5b4fc"
+    const isDone = completedStepIds.has(step.id)
+
+    return (
+      <div key={step.id}>
+        {isFirstCoreStep && (
+          <div style={styles.sectionDivider}>
+            <Map size={16} />
+            <span>Full Career Roadmap</span>
+          </div>
+        )}
+
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.3 }}
+          style={styles.stepRow}
+        >
+          <div style={styles.stepLeft}>
+            <div
+              style={{
+                ...styles.stepIconCircle,
+                background: isDone ? "rgba(34,197,94,0.25)" : `${color}2e`,
+                color: isDone ? "#4ade80" : color,
+                boxShadow: isDone
+                  ? "0 0 0 2px rgba(74,222,128,0.5)"
+                  : `0 0 0 2px ${color}55`,
+              }}
+            >
+              <Icon size={18} strokeWidth={2} />
+            </div>
+            {displayNumber < combinedSteps.length && (
+              <div
+                style={{
+                  ...styles.stepLine,
+                  background: isDone ? "rgba(74,222,128,0.4)" : "rgba(255,255,255,0.15)",
+                }}
+              />
+            )}
+          </div>
+
+          <div style={{ ...styles.stepCard, opacity: isDone ? 0.75 : 1 }}>
+            <div style={styles.stepCardTop}>
+              <span style={{ ...styles.stepBadge, color }}>
+                Step {displayNumber} · {step.step_type}
+                {step.phase === "intro" && " · Getting Started"}
+              </span>
+              <button
+                style={{
+                  ...styles.checkBtn,
+                  background: isDone ? "rgba(34,197,94,0.18)" : "rgba(255,255,255,0.07)",
+                  color: isDone ? "#4ade80" : "#9599b0",
+                }}
+                onClick={() => toggleStep(step.id)}
+                disabled={savingStepId === step.id}
+              >
+                {isDone ? <CheckCircle2 size={14} /> : <Circle size={14} />}
+                {isDone ? "Done" : "Mark Done"}
+              </button>
+            </div>
+            <h3
+              style={{
+                ...styles.stepTitle,
+                textDecoration: isDone ? "line-through" : "none",
+              }}
+            >
+              {step.title}
+            </h3>
+            <p style={styles.stepDesc}>{step.description}</p>
+          </div>
+        </motion.div>
+      </div>
+    )
+  }
 
   return (
     <div style={styles.page}>
@@ -190,9 +294,9 @@ function RoadmapDetail() {
             </div>
             <div style={styles.progressLabelRow}>
               <span style={styles.progressLabel}>
-                {completedCount} of {steps.length} steps completed
+                {completedCount} of {combinedSteps.length} steps completed
               </span>
-              {progressPercent === 100 && steps.length > 0 && (
+              {progressPercent === 100 && combinedSteps.length > 0 && (
                 <span style={styles.completeBadge}>
                   <Trophy size={13} />
                   Roadmap Complete!
@@ -200,85 +304,28 @@ function RoadmapDetail() {
               )}
             </div>
           </div>
+
+          {introSteps.length === 0 && (
+            <p style={styles.introMissingNote}>
+              Personalized starting steps for your stage are coming soon for this career — showing the full core roadmap below.
+            </p>
+          )}
         </motion.div>
 
+        {introSteps.length > 0 && (
+          <div style={styles.sectionDivider}>
+            <Compass size={16} />
+            <span>Getting Started From Where You Are</span>
+          </div>
+        )}
+
         <div style={styles.timeline}>
-          {steps.map((step, i) => {
-            const Icon = STEP_TYPE_ICONS[step.step_type] || CheckCircle2
-            const color = STEP_TYPE_COLORS[step.step_type] || "#a5b4fc"
-            const isDone = completedStepIds.has(step.id)
-
-            return (
-              <motion.div
-                key={step.id}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.4, delay: Math.min(i * 0.04, 0.6) }}
-                style={styles.stepRow}
-              >
-                <div style={styles.stepLeft}>
-                  <div
-                    style={{
-                      ...styles.stepIconCircle,
-                      background: isDone ? "rgba(34,197,94,0.25)" : `${color}2e`,
-                      color: isDone ? "#4ade80" : color,
-                      boxShadow: isDone
-                        ? "0 0 0 2px rgba(74,222,128,0.5)"
-                        : `0 0 0 2px ${color}55`,
-                    }}
-                  >
-                    <Icon size={18} strokeWidth={2} />
-                  </div>
-                  {i < steps.length - 1 && (
-                    <div
-                      style={{
-                        ...styles.stepLine,
-                        background: isDone ? "rgba(74,222,128,0.4)" : "rgba(255,255,255,0.15)",
-                      }}
-                    />
-                  )}
-                </div>
-
-                <div
-                  style={{
-                    ...styles.stepCard,
-                    opacity: isDone ? 0.75 : 1,
-                  }}
-                >
-                  <div style={styles.stepCardTop}>
-                    <span style={{ ...styles.stepBadge, color }}>
-                      Step {step.step_order} · {step.step_type}
-                    </span>
-                    <button
-                      style={{
-                        ...styles.checkBtn,
-                        background: isDone ? "rgba(34,197,94,0.18)" : "rgba(255,255,255,0.07)",
-                        color: isDone ? "#4ade80" : "#9599b0",
-                      }}
-                      onClick={() => toggleStep(step.id)}
-                      disabled={savingStepId === step.id}
-                    >
-                      {isDone ? <CheckCircle2 size={14} /> : <Circle size={14} />}
-                      {isDone ? "Done" : "Mark Done"}
-                    </button>
-                  </div>
-                  <h3
-                    style={{
-                      ...styles.stepTitle,
-                      textDecoration: isDone ? "line-through" : "none",
-                    }}
-                  >
-                    {step.title}
-                  </h3>
-                  <p style={styles.stepDesc}>{step.description}</p>
-                </div>
-              </motion.div>
-            )
-          })}
+          {combinedSteps.map((step, i) =>
+            renderStepCard(step, i + 1, introSteps.length > 0 && i === introSteps.length)
+          )}
         </div>
 
-        {steps.length === 0 && (
+        {combinedSteps.length === 0 && (
           <p style={styles.noSteps}>
             Roadmap content for this career is being added soon!
           </p>
@@ -350,7 +397,7 @@ const styles = {
     borderRadius: "24px",
     padding: "40px",
     textAlign: "center",
-    margin: "20px 0 50px",
+    margin: "20px 0 40px",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.1), 0 20px 60px rgba(0,0,0,0.5)",
   },
   category: {
@@ -426,6 +473,23 @@ const styles = {
     borderRadius: "20px",
     fontSize: "0.75rem",
     fontWeight: 700,
+  },
+  introMissingNote: {
+    marginTop: "20px",
+    fontSize: "0.8rem",
+    color: "#9599b0",
+    fontStyle: "italic",
+  },
+  sectionDivider: {
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+    color: "#a5b4fc",
+    fontSize: "0.85rem",
+    fontWeight: 700,
+    textTransform: "uppercase",
+    letterSpacing: "0.05em",
+    margin: "0 0 20px 4px",
   },
   timeline: {
     display: "flex",

@@ -23,6 +23,14 @@ const EDUCATION_LEVELS = [
   "Middle School", "High School", "Undergraduate", "Postgraduate", "Working Professional",
 ]
 
+const STAGE_OPTIONS = [
+  { value: "pre_secondary", label: "8th or 9th Grade" },
+  { value: "secondary", label: "10th Grade" },
+  { value: "senior_secondary", label: "11th / 12th Grade (Inter)" },
+  { value: "undergraduate", label: "Undergraduate (Bachelor's Degree)" },
+  { value: "postgraduate_professional", label: "Postgraduate / Working Professional" },
+]
+
 const INTEREST_PRESETS = [
   "Technology", "Design", "Business", "Science", "Arts", "Sports",
   "Writing", "Music", "Healthcare", "Law", "Environment", "Finance",
@@ -183,6 +191,7 @@ function CreateProfile() {
   const [country, setCountry] = useState("")
   const [educationLevel, setEducationLevel] = useState("")
   const [classOrCourse, setClassOrCourse] = useState("")
+  const [currentStage, setCurrentStage] = useState("")
   const [interests, setInterests] = useState([])
   const [skills, setSkills] = useState([])
 
@@ -212,7 +221,7 @@ function CreateProfile() {
 
   const canGoNext = () => {
     if (step === 0) return fullName.trim() && age && country
-    if (step === 1) return educationLevel && classOrCourse.trim()
+    if (step === 1) return educationLevel && classOrCourse.trim() && currentStage
     if (step === 2) return interests.length > 0
     if (step === 3) return skills.length > 0
     return true
@@ -246,6 +255,7 @@ function CreateProfile() {
       country,
       education_level: educationLevel,
       class_or_course: classOrCourse.trim(),
+      current_stage: currentStage,
       interests: interests.join(", "),
       skills: skills.join(", "),
     })
@@ -366,6 +376,18 @@ function CreateProfile() {
                 value={classOrCourse}
                 onChange={(e) => setClassOrCourse(e.target.value)}
               />
+
+              <label className="field-label">Current Stage (for a personalized roadmap)</label>
+              <select
+                className="field-input"
+                value={currentStage}
+                onChange={(e) => setCurrentStage(e.target.value)}
+              >
+                <option value="">Select your current stage</option>
+                {STAGE_OPTIONS.map((opt) => (
+                  <option key={opt.value} value={opt.value}>{opt.label}</option>
+                ))}
+              </select>
             </motion.div>
           )}
 
