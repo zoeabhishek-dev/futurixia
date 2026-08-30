@@ -19,12 +19,18 @@ import {
   Palette,
   Cloud,
   Smartphone,
+  TrendingUp,
+  Landmark,
+  Megaphone,
+  Users,
+  PieChart,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
 const ICONS = {
   Code2, Stethoscope, Rocket, Scale, Plane, Shield, GraduationCap, Wrench,
   BarChart3, ShieldCheck, Palette, Cloud, Smartphone,
+  TrendingUp, Landmark, Megaphone, Users, PieChart,
 }
 
 function CareerSearch() {
@@ -32,6 +38,7 @@ function CareerSearch() {
   const [careers, setCareers] = useState([])
   const [loading, setLoading] = useState(true)
   const [query, setQuery] = useState("")
+  const [activeCategory, setActiveCategory] = useState("All")
 
   useEffect(() => {
     const checkUserAndLoad = async () => {
@@ -55,11 +62,15 @@ function CareerSearch() {
     checkUserAndLoad()
   }, [navigate])
 
-  const filteredCareers = careers.filter(
-    (c) =>
+  const categories = ["All", ...Array.from(new Set(careers.map((c) => c.category).filter(Boolean)))]
+
+  const filteredCareers = careers.filter((c) => {
+    const matchesQuery =
       c.title.toLowerCase().includes(query.toLowerCase()) ||
       c.category?.toLowerCase().includes(query.toLowerCase())
-  )
+    const matchesCategory = activeCategory === "All" || c.category === activeCategory
+    return matchesQuery && matchesCategory
+  })
 
   return (
     <div style={styles.page}>
@@ -110,6 +121,28 @@ function CareerSearch() {
           />
         </motion.div>
 
+        {!loading && categories.length > 2 && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.15 }}
+            style={styles.categoryRow}
+          >
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                style={{
+                  ...styles.categoryPill,
+                  ...(activeCategory === cat ? styles.categoryPillActive : {}),
+                }}
+              >
+                {cat}
+              </button>
+            ))}
+          </motion.div>
+        )}
+
         {loading ? (
           <p style={styles.loadingText}>Loading careers...</p>
         ) : (
@@ -121,7 +154,7 @@ function CareerSearch() {
                   key={career.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: i * 0.05 }}
+                  transition={{ duration: 0.4, delay: Math.min(i * 0.05, 0.5) }}
                   whileHover={{ y: -6 }}
                   style={styles.card}
                   onClick={() => navigate(`/career/${career.slug}`)}
@@ -226,7 +259,7 @@ const styles = {
     alignItems: "center",
     gap: "12px",
     maxWidth: "560px",
-    margin: "0 auto 50px",
+    margin: "0 auto 24px",
     background: "rgba(255,255,255,0.07)",
     borderRadius: "30px",
     padding: "16px 24px",
@@ -240,6 +273,30 @@ const styles = {
     color: "#fff",
     fontSize: "0.95rem",
   },
+  categoryRow: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    marginBottom: "40px",
+  },
+  categoryPill: {
+    background: "rgba(255,255,255,0.06)",
+    color: "#c9cbdb",
+    border: "none",
+    padding: "9px 18px",
+    borderRadius: "30px",
+    fontSize: "0.85rem",
+    fontWeight: 600,
+    cursor: "pointer",
+    boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08)",
+    transition: "background 0.2s ease, color 0.2s ease",
+  },
+  categoryPillActive: {
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    color: "#ffffff",
+    boxShadow: "none",
+  },
   loadingText: {
     textAlign: "center",
     color: "#9599b0",
@@ -249,7 +306,7 @@ const styles = {
     gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
     gap: "24px",
   },
-    card: {
+  card: {
     background: "rgba(15,17,32,0.85)",
     borderRadius: "20px",
     padding: "30px 26px",
