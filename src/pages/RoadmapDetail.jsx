@@ -11,10 +11,21 @@ import {
   Flag,
   CheckCircle2,
   Circle,
-  Wallet,
   Trophy,
   Compass,
   Map,
+  Code2,
+  Stethoscope,
+  Rocket,
+  Scale,
+  Plane,
+  Shield,
+  Wrench,
+  BarChart3,
+  ShieldCheck,
+  Palette,
+  Cloud,
+  Smartphone,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -34,6 +45,11 @@ const STEP_TYPE_COLORS = {
   experience: "#86efac",
   exam: "#f9a8d4",
   milestone: "#fde047",
+}
+
+const CAREER_ICONS = {
+  Code2, Stethoscope, Rocket, Scale, Plane, Shield, GraduationCap, Wrench,
+  BarChart3, ShieldCheck, Palette, Cloud, Smartphone,
 }
 
 function RoadmapDetail() {
@@ -170,6 +186,8 @@ function RoadmapDetail() {
   const progressPercent =
     combinedSteps.length > 0 ? Math.round((completedCount / combinedSteps.length) * 100) : 0
 
+  const CareerIcon = CAREER_ICONS[career.icon_name] || Briefcase
+
   const renderStepCard = (step, displayNumber, isFirstCoreStep) => {
     const Icon = STEP_TYPE_ICONS[step.step_type] || CheckCircle2
     const color = STEP_TYPE_COLORS[step.step_type] || "#a5b4fc"
@@ -272,16 +290,28 @@ function RoadmapDetail() {
           transition={{ duration: 0.5 }}
           style={styles.heroCard}
         >
+          <div style={styles.heroIconCircle}>
+            <CareerIcon size={30} strokeWidth={1.8} />
+          </div>
+
           <span style={styles.category}>{career.category}</span>
           <h1 style={styles.title}>{career.title}</h1>
           <p style={styles.desc}>{career.short_description}</p>
 
-          {career.salary_range && (
-            <div style={styles.salaryPill}>
-              <Wallet size={16} />
-              <span>{career.salary_range}</span>
+          <div style={styles.statsRow}>
+            <div style={styles.statBox}>
+              <span style={styles.statLabel}>Average Salary</span>
+              <span style={{ ...styles.statValue, color: "#4ade80" }}>
+                {career.salary_range || "Not available yet"}
+              </span>
             </div>
-          )}
+            <div style={styles.statBox}>
+              <span style={styles.statLabel}>Job Demand</span>
+              <span style={{ ...styles.statValue, color: "#c4b5fd" }}>
+                {career.job_demand || "Not available yet"}
+              </span>
+            </div>
+          </div>
 
           <div style={styles.progressSection}>
             <div style={styles.progressBarTrack}>
@@ -307,10 +337,12 @@ function RoadmapDetail() {
 
           {introSteps.length === 0 && (
             <p style={styles.introMissingNote}>
-              Personalized starting steps for your stage are coming soon for this career — showing the full core roadmap below.
+              Personalized starting steps for your stage are coming soon for this career, showing the full core roadmap below.
             </p>
           )}
         </motion.div>
+
+        <h2 style={styles.roadmapHeading}>Your Complete Step-by-Step Roadmap</h2>
 
         {introSteps.length > 0 && (
           <div style={styles.sectionDivider}>
@@ -395,10 +427,21 @@ const styles = {
   heroCard: {
     background: "rgba(15,17,32,0.85)",
     borderRadius: "24px",
-    padding: "40px",
+    padding: "44px 40px 40px",
     textAlign: "center",
-    margin: "20px 0 40px",
+    margin: "20px 0 36px",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.1), 0 20px 60px rgba(0,0,0,0.5)",
+  },
+  heroIconCircle: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "64px",
+    height: "64px",
+    borderRadius: "18px",
+    background: "rgba(99,102,241,0.16)",
+    color: "#a5b4fc",
+    margin: "0 auto 20px",
   },
   category: {
     fontSize: "0.75rem",
@@ -420,18 +463,34 @@ const styles = {
     maxWidth: "500px",
     margin: "0 auto",
   },
-  salaryPill: {
-    display: "inline-flex",
+  statsRow: {
+    display: "flex",
+    gap: "16px",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    marginTop: "28px",
+  },
+  statBox: {
+    display: "flex",
+    flexDirection: "column",
     alignItems: "center",
-    gap: "8px",
-    background: "rgba(34,197,94,0.15)",
-    color: "#86efac",
-    padding: "10px 20px",
-    borderRadius: "30px",
-    fontSize: "0.88rem",
-    fontWeight: 600,
-    marginTop: "22px",
-    boxShadow: "0 0 0 1px rgba(134,239,172,0.25)",
+    gap: "6px",
+    background: "rgba(255,255,255,0.05)",
+    borderRadius: "16px",
+    padding: "16px 26px",
+    minWidth: "180px",
+    boxShadow: "0 0 0 1px rgba(255,255,255,0.08)",
+  },
+  statLabel: {
+    fontSize: "0.72rem",
+    fontWeight: 700,
+    color: "#9599b0",
+    textTransform: "uppercase",
+    letterSpacing: "0.05em",
+  },
+  statValue: {
+    fontSize: "1.05rem",
+    fontWeight: 800,
   },
   progressSection: {
     marginTop: "28px",
@@ -479,6 +538,13 @@ const styles = {
     fontSize: "0.8rem",
     color: "#9599b0",
     fontStyle: "italic",
+  },
+  roadmapHeading: {
+    textAlign: "center",
+    fontSize: "1.3rem",
+    fontWeight: 800,
+    color: "#ffffff",
+    margin: "0 0 30px",
   },
   sectionDivider: {
     display: "flex",

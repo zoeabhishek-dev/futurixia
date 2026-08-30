@@ -34,12 +34,15 @@ function Auth() {
     setLoading(true)
 
     if (mode === "signup") {
-      const { error } = await supabase.auth.signUp({ email, password })
+      const { data, error } = await supabase.auth.signUp({ email, password })
       setLoading(false)
       if (error) {
         setErrorMsg(error.message)
+      } else if (data?.session) {
+        navigate("/dashboard")
       } else {
-        setSuccessMsg("Account created! Check your email to confirm, then log in.")
+        setSuccessMsg("Account created! You can now log in below.")
+        setMode("login")
       }
     } else {
       const { error } = await supabase.auth.signInWithPassword({ email, password })
