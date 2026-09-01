@@ -26,6 +26,21 @@ import {
   Palette,
   Cloud,
   Smartphone,
+  TrendingUp,
+  Landmark,
+  Megaphone,
+  Users,
+  PieChart,
+  HeartPulse,
+  Pill,
+  Building2,
+  Zap,
+  ChefHat,
+  Newspaper,
+  PenTool,
+  Building,
+  Brain,
+  Clapperboard,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -50,6 +65,8 @@ const STEP_TYPE_COLORS = {
 const CAREER_ICONS = {
   Code2, Stethoscope, Rocket, Scale, Plane, Shield, GraduationCap, Wrench,
   BarChart3, ShieldCheck, Palette, Cloud, Smartphone,
+  TrendingUp, Landmark, Megaphone, Users, PieChart,
+  HeartPulse, Pill, Building2, Zap, ChefHat, Newspaper, PenTool, Building, Brain, Clapperboard,
 }
 
 function RoadmapDetail() {
