@@ -39,6 +39,11 @@ import {
   Drama,
   PlaneTakeoff,
   Ship,
+  LayoutGrid,
+  PawPrint,
+  Sofa,
+  Droplets,
+  Gavel,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -48,6 +53,7 @@ const ICONS = {
   TrendingUp, Landmark, Megaphone, Users, PieChart,
   HeartPulse, Pill, Building2, Zap, ChefHat, Newspaper, PenTool, Building, Brain, Clapperboard,
   Home, Shirt, Drama, PlaneTakeoff, Ship,
+  LayoutGrid, PawPrint, Sofa, Droplets, Gavel,
 }
 
 function CareerSearch() {
