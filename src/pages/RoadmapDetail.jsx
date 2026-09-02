@@ -41,6 +41,11 @@ import {
   Building,
   Brain,
   Clapperboard,
+  Home,
+  Shirt,
+  Drama,
+  PlaneTakeoff,
+  Ship,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -67,6 +72,7 @@ const CAREER_ICONS = {
   BarChart3, ShieldCheck, Palette, Cloud, Smartphone,
   TrendingUp, Landmark, Megaphone, Users, PieChart,
   HeartPulse, Pill, Building2, Zap, ChefHat, Newspaper, PenTool, Building, Brain, Clapperboard,
+  Home, Shirt, Drama, PlaneTakeoff, Ship,
 }
 
 function RoadmapDetail() {
