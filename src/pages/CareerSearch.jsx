@@ -44,6 +44,8 @@ import {
   Sofa,
   Droplets,
   Gavel,
+  Activity,
+  HandHeart,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -54,6 +56,7 @@ const ICONS = {
   HeartPulse, Pill, Building2, Zap, ChefHat, Newspaper, PenTool, Building, Brain, Clapperboard,
   Home, Shirt, Drama, PlaneTakeoff, Ship,
   LayoutGrid, PawPrint, Sofa, Droplets, Gavel,
+  Activity, HandHeart,
 }
 
 function CareerSearch() {
