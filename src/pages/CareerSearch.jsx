@@ -46,6 +46,11 @@ import {
   Gavel,
   Activity,
   HandHeart,
+  Trophy,
+  Sprout,
+  Leaf,
+  Radar,
+  Flame,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -57,6 +62,7 @@ const ICONS = {
   Home, Shirt, Drama, PlaneTakeoff, Ship,
   LayoutGrid, PawPrint, Sofa, Droplets, Gavel,
   Activity, HandHeart,
+  Trophy, Sprout, Leaf, Radar, Flame,
 }
 
 function CareerSearch() {
