@@ -51,6 +51,10 @@ import {
   Leaf,
   Radar,
   Flame,
+  Calculator,
+  Scan,
+  Map,
+  Hotel,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -63,6 +67,7 @@ const ICONS = {
   LayoutGrid, PawPrint, Sofa, Droplets, Gavel,
   Activity, HandHeart,
   Trophy, Sprout, Leaf, Radar, Flame,
+  Calculator, Scan, Map, Hotel,
 }
 
 function CareerSearch() {
