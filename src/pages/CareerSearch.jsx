@@ -60,6 +60,11 @@ import {
   Globe2,
   Music,
   FileCheck2,
+  Server,
+  CalendarCheck,
+  Languages,
+  Eye,
+  Bird,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -74,6 +79,7 @@ const ICONS = {
   Trophy, Sprout, Leaf, Radar, Flame,
   Calculator, Scan, Map, Hotel,
   Truck, ShoppingBag, Globe2, Music, FileCheck2,
+  Server, CalendarCheck, Languages, Eye, Bird,
 }
 
 function CareerSearch() {
