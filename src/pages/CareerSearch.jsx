@@ -75,6 +75,11 @@ import {
   Wine,
   Receipt,
   Video,
+  Database,
+  Apple,
+  FileSignature,
+  Box,
+  Swords,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -92,6 +97,7 @@ const ICONS = {
   Server, CalendarCheck, Languages, Eye, Bird,
   Bug, MessageSquare, Footprints, Mountain, Mic2,
   FlaskConical, Blocks, Wine, Receipt, Video,
+  Database, Apple, FileSignature, Box, Swords,
 }
 
 function CareerSearch() {
