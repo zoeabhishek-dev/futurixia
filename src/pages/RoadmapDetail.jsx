@@ -88,6 +88,10 @@ import {
   Gamepad2,
   FileText,
   Bot,
+  Dna,
+  FileType,
+  Trees,
+  Telescope,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -125,6 +129,7 @@ const CAREER_ICONS = {
   FlaskConical, Blocks, Wine, Receipt, Video,
   Database, Apple, FileSignature, Box, Swords,
   Gamepad2, FileText, Bot,
+  Dna, FileType, Trees, Telescope,
 }
 
 function RoadmapDetail() {
