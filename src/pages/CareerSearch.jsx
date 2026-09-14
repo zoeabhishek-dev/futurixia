@@ -80,6 +80,9 @@ import {
   FileSignature,
   Box,
   Swords,
+  Gamepad2,
+  FileText,
+  Bot,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -98,6 +101,7 @@ const ICONS = {
   Bug, MessageSquare, Footprints, Mountain, Mic2,
   FlaskConical, Blocks, Wine, Receipt, Video,
   Database, Apple, FileSignature, Box, Swords,
+  Gamepad2, FileText, Bot,
 }
 
 function CareerSearch() {
