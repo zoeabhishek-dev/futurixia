@@ -92,6 +92,10 @@ import {
   Dumbbell,
   Mic,
   KeyRound,
+  Smile,
+  Film,
+  ChartBar,
+  Croissant,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -113,6 +117,7 @@ const ICONS = {
   Gamepad2, FileText, Bot,
   Dna, FileType, Trees, Telescope,
   Anchor, CloudSun, Dumbbell, Mic, KeyRound,
+  Smile, Film, ChartBar, Croissant,
 }
 
 function CareerSearch() {
