@@ -92,6 +92,11 @@ import {
   FileType,
   Trees,
   Telescope,
+  Anchor,
+  CloudSun,
+  Dumbbell,
+  Mic,
+  KeyRound,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -130,6 +135,7 @@ const CAREER_ICONS = {
   Database, Apple, FileSignature, Box, Swords,
   Gamepad2, FileText, Bot,
   Dna, FileType, Trees, Telescope,
+  Anchor, CloudSun, Dumbbell, Mic, KeyRound,
 }
 
 function RoadmapDetail() {
