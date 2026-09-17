@@ -96,6 +96,10 @@ import {
   Film,
   ChartBar,
   Croissant,
+  Camera,
+  PersonStanding,
+  Fish,
+  Pickaxe,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
@@ -118,6 +122,7 @@ const ICONS = {
   Dna, FileType, Trees, Telescope,
   Anchor, CloudSun, Dumbbell, Mic, KeyRound,
   Smile, Film, ChartBar, Croissant,
+  Camera, PersonStanding, Fish, Pickaxe,
 }
 
 function CareerSearch() {
