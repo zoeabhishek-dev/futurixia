@@ -31,6 +31,14 @@ const STAGE_OPTIONS = [
   { value: "postgraduate_professional", label: "Postgraduate / Working Professional" },
 ]
 
+const EXPERIENCE_LEVELS = [
+  { value: "no_experience", label: "No Experience Yet" },
+  { value: "beginner", label: "Beginner" },
+  { value: "some_projects", label: "Some Projects Completed" },
+  { value: "intermediate", label: "Intermediate" },
+  { value: "advanced", label: "Advanced" },
+]
+
 const INTEREST_PRESETS = [
   "Technology", "Design", "Business", "Science", "Arts", "Sports",
   "Writing", "Music", "Healthcare", "Law", "Environment", "Finance",
@@ -192,6 +200,8 @@ function CreateProfile() {
   const [educationLevel, setEducationLevel] = useState("")
   const [classOrCourse, setClassOrCourse] = useState("")
   const [currentStage, setCurrentStage] = useState("")
+  const [experienceLevel, setExperienceLevel] = useState("")
+  const [careerGoalNotes, setCareerGoalNotes] = useState("")
   const [interests, setInterests] = useState([])
   const [skills, setSkills] = useState([])
 
@@ -221,7 +231,7 @@ function CreateProfile() {
 
   const canGoNext = () => {
     if (step === 0) return fullName.trim() && age && country
-    if (step === 1) return educationLevel && classOrCourse.trim() && currentStage
+    if (step === 1) return educationLevel && classOrCourse.trim() && currentStage && experienceLevel
     if (step === 2) return interests.length > 0
     if (step === 3) return skills.length > 0
     return true
@@ -256,6 +266,8 @@ function CreateProfile() {
       education_level: educationLevel,
       class_or_course: classOrCourse.trim(),
       current_stage: currentStage,
+      experience_level: experienceLevel,
+      career_goal_notes: careerGoalNotes.trim() || null,
       interests: interests.join(", "),
       skills: skills.join(", "),
     })
@@ -388,6 +400,18 @@ function CreateProfile() {
                   <option key={opt.value} value={opt.value}>{opt.label}</option>
                 ))}
               </select>
+
+              <label className="field-label">Your Experience Level</label>
+              <select
+                className="field-input"
+                value={experienceLevel}
+                onChange={(e) => setExperienceLevel(e.target.value)}
+              >
+                <option value="">Select your experience level</option>
+                {EXPERIENCE_LEVELS.map((opt) => (
+                  <option key={opt.value} value={opt.value}>{opt.label}</option>
+                ))}
+              </select>
             </motion.div>
           )}
 
@@ -435,6 +459,17 @@ function CreateProfile() {
                 onToggle={toggleSkill}
                 onAddCustom={(val) => setSkills((prev) => [...prev, val])}
                 placeholder="Type a custom skill and press Enter"
+              />
+
+              <label className="field-label" style={{ marginTop: "20px" }}>
+                Why are you interested in this path? (Optional)
+              </label>
+              <textarea
+                className="field-input"
+                style={{ minHeight: "80px", resize: "vertical", fontFamily: "inherit" }}
+                placeholder="Share a bit about what draws you to this direction..."
+                value={careerGoalNotes}
+                onChange={(e) => setCareerGoalNotes(e.target.value)}
               />
             </motion.div>
           )}

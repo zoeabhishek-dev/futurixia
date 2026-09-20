@@ -72,10 +72,10 @@ function Home() {
   ]
 
   const stats = [
-    { icon: Globe2, value: "120+", label: "Countries Covered" },
-    { icon: Award, value: "300+", label: "Careers Mapped" },
-    { icon: Users, value: "10K+", label: "Students Guided" },
-    { icon: Sparkles, value: "100%", label: "Personalized" },
+    { icon: Award, value: "100+", label: "Careers Mapped" },
+    { icon: Globe2, value: "40", label: "Steps Per Roadmap" },
+    { icon: Sparkles, value: "5", label: "Student Stages Covered" },
+    { icon: Users, value: "Free", label: "To Use, Always" },
   ]
 
   const popularCareers = [

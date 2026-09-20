@@ -107,6 +107,7 @@ import {
   Pickaxe,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
+import { getPersonalizedRoadmap } from "../lib/personalization"
 
 const STEP_TYPE_ICONS = {
   education: GraduationCap,
@@ -173,7 +174,7 @@ function RoadmapDetail() {
 
       const { data: profileData } = await supabase
         .from("profiles")
-        .select("current_stage")
+        .select("current_stage, experience_level, interests, skills")
         .eq("id", user.id)
         .maybeSingle()
 
@@ -200,15 +201,10 @@ function RoadmapDetail() {
 
       const allSteps = stepsData || []
 
-      const matchedIntro = studentStage
-        ? allSteps
-            .filter((s) => s.phase === "intro" && s.stage === studentStage)
-            .sort((a, b) => a.step_order - b.step_order)
-        : []
-
-      const core = allSteps
-        .filter((s) => s.phase === "core")
-        .sort((a, b) => a.step_order - b.step_order)
+      const { introSteps: matchedIntro, coreSteps: core } = getPersonalizedRoadmap(
+        { ...profileData, current_stage: studentStage },
+        allSteps
+      )
 
       setIntroSteps(matchedIntro)
       setCoreSteps(core)
