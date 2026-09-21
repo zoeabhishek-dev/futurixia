@@ -131,14 +131,12 @@ function CareerSearch() {
   const [loading, setLoading] = useState(true)
   const [query, setQuery] = useState("")
   const [activeCategory, setActiveCategory] = useState("All")
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   useEffect(() => {
     const checkUserAndLoad = async () => {
       const { data: userData } = await supabase.auth.getUser()
-      if (!userData?.user) {
-        navigate("/login")
-        return
-      }
+      setIsLoggedIn(!!userData?.user)
 
       const { data, error } = await supabase
         .from("careers")
@@ -152,7 +150,7 @@ function CareerSearch() {
     }
 
     checkUserAndLoad()
-  }, [navigate])
+  }, [])
 
   const categories = ["All", ...Array.from(new Set(careers.map((c) => c.category).filter(Boolean)))]
 
@@ -173,12 +171,21 @@ function CareerSearch() {
       </div>
 
       <nav style={styles.nav}>
-        <button style={styles.backBtn} onClick={() => navigate("/dashboard")}>
+        <button
+          style={styles.backBtn}
+          onClick={() => navigate(isLoggedIn ? "/dashboard" : "/")}
+        >
           <ArrowLeft size={16} />
-          Dashboard
+          {isLoggedIn ? "Dashboard" : "Home"}
         </button>
         <div style={styles.logo}>Futurixia</div>
-        <span style={{ width: 110 }} />
+        {isLoggedIn ? (
+          <span style={{ width: 110 }} />
+        ) : (
+          <button style={styles.backBtn} onClick={() => navigate("/login")}>
+            Log In
+          </button>
+        )}
       </nav>
 
       <div style={styles.content}>

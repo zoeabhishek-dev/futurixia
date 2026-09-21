@@ -83,3 +83,47 @@ export function getPersonalizedRoadmap(profile, allSteps) {
 
   return { introSteps, coreSteps }
 }
+
+/**
+ * scoreCareerMatch
+ * Rule-based, fully transparent scoring between a student's selected
+ * interests/skills and a single career. Used by the Career Discovery page.
+ * No AI — pure keyword matching against the career's own stored text.
+ */
+export function scoreCareerMatch(interests, skills, career) {
+  const interestList = parseCommaList(Array.isArray(interests) ? interests.join(",") : interests)
+  const skillList = parseCommaList(Array.isArray(skills) ? skills.join(",") : skills)
+
+  const haystack = [career.title, career.category, career.short_description]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase()
+
+  let score = 0
+  const reasons = []
+  const matchedInterests = []
+  const matchedSkills = []
+
+  interestList.forEach((interest) => {
+    if (haystack.includes(interest)) {
+      score += 3
+      matchedInterests.push(interest)
+    }
+  })
+
+  skillList.forEach((skill) => {
+    if (haystack.includes(skill)) {
+      score += 2
+      matchedSkills.push(skill)
+    }
+  })
+
+  if (matchedInterests.length > 0) {
+    reasons.push(`You selected ${matchedInterests.join(", ")}, which relates closely to ${career.title}`)
+  }
+  if (matchedSkills.length > 0) {
+    reasons.push(`Your skill in ${matchedSkills.join(", ")} is relevant to this career`)
+  }
+
+  return { score, reasons }
+}

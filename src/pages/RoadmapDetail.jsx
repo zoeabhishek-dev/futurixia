@@ -165,21 +165,6 @@ function RoadmapDetail() {
       const { data: userData } = await supabase.auth.getUser()
       const user = userData?.user
 
-      if (!user) {
-        navigate("/login")
-        return
-      }
-
-      setUserId(user.id)
-
-      const { data: profileData } = await supabase
-        .from("profiles")
-        .select("current_stage, experience_level, interests, skills")
-        .eq("id", user.id)
-        .maybeSingle()
-
-      const studentStage = profileData?.current_stage || null
-
       const { data: careerData, error: careerError } = await supabase
         .from("careers")
         .select("*")
@@ -200,6 +185,28 @@ function RoadmapDetail() {
         .order("step_order")
 
       const allSteps = stepsData || []
+
+      if (!user) {
+        const { introSteps: matchedIntro, coreSteps: core } = getPersonalizedRoadmap(
+          { current_stage: null },
+          allSteps
+        )
+        setIntroSteps(matchedIntro)
+        setCoreSteps(core)
+        setUserId(null)
+        setLoading(false)
+        return
+      }
+
+      setUserId(user.id)
+
+      const { data: profileData } = await supabase
+        .from("profiles")
+        .select("current_stage, experience_level, interests, skills")
+        .eq("id", user.id)
+        .maybeSingle()
+
+      const studentStage = profileData?.current_stage || null
 
       const { introSteps: matchedIntro, coreSteps: core } = getPersonalizedRoadmap(
         { ...profileData, current_stage: studentStage },
@@ -222,10 +229,14 @@ function RoadmapDetail() {
     }
 
     load()
-  }, [slug, navigate])
+  }, [slug])
 
   const toggleStep = async (stepId) => {
-    if (!userId || savingStepId) return
+    if (!userId) {
+      navigate("/login")
+      return
+    }
+    if (savingStepId) return
     setSavingStepId(stepId)
 
     const isCompleted = completedStepIds.has(stepId)
@@ -340,7 +351,7 @@ function RoadmapDetail() {
                 disabled={savingStepId === step.id}
               >
                 {isDone ? <CheckCircle2 size={14} /> : <Circle size={14} />}
-                {isDone ? "Done" : "Mark Done"}
+                {isDone ? "Done" : userId ? "Mark Done" : "Log In to Track"}
               </button>
             </div>
             <h3
@@ -352,6 +363,16 @@ function RoadmapDetail() {
               {step.title}
             </h3>
             <p style={styles.stepDesc}>{step.description}</p>
+            {step.reasons && step.reasons.length > 0 && (
+              <div style={styles.whyBox}>
+                <span style={styles.whyLabel}>Why you are seeing this</span>
+                <ul style={styles.whyList}>
+                  {step.reasons.map((reason, idx) => (
+                    <li key={idx}>{reason}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </motion.div>
       </div>
@@ -427,7 +448,12 @@ function RoadmapDetail() {
             </div>
           </div>
 
-          {introSteps.length === 0 && (
+          {introSteps.length === 0 && !userId && (
+            <p style={styles.introMissingNote}>
+              Log in and complete your profile to see personalized starting steps for your exact stage.
+            </p>
+          )}
+          {introSteps.length === 0 && userId && (
             <p style={styles.introMissingNote}>
               Personalized starting steps for your stage are coming soon for this career, showing the full core roadmap below.
             </p>
@@ -722,6 +748,26 @@ const styles = {
     color: "#c2c4d6",
     fontSize: "0.92rem",
     lineHeight: 1.6,
+  },
+  whyBox: {
+    marginTop: "12px",
+    background: "rgba(99,102,241,0.08)",
+    borderRadius: "10px",
+    padding: "10px 14px",
+  },
+  whyLabel: {
+    fontSize: "0.72rem",
+    fontWeight: 700,
+    color: "#a5b4fc",
+    textTransform: "uppercase",
+    letterSpacing: "0.05em",
+  },
+  whyList: {
+    margin: "6px 0 0",
+    paddingLeft: "18px",
+    color: "#c9cbdb",
+    fontSize: "0.85rem",
+    lineHeight: 1.5,
   },
   noSteps: {
     textAlign: "center",

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { LogOut, User2, AlertTriangle, Compass, ArrowRight } from "lucide-react"
+import { LogOut, User2, AlertTriangle, Compass, ArrowRight, Sparkles } from "lucide-react"
 import { supabase } from "../supabaseClient"
 
 function Dashboard() {
@@ -86,6 +86,22 @@ function Dashboard() {
             <h2 style={{ marginBottom: 6 }}>Explore Careers & Get Your Roadmap</h2>
             <p style={styles.subtext}>
               Search any career and see a personalized, step-by-step path to get there.
+            </p>
+          </div>
+          <ArrowRight size={20} color="#c7d2fe" />
+        </div>
+
+        <div
+          style={styles.placeholderCard}
+          onClick={() => navigate("/discover")}
+        >
+          <div style={styles.placeholderIcon}>
+            <Sparkles size={26} color="#c4b5fd" />
+          </div>
+          <div style={{ flex: 1 }}>
+            <h2 style={{ marginBottom: 6 }}>Not Sure What You Want? Take the Discovery Quiz</h2>
+            <p style={styles.subtext}>
+              Tell us your interests and skills, and we will suggest careers worth exploring.
             </p>
           </div>
           <ArrowRight size={20} color="#c7d2fe" />

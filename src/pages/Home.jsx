@@ -181,6 +181,15 @@ function Home() {
           >
             See How it Works
           </motion.a>
+          <Link to="/discover">
+            <motion.button
+              className="secondary-btn"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              Not Sure? Take the Quiz
+            </motion.button>
+          </Link>
         </motion.div>
 
         <div className="floating-careers">
