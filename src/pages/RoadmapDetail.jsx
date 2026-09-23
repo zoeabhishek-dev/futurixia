@@ -159,6 +159,7 @@ function RoadmapDetail() {
   const [completedStepIds, setCompletedStepIds] = useState(new Set())
   const [loading, setLoading] = useState(true)
   const [savingStepId, setSavingStepId] = useState(null)
+  const [countryNote, setCountryNote] = useState(null)
 
   useEffect(() => {
     const load = async () => {
@@ -202,9 +203,22 @@ function RoadmapDetail() {
 
       const { data: profileData } = await supabase
         .from("profiles")
-        .select("current_stage, experience_level, interests, skills")
+        .select("current_stage, experience_level, interests, skills, country")
         .eq("id", user.id)
         .maybeSingle()
+
+      if (profileData?.country) {
+        const { data: noteData } = await supabase
+          .from("career_country_notes")
+          .select("note")
+          .eq("career_id", careerData.id)
+          .eq("country", profileData.country)
+          .maybeSingle()
+
+        if (noteData?.note) {
+          setCountryNote(noteData.note)
+        }
+      }
 
       const studentStage = profileData?.current_stage || null
 
@@ -448,6 +462,13 @@ function RoadmapDetail() {
             </div>
           </div>
 
+          {countryNote && (
+            <div style={styles.countryNoteBox}>
+              <span style={styles.countryNoteLabel}>Note for Your Country</span>
+              <p style={styles.countryNoteText}>{countryNote}</p>
+            </div>
+          )}
+
           {introSteps.length === 0 && !userId && (
             <p style={styles.introMissingNote}>
               Log in and complete your profile to see personalized starting steps for your exact stage.
@@ -656,6 +677,26 @@ const styles = {
     fontSize: "0.8rem",
     color: "#9599b0",
     fontStyle: "italic",
+  },
+  countryNoteBox: {
+    marginTop: "20px",
+    background: "rgba(251,191,36,0.08)",
+    borderRadius: "14px",
+    padding: "14px 18px",
+    textAlign: "left",
+  },
+  countryNoteLabel: {
+    fontSize: "0.72rem",
+    fontWeight: 700,
+    color: "#fbbf24",
+    textTransform: "uppercase",
+    letterSpacing: "0.05em",
+  },
+  countryNoteText: {
+    marginTop: "6px",
+    fontSize: "0.85rem",
+    color: "#e5d9b8",
+    lineHeight: 1.5,
   },
   roadmapHeading: {
     textAlign: "center",
