@@ -325,9 +325,11 @@ function RoadmapDetail() {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.3 }}
           style={styles.stepRow}
+          className="fx-step-row"
         >
           <div style={styles.stepLeft}>
             <div
+              className="fx-step-icon-circle"
               style={{
                 ...styles.stepIconCircle,
                 background: isDone ? "rgba(34,197,94,0.25)" : `${color}2e`,
@@ -349,7 +351,7 @@ function RoadmapDetail() {
             )}
           </div>
 
-          <div style={{ ...styles.stepCard, opacity: isDone ? 0.75 : 1 }}>
+          <div style={{ ...styles.stepCard, opacity: isDone ? 0.75 : 1 }} className="fx-step-card">
             <div style={styles.stepCardTop}>
               <span style={{ ...styles.stepBadge, color }}>
                 Step {displayNumber} · {step.step_type}
@@ -401,7 +403,7 @@ function RoadmapDetail() {
         <div className="aurora-blob blob-c" />
       </div>
 
-      <nav style={styles.nav}>
+      <nav style={styles.nav} className="fx-nav">
         <button style={styles.backBtn} onClick={() => navigate("/careers")}>
           <ArrowLeft size={16} />
           All Careers
@@ -410,29 +412,30 @@ function RoadmapDetail() {
         <span style={{ width: 110 }} />
       </nav>
 
-      <div style={styles.content}>
+      <div style={styles.content} className="fx-content">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           style={styles.heroCard}
+          className="fx-hero-card"
         >
           <div style={styles.heroIconCircle}>
             <CareerIcon size={30} strokeWidth={1.8} />
           </div>
 
           <span style={styles.category}>{career.category}</span>
-          <h1 style={styles.title}>{career.title}</h1>
+          <h1 style={styles.title} className="fx-hero-title">{career.title}</h1>
           <p style={styles.desc}>{career.short_description}</p>
 
-          <div style={styles.statsRow}>
-            <div style={styles.statBox}>
+          <div style={styles.statsRow} className="fx-stats-row">
+            <div style={styles.statBox} className="fx-stat-box">
               <span style={styles.statLabel}>Average Salary</span>
               <span style={{ ...styles.statValue, color: "#4ade80" }}>
                 {career.salary_range || "Not available yet"}
               </span>
             </div>
-            <div style={styles.statBox}>
+            <div style={styles.statBox} className="fx-stat-box">
               <span style={styles.statLabel}>Job Demand</span>
               <span style={{ ...styles.statValue, color: "#c4b5fd" }}>
                 {career.job_demand || "Not available yet"}

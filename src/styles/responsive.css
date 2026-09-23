@@ -1,0 +1,92 @@
+@media (max-width: 640px) {
+  input, select, textarea, button {
+    font-size: 16px !important;
+  }
+
+  .fx-nav {
+    padding: 14px 16px !important;
+  }
+
+  .fx-content {
+    padding: 16px 14px 60px !important;
+  }
+
+  .fx-hero-card {
+    padding: 28px 20px !important;
+  }
+
+  .fx-hero-title {
+    font-size: 1.6rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .fx-stats-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  .fx-stat-box {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .fx-step-row {
+    gap: 10px !important;
+  }
+
+  .fx-step-icon-circle {
+    width: 30px !important;
+    height: 30px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .fx-step-card {
+    padding: 16px 14px !important;
+  }
+
+  .fx-career-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .fx-card {
+    padding: 20px 16px !important;
+  }
+
+  .fx-welcome-card,
+  .fx-progress-card,
+  .fx-section-card {
+    padding: 20px 16px !important;
+  }
+
+  .fx-placeholder-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    padding: 20px 16px !important;
+  }
+
+  .fx-search-box {
+    padding: 12px 16px !important;
+  }
+
+  .fx-actions-row {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .fx-hero-title {
+    font-size: 1.4rem !important;
+  }
+
+  .fx-content {
+    padding: 12px 10px 50px !important;
+  }
+
+  .fx-nav {
+    padding: 12px 12px !important;
+  }
+}

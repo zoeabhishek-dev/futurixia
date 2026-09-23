@@ -132,6 +132,7 @@ function CareerSearch() {
   const [query, setQuery] = useState("")
   const [activeCategory, setActiveCategory] = useState("All")
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [loadError, setLoadError] = useState(false)
 
   useEffect(() => {
     const checkUserAndLoad = async () => {
@@ -143,7 +144,9 @@ function CareerSearch() {
         .select("*")
         .order("title")
 
-      if (!error && data) {
+      if (error) {
+        setLoadError(true)
+      } else if (data) {
         setCareers(data)
       }
       setLoading(false)
@@ -170,7 +173,7 @@ function CareerSearch() {
         <div className="aurora-blob blob-c" />
       </div>
 
-      <nav style={styles.nav}>
+      <nav style={styles.nav} className="fx-nav">
         <button
           style={styles.backBtn}
           onClick={() => navigate(isLoggedIn ? "/dashboard" : "/")}
@@ -188,7 +191,7 @@ function CareerSearch() {
         )}
       </nav>
 
-      <div style={styles.content}>
+      <div style={styles.content} className="fx-content">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -209,6 +212,7 @@ function CareerSearch() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           style={styles.searchBox}
+          className="fx-search-box"
         >
           <Search size={18} color="#9599b0" />
           <input
@@ -244,8 +248,12 @@ function CareerSearch() {
 
         {loading ? (
           <p style={styles.loadingText}>Loading careers...</p>
+        ) : loadError ? (
+          <p style={styles.loadingText}>
+            We could not load careers right now. Please check your connection and try refreshing the page.
+          </p>
         ) : (
-          <div style={styles.grid}>
+          <div style={styles.grid} className="fx-career-grid">
             {filteredCareers.map((career, i) => {
               const Icon = ICONS[career.icon_name] || Briefcase
               return (
@@ -256,6 +264,7 @@ function CareerSearch() {
                   transition={{ duration: 0.4, delay: Math.min(i * 0.05, 0.5) }}
                   whileHover={{ y: -6 }}
                   style={styles.card}
+                  className="fx-card"
                   onClick={() => navigate(`/career/${career.slug}`)}
                 >
                   <div style={styles.cardIcon}>

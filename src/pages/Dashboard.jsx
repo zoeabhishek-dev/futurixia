@@ -14,108 +14,113 @@ function Dashboard() {
   const [nextStep, setNextStep] = useState(null)
   const [recentActivity, setRecentActivity] = useState([])
   const [recommendedProjects, setRecommendedProjects] = useState([])
+  const [loadError, setLoadError] = useState(false)
 
   useEffect(() => {
     const load = async () => {
-      const { data: userData } = await supabase.auth.getUser()
-      const user = userData?.user
+      try {
+        const { data: userData } = await supabase.auth.getUser()
+        const user = userData?.user
 
-      if (!user) {
-        navigate("/login")
-        return
-      }
+        if (!user) {
+          navigate("/login")
+          return
+        }
 
-      const { data: profileData } = await supabase
-        .from("profiles")
-        .select("*")
-        .eq("id", user.id)
-        .maybeSingle()
-
-      if (!profileData) {
-        navigate("/create-profile")
-        return
-      }
-
-      setProfile(profileData)
-
-      const { data: allProgress } = await supabase
-        .from("user_progress")
-        .select("step_id, completed_at")
-        .eq("user_id", user.id)
-        .order("completed_at", { ascending: false })
-
-      if (allProgress && allProgress.length > 0) {
-        const mostRecentStepId = allProgress[0].step_id
-
-        const { data: mostRecentStep } = await supabase
-          .from("roadmap_steps")
-          .select("career_id")
-          .eq("id", mostRecentStepId)
+        const { data: profileData } = await supabase
+          .from("profiles")
+          .select("*")
+          .eq("id", user.id)
           .maybeSingle()
 
-        if (mostRecentStep?.career_id) {
-          const { data: careerData } = await supabase
-            .from("careers")
-            .select("*")
-            .eq("id", mostRecentStep.career_id)
+        if (!profileData) {
+          navigate("/create-profile")
+          return
+        }
+
+        setProfile(profileData)
+
+        const { data: allProgress } = await supabase
+          .from("user_progress")
+          .select("step_id, completed_at")
+          .eq("user_id", user.id)
+          .order("completed_at", { ascending: false })
+
+        if (allProgress && allProgress.length > 0) {
+          const mostRecentStepId = allProgress[0].step_id
+
+          const { data: mostRecentStep } = await supabase
+            .from("roadmap_steps")
+            .select("career_id")
+            .eq("id", mostRecentStepId)
             .maybeSingle()
 
-          const { data: allSteps } = await supabase
-            .from("roadmap_steps")
-            .select("*")
-            .eq("career_id", mostRecentStep.career_id)
-            .order("step_order")
+          if (mostRecentStep?.career_id) {
+            const { data: careerData } = await supabase
+              .from("careers")
+              .select("*")
+              .eq("id", mostRecentStep.career_id)
+              .maybeSingle()
 
-          if (careerData && allSteps) {
-            setActiveCareer(careerData)
-
-            const { introSteps, coreSteps } = getPersonalizedRoadmap(profileData, allSteps)
-            const combined = [...introSteps, ...coreSteps]
-
-            const careerStepIds = new Set(combined.map((s) => s.id))
-            const completedIdsForCareer = new Set(
-              allProgress
-                .map((p) => p.step_id)
-                .filter((id) => careerStepIds.has(id))
-            )
-
-            const total = combined.length
-            const completedCount = completedIdsForCareer.size
-            const percent = total > 0 ? Math.round((completedCount / total) * 100) : 0
-            setProgressPercent(percent)
-
-            const upcoming = combined.find((s) => !completedIdsForCareer.has(s.id))
-            setNextStep(upcoming || null)
-
-            const stepLookup = {}
-            combined.forEach((s) => {
-              stepLookup[s.id] = s
-            })
-
-            const activity = allProgress
-              .filter((p) => careerStepIds.has(p.step_id))
-              .slice(0, 5)
-              .map((p) => ({
-                title: stepLookup[p.step_id]?.title || "Step",
-                completed_at: p.completed_at,
-              }))
-            setRecentActivity(activity)
-
-            const { data: careerProjects } = await supabase
-              .from("career_projects")
-              .select("*, projects(*)")
+            const { data: allSteps } = await supabase
+              .from("roadmap_steps")
+              .select("*")
               .eq("career_id", mostRecentStep.career_id)
+              .order("step_order")
 
-            if (careerProjects && careerProjects.length > 0) {
-              setRecommendedProjects(
-                careerProjects.map((cp) => cp.projects).filter(Boolean)
+            if (careerData && allSteps) {
+              setActiveCareer(careerData)
+
+              const { introSteps, coreSteps } = getPersonalizedRoadmap(profileData, allSteps)
+              const combined = [...introSteps, ...coreSteps]
+
+              const careerStepIds = new Set(combined.map((s) => s.id))
+              const completedIdsForCareer = new Set(
+                allProgress
+                  .map((p) => p.step_id)
+                  .filter((id) => careerStepIds.has(id))
               )
+
+              const total = combined.length
+              const completedCount = completedIdsForCareer.size
+              const percent = total > 0 ? Math.round((completedCount / total) * 100) : 0
+              setProgressPercent(percent)
+
+              const upcoming = combined.find((s) => !completedIdsForCareer.has(s.id))
+              setNextStep(upcoming || null)
+
+              const stepLookup = {}
+              combined.forEach((s) => {
+                stepLookup[s.id] = s
+              })
+
+              const activity = allProgress
+                .filter((p) => careerStepIds.has(p.step_id))
+                .slice(0, 5)
+                .map((p) => ({
+                  title: stepLookup[p.step_id]?.title || "Step",
+                  completed_at: p.completed_at,
+                }))
+              setRecentActivity(activity)
+
+              const { data: careerProjects } = await supabase
+                .from("career_projects")
+                .select("*, projects(*)")
+                .eq("career_id", mostRecentStep.career_id)
+
+              if (careerProjects && careerProjects.length > 0) {
+                setRecommendedProjects(
+                  careerProjects.map((cp) => cp.projects).filter(Boolean)
+                )
+              }
             }
           }
         }
+      } catch (err) {
+        setLoadError(true)
+      } finally {
+        setLoading(false)
       }
-
-      setLoading(false)
     }
 
     load()
@@ -134,12 +139,22 @@ function Dashboard() {
     )
   }
 
+  if (loadError) {
+    return (
+      <div style={styles.center}>
+        <p style={{ maxWidth: 320, textAlign: "center", color: "#a9adc4" }}>
+          We could not load your dashboard right now. Please check your connection and try refreshing the page.
+        </p>
+      </div>
+    )
+  }
+
   const interestTags = profile.interests?.split(", ").filter(Boolean) || []
   const skillTags = profile.skills?.split(", ").filter(Boolean) || []
 
   return (
     <div style={styles.page}>
-      <nav style={styles.nav}>
+      <nav style={styles.nav} className="fx-nav">
         <div style={styles.logo}>Futurixia</div>
         <button style={styles.logoutBtn} onClick={() => setShowLogoutConfirm(true)}>
           <LogOut size={16} />
@@ -147,8 +162,8 @@ function Dashboard() {
         </button>
       </nav>
 
-      <div style={styles.content}>
-        <div style={styles.welcomeCard}>
+      <div style={styles.content} className="fx-content">
+        <div style={styles.welcomeCard} className="fx-welcome-card">
           <User2 size={32} color="#a5b4fc" />
           <h1>Welcome, {profile.full_name}!</h1>
           <p style={styles.subtext}>
@@ -163,7 +178,7 @@ function Dashboard() {
         </div>
 
         {activeCareer ? (
-          <div style={styles.progressCard}>
+          <div style={styles.progressCard} className="fx-progress-card">
             <div style={styles.progressHeader}>
               <div>
                 <span style={styles.progressLabel}>Currently Working On</span>
@@ -213,7 +228,7 @@ function Dashboard() {
             </button>
           </div>
         ) : (
-          <div style={styles.placeholderCard} onClick={() => navigate("/careers")}>
+          <div style={styles.placeholderCard} onClick={() => navigate("/careers")} className="fx-placeholder-card">
             <div style={styles.placeholderIcon}>
               <Compass size={26} color="#99f6ff" />
             </div>
@@ -228,7 +243,7 @@ function Dashboard() {
         )}
 
         {recommendedProjects.length > 0 && (
-          <div style={styles.sectionCard}>
+          <div style={styles.sectionCard} className="fx-section-card">
             <h3 style={styles.sectionTitle}>Recommended Projects</h3>
             {recommendedProjects.map((project) => (
               <div key={project.id} style={styles.projectRow}>
@@ -242,7 +257,7 @@ function Dashboard() {
         )}
 
         {skillTags.length > 0 && (
-          <div style={styles.sectionCard}>
+          <div style={styles.sectionCard} className="fx-section-card">
             <h3 style={styles.sectionTitle}>
               <TrendingUp size={16} style={{ marginRight: 6, verticalAlign: "-3px" }} />
               Skills You're Building
@@ -256,7 +271,7 @@ function Dashboard() {
         )}
 
         {recentActivity.length > 0 && (
-          <div style={styles.sectionCard}>
+          <div style={styles.sectionCard} className="fx-section-card">
             <h3 style={styles.sectionTitle}>
               <Clock size={16} style={{ marginRight: 6, verticalAlign: "-3px" }} />
               Recent Activity
@@ -270,7 +285,7 @@ function Dashboard() {
           </div>
         )}
 
-        <div style={styles.actionsRow}>
+        <div style={styles.actionsRow} className="fx-actions-row">
           <Link to="/careers" style={styles.actionLink}>Explore Careers</Link>
           <Link to="/discover" style={styles.actionLink}>Discovery Quiz</Link>
           <Link to="/create-profile" style={styles.actionLink}>Edit Profile</Link>
