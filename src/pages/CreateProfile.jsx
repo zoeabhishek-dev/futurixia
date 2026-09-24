@@ -190,6 +190,7 @@ function ChipPicker({ presets, selected, onToggle, onAddCustom, placeholder }) {
 function CreateProfile() {
   const navigate = useNavigate()
   const [checkingAuth, setCheckingAuth] = useState(true)
+  const [isEditMode, setIsEditMode] = useState(false)
   const [step, setStep] = useState(0)
   const [saving, setSaving] = useState(false)
   const [errorMsg, setErrorMsg] = useState("")
@@ -206,15 +207,46 @@ function CreateProfile() {
   const [skills, setSkills] = useState([])
 
   useEffect(() => {
-    const checkUser = async () => {
+    const checkUserAndPrefill = async () => {
       const { data } = await supabase.auth.getUser()
-      if (!data?.user) {
+      const user = data?.user
+
+      if (!user) {
         navigate("/login")
-      } else {
-        setCheckingAuth(false)
+        return
       }
+
+      const { data: existingProfile } = await supabase
+        .from("profiles")
+        .select("*")
+        .eq("id", user.id)
+        .maybeSingle()
+
+      if (existingProfile) {
+        setFullName(existingProfile.full_name || "")
+        setAge(existingProfile.age ? String(existingProfile.age) : "")
+        setCountry(existingProfile.country || "")
+        setEducationLevel(existingProfile.education_level || "")
+        setClassOrCourse(existingProfile.class_or_course || "")
+        setCurrentStage(existingProfile.current_stage || "")
+        setExperienceLevel(existingProfile.experience_level || "")
+        setCareerGoalNotes(existingProfile.career_goal_notes || "")
+        setInterests(
+          existingProfile.interests
+            ? existingProfile.interests.split(",").map((v) => v.trim()).filter(Boolean)
+            : []
+        )
+        setSkills(
+          existingProfile.skills
+            ? existingProfile.skills.split(",").map((v) => v.trim()).filter(Boolean)
+            : []
+        )
+        setIsEditMode(true)
+      }
+
+      setCheckingAuth(false)
     }
-    checkUser()
+    checkUserAndPrefill()
   }, [navigate])
 
   const toggleInterest = (item) => {
@@ -327,7 +359,7 @@ function CreateProfile() {
             >
               <div className="step-heading">
                 <User size={22} />
-                <h2>Tell us about you</h2>
+                <h2>{isEditMode ? "Update Your Details" : "Tell us about you"}</h2>
               </div>
 
               <label className="field-label">Full Name</label>
@@ -506,7 +538,7 @@ function CreateProfile() {
             >
               {saving ? <Loader2 size={16} className="spin" /> : (
                 <>
-                  Finish
+                  {isEditMode ? "Save Changes" : "Finish"}
                   <Check size={16} />
                 </>
               )}
