@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Link, useNavigate } from "react-router-dom"
 import { supabase } from "../supabaseClient"
+import ContactModal from "../components/ContactModal"
 import "../App.css"
 import {
   Rocket,
@@ -29,6 +30,7 @@ import {
 function Home() {
   const navigate = useNavigate()
   const [checkingSession, setCheckingSession] = useState(true)
+  const [showContactModal, setShowContactModal] = useState(false)
 
   useEffect(() => {
     const checkExistingSession = async () => {
@@ -384,8 +386,27 @@ function Home() {
 
         <div className="footer-bottom">
           <p>© 2026 Futurixia — Guiding students to their dream careers, worldwide.</p>
+          <button
+            onClick={() => setShowContactModal(true)}
+            style={{
+              marginTop: "16px",
+              background: "rgba(255,255,255,0.07)",
+              color: "#e0e1ff",
+              border: "none",
+              padding: "10px 22px",
+              borderRadius: "30px",
+              fontSize: "0.82rem",
+              fontWeight: 700,
+              cursor: "pointer",
+              boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
+            }}
+          >
+            Contact Us
+          </button>
         </div>
       </footer>
+
+      <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
     </div>
   )
 }

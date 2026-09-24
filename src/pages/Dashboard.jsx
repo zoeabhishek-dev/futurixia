@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
-import { LogOut, User2, AlertTriangle, Compass, ArrowRight, Sparkles, TrendingUp, Clock, Target } from "lucide-react"
+import { LogOut, User2, AlertTriangle, Compass, ArrowRight, Sparkles, TrendingUp, Clock, Target, Mail } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import { getPersonalizedRoadmap } from "../lib/personalization"
+import ContactModal from "../components/ContactModal"
 
 function Dashboard() {
   const navigate = useNavigate()
@@ -15,6 +16,7 @@ function Dashboard() {
   const [recentActivity, setRecentActivity] = useState([])
   const [recommendedProjects, setRecommendedProjects] = useState([])
   const [loadError, setLoadError] = useState(false)
+  const [showContactModal, setShowContactModal] = useState(false)
 
   useEffect(() => {
     const load = async () => {
@@ -219,13 +221,24 @@ function Dashboard() {
               </div>
             )}
 
-            <button
-              style={styles.continueBtn}
-              onClick={() => navigate(`/career/${activeCareer.slug}`)}
-            >
-              Continue Roadmap
-              <ArrowRight size={16} />
-            </button>
+                        {nextStep && (
+              <button
+                style={styles.continueBtn}
+                onClick={() => navigate(`/career/${activeCareer.slug}`)}
+              >
+                Continue Roadmap
+                <ArrowRight size={16} />
+              </button>
+            )}
+            ) : (
+              <button
+                style={styles.continueBtn}
+                onClick={() => navigate("/careers")}
+              >
+                Explore More Careers
+                <ArrowRight size={16} />
+              </button>
+            ){"}"}
           </div>
         ) : (
           <div style={styles.placeholderCard} onClick={() => navigate("/careers")} className="fx-placeholder-card">
@@ -286,11 +299,23 @@ function Dashboard() {
         )}
 
         <div style={styles.actionsRow} className="fx-actions-row">
-          <Link to="/careers" style={styles.actionLink}>Explore Careers</Link>
-          <Link to="/discover" style={styles.actionLink}>Discovery Quiz</Link>
-          <Link to="/create-profile" style={styles.actionLink}>Edit Profile</Link>
+          <Link to="/careers" style={styles.actionButton}>Explore Careers</Link>
+          <Link to="/discover" style={styles.actionButton}>Discovery Quiz</Link>
+          <Link to="/create-profile" style={styles.actionButton}>Edit Profile</Link>
+        </div>
+
+        <div style={styles.contactBox}>
+          <p style={styles.contactText}>
+            Can't find the career you're looking for? Contact us, we'll add it for you.
+          </p>
+          <button style={styles.contactBtn} onClick={() => setShowContactModal(true)}>
+            <Mail size={16} />
+            Contact Us
+          </button>
         </div>
       </div>
+
+      <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
 
       {showLogoutConfirm && (
         <div style={styles.modalOverlay} onClick={() => setShowLogoutConfirm(false)}>
@@ -349,7 +374,41 @@ const styles = {
   activityDot: { width: "6px", height: "6px", borderRadius: "50%", background: "#4ade80", flexShrink: 0 },
   activityText: { fontSize: "0.88rem", color: "#c9cbdb" },
   actionsRow: { display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" },
-  actionLink: { color: "#a5b4fc", fontSize: "0.85rem", fontWeight: 600, textDecoration: "underline" },
+  actionButton: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "#fff",
+    fontSize: "0.85rem",
+    fontWeight: 700,
+    textDecoration: "none",
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    padding: "12px 24px",
+    borderRadius: "16px",
+  },
+  contactBox: {
+    textAlign: "center",
+    marginTop: "6px",
+  },
+  contactText: {
+    color: "#9599b0",
+    fontSize: "0.85rem",
+    marginBottom: "14px",
+  },
+  contactBtn: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "8px",
+    background: "rgba(255,255,255,0.07)",
+    color: "#e0e1ff",
+    border: "none",
+    padding: "12px 24px",
+    borderRadius: "30px",
+    fontSize: "0.9rem",
+    fontWeight: 700,
+    cursor: "pointer",
+    boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
+  },
   subtext: { color: "#a9adc4", fontSize: "0.92rem", marginTop: "6px" },
   tagsRow: { display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "12px" },
   tag: { background: "rgba(99,102,241,0.18)", color: "#c7d2fe", padding: "6px 14px", borderRadius: "20px", fontSize: "0.82rem" },
