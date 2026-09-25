@@ -1,12 +1,18 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #0a0a12;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+body {
+  background: #0a0a12;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* ============================================= */

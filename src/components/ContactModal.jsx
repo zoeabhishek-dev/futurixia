@@ -36,10 +36,21 @@ function ContactModal({ isOpen, onClose }) {
         setEmail("")
         setMessage("")
       } else {
-        setError("Something went wrong sending your message. Please try again.")
+        let detail = ""
+        try {
+          const body = await response.json()
+          detail = body?.errors?.[0]?.message || body?.error || ""
+        } catch (parseErr) {
+          detail = ""
+        }
+        setError(
+          detail
+            ? `Could not send your message: ${detail}`
+            : `Could not send your message (status ${response.status}). Please check your Formspree form is confirmed, or try again.`
+        )
       }
     } catch (err) {
-      setError("Something went wrong sending your message. Please try again.")
+      setError(`Could not send your message: ${err.message || "network error"}. Please check your connection.`)
     }
 
     setSending(false)
