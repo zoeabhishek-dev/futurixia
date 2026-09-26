@@ -254,6 +254,7 @@ function RoadmapDetail() {
     setSavingStepId(stepId)
 
     const isCompleted = completedStepIds.has(stepId)
+    const allSteps = [...introSteps, ...coreSteps]
 
     if (isCompleted) {
       await supabase
@@ -267,12 +268,30 @@ function RoadmapDetail() {
         next.delete(stepId)
         return next
       })
+
+      await supabase
+        .from("roadmap_completions")
+        .delete()
+        .eq("user_id", userId)
+        .eq("career_id", career.id)
     } else {
       await supabase
         .from("user_progress")
         .insert({ user_id: userId, step_id: stepId })
 
-      setCompletedStepIds((prev) => new Set(prev).add(stepId))
+      const updatedCompletedIds = new Set(completedStepIds).add(stepId)
+      setCompletedStepIds(updatedCompletedIds)
+
+      const allNowDone = allSteps.every((s) => updatedCompletedIds.has(s.id))
+
+      if (allNowDone && allSteps.length > 0) {
+        await supabase.from("roadmap_completions").upsert({
+          user_id: userId,
+          career_id: career.id,
+          total_steps: allSteps.length,
+          completed_at: new Date().toISOString(),
+        })
+      }
     }
 
     setSavingStepId(null)
@@ -379,6 +398,34 @@ function RoadmapDetail() {
               {step.title}
             </h3>
             <p style={styles.stepDesc}>{step.description}</p>
+
+            {step.estimated_time && (
+              <span style={styles.estimatedTimePill}>
+                Estimated time: {step.estimated_time}
+              </span>
+            )}
+
+            {step.why_it_matters && (
+              <div style={styles.enrichedBox}>
+                <span style={styles.enrichedLabel}>Why This Matters</span>
+                <p style={styles.enrichedText}>{step.why_it_matters}</p>
+              </div>
+            )}
+
+            {step.what_to_achieve && (
+              <div style={styles.enrichedBox}>
+                <span style={styles.enrichedLabel}>What You Should Achieve</span>
+                <p style={styles.enrichedText}>{step.what_to_achieve}</p>
+              </div>
+            )}
+
+            {step.practice_task && (
+              <div style={styles.enrichedBox}>
+                <span style={styles.enrichedLabel}>Practice Task</span>
+                <p style={styles.enrichedText}>{step.practice_task}</p>
+              </div>
+            )}
+
             {step.reasons && step.reasons.length > 0 && (
               <div style={styles.whyBox}>
                 <span style={styles.whyLabel}>Why you are seeing this</span>
@@ -792,6 +839,35 @@ const styles = {
     color: "#c2c4d6",
     fontSize: "0.92rem",
     lineHeight: 1.6,
+  },
+  estimatedTimePill: {
+    display: "inline-block",
+    marginTop: "10px",
+    background: "rgba(34,211,238,0.12)",
+    color: "#67e8f9",
+    fontSize: "0.78rem",
+    fontWeight: 700,
+    padding: "5px 12px",
+    borderRadius: "20px",
+  },
+  enrichedBox: {
+    marginTop: "12px",
+    background: "rgba(255,255,255,0.04)",
+    borderRadius: "10px",
+    padding: "10px 14px",
+  },
+  enrichedLabel: {
+    fontSize: "0.72rem",
+    fontWeight: 700,
+    color: "#a5b4fc",
+    textTransform: "uppercase",
+    letterSpacing: "0.05em",
+  },
+  enrichedText: {
+    marginTop: "6px",
+    color: "#c9cbdb",
+    fontSize: "0.85rem",
+    lineHeight: 1.5,
   },
   whyBox: {
     marginTop: "12px",

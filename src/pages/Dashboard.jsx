@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
-import { LogOut, User2, AlertTriangle, Compass, ArrowRight, Sparkles, TrendingUp, Clock, Target, Mail } from "lucide-react"
+import { LogOut, User2, AlertTriangle, Compass, ArrowRight, Sparkles, TrendingUp, Clock, Target, Mail, Trophy, CheckCircle2 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import { getPersonalizedRoadmap } from "../lib/personalization"
 import ContactModal from "../components/ContactModal"
@@ -17,6 +17,7 @@ function Dashboard() {
   const [recommendedProjects, setRecommendedProjects] = useState([])
   const [loadError, setLoadError] = useState(false)
   const [showContactModal, setShowContactModal] = useState(false)
+  const [completionHistory, setCompletionHistory] = useState([])
 
   useEffect(() => {
     const load = async () => {
@@ -120,6 +121,25 @@ function Dashboard() {
         }
       } catch (err) {
         setLoadError(true)
+      }
+
+      try {
+        const { data: userDataForHistory } = await supabase.auth.getUser()
+        const userForHistory = userDataForHistory?.user
+
+        if (userForHistory) {
+          const { data: completions } = await supabase
+            .from("roadmap_completions")
+            .select("*, careers(title, slug)")
+            .eq("user_id", userForHistory.id)
+            .order("completed_at", { ascending: false })
+
+          if (completions) {
+            setCompletionHistory(completions)
+          }
+        }
+      } catch (historyErr) {
+        // History is a bonus section; a failure here should not block the dashboard.
       } finally {
         setLoading(false)
       }
@@ -304,6 +324,36 @@ function Dashboard() {
           <Link to="/create-profile" style={styles.actionButton}>Edit Profile</Link>
         </div>
 
+        {completionHistory.length > 0 && (
+          <div style={styles.sectionCard} className="fx-section-card">
+            <h3 style={styles.sectionTitle}>
+              <Trophy size={16} style={{ marginRight: 6, verticalAlign: "-3px" }} />
+              Completed Roadmaps
+            </h3>
+            {completionHistory.map((entry) => (
+              <div key={entry.id} style={styles.completionRow}>
+                <div style={styles.completionIconWrap}>
+                  <CheckCircle2 size={18} color="#4ade80" />
+                </div>
+                <div style={{ flex: 1 }}>
+                  <p style={styles.completionCareerName}>
+                    {entry.careers?.title || "Career"}
+                  </p>
+                  <p style={styles.completionMeta}>
+                    {entry.total_steps}/{entry.total_steps} steps completed ·{" "}
+                    {new Date(entry.completed_at).toLocaleDateString(undefined, {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </p>
+                </div>
+                <span style={styles.completionBadge}>Successfully Completed</span>
+              </div>
+            ))}
+          </div>
+        )}
+
         <div style={styles.contactBox}>
           <p style={styles.contactText}>
             Can't find the career you're looking for? Contact us, we'll add it for you.
@@ -385,6 +435,42 @@ const styles = {
     background: "linear-gradient(90deg, #6366f1, #22d3ee)",
     padding: "12px 24px",
     borderRadius: "16px",
+  },
+  completionRow: {
+    display: "flex",
+    alignItems: "center",
+    gap: "14px",
+    padding: "12px 0",
+    borderBottom: "1px solid rgba(255,255,255,0.06)",
+  },
+  completionIconWrap: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "36px",
+    height: "36px",
+    borderRadius: "10px",
+    background: "rgba(74,222,128,0.14)",
+    flexShrink: 0,
+  },
+  completionCareerName: {
+    fontSize: "0.95rem",
+    fontWeight: 700,
+    color: "#fff",
+  },
+  completionMeta: {
+    fontSize: "0.78rem",
+    color: "#9599b0",
+    marginTop: "2px",
+  },
+  completionBadge: {
+    background: "rgba(74,222,128,0.14)",
+    color: "#4ade80",
+    fontSize: "0.72rem",
+    fontWeight: 700,
+    padding: "6px 12px",
+    borderRadius: "20px",
+    whiteSpace: "nowrap",
   },
   contactBox: {
     textAlign: "center",
