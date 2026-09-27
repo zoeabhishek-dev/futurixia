@@ -1,6 +1,19 @@
 import { useEffect, useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
-import { LogOut, User2, AlertTriangle, Compass, ArrowRight, Sparkles, TrendingUp, Clock, Target, Mail, Trophy, CheckCircle2 } from "lucide-react"
+import {
+  LogOut,
+  User2,
+  AlertTriangle,
+  Compass,
+  ArrowRight,
+  Sparkles,
+  TrendingUp,
+  Clock,
+  Target,
+  Mail,
+  Trophy,
+  CheckCircle2,
+} from "lucide-react"
 import { supabase } from "../supabaseClient"
 import { getPersonalizedRoadmap } from "../lib/personalization"
 import ContactModal from "../components/ContactModal"
@@ -8,15 +21,15 @@ import ContactModal from "../components/ContactModal"
 function Dashboard() {
   const navigate = useNavigate()
   const [loading, setLoading] = useState(true)
+  const [loadError, setLoadError] = useState(false)
   const [profile, setProfile] = useState(null)
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false)
+  const [showContactModal, setShowContactModal] = useState(false)
   const [activeCareer, setActiveCareer] = useState(null)
   const [progressPercent, setProgressPercent] = useState(0)
   const [nextStep, setNextStep] = useState(null)
   const [recentActivity, setRecentActivity] = useState([])
   const [recommendedProjects, setRecommendedProjects] = useState([])
-  const [loadError, setLoadError] = useState(false)
-  const [showContactModal, setShowContactModal] = useState(false)
   const [completionHistory, setCompletionHistory] = useState([])
 
   useEffect(() => {
@@ -79,9 +92,7 @@ function Dashboard() {
 
               const careerStepIds = new Set(combined.map((s) => s.id))
               const completedIdsForCareer = new Set(
-                allProgress
-                  .map((p) => p.step_id)
-                  .filter((id) => careerStepIds.has(id))
+                allProgress.map((p) => p.step_id).filter((id) => careerStepIds.has(id))
               )
 
               const total = combined.length
@@ -112,9 +123,7 @@ function Dashboard() {
                 .eq("career_id", mostRecentStep.career_id)
 
               if (careerProjects && careerProjects.length > 0) {
-                setRecommendedProjects(
-                  careerProjects.map((cp) => cp.projects).filter(Boolean)
-                )
+                setRecommendedProjects(careerProjects.map((cp) => cp.projects).filter(Boolean))
               }
             }
           }
@@ -194,7 +203,9 @@ function Dashboard() {
 
           <div style={styles.tagsRow}>
             {interestTags.map((tag) => (
-              <span style={styles.tag} key={tag}>{tag}</span>
+              <span style={styles.tag} key={tag}>
+                {tag}
+              </span>
             ))}
           </div>
         </div>
@@ -212,9 +223,7 @@ function Dashboard() {
             </div>
 
             <div style={styles.progressBarTrack}>
-              <div
-                style={{ ...styles.progressBarFill, width: `${progressPercent}%` }}
-              />
+              <div style={{ ...styles.progressBarFill, width: `${progressPercent}%` }} />
             </div>
 
             {nextStep ? (
@@ -241,7 +250,7 @@ function Dashboard() {
               </div>
             )}
 
-                        {nextStep && (
+            {nextStep && (
               <button
                 style={styles.continueBtn}
                 onClick={() => navigate(`/career/${activeCareer.slug}`)}
@@ -250,18 +259,13 @@ function Dashboard() {
                 <ArrowRight size={16} />
               </button>
             )}
-            ) : (
-              <button
-                style={styles.continueBtn}
-                onClick={() => navigate("/careers")}
-              >
-                Explore More Careers
-                <ArrowRight size={16} />
-              </button>
-            ){"}"}
           </div>
         ) : (
-          <div style={styles.placeholderCard} onClick={() => navigate("/careers")} className="fx-placeholder-card">
+          <div
+            style={styles.placeholderCard}
+            onClick={() => navigate("/careers")}
+            className="fx-placeholder-card"
+          >
             <div style={styles.placeholderIcon}>
               <Compass size={26} color="#99f6ff" />
             </div>
@@ -275,15 +279,41 @@ function Dashboard() {
           </div>
         )}
 
+        {completionHistory.length > 0 && (
+          <div style={styles.sectionCard} className="fx-section-card">
+            <h3 style={styles.sectionTitle}>
+              <Trophy size={16} style={{ marginRight: 6, verticalAlign: "-3px" }} />
+              Completed Roadmaps
+            </h3>
+            {completionHistory.map((entry) => (
+              <div key={entry.id} style={styles.completionRow}>
+                <div style={styles.completionIconWrap}>
+                  <CheckCircle2 size={18} color="#4ade80" />
+                </div>
+                <div style={{ flex: 1 }}>
+                  <p style={styles.completionCareerName}>{entry.careers?.title || "Career"}</p>
+                  <p style={styles.completionMeta}>
+                    {entry.total_steps}/{entry.total_steps} steps completed ·{" "}
+                    {new Date(entry.completed_at).toLocaleDateString(undefined, {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </p>
+                </div>
+                <span style={styles.completionBadge}>Successfully Completed</span>
+              </div>
+            ))}
+          </div>
+        )}
+
         {recommendedProjects.length > 0 && (
           <div style={styles.sectionCard} className="fx-section-card">
             <h3 style={styles.sectionTitle}>Recommended Projects</h3>
             {recommendedProjects.map((project) => (
               <div key={project.id} style={styles.projectRow}>
                 <p style={styles.projectTitle}>{project.title}</p>
-                {project.description && (
-                  <p style={styles.subtext}>{project.description}</p>
-                )}
+                {project.description && <p style={styles.subtext}>{project.description}</p>}
               </div>
             ))}
           </div>
@@ -297,7 +327,9 @@ function Dashboard() {
             </h3>
             <div style={styles.tagsRow}>
               {skillTags.map((tag) => (
-                <span style={styles.tag} key={tag}>{tag}</span>
+                <span style={styles.tag} key={tag}>
+                  {tag}
+                </span>
               ))}
             </div>
           </div>
@@ -319,40 +351,16 @@ function Dashboard() {
         )}
 
         <div style={styles.actionsRow} className="fx-actions-row">
-          <Link to="/careers" style={styles.actionButton}>Explore Careers</Link>
-          <Link to="/discover" style={styles.actionButton}>Discovery Quiz</Link>
-          <Link to="/create-profile" style={styles.actionButton}>Edit Profile</Link>
+          <Link to="/careers" style={styles.actionButton}>
+            Explore Careers
+          </Link>
+          <Link to="/discover" style={styles.actionButton}>
+            Discovery Quiz
+          </Link>
+          <Link to="/create-profile" style={styles.actionButton}>
+            Edit Profile
+          </Link>
         </div>
-
-        {completionHistory.length > 0 && (
-          <div style={styles.sectionCard} className="fx-section-card">
-            <h3 style={styles.sectionTitle}>
-              <Trophy size={16} style={{ marginRight: 6, verticalAlign: "-3px" }} />
-              Completed Roadmaps
-            </h3>
-            {completionHistory.map((entry) => (
-              <div key={entry.id} style={styles.completionRow}>
-                <div style={styles.completionIconWrap}>
-                  <CheckCircle2 size={18} color="#4ade80" />
-                </div>
-                <div style={{ flex: 1 }}>
-                  <p style={styles.completionCareerName}>
-                    {entry.careers?.title || "Career"}
-                  </p>
-                  <p style={styles.completionMeta}>
-                    {entry.total_steps}/{entry.total_steps} steps completed ·{" "}
-                    {new Date(entry.completed_at).toLocaleDateString(undefined, {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    })}
-                  </p>
-                </div>
-                <span style={styles.completionBadge}>Successfully Completed</span>
-              </div>
-            ))}
-          </div>
-        )}
 
         <div style={styles.contactBox}>
           <p style={styles.contactText}>
@@ -395,29 +403,152 @@ function Dashboard() {
 
 const styles = {
   page: { minHeight: "100vh", background: "#05070f", color: "#fff", fontFamily: "Inter, system-ui, sans-serif" },
-  center: { minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#05070f", color: "#fff", fontFamily: "Inter, system-ui, sans-serif" },
+  center: {
+    minHeight: "100vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "#05070f",
+    color: "#fff",
+    fontFamily: "Inter, system-ui, sans-serif",
+  },
   nav: { display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 40px" },
-  logo: { fontSize: "1.4rem", fontWeight: 800, background: "linear-gradient(90deg, #6366f1, #22d3ee)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" },
-  logoutBtn: { display: "flex", alignItems: "center", gap: "6px", background: "rgba(255,255,255,0.08)", color: "#fff", border: "none", padding: "10px 18px", borderRadius: "30px", cursor: "pointer", fontSize: "0.85rem" },
-  content: { maxWidth: "720px", margin: "40px auto", padding: "0 20px", display: "flex", flexDirection: "column", gap: "24px" },
+  logo: {
+    fontSize: "1.4rem",
+    fontWeight: 800,
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+  },
+  logoutBtn: {
+    display: "flex",
+    alignItems: "center",
+    gap: "6px",
+    background: "rgba(255,255,255,0.08)",
+    color: "#fff",
+    border: "none",
+    padding: "10px 18px",
+    borderRadius: "30px",
+    cursor: "pointer",
+    fontSize: "0.85rem",
+  },
+  content: {
+    maxWidth: "720px",
+    margin: "40px auto",
+    padding: "0 20px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "24px",
+  },
   welcomeCard: { background: "rgba(255,255,255,0.06)", borderRadius: "22px", padding: "34px" },
   progressCard: { background: "rgba(255,255,255,0.05)", borderRadius: "22px", padding: "30px" },
   progressHeader: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "18px" },
-  progressLabel: { fontSize: "0.75rem", fontWeight: 700, color: "#a5b4fc", textTransform: "uppercase", letterSpacing: "0.05em" },
+  progressLabel: {
+    fontSize: "0.75rem",
+    fontWeight: 700,
+    color: "#a5b4fc",
+    textTransform: "uppercase",
+    letterSpacing: "0.05em",
+  },
   progressTitle: { fontSize: "1.4rem", fontWeight: 800, margin: "6px 0 0" },
-  progressCircleWrap: { display: "flex", alignItems: "center", justifyContent: "center", width: "56px", height: "56px", borderRadius: "50%", background: "rgba(99,102,241,0.18)" },
+  progressCircleWrap: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "56px",
+    height: "56px",
+    borderRadius: "50%",
+    background: "rgba(99,102,241,0.18)",
+  },
   progressPercentText: { fontSize: "0.95rem", fontWeight: 800, color: "#c7d2fe" },
-  progressBarTrack: { width: "100%", height: "10px", background: "rgba(255,255,255,0.08)", borderRadius: "10px", overflow: "hidden", marginBottom: "22px" },
+  progressBarTrack: {
+    width: "100%",
+    height: "10px",
+    background: "rgba(255,255,255,0.08)",
+    borderRadius: "10px",
+    overflow: "hidden",
+    marginBottom: "22px",
+  },
   progressBarFill: { height: "100%", background: "linear-gradient(90deg, #6366f1, #22d3ee)", borderRadius: "10px" },
-  nextStepBox: { display: "flex", gap: "14px", alignItems: "flex-start", background: "rgba(255,255,255,0.04)", borderRadius: "16px", padding: "16px 18px", marginBottom: "20px" },
-  nextStepIconWrap: { display: "flex", alignItems: "center", justifyContent: "center", width: "40px", height: "40px", borderRadius: "12px", background: "rgba(34,211,238,0.14)", flexShrink: 0 },
+  nextStepBox: {
+    display: "flex",
+    gap: "14px",
+    alignItems: "flex-start",
+    background: "rgba(255,255,255,0.04)",
+    borderRadius: "16px",
+    padding: "16px 18px",
+    marginBottom: "20px",
+  },
+  nextStepIconWrap: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "40px",
+    height: "40px",
+    borderRadius: "12px",
+    background: "rgba(34,211,238,0.14)",
+    flexShrink: 0,
+  },
   nextStepLabel: { fontSize: "0.72rem", fontWeight: 700, color: "#9599b0", textTransform: "uppercase", letterSpacing: "0.05em" },
   nextStepTitle: { fontSize: "0.95rem", fontWeight: 600, margin: "4px 0 0", color: "#fff" },
-  continueBtn: { display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", width: "100%", background: "linear-gradient(90deg, #6366f1, #22d3ee)", color: "#fff", border: "none", padding: "14px", borderRadius: "16px", fontSize: "0.95rem", fontWeight: 700, cursor: "pointer" },
-  placeholderCard: { display: "flex", alignItems: "center", gap: "20px", background: "rgba(255,255,255,0.045)", borderRadius: "22px", padding: "30px 34px", cursor: "pointer" },
-  placeholderIcon: { display: "flex", alignItems: "center", justifyContent: "center", width: "54px", height: "54px", borderRadius: "16px", background: "rgba(34,211,238,0.14)", flexShrink: 0 },
+  continueBtn: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "8px",
+    width: "100%",
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    color: "#fff",
+    border: "none",
+    padding: "14px",
+    borderRadius: "16px",
+    fontSize: "0.95rem",
+    fontWeight: 700,
+    cursor: "pointer",
+  },
+  placeholderCard: {
+    display: "flex",
+    alignItems: "center",
+    gap: "20px",
+    background: "rgba(255,255,255,0.045)",
+    borderRadius: "22px",
+    padding: "30px 34px",
+    cursor: "pointer",
+  },
+  placeholderIcon: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "54px",
+    height: "54px",
+    borderRadius: "16px",
+    background: "rgba(34,211,238,0.14)",
+    flexShrink: 0,
+  },
   sectionCard: { background: "rgba(255,255,255,0.04)", borderRadius: "18px", padding: "24px" },
   sectionTitle: { fontSize: "1rem", fontWeight: 700, marginBottom: "14px" },
+  completionRow: { display: "flex", alignItems: "center", gap: "14px", padding: "12px 0", borderBottom: "1px solid rgba(255,255,255,0.06)" },
+  completionIconWrap: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "36px",
+    height: "36px",
+    borderRadius: "10px",
+    background: "rgba(74,222,128,0.14)",
+    flexShrink: 0,
+  },
+  completionCareerName: { fontSize: "0.95rem", fontWeight: 700, color: "#fff" },
+  completionMeta: { fontSize: "0.78rem", color: "#9599b0", marginTop: "2px" },
+  completionBadge: {
+    background: "rgba(74,222,128,0.14)",
+    color: "#4ade80",
+    fontSize: "0.72rem",
+    fontWeight: 700,
+    padding: "6px 12px",
+    borderRadius: "20px",
+    whiteSpace: "nowrap",
+  },
   projectRow: { marginBottom: "12px" },
   projectTitle: { fontSize: "0.92rem", fontWeight: 600, color: "#fff" },
   activityRow: { display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" },
@@ -436,51 +567,8 @@ const styles = {
     padding: "12px 24px",
     borderRadius: "16px",
   },
-  completionRow: {
-    display: "flex",
-    alignItems: "center",
-    gap: "14px",
-    padding: "12px 0",
-    borderBottom: "1px solid rgba(255,255,255,0.06)",
-  },
-  completionIconWrap: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "36px",
-    height: "36px",
-    borderRadius: "10px",
-    background: "rgba(74,222,128,0.14)",
-    flexShrink: 0,
-  },
-  completionCareerName: {
-    fontSize: "0.95rem",
-    fontWeight: 700,
-    color: "#fff",
-  },
-  completionMeta: {
-    fontSize: "0.78rem",
-    color: "#9599b0",
-    marginTop: "2px",
-  },
-  completionBadge: {
-    background: "rgba(74,222,128,0.14)",
-    color: "#4ade80",
-    fontSize: "0.72rem",
-    fontWeight: 700,
-    padding: "6px 12px",
-    borderRadius: "20px",
-    whiteSpace: "nowrap",
-  },
-  contactBox: {
-    textAlign: "center",
-    marginTop: "6px",
-  },
-  contactText: {
-    color: "#9599b0",
-    fontSize: "0.85rem",
-    marginBottom: "14px",
-  },
+  contactBox: { textAlign: "center", marginTop: "6px" },
+  contactText: { color: "#9599b0", fontSize: "0.85rem", marginBottom: "14px" },
   contactBtn: {
     display: "inline-flex",
     alignItems: "center",
@@ -498,14 +586,57 @@ const styles = {
   subtext: { color: "#a9adc4", fontSize: "0.92rem", marginTop: "6px" },
   tagsRow: { display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "12px" },
   tag: { background: "rgba(99,102,241,0.18)", color: "#c7d2fe", padding: "6px 14px", borderRadius: "20px", fontSize: "0.82rem" },
-  modalOverlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", backdropFilter: "blur(4px)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 100, padding: "20px" },
+  modalOverlay: {
+    position: "fixed",
+    inset: 0,
+    background: "rgba(0,0,0,0.6)",
+    backdropFilter: "blur(4px)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 100,
+    padding: "20px",
+  },
   modalCard: { background: "#0f1120", borderRadius: "22px", padding: "34px", maxWidth: "380px", width: "100%", textAlign: "center", boxShadow: "0 30px 80px rgba(0,0,0,0.5)" },
-  modalIcon: { display: "flex", alignItems: "center", justifyContent: "center", width: "54px", height: "54px", borderRadius: "16px", background: "rgba(251,191,36,0.12)", margin: "0 auto 18px" },
+  modalIcon: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "54px",
+    height: "54px",
+    borderRadius: "16px",
+    background: "rgba(251,191,36,0.12)",
+    margin: "0 auto 18px",
+  },
   modalTitle: { fontSize: "1.2rem", fontWeight: 800, marginBottom: "8px" },
   modalText: { color: "#a9adc4", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "26px" },
   modalActions: { display: "flex", gap: "12px" },
-  modalCancelBtn: { flex: 1, background: "rgba(255,255,255,0.08)", color: "#fff", border: "none", padding: "12px", borderRadius: "14px", cursor: "pointer", fontSize: "0.9rem", fontWeight: 600 },
-  modalConfirmBtn: { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", background: "linear-gradient(90deg, #ef4444, #f87171)", color: "#fff", border: "none", padding: "12px", borderRadius: "14px", cursor: "pointer", fontSize: "0.9rem", fontWeight: 700 },
+  modalCancelBtn: {
+    flex: 1,
+    background: "rgba(255,255,255,0.08)",
+    color: "#fff",
+    border: "none",
+    padding: "12px",
+    borderRadius: "14px",
+    cursor: "pointer",
+    fontSize: "0.9rem",
+    fontWeight: 600,
+  },
+  modalConfirmBtn: {
+    flex: 1,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "6px",
+    background: "linear-gradient(90deg, #ef4444, #f87171)",
+    color: "#fff",
+    border: "none",
+    padding: "12px",
+    borderRadius: "14px",
+    cursor: "pointer",
+    fontSize: "0.9rem",
+    fontWeight: 700,
+  },
 }
 
 export default Dashboard

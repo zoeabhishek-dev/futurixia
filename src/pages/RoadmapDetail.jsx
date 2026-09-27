@@ -70,28 +70,6 @@ import {
   Languages,
   Eye,
   Bird,
-  Bug,
-  MessageSquare,
-  Footprints,
-  Mountain,
-  Mic2,
-  FlaskConical,
-  Blocks,
-  Wine,
-  Receipt,
-  Video,
-  Database,
-  Apple,
-  FileSignature,
-  Box,
-  Swords,
-  Gamepad2,
-  FileText,
-  Bot,
-  Dna,
-  FileType,
-  Trees,
-  Telescope,
   Anchor,
   CloudSun,
   Dumbbell,
@@ -139,11 +117,6 @@ const CAREER_ICONS = {
   Calculator, Scan, Map, Hotel,
   Truck, ShoppingBag, Globe2, Music, FileCheck2,
   Server, CalendarCheck, Languages, Eye, Bird,
-  Bug, MessageSquare, Footprints, Mountain, Mic2,
-  FlaskConical, Blocks, Wine, Receipt, Video,
-  Database, Apple, FileSignature, Box, Swords,
-  Gamepad2, FileText, Bot,
-  Dna, FileType, Trees, Telescope,
   Anchor, CloudSun, Dumbbell, Mic, KeyRound,
   Smile, Film, ChartBar, Croissant,
   Camera, PersonStanding, Fish, Pickaxe,
@@ -160,86 +133,91 @@ function RoadmapDetail() {
   const [loading, setLoading] = useState(true)
   const [savingStepId, setSavingStepId] = useState(null)
   const [countryNote, setCountryNote] = useState(null)
+  const [loadError, setLoadError] = useState(false)
 
   useEffect(() => {
     const load = async () => {
-      const { data: userData } = await supabase.auth.getUser()
-      const user = userData?.user
+      try {
+        const { data: userData } = await supabase.auth.getUser()
+        const user = userData?.user
 
-      const { data: careerData, error: careerError } = await supabase
-        .from("careers")
-        .select("*")
-        .eq("slug", slug)
-        .maybeSingle()
-
-      if (careerError || !careerData) {
-        setLoading(false)
-        return
-      }
-
-      setCareer(careerData)
-
-      const { data: stepsData } = await supabase
-        .from("roadmap_steps")
-        .select("*")
-        .eq("career_id", careerData.id)
-        .order("step_order")
-
-      const allSteps = stepsData || []
-
-      if (!user) {
-        const { introSteps: matchedIntro, coreSteps: core } = getPersonalizedRoadmap(
-          { current_stage: null },
-          allSteps
-        )
-        setIntroSteps(matchedIntro)
-        setCoreSteps(core)
-        setUserId(null)
-        setLoading(false)
-        return
-      }
-
-      setUserId(user.id)
-
-      const { data: profileData } = await supabase
-        .from("profiles")
-        .select("current_stage, experience_level, interests, skills, country")
-        .eq("id", user.id)
-        .maybeSingle()
-
-      if (profileData?.country) {
-        const { data: noteData } = await supabase
-          .from("career_country_notes")
-          .select("note")
-          .eq("career_id", careerData.id)
-          .eq("country", profileData.country)
+        const { data: careerData, error: careerError } = await supabase
+          .from("careers")
+          .select("*")
+          .eq("slug", slug)
           .maybeSingle()
 
-        if (noteData?.note) {
-          setCountryNote(noteData.note)
+        if (careerError || !careerData) {
+          setLoading(false)
+          return
         }
+
+        setCareer(careerData)
+
+        const { data: stepsData } = await supabase
+          .from("roadmap_steps")
+          .select("*")
+          .eq("career_id", careerData.id)
+          .order("step_order")
+
+        const allSteps = stepsData || []
+
+        if (!user) {
+          const { introSteps: matchedIntro, coreSteps: core } = getPersonalizedRoadmap(
+            { current_stage: null },
+            allSteps
+          )
+          setIntroSteps(matchedIntro)
+          setCoreSteps(core)
+          setUserId(null)
+          setLoading(false)
+          return
+        }
+
+        setUserId(user.id)
+
+        const { data: profileData } = await supabase
+          .from("profiles")
+          .select("current_stage, experience_level, interests, skills, country")
+          .eq("id", user.id)
+          .maybeSingle()
+
+        const studentStage = profileData?.current_stage || null
+
+        if (profileData?.country) {
+          const { data: noteData } = await supabase
+            .from("career_country_notes")
+            .select("note")
+            .eq("career_id", careerData.id)
+            .eq("country", profileData.country)
+            .maybeSingle()
+
+          if (noteData?.note) {
+            setCountryNote(noteData.note)
+          }
+        }
+
+        const { introSteps: matchedIntro, coreSteps: core } = getPersonalizedRoadmap(
+          { ...profileData, current_stage: studentStage },
+          allSteps
+        )
+
+        setIntroSteps(matchedIntro)
+        setCoreSteps(core)
+
+        const { data: progressData } = await supabase
+          .from("user_progress")
+          .select("step_id")
+          .eq("user_id", user.id)
+
+        if (progressData) {
+          setCompletedStepIds(new Set(progressData.map((p) => p.step_id)))
+        }
+      } catch (err) {
+        setLoadError(true)
+      } finally {
+        setLoading(false)
       }
-
-      const studentStage = profileData?.current_stage || null
-
-      const { introSteps: matchedIntro, coreSteps: core } = getPersonalizedRoadmap(
-        { ...profileData, current_stage: studentStage },
-        allSteps
-      )
-
-      setIntroSteps(matchedIntro)
-      setCoreSteps(core)
-
-      const { data: progressData } = await supabase
-        .from("user_progress")
-        .select("step_id")
-        .eq("user_id", user.id)
-
-      if (progressData) {
-        setCompletedStepIds(new Set(progressData.map((p) => p.step_id)))
-      }
-
-      setLoading(false)
     }
 
     load()
@@ -301,6 +279,16 @@ function RoadmapDetail() {
     return (
       <div style={styles.centerPage}>
         <p>Loading roadmap...</p>
+      </div>
+    )
+  }
+
+  if (loadError) {
+    return (
+      <div style={styles.centerPage}>
+        <p style={{ maxWidth: 320, textAlign: "center", color: "#a9adc4" }}>
+          We could not load this roadmap right now. Please check your connection and try refreshing the page.
+        </p>
       </div>
     )
   }
@@ -389,6 +377,7 @@ function RoadmapDetail() {
                 {isDone ? "Done" : userId ? "Mark Done" : "Log In to Track"}
               </button>
             </div>
+
             <h3
               style={{
                 ...styles.stepTitle,
@@ -722,12 +711,6 @@ const styles = {
     fontSize: "0.75rem",
     fontWeight: 700,
   },
-  introMissingNote: {
-    marginTop: "20px",
-    fontSize: "0.8rem",
-    color: "#9599b0",
-    fontStyle: "italic",
-  },
   countryNoteBox: {
     marginTop: "20px",
     background: "rgba(251,191,36,0.08)",
@@ -747,6 +730,12 @@ const styles = {
     fontSize: "0.85rem",
     color: "#e5d9b8",
     lineHeight: 1.5,
+  },
+  introMissingNote: {
+    marginTop: "20px",
+    fontSize: "0.8rem",
+    color: "#9599b0",
+    fontStyle: "italic",
   },
   roadmapHeading: {
     textAlign: "center",
