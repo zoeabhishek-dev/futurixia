@@ -127,3 +127,90 @@ export function scoreCareerMatch(interests, skills, career) {
 
   return { score, reasons }
 }
+
+export const STAGE_LABELS = {
+  pre_secondary: "8th or 9th Grade",
+  secondary: "10th Grade",
+  senior_secondary: "11th / 12th Grade",
+  undergraduate: "Undergraduate",
+  postgraduate_professional: "Postgraduate / Working Professional",
+}
+
+const STEP_TYPE_GUIDANCE = {
+  education:
+    "Look up the exact entry requirements on the official website of the institution or exam body before you commit, so your plan is based on facts and not guesses.",
+  skill:
+    "Practice a little every day instead of one long session once in a while. Try to use the skill on one small real example, even a rough one.",
+  project:
+    "Start small. A finished simple project teaches more than an unfinished ambitious one. When you finish, write down what you learned.",
+  experience:
+    "Ask one person already working in this area for 15 minutes of advice. Real conversations reveal things courses cannot.",
+  exam:
+    "Read the official syllabus and exam format first, then practice under timed conditions and review every mistake.",
+  milestone:
+    "Before you mark this done, write one sentence about what you achieved and what comes next.",
+}
+
+export function getStepGuidance(step) {
+  return STEP_TYPE_GUIDANCE[step?.step_type] || null
+}
+
+function splitList(value) {
+  if (!value) return []
+  return value
+    .split("|")
+    .map((v) => v.trim().toLowerCase())
+    .filter(Boolean)
+}
+
+/**
+ * matchResourcesForStep
+ * Simple rule: a resource is suggested when one of its keywords appears in the
+ * step title, its category rule (if any) fits the career, and its country rule
+ * (if any) matches the student's country. Steps that were linked by hand in the
+ * step_resources table always come first. Maximum 4 suggestions per step.
+ */
+export function matchResourcesForStep(step, career, resources, studentCountry, explicitList) {
+  const title = (step?.title || "").toLowerCase()
+  const category = (career?.category || "").toLowerCase()
+  const country = (studentCountry || "").toLowerCase()
+  const results = []
+  const seen = new Set()
+
+  const countryAllowed = (r) => {
+    if (!r.country) return true
+    return r.country.toLowerCase() === country
+  }
+
+  const addResource = (r) => {
+    if (!r || seen.has(r.id) || !countryAllowed(r)) return
+    seen.add(r.id)
+    results.push(r)
+  }
+
+  const explicit = explicitList || []
+  explicit.forEach(addResource)
+
+  const all = resources || []
+  all.forEach((r) => {
+    if (results.length >= 4) return
+    const keywords = splitList(r.keywords)
+    if (keywords.length === 0) return
+    const titleMatches = keywords.some((k) => title.includes(k))
+    if (!titleMatches) return
+    const categories = splitList(r.categories)
+    if (categories.length > 0 && !categories.some((c) => category.includes(c))) return
+    addResource(r)
+  })
+
+  return results.slice(0, 4)
+}
+
+export function groupResources(list) {
+  const items = list || []
+  return {
+    videos: items.filter((r) => r.type === "video"),
+    official: items.filter((r) => r.type === "official"),
+    learning: items.filter((r) => r.type !== "video" && r.type !== "official"),
+  }
+}

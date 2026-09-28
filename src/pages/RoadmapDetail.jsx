@@ -83,9 +83,19 @@ import {
   PersonStanding,
   Fish,
   Pickaxe,
+  ExternalLink,
+  ChevronDown,
+  ChevronUp,
+  Crosshair,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
-import { getPersonalizedRoadmap } from "../lib/personalization"
+import {
+  getPersonalizedRoadmap,
+  getStepGuidance,
+  matchResourcesForStep,
+  groupResources,
+  STAGE_LABELS,
+} from "../lib/personalization"
 
 const STEP_TYPE_ICONS = {
   education: GraduationCap,
@@ -134,6 +144,11 @@ function RoadmapDetail() {
   const [savingStepId, setSavingStepId] = useState(null)
   const [countryNote, setCountryNote] = useState(null)
   const [loadError, setLoadError] = useState(false)
+  const [resourcesList, setResourcesList] = useState([])
+  const [stepLinks, setStepLinks] = useState([])
+  const [expandedIds, setExpandedIds] = useState(new Set())
+  const [myStage, setMyStage] = useState(null)
+  const [myCountry, setMyCountry] = useState(null)
 
   useEffect(() => {
     const load = async () => {
@@ -162,6 +177,18 @@ function RoadmapDetail() {
 
         const allSteps = stepsData || []
 
+        const { data: resourceData } = await supabase.from("resources").select("*")
+        setResourcesList(resourceData || [])
+
+        const stepIdsForLinks = allSteps.map((s) => s.id)
+        if (stepIdsForLinks.length > 0) {
+          const { data: linkData } = await supabase
+            .from("step_resources")
+            .select("step_id, resource_id")
+            .in("step_id", stepIdsForLinks)
+          setStepLinks(linkData || [])
+        }
+
         if (!user) {
           const { introSteps: matchedIntro, coreSteps: core } = getPersonalizedRoadmap(
             { current_stage: null },
@@ -183,6 +210,8 @@ function RoadmapDetail() {
           .maybeSingle()
 
         const studentStage = profileData?.current_stage || null
+        setMyStage(studentStage)
+        setMyCountry(profileData?.country || null)
 
         if (profileData?.country) {
           const { data: noteData } = await supabase
@@ -211,7 +240,10 @@ function RoadmapDetail() {
           .eq("user_id", user.id)
 
         if (progressData) {
-          setCompletedStepIds(new Set(progressData.map((p) => p.step_id)))
+          const doneSet = new Set(progressData.map((p) => p.step_id))
+          setCompletedStepIds(doneSet)
+          const firstOpen = [...matchedIntro, ...core].find((s) => !doneSet.has(s.id))
+          if (firstOpen) setExpandedIds(new Set([firstOpen.id]))
         }
       } catch (err) {
         setLoadError(true)
@@ -259,6 +291,9 @@ function RoadmapDetail() {
 
       const updatedCompletedIds = new Set(completedStepIds).add(stepId)
       setCompletedStepIds(updatedCompletedIds)
+
+      const nextOpen = allSteps.find((s) => !updatedCompletedIds.has(s.id))
+      if (nextOpen) setExpandedIds((prev) => new Set(prev).add(nextOpen.id))
 
       const allNowDone = allSteps.every((s) => updatedCompletedIds.has(s.id))
 
@@ -312,13 +347,53 @@ function RoadmapDetail() {
 
   const CareerIcon = CAREER_ICONS[career.icon_name] || Briefcase
 
+  const focusStep = combinedSteps.find((s) => !completedStepIds.has(s.id)) || null
+  const introDoneCount = introSteps.filter((s) => completedStepIds.has(s.id)).length
+  const stageLabel = myStage ? STAGE_LABELS[myStage] : null
+
+  const resourceById = {}
+  resourcesList.forEach((r) => {
+    resourceById[r.id] = r
+  })
+  const explicitByStep = {}
+  stepLinks.forEach((link) => {
+    if (!resourceById[link.resource_id]) return
+    if (!explicitByStep[link.step_id]) explicitByStep[link.step_id] = []
+    explicitByStep[link.step_id].push(resourceById[link.resource_id])
+  })
+
+  const toggleExpanded = (stepId) => {
+    setExpandedIds((prev) => {
+      const next = new Set(prev)
+      if (next.has(stepId)) next.delete(stepId)
+      else next.add(stepId)
+      return next
+    })
+  }
+
+  const jumpToFocus = () => {
+    if (!focusStep) return
+    setExpandedIds((prev) => new Set(prev).add(focusStep.id))
+    setTimeout(() => {
+      const el = document.getElementById(`step-${focusStep.id}`)
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" })
+    }, 50)
+  }
+
   const renderStepCard = (step, displayNumber, isFirstCoreStep) => {
     const Icon = STEP_TYPE_ICONS[step.step_type] || CheckCircle2
     const color = STEP_TYPE_COLORS[step.step_type] || "#a5b4fc"
     const isDone = completedStepIds.has(step.id)
+    const isFocus = focusStep ? focusStep.id === step.id : false
+    const isExpanded = expandedIds.has(step.id)
+    const guidance = getStepGuidance(step)
+    const grouped = groupResources(
+      matchResourcesForStep(step, career, resourcesList, myCountry, explicitByStep[step.id] || [])
+    )
+    const resourceCount = grouped.videos.length + grouped.learning.length + grouped.official.length
 
     return (
-      <div key={step.id}>
+      <div key={step.id} id={`step-${step.id}`}>
         {isFirstCoreStep && (
           <div style={styles.sectionDivider}>
             <Map size={16} />
@@ -358,11 +433,19 @@ function RoadmapDetail() {
             )}
           </div>
 
-          <div style={{ ...styles.stepCard, opacity: isDone ? 0.75 : 1 }} className="fx-step-card">
+          <div
+            style={{
+              ...styles.stepCard,
+              opacity: isDone ? 0.75 : 1,
+              ...(isFocus ? styles.stepCardFocus : {}),
+            }}
+            className="fx-step-card"
+          >
             <div style={styles.stepCardTop}>
               <span style={{ ...styles.stepBadge, color }}>
                 Step {displayNumber} · {step.step_type}
                 {step.phase === "intro" && " · Getting Started"}
+                {isFocus && " · Your Focus Now"}
               </span>
               <button
                 style={{
@@ -394,28 +477,77 @@ function RoadmapDetail() {
               </span>
             )}
 
-            {step.why_it_matters && (
+            <button
+              style={styles.detailsToggle}
+              onClick={() => toggleExpanded(step.id)}
+              aria-expanded={isExpanded}
+            >
+              {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+              {isExpanded ? "Hide details" : "Show details & free resources"}
+            </button>
+
+            {isExpanded && step.why_it_matters && (
               <div style={styles.enrichedBox}>
                 <span style={styles.enrichedLabel}>Why This Matters</span>
                 <p style={styles.enrichedText}>{step.why_it_matters}</p>
               </div>
             )}
 
-            {step.what_to_achieve && (
+            {isExpanded && step.what_to_achieve && (
               <div style={styles.enrichedBox}>
                 <span style={styles.enrichedLabel}>What You Should Achieve</span>
                 <p style={styles.enrichedText}>{step.what_to_achieve}</p>
               </div>
             )}
 
-            {step.practice_task && (
+            {isExpanded && step.practice_task && (
               <div style={styles.enrichedBox}>
                 <span style={styles.enrichedLabel}>Practice Task</span>
                 <p style={styles.enrichedText}>{step.practice_task}</p>
               </div>
             )}
 
-            {step.reasons && step.reasons.length > 0 && (
+            {isExpanded && !step.practice_task && guidance && (
+              <div style={styles.enrichedBox}>
+                <span style={styles.enrichedLabel}>How To Approach This Step</span>
+                <p style={styles.enrichedText}>{guidance}</p>
+              </div>
+            )}
+
+            {isExpanded && resourceCount > 0 && (
+              <div style={styles.enrichedBox}>
+                <span style={styles.enrichedLabel}>Free Resources</span>
+                {[
+                  { label: "Useful Videos", items: grouped.videos },
+                  { label: "Free Learning Resources", items: grouped.learning },
+                  { label: "Official Websites", items: grouped.official },
+                ].map((group) =>
+                  group.items.length > 0 ? (
+                    <div key={group.label} style={{ marginTop: "8px" }}>
+                      <p style={styles.resourceGroupLabel}>{group.label}</p>
+                      {group.items.map((r) => (
+                        
+                        <a
+                          key={r.id}
+                          href={r.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={styles.resourceLink}
+                        >
+                          <span>
+                            {r.title}
+                            {r.provider ? ` · ${r.provider}` : ""}
+                          </span>
+                          <ExternalLink size={12} />
+                        </a>
+                      ))}
+                    </div>
+                  ) : null
+                )}
+              </div>
+            )}
+
+            {isExpanded && step.reasons && step.reasons.length > 0 && (
               <div style={styles.whyBox}>
                 <span style={styles.whyLabel}>Why you are seeing this</span>
                 <ul style={styles.whyList}>
@@ -521,6 +653,24 @@ function RoadmapDetail() {
         </motion.div>
 
         <h2 style={styles.roadmapHeading}>Your Complete Step-by-Step Roadmap</h2>
+
+        {stageLabel && (
+          <div style={styles.stageBanner}>
+            <span style={styles.stageBannerLabel}>Your Stage: {stageLabel}</span>
+            <p style={styles.stageBannerText}>
+              The Getting Started steps below are chosen for your stage.
+              {introSteps.length > 0
+                ? ` You have finished ${introDoneCount} of ${introSteps.length} of them.`
+                : ""}
+            </p>
+            {focusStep && (
+              <button style={styles.jumpBtn} onClick={jumpToFocus}>
+                <Crosshair size={14} />
+                Jump to My Next Step
+              </button>
+            )}
+          </div>
+        )}
 
         {introSteps.length > 0 && (
           <div style={styles.sectionDivider}>
@@ -838,6 +988,74 @@ const styles = {
     fontWeight: 700,
     padding: "5px 12px",
     borderRadius: "20px",
+  },
+  stepCardFocus: {
+    boxShadow: "0 0 0 2px rgba(34,211,238,0.55), 0 10px 30px rgba(0,0,0,0.35)",
+  },
+  detailsToggle: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "6px",
+    marginTop: "12px",
+    background: "rgba(255,255,255,0.07)",
+    color: "#c7d2fe",
+    border: "none",
+    padding: "8px 14px",
+    borderRadius: "20px",
+    fontSize: "0.78rem",
+    fontWeight: 700,
+    cursor: "pointer",
+  },
+  resourceGroupLabel: {
+    fontSize: "0.75rem",
+    fontWeight: 700,
+    color: "#9599b0",
+    marginBottom: "4px",
+  },
+  resourceLink: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: "10px",
+    color: "#67e8f9",
+    textDecoration: "none",
+    fontSize: "0.85rem",
+    padding: "8px 0",
+    wordBreak: "break-word",
+  },
+  stageBanner: {
+    background: "rgba(99,102,241,0.1)",
+    borderRadius: "16px",
+    padding: "16px 20px",
+    marginBottom: "28px",
+    textAlign: "center",
+  },
+  stageBannerLabel: {
+    fontSize: "0.8rem",
+    fontWeight: 700,
+    color: "#a5b4fc",
+    textTransform: "uppercase",
+    letterSpacing: "0.05em",
+  },
+  stageBannerText: {
+    marginTop: "6px",
+    color: "#c9cbdb",
+    fontSize: "0.88rem",
+    lineHeight: 1.5,
+  },
+  jumpBtn: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "6px",
+    marginTop: "12px",
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    color: "#fff",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "30px",
+    fontSize: "0.85rem",
+    fontWeight: 700,
+    cursor: "pointer",
   },
   enrichedBox: {
     marginTop: "12px",
