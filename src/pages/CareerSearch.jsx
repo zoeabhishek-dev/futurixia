@@ -102,6 +102,7 @@ import {
   Pickaxe,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
+import { useMemo } from "react"
 
 const ICONS = {
   Code2, Stethoscope, Rocket, Scale, Plane, Shield, GraduationCap, Wrench,
@@ -132,6 +133,7 @@ function CareerSearch() {
   const [query, setQuery] = useState("")
   const [activeCategory, setActiveCategory] = useState("All")
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [compareSlugs, setCompareSlugs] = useState([])
   const [loadError, setLoadError] = useState(false)
 
   useEffect(() => {
@@ -155,15 +157,29 @@ function CareerSearch() {
     checkUserAndLoad()
   }, [])
 
-  const categories = ["All", ...Array.from(new Set(careers.map((c) => c.category).filter(Boolean)))]
+  const categories = useMemo(
+    () => ["All", ...Array.from(new Set(careers.map((c) => c.category).filter(Boolean)))],
+    [careers]
+  )
 
-  const filteredCareers = careers.filter((c) => {
-    const matchesQuery =
-      c.title.toLowerCase().includes(query.toLowerCase()) ||
-      c.category?.toLowerCase().includes(query.toLowerCase())
-    const matchesCategory = activeCategory === "All" || c.category === activeCategory
-    return matchesQuery && matchesCategory
-  })
+  const filteredCareers = useMemo(() => {
+    const lowerQuery = query.toLowerCase()
+    return careers.filter((c) => {
+      const matchesQuery =
+        c.title.toLowerCase().includes(lowerQuery) ||
+        c.category?.toLowerCase().includes(lowerQuery)
+      const matchesCategory = activeCategory === "All" || c.category === activeCategory
+      return matchesQuery && matchesCategory
+    })
+  }, [careers, query, activeCategory])
+
+  const toggleCompare = (slug) => {
+    setCompareSlugs((prev) => {
+      if (prev.includes(slug)) return prev.filter((s) => s !== slug)
+      if (prev.length >= 2) return [prev[1], slug]
+      return [...prev, slug]
+    })
+  }
 
   return (
     <div style={styles.page}>
@@ -267,8 +283,22 @@ function CareerSearch() {
                   className="fx-card"
                   onClick={() => navigate(`/career/${career.slug}`)}
                 >
-                  <div style={styles.cardIcon}>
-                    <Icon size={24} strokeWidth={1.8} />
+                  <div style={styles.cardTopRow}>
+                    <div style={styles.cardIcon}>
+                      <Icon size={24} strokeWidth={1.8} />
+                    </div>
+                    <label
+                      style={styles.compareCheckboxLabel}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={compareSlugs.includes(career.slug)}
+                        onChange={() => toggleCompare(career.slug)}
+                        disabled={!compareSlugs.includes(career.slug) && compareSlugs.length >= 2}
+                      />
+                      Compare
+                    </label>
                   </div>
                   <span style={styles.cardCategory}>{career.category}</span>
                   <h3 style={styles.cardTitle}>{career.title}</h3>
@@ -288,6 +318,34 @@ function CareerSearch() {
           </div>
         )}
       </div>
+
+      {compareSlugs.length === 1 && (
+        <div style={styles.compareBar}>
+          <span style={styles.compareBarText}>
+            Select one more career to compare
+          </span>
+          <button style={styles.compareBarClear} onClick={() => setCompareSlugs([])}>
+            Clear
+          </button>
+        </div>
+      )}
+
+      {compareSlugs.length === 2 && (
+        <div style={styles.compareBar}>
+          <span style={styles.compareBarText}>2 careers selected</span>
+          <button
+            style={styles.compareBarBtn}
+            onClick={() =>
+              navigate(`/compare?a=${compareSlugs[0]}&b=${compareSlugs[1]}`)
+            }
+          >
+            Compare Now
+          </button>
+          <button style={styles.compareBarClear} onClick={() => setCompareSlugs([])}>
+            Clear
+          </button>
+        </div>
+      )}
     </div>
   )
 }
@@ -421,6 +479,60 @@ const styles = {
     cursor: "pointer",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.09), 0 10px 40px rgba(0,0,0,0.35)",
     transition: "box-shadow 0.3s ease",
+  },
+  cardTopRow: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    marginBottom: "18px",
+  },
+  compareCheckboxLabel: {
+    display: "flex",
+    alignItems: "center",
+    gap: "6px",
+    color: "#9599b0",
+    fontSize: "0.72rem",
+    fontWeight: 600,
+    cursor: "pointer",
+  },
+  compareBar: {
+    position: "fixed",
+    bottom: "20px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    display: "flex",
+    alignItems: "center",
+    gap: "14px",
+    background: "#0f1120",
+    padding: "14px 20px",
+    borderRadius: "40px",
+    boxShadow: "0 20px 50px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1)",
+    zIndex: 50,
+  },
+  compareBarText: {
+    color: "#c9cbdb",
+    fontSize: "0.85rem",
+    fontWeight: 600,
+  },
+  compareBarBtn: {
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    color: "#fff",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "30px",
+    fontSize: "0.85rem",
+    fontWeight: 700,
+    cursor: "pointer",
+  },
+  compareBarClear: {
+    background: "rgba(255,255,255,0.08)",
+    color: "#e0e1ff",
+    border: "none",
+    padding: "10px 16px",
+    borderRadius: "30px",
+    fontSize: "0.8rem",
+    fontWeight: 600,
+    cursor: "pointer",
   },
   cardIcon: {
     display: "flex",

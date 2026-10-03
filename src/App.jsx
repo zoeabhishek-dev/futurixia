@@ -6,6 +6,7 @@ import CreateProfile from "./pages/CreateProfile"
 import CareerSearch from "./pages/CareerSearch"
 import RoadmapDetail from "./pages/RoadmapDetail"
 import CareerDiscovery from "./pages/CareerDiscovery"
+import CareerCompare from "./pages/CareerCompare"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/careers" element={<CareerSearch />} />
       <Route path="/career/:slug" element={<RoadmapDetail />} />
       <Route path="/discover" element={<CareerDiscovery />} />
+      <Route path="/compare" element={<CareerCompare />} />
     </Routes>
   )
 }
