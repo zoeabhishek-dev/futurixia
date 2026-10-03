@@ -122,11 +122,11 @@ function CareerCompare() {
 
         {careerA && careerB && (
           <div style={styles.table}>
-            <div style={styles.verticalDivider} />
+            <div style={styles.verticalDivider} className="fx-compare-divider" />
             {FIELDS.map((field) => (
               <div key={field.key} style={styles.row}>
                 <span style={styles.rowLabel}>{field.label}</span>
-                <div style={styles.rowValues}>
+                <div style={styles.rowValues} className="fx-compare-row-values">
                   <p style={styles.cell}>
                     {careerA[field.key] || "Not available yet for this career"}
                   </p>

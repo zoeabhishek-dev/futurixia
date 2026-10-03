@@ -25,6 +25,7 @@ function Dashboard() {
   const [profile, setProfile] = useState(null)
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false)
   const [showContactModal, setShowContactModal] = useState(false)
+  const [showRequestModal, setShowRequestModal] = useState(false)
   const [activeCareer, setActiveCareer] = useState(null)
   const [progressPercent, setProgressPercent] = useState(0)
   const [nextStep, setNextStep] = useState(null)
@@ -364,16 +365,23 @@ function Dashboard() {
 
         <div style={styles.contactBox}>
           <p style={styles.contactText}>
-            Can't find the career you're looking for? Contact us, we'll add it for you.
+            Can't find the career you're looking for? Request it and we'll consider adding it.
           </p>
-          <button style={styles.contactBtn} onClick={() => setShowContactModal(true)}>
-            <Mail size={16} />
-            Contact Us
+          <button style={styles.contactBtn} onClick={() => setShowRequestModal(true)}>
+            <Compass size={16} />
+            Request a Career
           </button>
+          <p style={styles.generalContactText}>
+            Have other feedback?{" "}
+            <button style={styles.inlineLinkBtn} onClick={() => setShowContactModal(true)}>
+              Contact Us
+            </button>
+          </p>
         </div>
       </div>
 
-      <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
+      <ContactModal mode="request" isOpen={showRequestModal} onClose={() => setShowRequestModal(false)} />
+      <ContactModal mode="general" isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
 
       {showLogoutConfirm && (
         <div style={styles.modalOverlay} onClick={() => setShowLogoutConfirm(false)}>
@@ -582,6 +590,21 @@ const styles = {
     fontWeight: 700,
     cursor: "pointer",
     boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
+  },
+  generalContactText: {
+    marginTop: "14px",
+    color: "#7d8299",
+    fontSize: "0.8rem",
+  },
+  inlineLinkBtn: {
+    background: "none",
+    border: "none",
+    color: "#a5b4fc",
+    fontSize: "0.8rem",
+    fontWeight: 700,
+    textDecoration: "underline",
+    cursor: "pointer",
+    padding: 0,
   },
   subtext: { color: "#a9adc4", fontSize: "0.92rem", marginTop: "6px" },
   tagsRow: { display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "12px" },

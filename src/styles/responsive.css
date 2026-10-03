@@ -75,6 +75,20 @@
     flex-direction: column !important;
     align-items: center !important;
   }
+
+  .fx-contact-card {
+    padding: 24px 18px !important;
+    max-height: 90vh !important;
+  }
+
+  .fx-compare-row-values {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .fx-compare-divider {
+    display: none !important;
+  }
 }
 
 @media (max-width: 400px) {

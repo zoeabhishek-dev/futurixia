@@ -145,7 +145,7 @@ function CareerDiscovery() {
         <div className="aurora-blob blob-c" />
       </div>
 
-      <nav style={styles.nav}>
+      <nav style={styles.nav} className="fx-nav">
         <button style={styles.backBtn} onClick={() => navigate(-1)}>
           <ArrowLeft size={16} />
           Back
@@ -154,7 +154,7 @@ function CareerDiscovery() {
         <span style={{ width: 90 }} />
       </nav>
 
-      <div style={styles.content}>
+      <div style={styles.content} className="fx-content">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

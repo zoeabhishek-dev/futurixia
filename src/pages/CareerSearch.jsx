@@ -101,8 +101,10 @@ import {
   Fish,
   Pickaxe,
 } from "lucide-react"
+import { Compass } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import { useMemo } from "react"
+import ContactModal from "../components/ContactModal"
 
 const ICONS = {
   Code2, Stethoscope, Rocket, Scale, Plane, Shield, GraduationCap, Wrench,
@@ -134,6 +136,7 @@ function CareerSearch() {
   const [activeCategory, setActiveCategory] = useState("All")
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [compareSlugs, setCompareSlugs] = useState([])
+  const [showRequestModal, setShowRequestModal] = useState(false)
   const [loadError, setLoadError] = useState(false)
 
   useEffect(() => {
@@ -311,9 +314,13 @@ function CareerSearch() {
             })}
 
             {filteredCareers.length === 0 && (
-              <p style={styles.noResults}>
-                No careers found matching "{query}". More careers are being added soon!
-              </p>
+              <div style={styles.noResults}>
+                <p>No careers found matching "{query}".</p>
+                <button style={styles.requestCareerBtn} onClick={() => setShowRequestModal(true)}>
+                  <Compass size={16} />
+                  Request This Career
+                </button>
+              </div>
             )}
           </div>
         )}
@@ -346,6 +353,13 @@ function CareerSearch() {
           </button>
         </div>
       )}
+
+      <ContactModal
+        mode="request"
+        isOpen={showRequestModal}
+        onClose={() => setShowRequestModal(false)}
+        initialCareerName={query}
+      />
     </div>
   )
 }
@@ -576,6 +590,23 @@ const styles = {
     textAlign: "center",
     color: "#9599b0",
     padding: "40px 0",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "16px",
+  },
+  requestCareerBtn: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "8px",
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    color: "#fff",
+    border: "none",
+    padding: "12px 24px",
+    borderRadius: "30px",
+    fontSize: "0.85rem",
+    fontWeight: 700,
+    cursor: "pointer",
   },
 }
 
