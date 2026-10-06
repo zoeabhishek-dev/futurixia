@@ -114,9 +114,9 @@ function CareerCompare() {
           </p>
         </div>
 
-        <div style={styles.slotsRow}>
+        <div style={styles.slotsRow} className="fx-compare-slots">
           {renderSlot(careerA, "A")}
-          <span style={styles.vsText}>vs</span>
+          <span style={styles.vsText} className="fx-compare-vs">vs</span>
           {renderSlot(careerB, "B")}
         </div>
 
