@@ -25,12 +25,15 @@ import {
   Link2,
   Send,
   Mail,
+  Menu,
+  X,
 } from "lucide-react"
 
 function Home() {
   const navigate = useNavigate()
   const [checkingSession, setCheckingSession] = useState(true)
   const [showContactModal, setShowContactModal] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const checkExistingSession = async () => {
@@ -113,7 +116,26 @@ function Home() {
             <ArrowRight size={16} />
           </Link>
         </div>
+        <button
+          className="nav-hamburger"
+          onClick={() => setMobileMenuOpen((prev) => !prev)}
+          aria-label="Toggle menu"
+          aria-expanded={mobileMenuOpen}
+        >
+          {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
       </nav>
+
+      {mobileMenuOpen && (
+        <div className="nav-mobile-menu">
+          <a href="#how" onClick={() => setMobileMenuOpen(false)}>How it Works</a>
+          <a href="#careers" onClick={() => setMobileMenuOpen(false)}>Careers</a>
+          <Link to="/login" className="nav-btn" onClick={() => setMobileMenuOpen(false)}>
+            Get Started
+            <ArrowRight size={16} />
+          </Link>
+        </div>
+      )}
 
       {/* HERO */}
       <section className="hero">
