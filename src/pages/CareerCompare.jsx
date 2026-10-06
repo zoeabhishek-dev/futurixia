@@ -212,7 +212,7 @@ const styles = {
   },
   table: { display: "flex", flexDirection: "column", gap: "4px" },
   row: { background: "rgba(255,255,255,0.03)", borderRadius: "14px", padding: "16px 20px" },
-  rowLabel: { fontSize: "0.78rem", fontWeight: 700, color: "#a5b4fc", textTransform: "uppercase", letterSpacing: "0.05em", display: "block", marginBottom: "10px" },
+  rowLabel: { fontSize: "0.78rem", fontWeight: 700, color: "#a5b4fc", textTransform: "uppercase", letterSpacing: "0.05em", display: "block", marginBottom: "10px", textAlign: "center" },
   rowValues: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
@@ -226,7 +226,7 @@ const styles = {
     margin: 0,
   },
   cellRight: {
-    borderLeft: "1px solid rgba(255,255,255,0.14)",
+    borderLeft: "1px solid rgba(255,255,255,0.35)",
     paddingLeft: "20px",
   },
   hintText: { textAlign: "center", color: "#9599b0", padding: "20px 0" },
