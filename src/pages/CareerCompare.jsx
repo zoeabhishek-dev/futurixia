@@ -116,21 +116,20 @@ function CareerCompare() {
 
         <div style={styles.slotsRow} className="fx-compare-slots">
           {renderSlot(careerA, "A")}
-          <span style={styles.vsText} className="fx-compare-vs">vs</span>
+          <div style={styles.vsText} className="fx-compare-vs">vs</div>
           {renderSlot(careerB, "B")}
         </div>
 
         {careerA && careerB && (
           <div style={styles.table}>
-            <div style={styles.verticalDivider} className="fx-compare-divider" />
             {FIELDS.map((field) => (
               <div key={field.key} style={styles.row}>
                 <span style={styles.rowLabel}>{field.label}</span>
-                <div style={styles.rowValues} className="fx-compare-row-values">
-                  <p style={styles.cell} className="fx-compare-cell">
+                <div style={styles.rowValues}>
+                  <p style={styles.cell}>
                     {careerA[field.key] || "Not available yet for this career"}
                   </p>
-                  <p style={styles.cell} className="fx-compare-cell">
+                  <p style={{ ...styles.cell, ...styles.cellRight }}>
                     {careerB[field.key] || "Not available yet for this career"}
                   </p>
                 </div>
@@ -211,16 +210,7 @@ const styles = {
     alignItems: "center",
     padding: "0 4px",
   },
-  table: { position: "relative", display: "flex", flexDirection: "column", gap: "4px" },
-  verticalDivider: {
-    position: "absolute",
-    top: 0,
-    bottom: 0,
-    left: "50%",
-    width: "1px",
-    background: "rgba(255,255,255,0.14)",
-    pointerEvents: "none",
-  },
+  table: { display: "flex", flexDirection: "column", gap: "4px" },
   row: { background: "rgba(255,255,255,0.03)", borderRadius: "14px", padding: "16px 20px" },
   rowLabel: { fontSize: "0.78rem", fontWeight: 700, color: "#a5b4fc", textTransform: "uppercase", letterSpacing: "0.05em", display: "block", marginBottom: "10px" },
   rowValues: {
@@ -233,7 +223,11 @@ const styles = {
     color: "#c9cbdb",
     fontSize: "0.86rem",
     lineHeight: 1.6,
-    paddingLeft: "16px",
+    margin: 0,
+  },
+  cellRight: {
+    borderLeft: "1px solid rgba(255,255,255,0.14)",
+    paddingLeft: "20px",
   },
   hintText: { textAlign: "center", color: "#9599b0", padding: "20px 0" },
   overlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", backdropFilter: "blur(4px)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 150, padding: "20px" },

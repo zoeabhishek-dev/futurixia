@@ -90,17 +90,10 @@
   }
 
   .fx-compare-vs {
+    width: 100% !important;
+    display: block !important;
     text-align: center !important;
-    padding: 6px 0 !important;
-  }
-
-  .fx-compare-row-values {
-    gap: 10px !important;
-  }
-
-  .fx-compare-cell {
-    font-size: 0.8rem !important;
-    padding-left: 10px !important;
+    padding: 8px 0 !important;
   }
 }
 
