@@ -127,10 +127,10 @@ function CareerCompare() {
               <div key={field.key} style={styles.row}>
                 <span style={styles.rowLabel}>{field.label}</span>
                 <div style={styles.rowValues} className="fx-compare-row-values">
-                  <p style={styles.cell}>
+                  <p style={styles.cell} className="fx-compare-cell">
                     {careerA[field.key] || "Not available yet for this career"}
                   </p>
-                  <p style={styles.cell}>
+                  <p style={styles.cell} className="fx-compare-cell">
                     {careerB[field.key] || "Not available yet for this career"}
                   </p>
                 </div>
