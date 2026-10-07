@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { Link, useNavigate } from "react-router-dom"
 import { supabase } from "../supabaseClient"
 import ContactModal from "../components/ContactModal"
+import InfoModal from "../components/InfoModal"
 import "../App.css"
 import {
   Rocket,
@@ -34,6 +35,12 @@ function Home() {
   const [checkingSession, setCheckingSession] = useState(true)
   const [showContactModal, setShowContactModal] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [infoModalType, setInfoModalType] = useState(null)
+
+  const openInfo = (type) => (e) => {
+    e.preventDefault()
+    setInfoModalType(type)
+  }
 
   useEffect(() => {
     const checkExistingSession = async () => {
@@ -84,12 +91,12 @@ function Home() {
   ]
 
   const popularCareers = [
-    { icon: Code2, title: "Software Engineer", desc: "Build apps, websites & systems that power the world." },
-    { icon: Stethoscope, title: "Doctor", desc: "Diagnose, treat and care for patients across specialties." },
-    { icon: Rocket, title: "Entrepreneur", desc: "Build and scale your own business from the ground up." },
-    { icon: Scale, title: "Lawyer", desc: "Advocate, advise and interpret the law professionally." },
-    { icon: Plane, title: "Pilot", desc: "Fly commercial or private aircraft across the globe." },
-    { icon: Shield, title: "IPS Officer", desc: "Lead law enforcement and public safety at scale." },
+    { icon: Code2, title: "Software Engineer", slug: "software-engineer", desc: "Build apps, websites & systems that power the world." },
+    { icon: Stethoscope, title: "Doctor", slug: "doctor", desc: "Diagnose, treat and care for patients across specialties." },
+    { icon: Rocket, title: "Entrepreneur", slug: "entrepreneur", desc: "Build and scale your own business from the ground up." },
+    { icon: Scale, title: "Lawyer", slug: "lawyer", desc: "Advocate, advise and interpret the law professionally." },
+    { icon: Plane, title: "Pilot", slug: "pilot", desc: "Fly commercial or private aircraft across the globe." },
+    { icon: Shield, title: "IPS Officer", slug: "ips-officer", desc: "Lead law enforcement and public safety at scale." },
   ]
 
   if (checkingSession) {
@@ -245,7 +252,7 @@ function Home() {
       </section>
 
       {/* STATS BAR */}
-      <section className="stats-bar">
+      <section className="stats-bar" id="pricing">
         {stats.map((stat, i) => {
           const Icon = stat.icon
           return (
@@ -338,9 +345,9 @@ function Home() {
                 </div>
                 <h3>{career.title}</h3>
                 <p>{career.desc}</p>
-                <a href="#" className="career-card-link">
+                <Link to={`/career/${career.slug}`} className="career-card-link">
                   Explore Roadmap <ArrowRight size={14} />
-                </a>
+                </Link>
               </motion.div>
             )
           })}
@@ -389,20 +396,20 @@ function Home() {
             <h4>Product</h4>
             <a href="#how">How it Works</a>
             <a href="#careers">Careers</a>
-            <a href="#">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </div>
 
           <div className="footer-col">
             <h4>Company</h4>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-            <a href="#">Blog</a>
+            <a href="#" onClick={openInfo("about")}>About Us</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); setShowContactModal(true) }}>Contact</a>
+            <a href="#" onClick={openInfo("blog")}>Blog</a>
           </div>
 
           <div className="footer-col">
             <h4>Legal</h4>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="#" onClick={openInfo("privacy")}>Privacy Policy</a>
+            <a href="#" onClick={openInfo("terms")}>Terms of Service</a>
           </div>
         </div>
 
@@ -429,6 +436,77 @@ function Home() {
       </footer>
 
       <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
+
+      <InfoModal
+        isOpen={infoModalType === "about"}
+        onClose={() => setInfoModalType(null)}
+        title="About Futurixia"
+      >
+        <p>
+          Futurixia is a free career guidance platform built to help students and early
+          professionals find a clear, step-by-step path toward the career they want — based on
+          their own education stage, interests, and skills rather than generic advice.
+        </p>
+        <p style={{ marginTop: "14px" }}>
+          Every roadmap on Futurixia is built using real, rule-based personalization — no AI
+          guesswork — and every career page links to genuine free resources so you can start
+          learning immediately, at no cost.
+        </p>
+      </InfoModal>
+
+      <InfoModal
+        isOpen={infoModalType === "blog"}
+        onClose={() => setInfoModalType(null)}
+        title="Futurixia Blog"
+      >
+        <p>
+          The Futurixia blog is coming soon. We're focused right now on building out the career
+          catalog and roadmap experience — once that's solid, we'll start sharing career guidance
+          articles here.
+        </p>
+      </InfoModal>
+
+      <InfoModal
+        isOpen={infoModalType === "privacy"}
+        onClose={() => setInfoModalType(null)}
+        title="Privacy Policy"
+      >
+        <p>
+          Futurixia collects only the information you choose to provide: your name, age, country,
+          education details, interests, and skills, used solely to personalize your career
+          roadmap. Your account and progress data are stored securely and are never sold or shared
+          with third parties.
+        </p>
+        <p style={{ marginTop: "14px" }}>
+          If you use the Contact Us or Request a Career forms, your message and email are sent
+          directly to our team through a secure third-party form service for the sole purpose of
+          responding to you.
+        </p>
+        <p style={{ marginTop: "14px" }}>
+          You can edit or delete your profile information at any time from your Dashboard.
+        </p>
+      </InfoModal>
+
+      <InfoModal
+        isOpen={infoModalType === "terms"}
+        onClose={() => setInfoModalType(null)}
+        title="Terms of Service"
+      >
+        <p>
+          Futurixia is provided as a free educational guidance tool. Career information, salary
+          ranges, and roadmap content are intended as general guidance only and should not be
+          treated as a guarantee of outcomes, income, or admission into any program or profession.
+        </p>
+        <p style={{ marginTop: "14px" }}>
+          You are responsible for verifying specific requirements, such as exams, licensing, or
+          eligibility criteria, with the relevant official authority in your country before making
+          decisions based on information shown here.
+        </p>
+        <p style={{ marginTop: "14px" }}>
+          By using Futurixia, you agree to use the platform respectfully and not to misuse the
+          Contact Us or Request a Career forms for unrelated or harmful purposes.
+        </p>
+      </InfoModal>
     </div>
   )
 }
