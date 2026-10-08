@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { supabase } from "../supabaseClient"
 import ContactModal from "../components/ContactModal"
 import InfoModal from "../components/InfoModal"
+import PricingModal from "../components/PricingModal"
 import "../App.css"
 import {
   Rocket,
@@ -87,7 +88,7 @@ function Home() {
     { icon: Award, value: "100+", label: "Careers Mapped" },
     { icon: Globe2, value: "40", label: "Steps Per Roadmap" },
     { icon: Sparkles, value: "5", label: "Student Stages Covered" },
-    { icon: Users, value: "Free", label: "To Use, Always" },
+    { icon: Users, value: "Free", label: "To Explore Every Career" },
   ]
 
   const popularCareers = [
@@ -252,7 +253,7 @@ function Home() {
       </section>
 
       {/* STATS BAR */}
-      <section className="stats-bar" id="pricing">
+      <section className="stats-bar">
         {stats.map((stat, i) => {
           const Icon = stat.icon
           return (
@@ -324,7 +325,7 @@ function Home() {
         >
           <span className="section-tag">Explore</span>
           <h2>Popular Careers on Futurixia</h2>
-          <p>A small taste of the 300+ career paths we help you navigate.</p>
+          <p>A small taste of the 100+ career paths we help you navigate.</p>
         </motion.div>
 
         <div className="careers-grid">
@@ -364,7 +365,7 @@ function Home() {
           transition={{ duration: 0.6 }}
         >
           <h2>Ready to find your path?</h2>
-          <p>Create your free profile and get your personalized roadmap in minutes.</p>
+          <p>Create your free profile and start exploring careers in minutes.</p>
           <Link to="/login">
             <motion.button
               className="cta-btn"
@@ -396,13 +397,21 @@ function Home() {
             <h4>Product</h4>
             <a href="#how">How it Works</a>
             <a href="#careers">Careers</a>
-            <a href="#pricing">Pricing</a>
+            <a href="#" onClick={openInfo("pricing-modal")}>Pricing</a>
           </div>
 
           <div className="footer-col">
             <h4>Company</h4>
             <a href="#" onClick={openInfo("about")}>About Us</a>
-            <a href="#" onClick={(e) => { e.preventDefault(); setShowContactModal(true) }}>Contact</a>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault()
+                setShowContactModal(true)
+              }}
+            >
+              Contact
+            </a>
             <a href="#" onClick={openInfo("blog")}>Blog</a>
           </div>
 
@@ -437,20 +446,25 @@ function Home() {
 
       <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
 
+      <PricingModal
+        isOpen={infoModalType === "pricing-modal"}
+        onClose={() => setInfoModalType(null)}
+      />
+
       <InfoModal
         isOpen={infoModalType === "about"}
         onClose={() => setInfoModalType(null)}
         title="About Futurixia"
       >
         <p>
-          Futurixia is a free career guidance platform built to help students and early
-          professionals find a clear, step-by-step path toward the career they want — based on
+          Futurixia is a career guidance platform built to help students and early
+          professionals find a clear, step-by-step path toward the career they want, based on
           their own education stage, interests, and skills rather than generic advice.
         </p>
         <p style={{ marginTop: "14px" }}>
-          Every roadmap on Futurixia is built using real, rule-based personalization — no AI
-          guesswork — and every career page links to genuine free resources so you can start
-          learning immediately, at no cost.
+          Every roadmap on Futurixia is built using real, rule-based personalization with no AI
+          guesswork, and career pages link to genuine free resources so you can start learning
+          right away.
         </p>
       </InfoModal>
 
@@ -460,9 +474,9 @@ function Home() {
         title="Futurixia Blog"
       >
         <p>
-          The Futurixia blog is coming soon. We're focused right now on building out the career
-          catalog and roadmap experience — once that's solid, we'll start sharing career guidance
-          articles here.
+          The Futurixia blog is coming soon. We are focused right now on building out the career
+          catalog and roadmap experience. Once that is solid, we will start sharing career
+          guidance articles here.
         </p>
       </InfoModal>
 
@@ -483,7 +497,7 @@ function Home() {
           responding to you.
         </p>
         <p style={{ marginTop: "14px" }}>
-          You can edit or delete your profile information at any time from your Dashboard.
+          You can edit your profile information at any time from your Dashboard.
         </p>
       </InfoModal>
 
@@ -493,7 +507,7 @@ function Home() {
         title="Terms of Service"
       >
         <p>
-          Futurixia is provided as a free educational guidance tool. Career information, salary
+          Futurixia is provided as an educational guidance tool. Career information, salary
           ranges, and roadmap content are intended as general guidance only and should not be
           treated as a guarantee of outcomes, income, or admission into any program or profession.
         </p>
