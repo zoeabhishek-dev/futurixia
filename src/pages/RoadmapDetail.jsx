@@ -113,6 +113,7 @@ import {
   BookOpen,
   AlertTriangle,
   GitBranch,
+  Lock,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import PricingModal from "../components/PricingModal"
@@ -124,7 +125,7 @@ import {
   STAGE_LABELS,
 } from "../lib/personalization"
 
-const FREE_STEP_LIMIT = 10
+const GUEST_STEP_LIMIT = 10
 
 const STEP_TYPE_ICONS = {
   education: GraduationCap,
@@ -304,9 +305,7 @@ function RoadmapDetail() {
           const doneSet = new Set(progressData.map((p) => p.step_id))
           setCompletedStepIds(doneSet)
 
-          const visibleNow = proNow
-            ? [...matchedIntro, ...core]
-            : core.slice(0, FREE_STEP_LIMIT)
+          const visibleNow = [...matchedIntro, ...core]
           const firstOpen = visibleNow.find((s) => !doneSet.has(s.id))
           if (firstOpen && proNow) setExpandedIds(new Set([firstOpen.id]))
         }
@@ -330,7 +329,7 @@ function RoadmapDetail() {
 
     const isCompleted = completedStepIds.has(stepId)
     const fullSteps = [...introSteps, ...coreSteps]
-    const visibleSteps = isPro ? fullSteps : coreSteps.slice(0, FREE_STEP_LIMIT)
+    const visibleSteps = fullSteps
 
     if (isCompleted) {
       await supabase
@@ -364,7 +363,7 @@ function RoadmapDetail() {
       }
 
       const allNowDone =
-        isPro && fullSteps.length > 0 && fullSteps.every((s) => updatedCompletedIds.has(s.id))
+        fullSteps.length > 0 && fullSteps.every((s) => updatedCompletedIds.has(s.id))
 
       if (allNowDone) {
         await supabase.from("roadmap_completions").upsert(
@@ -412,12 +411,11 @@ function RoadmapDetail() {
     )
   }
 
-  const visibleIntroSteps = isPro ? introSteps : []
-  const visibleCoreSteps = isPro ? coreSteps : coreSteps.slice(0, FREE_STEP_LIMIT)
+  const isGuest = !userId
+  const visibleIntroSteps = introSteps
+  const visibleCoreSteps = isGuest ? coreSteps.slice(0, GUEST_STEP_LIMIT) : coreSteps
   const combinedSteps = [...visibleIntroSteps, ...visibleCoreSteps]
-  const lockedStepCount = isPro
-    ? 0
-    : introSteps.length + Math.max(coreSteps.length - FREE_STEP_LIMIT, 0)
+  const lockedStepCount = isGuest ? Math.max(coreSteps.length - GUEST_STEP_LIMIT, 0) : 0
 
   const completedCount = combinedSteps.filter((s) => completedStepIds.has(s.id)).length
   const progressPercent =
@@ -585,6 +583,13 @@ function RoadmapDetail() {
               </button>
             )}
 
+            {userId && !isPro && (
+              <button style={styles.detailsToggle} onClick={() => setShowPricing(true)}>
+                <Lock size={14} />
+                Unlock details & free resources
+              </button>
+            )}
+
             {isPro && isExpanded && step.why_it_matters && (
               <div style={styles.enrichedBox}>
                 <span style={styles.enrichedLabel}>Why This Matters</span>
@@ -740,7 +745,7 @@ function RoadmapDetail() {
               <span style={styles.progressLabel}>
                 {completedCount} of {combinedSteps.length} steps completed
               </span>
-              {isPro && progressPercent === 100 && combinedSteps.length > 0 && (
+              {!isGuest && progressPercent === 100 && combinedSteps.length > 0 && (
                 <span style={styles.completeBadge}>
                   <Trophy size={13} />
                   Roadmap Complete!
@@ -758,15 +763,10 @@ function RoadmapDetail() {
 
           {!userId && (
             <p style={styles.introMissingNote}>
-              Log in and complete your profile to see more of this roadmap.
+              Log in free and complete your profile to see the full roadmap, including starting steps chosen for your stage.
             </p>
           )}
-          {userId && !isPro && introSteps.length > 0 && (
-            <p style={styles.introMissingNote}>
-              Upgrade to Pro to unlock the personalized starting steps chosen for your stage.
-            </p>
-          )}
-          {userId && isPro && introSteps.length === 0 && (
+          {userId && introSteps.length === 0 && (
             <p style={styles.introMissingNote}>
               Personalized starting steps for your stage are coming soon for this career, showing the full core roadmap below.
             </p>
@@ -874,7 +874,7 @@ function RoadmapDetail() {
 
         <h2 style={styles.roadmapHeading}>Your Complete Step-by-Step Roadmap</h2>
 
-        {isPro && stageLabel && (
+        {stageLabel && (
           <div style={styles.stageBanner}>
             <span style={styles.stageBannerLabel}>Your Stage: {stageLabel}</span>
             <p style={styles.stageBannerText}>
@@ -899,6 +899,18 @@ function RoadmapDetail() {
           </div>
         )}
 
+        {userId && !isPro && (
+          <div style={{ ...styles.upgradeBanner, marginTop: 0, marginBottom: "24px" }}>
+            <span style={styles.upgradeBannerTitle}>Want more help on every step?</span>
+            <p style={styles.upgradeBannerText}>
+              Pro unlocks free learning resources, videos, official websites, and detailed guidance on every step.
+            </p>
+            <button style={styles.upgradeBannerBtn} onClick={() => setShowPricing(true)}>
+              See Plans
+            </button>
+          </div>
+        )}
+
         <div style={styles.timeline}>
           {combinedSteps.map((step, i) =>
             renderStepCard(
@@ -912,15 +924,13 @@ function RoadmapDetail() {
         {lockedStepCount > 0 && (
           <div style={styles.upgradeBanner}>
             <span style={styles.upgradeBannerTitle}>
-              {lockedStepCount} more personalized steps, free resources & videos are waiting
+              {lockedStepCount} more steps are waiting for you
             </span>
             <p style={styles.upgradeBannerText}>
-              {userId
-                ? "Upgrade to Pro to unlock your full, personalized roadmap for this career."
-                : "Log in and upgrade to Pro to unlock your full, personalized roadmap."}
+              Log in for free to see the complete step-by-step roadmap for this career.
             </p>
-            <button style={styles.upgradeBannerBtn} onClick={() => setShowPricing(true)}>
-              See Plans
+            <button style={styles.upgradeBannerBtn} onClick={() => navigate("/login")}>
+              Log In Free
             </button>
           </div>
         )}

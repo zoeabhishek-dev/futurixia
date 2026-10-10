@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
-import { X, Check, Sparkles, Crown } from "lucide-react"
+import { X, Check, Sparkles, Crown, Lock } from "lucide-react"
 
 function detectIsIndia() {
   try {
@@ -21,13 +21,18 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
       icon: Sparkles,
       priceINR: "₹0",
       priceUSD: "$0",
-      tagline: "Explore every career",
+      tagline: "Your complete roadmap, free",
       features: [
         "Browse all 100+ careers",
-        "See a limited starter roadmap",
-        "Basic career overview",
+        "Complete step-by-step roadmap for every career",
+        "Personalized starting steps for your stage",
+        "Progress tracking and completion history",
+        "Discovery quiz and career comparison",
       ],
-      locked: ["Full personalized roadmap", "Free resources & videos", "Discovery quiz & compare"],
+      locked: [
+        "Free resources, videos and official websites",
+        "Detailed guidance on every step",
+      ],
     },
     {
       name: "Pro",
@@ -35,15 +40,13 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
       priceINR: "₹299",
       priceUSD: "$4.99",
       period: "/ month",
-      tagline: "Your full personalized path",
+      tagline: "Extra help on every step",
       highlight: true,
       features: [
         "Everything in Free",
-        "Full step-by-step roadmap",
-        "Personalized by your stage, interests & skills",
-        "Free resources & videos on every step",
-        "Discovery quiz & career comparison",
-        "Progress tracking & completion history",
+        "Free learning resources, videos and official websites matched to each step",
+        "Detailed guidance on every step: how to approach it, why it matters, what to achieve",
+        "Estimated time and practice tasks where available",
       ],
       locked: [],
     },
@@ -53,11 +56,13 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
       priceINR: "₹499",
       priceUSD: "$8.99",
       period: "/ month",
-      tagline: "Pro, plus what's next",
+      tagline: "Pro, plus what is coming next",
+      badge: "Upcoming features",
       features: [
         "Everything in Pro",
         "Completion certificates (coming soon)",
         "1-on-1 career guidance (coming soon)",
+        "Early access to new features as they launch",
       ],
       locked: [],
     },
@@ -86,7 +91,7 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
 
             <h3 style={styles.title}>Pricing</h3>
             <p style={styles.subtitle}>
-              Explore every career for free. Upgrade for your full personalized roadmap.
+              Every career roadmap is free. Upgrade for resources and detailed guidance on every step.
             </p>
 
             <div style={styles.tiersRow}>
@@ -101,6 +106,7 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
                       <Icon size={20} color={tier.highlight ? "#67e8f9" : "#a5b4fc"} />
                     </div>
                     <h4 style={styles.tierName}>{tier.name}</h4>
+                    {tier.badge && <span style={styles.badge}>{tier.badge}</span>}
                     <p style={styles.tierTagline}>{tier.tagline}</p>
                     <div style={styles.priceRow}>
                       <span style={styles.price}>{isIndia ? tier.priceINR : tier.priceUSD}</span>
@@ -113,13 +119,13 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
                     <ul style={styles.featureList}>
                       {tier.features.map((f) => (
                         <li key={f} style={styles.featureItem}>
-                          <Check size={14} color="#4ade80" />
+                          <Check size={14} color="#4ade80" style={{ flexShrink: 0, marginTop: 2 }} />
                           <span>{f}</span>
                         </li>
                       ))}
                       {tier.locked.map((f) => (
                         <li key={f} style={styles.lockedItem}>
-                          <X size={14} color="#7d8299" />
+                          <Lock size={13} color="#7d8299" style={{ flexShrink: 0, marginTop: 2 }} />
                           <span>{f}</span>
                         </li>
                       ))}
@@ -130,7 +136,7 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
                       onClick={() => tier.name !== "Free" && setShowComingSoon(true)}
                       disabled={tier.name === "Free"}
                     >
-                      {tier.name === "Free" ? "Your Current Plan" : `Get ${tier.name}`}
+                      {tier.name === "Free" ? "Included For Everyone" : `Get ${tier.name}`}
                     </button>
                   </div>
                 )
@@ -139,7 +145,7 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
 
             {showComingSoon && (
               <p style={styles.comingSoonNote}>
-                Online payments are being set up — subscriptions will be available to purchase very soon.
+                Online payments are being set up. Subscriptions will be available to purchase very soon.
               </p>
             )}
           </motion.div>
@@ -160,7 +166,8 @@ const styles = {
   tierCardHighlight: { background: "rgba(99,102,241,0.1)", boxShadow: "0 0 0 2px rgba(99,102,241,0.5)" },
   tierIconWrap: { display: "flex", alignItems: "center", justifyContent: "center", width: "40px", height: "40px", borderRadius: "12px", background: "rgba(255,255,255,0.06)", marginBottom: "12px" },
   tierName: { fontSize: "1.1rem", fontWeight: 800, color: "#fff" },
-  tierTagline: { color: "#9599b0", fontSize: "0.8rem", marginTop: "4px", marginBottom: "14px" },
+  badge: { display: "inline-block", alignSelf: "flex-start", marginTop: "6px", background: "rgba(251,191,36,0.14)", color: "#fbbf24", fontSize: "0.68rem", fontWeight: 700, padding: "4px 10px", borderRadius: "20px" },
+  tierTagline: { color: "#9599b0", fontSize: "0.8rem", marginTop: "6px", marginBottom: "14px" },
   priceRow: { display: "flex", alignItems: "baseline", gap: "6px" },
   price: { fontSize: "1.7rem", fontWeight: 800, color: "#fff" },
   period: { color: "#9599b0", fontSize: "0.8rem" },
