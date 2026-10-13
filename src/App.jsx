@@ -7,6 +7,7 @@ import CareerSearch from "./pages/CareerSearch"
 import RoadmapDetail from "./pages/RoadmapDetail"
 import CareerDiscovery from "./pages/CareerDiscovery"
 import CareerCompare from "./pages/CareerCompare"
+import ResetPassword from "./pages/ResetPassword"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/career/:slug" element={<RoadmapDetail />} />
       <Route path="/discover" element={<CareerDiscovery />} />
       <Route path="/compare" element={<CareerCompare />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
     </Routes>
   )
 }
