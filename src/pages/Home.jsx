@@ -398,6 +398,7 @@ function Home() {
             <a href="#how">How it Works</a>
             <a href="#careers">Careers</a>
             <a href="#" onClick={openInfo("pricing-modal")}>Pricing</a>
+            <Link to="/verify">Verify a Certificate</Link>
           </div>
 
           <div className="footer-col">
@@ -497,7 +498,7 @@ function Home() {
           responding to you.
         </p>
         <p style={{ marginTop: "14px" }}>
-          You can edit your profile information at any time from your Dashboard.
+          You can edit your profile information at any time from your Dashboard. If you earn a completion certificate, anyone who has its certificate ID can confirm your name, the career and the completion date on our verification page.
         </p>
       </InfoModal>
 

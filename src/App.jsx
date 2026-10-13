@@ -8,6 +8,8 @@ import RoadmapDetail from "./pages/RoadmapDetail"
 import CareerDiscovery from "./pages/CareerDiscovery"
 import CareerCompare from "./pages/CareerCompare"
 import ResetPassword from "./pages/ResetPassword"
+import Certificate from "./pages/Certificate"
+import VerifyCertificate from "./pages/VerifyCertificate"
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
       <Route path="/discover" element={<CareerDiscovery />} />
       <Route path="/compare" element={<CareerCompare />} />
       <Route path="/reset-password" element={<ResetPassword />} />
+      <Route path="/certificate/:slug" element={<Certificate />} />
+      <Route path="/verify" element={<VerifyCertificate />} />
+      <Route path="/verify/:certId" element={<VerifyCertificate />} />
     </Routes>
   )
 }

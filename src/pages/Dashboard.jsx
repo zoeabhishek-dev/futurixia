@@ -17,6 +17,8 @@ import {
 import { supabase } from "../supabaseClient"
 import { getPersonalizedRoadmap } from "../lib/personalization"
 import ContactModal from "../components/ContactModal"
+import PricingModal from "../components/PricingModal"
+import { Award, Lock } from "lucide-react"
 
 function Dashboard() {
   const navigate = useNavigate()
@@ -25,6 +27,7 @@ function Dashboard() {
   const [profile, setProfile] = useState(null)
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false)
   const [showContactModal, setShowContactModal] = useState(false)
+  const [showPricing, setShowPricing] = useState(false)
   const [showRequestModal, setShowRequestModal] = useState(false)
   const [activeCareer, setActiveCareer] = useState(null)
   const [progressPercent, setProgressPercent] = useState(0)
@@ -302,7 +305,23 @@ function Dashboard() {
                     })}
                   </p>
                 </div>
-                <span style={styles.completionBadge}>Successfully Completed</span>
+                <div style={styles.completionActions}>
+                  <span style={styles.completionBadge}>Successfully Completed</span>
+                  {profile.subscription_tier === "pro_max" ? (
+                    <button
+                      style={styles.certBtn}
+                      onClick={() => navigate(`/certificate/${entry.careers?.slug}`)}
+                    >
+                      <Award size={14} />
+                      View Certificate
+                    </button>
+                  ) : (
+                    <button style={styles.certBtnLocked} onClick={() => setShowPricing(true)}>
+                      <Lock size={13} />
+                      Certificate with Pro Max
+                    </button>
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -382,6 +401,12 @@ function Dashboard() {
 
       <ContactModal mode="request" isOpen={showRequestModal} onClose={() => setShowRequestModal(false)} />
       <ContactModal mode="general" isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
+
+      <PricingModal
+        isOpen={showPricing}
+        onClose={() => setShowPricing(false)}
+        studentCountry={profile?.country}
+      />
 
       {showLogoutConfirm && (
         <div style={styles.modalOverlay} onClick={() => setShowLogoutConfirm(false)}>
@@ -548,6 +573,41 @@ const styles = {
   },
   completionCareerName: { fontSize: "0.95rem", fontWeight: 700, color: "#fff" },
   completionMeta: { fontSize: "0.78rem", color: "#9599b0", marginTop: "2px" },
+  completionActions: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-end",
+    gap: "8px",
+  },
+  certBtn: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "6px",
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    color: "#fff",
+    border: "none",
+    padding: "8px 14px",
+    borderRadius: "20px",
+    fontSize: "0.75rem",
+    fontWeight: 700,
+    cursor: "pointer",
+    whiteSpace: "nowrap",
+  },
+  certBtnLocked: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "6px",
+    background: "rgba(255,255,255,0.07)",
+    color: "#c7d2fe",
+    border: "none",
+    padding: "8px 14px",
+    borderRadius: "20px",
+    fontSize: "0.72rem",
+    fontWeight: 700,
+    cursor: "pointer",
+    whiteSpace: "nowrap",
+    boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
+  },
   completionBadge: {
     background: "rgba(74,222,128,0.14)",
     color: "#4ade80",

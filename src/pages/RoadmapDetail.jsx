@@ -117,6 +117,7 @@ import {
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import PricingModal from "../components/PricingModal"
+import { Award } from "lucide-react"
 import {
   getPersonalizedRoadmap,
   getStepGuidance,
@@ -754,6 +755,25 @@ function RoadmapDetail() {
             </div>
           </div>
 
+          {!isGuest && progressPercent === 100 && combinedSteps.length > 0 && (
+            <div style={styles.certPrompt}>
+              {myTier === "pro_max" ? (
+                <button
+                  style={styles.certPromptBtn}
+                  onClick={() => navigate(`/certificate/${career.slug}`)}
+                >
+                  <Award size={15} />
+                  Get Your Certificate
+                </button>
+              ) : (
+                <button style={styles.certPromptBtnLocked} onClick={() => setShowPricing(true)}>
+                  <Lock size={14} />
+                  Certificates come with Pro Max
+                </button>
+              )}
+            </div>
+          )}
+
           {countryNote && (
             <div style={styles.countryNoteBox}>
               <span style={styles.countryNoteLabel}>Note for Your Country</span>
@@ -1136,6 +1156,34 @@ const styles = {
     borderRadius: "20px",
     fontSize: "0.75rem",
     fontWeight: 700,
+  },
+  certPrompt: { marginTop: "20px", textAlign: "center" },
+  certPromptBtn: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "8px",
+    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    color: "#fff",
+    border: "none",
+    padding: "12px 24px",
+    borderRadius: "30px",
+    fontSize: "0.88rem",
+    fontWeight: 700,
+    cursor: "pointer",
+  },
+  certPromptBtnLocked: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "8px",
+    background: "rgba(255,255,255,0.07)",
+    color: "#c7d2fe",
+    border: "none",
+    padding: "12px 24px",
+    borderRadius: "30px",
+    fontSize: "0.85rem",
+    fontWeight: 700,
+    cursor: "pointer",
+    boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
   },
   countryNoteBox: {
     marginTop: "20px",

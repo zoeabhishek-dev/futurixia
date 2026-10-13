@@ -60,7 +60,7 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
       badge: "Upcoming features",
       features: [
         "Everything in Pro",
-        "Completion certificates (coming soon)",
+        "Completion certificates with a public verification link",
         "1-on-1 career guidance (coming soon)",
         "Early access to new features as they launch",
       ],
