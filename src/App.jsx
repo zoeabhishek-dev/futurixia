@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Auth from "./pages/Auth"
@@ -10,6 +11,7 @@ import CareerCompare from "./pages/CareerCompare"
 import ResetPassword from "./pages/ResetPassword"
 import Certificate from "./pages/Certificate"
 import VerifyCertificate from "./pages/VerifyCertificate"
+import Coach from "./pages/Coach"
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
       <Route path="/certificate/:slug" element={<Certificate />} />
       <Route path="/verify" element={<VerifyCertificate />} />
       <Route path="/verify/:certId" element={<VerifyCertificate />} />
+      <Route path="/coach" element={<Coach />} />
     </Routes>
   )
 }
