@@ -12,6 +12,7 @@ import ResetPassword from "./pages/ResetPassword"
 import Certificate from "./pages/Certificate"
 import VerifyCertificate from "./pages/VerifyCertificate"
 import Coach from "./pages/Coach"
+import Report from "./pages/Report"
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Route path="/verify" element={<VerifyCertificate />} />
       <Route path="/verify/:certId" element={<VerifyCertificate />} />
       <Route path="/coach" element={<Coach />} />
+      <Route path="/report" element={<Report />} />
     </Routes>
   )
 }

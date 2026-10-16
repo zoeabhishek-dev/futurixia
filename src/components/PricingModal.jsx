@@ -62,7 +62,7 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
         "Everything in Pro",
         "Completion certificates with a public verification link",
         "Smart Coach: automatic skill check, weekly study plan and calendar reminders",
-        "Early access to new features as they launch",
+        "Printable personal career report, built automatically from your progress",
       ],
       locked: [],
     },

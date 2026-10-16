@@ -463,6 +463,9 @@ function Dashboard() {
             Explore Careers
           </Link>
 
+          <Link to="/report" style={styles.actionButton}>
+            My Report
+          </Link>
           <Link to="/discover" style={styles.actionButton}>
             Discovery Quiz
           </Link>

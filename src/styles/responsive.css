@@ -126,3 +126,12 @@ input:autofill {
   -webkit-text-fill-color: #ffffff !important;
   box-shadow: 0 0 0 1000px #1c1f31 inset !important;
 }
+
+select {
+  color-scheme: dark;
+}
+
+select option {
+  background-color: #12142a;
+  color: #ffffff;
+}
