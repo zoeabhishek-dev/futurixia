@@ -1,0 +1,98 @@
+{
+  "slug": "doctor",
+  "overview": {
+    "summary": "Doctors assess people who are unwell or worried about their health, work out what may be wrong, and plan treatment or prevention.",
+    "problems": "They help people recover from illness and injury, manage long-term conditions and stay healthy.",
+    "worksWith": "Patients and their families, nurses, specialists, pharmacists, laboratory staff and other health workers.",
+    "workplaces": "Hospitals, clinics, health centres, private practice, and community or public health settings."
+  },
+  "timeline": [
+    {
+      "time": "7:30 to 8:30",
+      "title": "Handover and ward round",
+      "description": "The doctor hears from the previous team about each patient, then visits patients on the ward to check progress and update plans.",
+      "why": "A careful handover keeps patient care continuous and safe.",
+      "skills": ["Communication", "Clinical judgment"]
+    },
+    {
+      "time": "8:30 to 12:30",
+      "title": "Patient consultations and examinations",
+      "description": "The doctor asks about symptoms and history, examines the patient, and explains findings and next steps in plain words.",
+      "why": "A careful history and examination guide most medical decisions.",
+      "skills": ["Listening", "Clinical knowledge", "Empathy"]
+    },
+    {
+      "time": "12:30 to 14:00",
+      "title": "Reviewing results and coordinating care",
+      "description": "The doctor reads laboratory and scan results, discusses patients with nurses and specialists, and adjusts treatment plans.",
+      "why": "Results can change the plan, and good care depends on teamwork.",
+      "skills": ["Analysis", "Teamwork"]
+    },
+    {
+      "time": "14:00 to 16:00",
+      "title": "Procedures or a second clinic",
+      "description": "Depending on the specialty, this may be minor procedures, more clinic patients, time in an operating theatre or work in an emergency department.",
+      "why": "Practical skills and decisions under pressure are central to many specialties.",
+      "skills": ["Precision", "Calm under pressure"]
+    },
+    {
+      "time": "16:00 to 17:30",
+      "title": "Records and follow-up",
+      "description": "The doctor writes notes, prescriptions and referral letters, updates records and speaks with families.",
+      "why": "Accurate records protect patients and help colleagues continue their care.",
+      "skills": ["Writing", "Attention to detail"]
+    },
+    {
+      "time": "Varies",
+      "title": "Teaching, learning and on-call duty",
+      "description": "Many doctors teach junior colleagues, attend case discussions, study new guidance and take turns being on call at night or weekends.",
+      "why": "Medical knowledge keeps changing and training the next generation is part of the job.",
+      "skills": ["Teaching", "Continuous learning"]
+    }
+  ],
+  "responsibilities": [
+    "Assessing patients and diagnosing conditions within the level of their training",
+    "Planning treatment and explaining it clearly, including risks",
+    "Prescribing medicines carefully and checking for harm",
+    "Keeping accurate and confidential records",
+    "Working with nurses, specialists and pharmacists",
+    "Following ethics and consent rules",
+    "Referring patients to others when needed"
+  ],
+  "challenges": [
+    "Hours can be long and irregular, especially during training, and can include nights and weekends.",
+    "Illness, death and difficult conversations carry an emotional weight.",
+    "Responsibility is high because mistakes can seriously affect people.",
+    "There is a lot of paperwork and record keeping.",
+    "The path to qualifying is long and competitive.",
+    "Medical knowledge keeps changing, so learning never stops."
+  ],
+  "skills": ["Communication", "Empathy", "Clinical reasoning", "Attention to detail", "Teamwork", "Stress management", "Time management", "Ethical judgment", "Lifelong learning"],
+  "workEnvironment": "Hospitals, clinics, health centres or private practice, and for some doctors research, teaching or public health. Workload, hours and surroundings differ a lot by specialty and country. Settings can be busy, noisy and emotionally intense.",
+  "rewards": [
+    "Helping people at important moments in their lives",
+    "The trust that patients and colleagues place in you",
+    "Many specialties to explore",
+    "Constant learning and intellectual challenge"
+  ],
+  "tradeoffs": [
+    "Many years of study and supervised training before working independently",
+    "Heavy workloads and shift work, especially early on",
+    "Emotional strain from caring for people who are very ill",
+    "Income and working conditions differ by country, specialty and employer"
+  ],
+  "activity": {
+    "title": "Write a one-page health information summary",
+    "steps": [
+      "Choose a common, non-serious topic, such as seasonal flu or healthy sleep.",
+      "Read about it on a trusted public health website, such as the World Health Organization or your country's health ministry.",
+      "Write what causes it, how it can be prevented, and when people should see a doctor.",
+      "Explain it aloud to a family member in simple words.",
+      "Note which part you enjoyed most: researching, writing or explaining."
+    ],
+    "outcome": "You practise finding reliable health information and explaining it clearly, which doctors do every day.",
+    "safety": "This is an information exercise only. Do not diagnose or treat yourself or anyone else, and always ask a qualified doctor about real health concerns."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-16"
+}

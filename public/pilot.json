@@ -1,0 +1,97 @@
+{
+  "slug": "pilot",
+  "overview": {
+    "summary": "Pilots fly aircraft and are responsible for the safe operation of each flight, from planning to landing.",
+    "problems": "They move passengers and cargo safely between places, often in changing weather and busy airspace.",
+    "worksWith": "The co-pilot and cabin crew, air traffic controllers, engineers, dispatchers and ground staff.",
+    "workplaces": "Airline cockpits and airports, and in other roles flight schools, charter companies, cargo operators and helicopter services."
+  },
+  "timeline": [
+    {
+      "time": "Before departure (about 2 hours)",
+      "title": "Flight planning and briefing",
+      "description": "The pilot checks weather, route, fuel, aircraft status and official notices, then briefs the crew.",
+      "why": "Most safety decisions are made before the aircraft moves.",
+      "skills": ["Planning", "Decision-making"]
+    },
+    {
+      "time": "Before departure (about 1 hour)",
+      "title": "Aircraft checks",
+      "description": "The pilot checks the aircraft, sets up the cockpit and works through the checklists.",
+      "why": "Checklists catch problems that memory alone can miss.",
+      "skills": ["Checklist discipline", "Attention to detail"]
+    },
+    {
+      "time": "Departure",
+      "title": "Take-off and climb",
+      "description": "The pilot flies the departure with the co-pilot, follows procedures and talks with air traffic control.",
+      "why": "This is a busy phase that needs precision and clear teamwork.",
+      "skills": ["Teamwork", "Communication", "Precision"]
+    },
+    {
+      "time": "In flight",
+      "title": "Monitoring and managing the flight",
+      "description": "The pilot watches systems, weather, fuel and radio calls and makes adjustments. Much of the cruise phase is monitoring rather than constant manual flying.",
+      "why": "Staying alert to small changes prevents bigger problems later.",
+      "skills": ["Vigilance", "Situational awareness"]
+    },
+    {
+      "time": "Arrival",
+      "title": "Approach and landing",
+      "description": "The pilot briefs the approach, talks with air traffic control, lands the aircraft and taxis to the gate.",
+      "why": "Approach and landing need accuracy and calm decision-making.",
+      "skills": ["Precision", "Calm under pressure"]
+    },
+    {
+      "time": "After landing",
+      "title": "Debrief and reporting",
+      "description": "The pilot completes reports, notes any aircraft problems and rests within the legal duty limits. Some pilots fly more flights the same day, and others stay overnight away from home.",
+      "why": "Reports help engineers fix problems and keep future flights safe.",
+      "skills": ["Reporting", "Responsibility"]
+    }
+  ],
+  "responsibilities": [
+    "Operating the aircraft safely",
+    "Planning flights with weather and fuel in mind",
+    "Following procedures and checklists",
+    "Communicating with air traffic control and the crew",
+    "Making decisions when something unusual happens",
+    "Meeting medical and training requirements"
+  ],
+  "challenges": [
+    "Schedules are irregular and can include nights, time zone changes and time away from home.",
+    "Strict medical checks and regular training and tests are required.",
+    "Responsibility for passengers and crew is high.",
+    "Training is expensive and the route to a first job can be long.",
+    "Managing tiredness is an important part of the job.",
+    "Job availability can change with economic conditions."
+  ],
+  "skills": ["Concentration", "Decision-making", "Communication", "Technical knowledge", "Teamwork", "Calm under pressure", "Discipline", "Time management"],
+  "workEnvironment": "The cockpit, airports and hotels used by crews. Flying is mostly done seated, with irregular hours and some nights away from home. Airline, cargo, charter, instructing and helicopter flying differ a lot from one another.",
+  "rewards": [
+    "Visiting different places",
+    "The satisfaction of operating a complex aircraft safely",
+    "Close teamwork with colleagues",
+    "A role with clear skills and standards to master"
+  ],
+  "tradeoffs": [
+    "Time away from family and friends",
+    "Disrupted sleep and an irregular routine",
+    "A medical or licensing problem can stop you from flying",
+    "Pay and conditions vary by airline and country"
+  ],
+  "activity": {
+    "title": "Decode an airport weather report",
+    "steps": [
+      "Open an aviation weather site, such as the Aviation Weather Center at aviationweather.gov, and find the latest weather report, called a METAR, for an airport.",
+      "Use a beginner METAR guide to read the wind, visibility, clouds and temperature.",
+      "Write one plain sentence describing the weather.",
+      "Decide whether the weather looks easy or difficult for flying and explain why.",
+      "Note how you felt about studying detailed technical information."
+    ],
+    "outcome": "You practise reading technical information carefully, which pilots do before every flight.",
+    "safety": "This is for learning only. Never use it to plan or attempt a real flight."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-16"
+}

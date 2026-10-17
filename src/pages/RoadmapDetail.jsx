@@ -117,6 +117,7 @@ import {
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import PricingModal from "../components/PricingModal"
+import CareerDay from "../components/CareerDay"
 import { Award } from "lucide-react"
 import {
   getPersonalizedRoadmap,
@@ -892,7 +893,9 @@ function RoadmapDetail() {
           </div>
         )}
 
-        <h2 style={styles.roadmapHeading}>Your Complete Step-by-Step Roadmap</h2>
+        <CareerDay key={career.slug} career={career} userId={userId} />
+
+        <h2 id="roadmap-start" style={styles.roadmapHeading}>Your Complete Step-by-Step Roadmap</h2>
 
         {stageLabel && (
           <div style={styles.stageBanner}>

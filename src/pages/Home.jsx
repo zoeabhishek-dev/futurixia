@@ -498,7 +498,7 @@ function Home() {
           responding to you.
         </p>
         <p style={{ marginTop: "14px" }}>
-          You can edit your profile information at any time from your Dashboard. If you earn a completion certificate, anyone who has its certificate ID can confirm your name, the career and the completion date on our verification page.
+          You can edit your profile information at any time from your Dashboard. If you answer the reflection questions on a career page, your answers are saved privately in your account and are not shown to anyone else. If you earn a completion certificate, anyone who has its certificate ID can confirm your name, the career and the completion date on our verification page.
         </p>
       </InfoModal>
 

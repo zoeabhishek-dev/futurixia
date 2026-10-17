@@ -1,0 +1,98 @@
+{
+  "slug": "lawyer",
+  "overview": {
+    "summary": "Lawyers advise people and organizations about their legal rights and duties, prepare legal documents and represent clients in disputes or negotiations.",
+    "problems": "They help people understand the law, resolve disagreements and make agreements that protect their interests.",
+    "worksWith": "Clients, other lawyers, judges and court staff, and in companies, managers and business teams.",
+    "workplaces": "Law firms, courts, company legal departments, government bodies and non-profit organizations."
+  },
+  "timeline": [
+    {
+      "time": "9:00 to 10:00",
+      "title": "Reading and planning",
+      "description": "The lawyer reads new emails and case notes, checks deadlines and decides which tasks come first.",
+      "why": "Missing a legal deadline can seriously harm a client.",
+      "skills": ["Organization", "Attention to detail"]
+    },
+    {
+      "time": "10:00 to 12:30",
+      "title": "Legal research and drafting",
+      "description": "The lawyer looks up laws and earlier cases, then drafts a document such as a contract, a notice or a court filing.",
+      "why": "Arguments and documents must be accurate, clear and well supported.",
+      "skills": ["Research", "Writing", "Analytical thinking"]
+    },
+    {
+      "time": "12:30 to 14:00",
+      "title": "Client meeting or call",
+      "description": "The lawyer listens to the client's situation, explains the options in plain language and agrees the next steps.",
+      "why": "Clients need to understand their choices to make good decisions.",
+      "skills": ["Listening", "Explaining", "Empathy"]
+    },
+    {
+      "time": "14:00 to 16:30",
+      "title": "Court, negotiation or meetings",
+      "description": "Lawyers who work in disputes may attend hearings. Others negotiate terms or advise teams inside a company.",
+      "why": "This is where preparation turns into results for the client.",
+      "skills": ["Speaking", "Negotiation", "Composure"]
+    },
+    {
+      "time": "16:30 to 18:00",
+      "title": "Follow-up and records",
+      "description": "The lawyer updates notes, sends documents and records the time spent on each matter.",
+      "why": "Good records keep work organized and support billing.",
+      "skills": ["Time management", "Accuracy"]
+    },
+    {
+      "time": "Varies",
+      "title": "Long hours before deadlines",
+      "description": "Before a hearing or a deal closes, some lawyers work evenings or weekends.",
+      "why": "Legal deadlines are fixed, and the work must be right.",
+      "skills": ["Resilience", "Focus"]
+    }
+  ],
+  "responsibilities": [
+    "Advising clients on their rights and options",
+    "Drafting and reviewing legal documents",
+    "Representing clients or negotiating on their behalf",
+    "Researching law and earlier decisions",
+    "Keeping client information confidential",
+    "Following professional ethics and court rules"
+  ],
+  "challenges": [
+    "Hours can be long and demanding, particularly in some firms.",
+    "Deadlines are strict and the stakes can be high.",
+    "Cases rarely end in a clear win for everyone involved.",
+    "Clients may be distressed or difficult to deal with.",
+    "The job involves a lot of reading and writing.",
+    "Strict ethical duties, such as confidentiality, always apply.",
+    "Competition for training places and jobs can be strong."
+  ],
+  "skills": ["Reading and analysis", "Writing", "Speaking", "Research", "Negotiation", "Attention to detail", "Integrity", "Time management"],
+  "workEnvironment": "Mostly office based, with visits to courts or clients. Law firms, courts, company legal teams and government bodies all differ. The day-to-day work depends heavily on the area of law, such as criminal, corporate, family or property.",
+  "rewards": [
+    "Helping people deal with serious problems",
+    "Intellectual challenge",
+    "Many areas of law to specialize in",
+    "Respect when you are trusted to give good advice"
+  ],
+  "tradeoffs": [
+    "Heavy workload and stress at busy times",
+    "Emotional weight in some kinds of cases",
+    "A long path to qualify",
+    "Income and conditions vary widely by country, employer and type of practice"
+  ],
+  "activity": {
+    "title": "Read a simple contract and summarize it",
+    "steps": [
+      "Find a short, public terms-and-conditions page, such as for a library card or a free online service.",
+      "Underline what the customer has to do and what the company has to do.",
+      "Mark anything unclear or surprising.",
+      "Write a one-page summary in plain language.",
+      "Note whether careful reading felt interesting or tiring."
+    ],
+    "outcome": "You practise careful reading and plain-language explanation, which are everyday legal skills.",
+    "safety": "This is a learning exercise only and is not legal advice. Do not accept or reject real agreements based on it, and ask a qualified lawyer about real legal matters."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-16"
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "software-engineer",
+  "overview": {
+    "summary": "Software engineers design, build, test and maintain the programs and systems behind websites, apps and digital tools.",
+    "problems": "They turn real needs, such as booking a ticket, paying a bill or tracking a delivery, into reliable software that people can use.",
+    "worksWith": "Other engineers, designers, product managers and testers, and in small teams sometimes directly with customers or business owners.",
+    "workplaces": "Technology companies, banks, hospitals, government bodies, start-ups, and freelance or remote work."
+  },
+  "timeline": [
+    {
+      "time": "9:30 to 10:00",
+      "title": "Team check-in and planning",
+      "description": "The team shares what each person finished, what they plan to do today and where they are stuck. The engineer chooses the first task of the day.",
+      "why": "Short check-ins stop people repeating work and bring problems to the surface early.",
+      "skills": ["Communication", "Prioritizing"]
+    },
+    {
+      "time": "10:00 to 12:30",
+      "title": "Writing new code",
+      "description": "The engineer builds a feature in small pieces and runs the code often to see whether it behaves as expected.",
+      "why": "Clear, readable code is the main thing the role produces, and other people must be able to understand it later.",
+      "skills": ["Programming", "Problem solving"]
+    },
+    {
+      "time": "13:30 to 15:00",
+      "title": "Testing and fixing bugs",
+      "description": "The engineer writes tests, reproduces a reported problem, searches for its cause and fixes it.",
+      "why": "A bug found before release costs far less to fix than one found by users.",
+      "skills": ["Debugging", "Attention to detail"]
+    },
+    {
+      "time": "15:00 to 16:00",
+      "title": "Code review",
+      "description": "The engineer reads a teammate's changes and leaves suggestions, and receives feedback on their own work.",
+      "why": "Reviews catch mistakes and spread knowledge across the team.",
+      "skills": ["Collaboration", "Giving and receiving feedback"]
+    },
+    {
+      "time": "16:00 to 17:30",
+      "title": "Meetings, notes and learning",
+      "description": "The engineer joins a planning or design discussion, writes notes explaining how something works, and reads about a tool needed for upcoming work.",
+      "why": "Software lasts for years and tools change quickly, so clear notes and steady learning matter.",
+      "skills": ["Writing", "Learning quickly"]
+    },
+    {
+      "time": "Varies",
+      "title": "Urgent problems and on-call duty",
+      "description": "In some teams, engineers take turns to respond when a live system fails, which can happen outside normal hours.",
+      "why": "Many services must stay available at all times.",
+      "skills": ["Staying calm", "Troubleshooting"]
+    }
+  ],
+  "responsibilities": [
+    "Writing and testing code that meets the needs of users",
+    "Finding and fixing bugs and slow or unreliable parts of a system",
+    "Reviewing teammates' work and welcoming review of their own",
+    "Documenting how systems work so others can maintain them",
+    "Estimating how long tasks take and telling the team early if something slips",
+    "Thinking about security and the privacy of user data"
+  ],
+  "challenges": [
+    "Much of the job is reading and understanding code that someone else wrote, not writing new code.",
+    "Some bugs are hard to reproduce and can take hours or days to find.",
+    "Deadlines and changing requirements can make plans shift quickly.",
+    "Tools and methods keep changing, so learning never stops.",
+    "Long hours at a screen call for deliberate breaks and healthy habits.",
+    "Some jobs include on-call duty at night or at weekends."
+  ],
+  "skills": ["Programming", "Problem solving", "Debugging", "Version control", "Communication", "Teamwork", "Time management", "Willingness to keep learning"],
+  "workEnvironment": "Mostly desk and computer based, in offices, from home or a mix of both. Work is usually done in teams with regular meetings. Hours are often regular, but deadlines or on-call duty can mean evenings or weekends in some jobs.",
+  "rewards": [
+    "Seeing something you built used by real people",
+    "Many industries and problems to choose from",
+    "Skills that can be practised and shown through projects",
+    "Some employers offer flexible or remote work"
+  ],
+  "tradeoffs": [
+    "Long focus time on screens, with a lot of reading and debugging",
+    "Deadline pressure and shifting priorities",
+    "Learning that sometimes continues outside working hours",
+    "Job availability and pay vary by country, employer and experience"
+  ],
+  "activity": {
+    "title": "Build a one-page website about something you like",
+    "steps": [
+      "Choose a topic you enjoy, such as a hobby or a favourite sport.",
+      "Follow a free beginner HTML lesson, for example on freeCodeCamp or MDN Web Docs, and create a page with a heading, a paragraph and an image.",
+      "Add one small change, such as a new colour or a link to another page.",
+      "Break something on purpose, for example by removing a closing tag, see what happens, then fix it.",
+      "Write down which parts felt enjoyable and which felt frustrating."
+    ],
+    "outcome": "You experience a small version of the build, test and fix cycle and learn whether it feels interesting to you.",
+    "safety": "Use only your own text and images, and do not publish personal details online."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-16"
+}

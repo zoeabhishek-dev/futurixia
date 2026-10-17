@@ -1,0 +1,97 @@
+{
+  "slug": "civil-engineer",
+  "overview": {
+    "summary": "Civil engineers design, build and maintain structures and systems such as roads, bridges, buildings, water supply and drainage.",
+    "problems": "They make sure the things communities depend on are safe, durable and built within budget.",
+    "worksWith": "Architects, contractors, surveyors, clients, government authorities and construction workers.",
+    "workplaces": "Design offices and construction sites, with some roles in government, consulting firms and construction companies."
+  },
+  "timeline": [
+    {
+      "time": "8:00 to 9:00",
+      "title": "Review drawings and plans",
+      "description": "The engineer checks design drawings, quantities and any updates before work starts for the day.",
+      "why": "Errors in drawings become expensive and risky once they are built.",
+      "skills": ["Technical drawing", "Attention to detail"]
+    },
+    {
+      "time": "9:00 to 12:00",
+      "title": "Site visit and inspection",
+      "description": "The engineer walks the site with the contractor, checks that the work matches the plan, takes measurements and photos, and checks safety arrangements.",
+      "why": "Checking real work against the design protects safety and quality.",
+      "skills": ["Observation", "Safety awareness"]
+    },
+    {
+      "time": "12:00 to 13:30",
+      "title": "Coordination meeting",
+      "description": "The engineer discusses progress, delays and materials with contractors, suppliers, architects or clients.",
+      "why": "Construction involves many teams that must work in the right order.",
+      "skills": ["Communication", "Negotiation"]
+    },
+    {
+      "time": "13:30 to 15:30",
+      "title": "Quality checks and calculations",
+      "description": "The engineer reviews material test results, checks calculations and updates schedules and cost estimates.",
+      "why": "Structures must be safe and durable while staying within budget.",
+      "skills": ["Mathematics", "Analysis", "Software tools"]
+    },
+    {
+      "time": "15:30 to 17:00",
+      "title": "Reports and planning for tomorrow",
+      "description": "The engineer writes a progress report, records any issues and plans the next day's inspections.",
+      "why": "Written records show what was done and help resolve disagreements later.",
+      "skills": ["Writing", "Planning"]
+    },
+    {
+      "time": "Varies",
+      "title": "Solving problems at short notice",
+      "description": "Bad weather, a late delivery or unexpected ground conditions can change the plan and call for quick decisions.",
+      "why": "Real sites rarely go exactly as planned.",
+      "skills": ["Adaptability", "Decision-making"]
+    }
+  ],
+  "responsibilities": [
+    "Designing or checking structures so they meet safety codes",
+    "Supervising construction and checking quality",
+    "Managing safety and compliance on site",
+    "Estimating cost, materials and time",
+    "Coordinating contractors and other professionals",
+    "Preparing reports and records"
+  ],
+  "challenges": [
+    "Site work can be outdoors in heat, rain or dust.",
+    "Responsibility for public safety is serious, because mistakes can have large consequences.",
+    "Deadlines and budgets create pressure.",
+    "Delays can come from weather, approvals or supply problems outside your control.",
+    "Some projects are far from home and involve travel.",
+    "Many countries require professional registration or a licence for senior responsibility."
+  ],
+  "skills": ["Mathematics and physics", "Technical drawing and design software", "Problem solving", "Communication", "Project management", "Safety awareness", "Teamwork", "Attention to detail"],
+  "workEnvironment": "A mix of office work for design and calculations and construction sites for inspection and supervision. Some roles are mostly in a design office and others mostly on site. Protective equipment is required on sites.",
+  "rewards": [
+    "Seeing a road, bridge, building or water system you helped create",
+    "Contributing to things communities need",
+    "Variety of projects over a career",
+    "A mix of technical and practical work"
+  ],
+  "tradeoffs": [
+    "Site conditions can be uncomfortable",
+    "High responsibility for safety",
+    "Work location can change from project to project",
+    "Construction activity can rise and fall with the economy"
+  ],
+  "activity": {
+    "title": "Test which shape holds more weight",
+    "steps": [
+      "Make a small bridge between two stacks of books using a strip of paper or thin cardboard.",
+      "Place coins on it one at a time and count how many it holds before bending.",
+      "Change one thing, such as folding the paper into a tube or adding a triangle shape, and test again.",
+      "Record both results in a small table.",
+      "Write what you learned about strength and shape."
+    ],
+    "outcome": "You see why engineers test designs, change one thing at a time and record their results.",
+    "safety": "Use only light materials and coins, work on a table or the floor, and never test heavy loads or climb on anything."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-16"
+}

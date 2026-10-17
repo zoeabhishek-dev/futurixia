@@ -1,0 +1,98 @@
+{
+  "slug": "ips-officer",
+  "overview": {
+    "summary": "Officers of the Indian Police Service hold leadership posts in state and central police organizations, supervising policing work and the police officers who carry it out.",
+    "problems": "They work to keep public order, prevent and investigate crime, and respond to emergencies.",
+    "worksWith": "Police officers of all ranks, the public, magistrates and civil administration, courts and other government agencies.",
+    "workplaces": "Police headquarters, district and city police offices, police stations, training institutions and other government bodies, with a lot of time in the field."
+  },
+  "timeline": [
+    {
+      "time": "Early morning",
+      "title": "Briefing and crime review",
+      "description": "The officer reviews overnight incidents, reports and arrests and speaks with station officers about the day's priorities.",
+      "why": "Quick, accurate information helps the force respond to situations that are still developing.",
+      "skills": ["Analysis", "Decision-making"]
+    },
+    {
+      "time": "Morning",
+      "title": "Meeting the public",
+      "description": "The officer hears complaints and concerns from citizens and directs action on them.",
+      "why": "Public trust depends on being accessible and fair.",
+      "skills": ["Listening", "Fairness"]
+    },
+    {
+      "time": "Late morning",
+      "title": "Supervising cases and investigations",
+      "description": "The officer reviews case files and guides investigating officers on evidence and correct procedure.",
+      "why": "A sound investigation protects victims and also the rights of the accused.",
+      "skills": ["Legal knowledge", "Judgment"]
+    },
+    {
+      "time": "Afternoon",
+      "title": "Field visits and inspections",
+      "description": "The officer visits police stations, incident locations or events and checks discipline, facilities and response arrangements.",
+      "why": "Leaders learn what is really happening by seeing it first-hand.",
+      "skills": ["Leadership", "Observation"]
+    },
+    {
+      "time": "Late afternoon",
+      "title": "Coordination with other departments",
+      "description": "The officer works with civil administration, courts and other agencies on plans for festivals, protests, traffic or disaster response.",
+      "why": "Public safety often depends on many agencies working together.",
+      "skills": ["Coordination", "Communication"]
+    },
+    {
+      "time": "Evening and night",
+      "title": "Reports and being on call",
+      "description": "The officer reviews reports, plans the next day and stays reachable in case of an emergency.",
+      "why": "Emergencies do not follow office hours.",
+      "skills": ["Responsibility", "Resilience"]
+    }
+  ],
+  "responsibilities": [
+    "Leading and supervising police personnel",
+    "Maintaining law and order in an area",
+    "Overseeing the investigation of crimes",
+    "Planning security for events and emergencies",
+    "Following the law and respecting human rights",
+    "Reporting to senior authorities"
+  ],
+  "challenges": [
+    "Hours are long and unpredictable, and officers are often on call.",
+    "The work carries real physical and emotional risk and stress.",
+    "Decisions face public scrutiny and sometimes social or political pressure.",
+    "Frequent transfers can disrupt family life.",
+    "Officers see crime and human suffering at close range.",
+    "Selection is through a very competitive national examination.",
+    "Resources can be limited in some postings."
+  ],
+  "skills": ["Leadership", "Decision-making", "Integrity", "Communication", "Physical fitness", "Legal knowledge", "Calm under pressure", "Teamwork"],
+  "workEnvironment": "Police offices and stations, and field locations including outdoor work and travel. Postings differ widely across states and roles, from district policing to training, traffic, cyber crime, intelligence or central agencies.",
+  "rewards": [
+    "Serving the public",
+    "Responsibility and leadership at an early stage",
+    "A variety of roles across a long career",
+    "Respect when duty is carried out well"
+  ],
+  "tradeoffs": [
+    "Stress and personal risk",
+    "Little predictability and frequent transfers",
+    "Public criticism can be harsh",
+    "Personal and family time is limited at times"
+  ],
+  "activity": {
+    "title": "Analyze a public-safety problem in your area",
+    "steps": [
+      "Choose a safe, everyday issue, such as road safety near a school.",
+      "Observe it from a safe public place for 20 minutes and note what you see, for example how many people cross at a marked crossing.",
+      "List three possible improvements.",
+      "Think about who would need to cooperate: the school, the local authority and the police.",
+      "Write a half-page note proposing the best idea and one risk."
+    ],
+    "outcome": "You practise observing, weighing options and planning cooperation, which are skills used in leadership roles.",
+    "safety": "Observe only from safe public places, do not photograph or record people, and do not approach or confront anyone."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-16"
+}

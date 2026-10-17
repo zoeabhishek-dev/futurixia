@@ -1,0 +1,97 @@
+{
+  "slug": "teacher",
+  "overview": {
+    "summary": "Teachers plan and deliver lessons, help students learn, and check how well they are progressing.",
+    "problems": "They help students understand new ideas, build skills and gain confidence in learning.",
+    "worksWith": "Students of different ages and abilities, parents or guardians, other teachers and school leaders.",
+    "workplaces": "Schools and colleges, tutoring centres, and online or home teaching."
+  },
+  "timeline": [
+    {
+      "time": "7:30 to 8:15",
+      "title": "Preparing the classroom",
+      "description": "The teacher checks the lesson plan, sets up materials, arranges the room and reads any notices from the school.",
+      "why": "Good preparation lets lesson time focus on learning.",
+      "skills": ["Planning", "Organization"]
+    },
+    {
+      "time": "8:15 to 12:30",
+      "title": "Teaching lessons",
+      "description": "The teacher explains ideas, asks questions, guides activities and adjusts for students who need extra help or extra challenge.",
+      "why": "This is the core of the job and where students make most of their progress.",
+      "skills": ["Explaining", "Patience", "Classroom management"]
+    },
+    {
+      "time": "12:30 to 13:30",
+      "title": "Supervision and student support",
+      "description": "During breaks the teacher supervises students, helps individuals and may talk with a student who is struggling.",
+      "why": "Students learn better when they feel safe and supported.",
+      "skills": ["Empathy", "Observation"]
+    },
+    {
+      "time": "13:30 to 15:00",
+      "title": "More teaching and group work",
+      "description": "Afternoon lessons often include group tasks, practical work or a different class, each needing a different approach.",
+      "why": "Different groups and ages need different methods.",
+      "skills": ["Flexibility", "Creativity"]
+    },
+    {
+      "time": "15:00 to 16:30",
+      "title": "Marking and feedback",
+      "description": "The teacher checks student work, writes feedback and notes what the whole class misunderstood.",
+      "why": "Feedback shows students how to improve and shows the teacher what to teach again.",
+      "skills": ["Assessment", "Fairness"]
+    },
+    {
+      "time": "After school or evening",
+      "title": "Planning and administration",
+      "description": "The teacher prepares next lessons, updates records, meets colleagues or parents, and may run a club. Some marking is often done at home.",
+      "why": "Planning and communication keep learning on track.",
+      "skills": ["Organization", "Communication"]
+    }
+  ],
+  "responsibilities": [
+    "Planning lessons that meet curriculum goals",
+    "Teaching and managing the classroom",
+    "Assessing student work and giving feedback",
+    "Supporting students with different needs",
+    "Communicating with parents or guardians and colleagues",
+    "Following school and child safeguarding policies"
+  ],
+  "challenges": [
+    "Planning and marking often extend beyond school hours.",
+    "One class can contain students with very different needs and abilities.",
+    "Managing behaviour calmly takes practice and patience.",
+    "Some schools have large classes or limited resources.",
+    "Administrative tasks take time away from teaching.",
+    "Caring about students can be emotionally tiring."
+  ],
+  "skills": ["Subject knowledge", "Explaining clearly", "Patience", "Communication", "Organization", "Creativity", "Empathy", "Time management"],
+  "workEnvironment": "Classrooms, laboratories and playgrounds, and sometimes online or at home. The setting is busy and often noisy. Many schools follow a fixed timetable with term breaks, though this differs by country and type of school.",
+  "rewards": [
+    "Seeing a student finally understand something or grow in confidence",
+    "Variety from one day to the next",
+    "Helping shape students' skills and outlook",
+    "In many systems, regular term breaks"
+  ],
+  "tradeoffs": [
+    "Heavy workload at busy times such as exams and reports",
+    "Emotional tiredness from caring for many students",
+    "Expectations from parents, school leaders and the public",
+    "Pay and career progression differ widely by country and type of school"
+  ],
+  "activity": {
+    "title": "Teach a ten-minute mini lesson",
+    "steps": [
+      "Choose a topic you know well, such as a maths method or a hobby.",
+      "Write one clear goal: what should your learner be able to do afterwards?",
+      "Plan three parts: a question to start, an explanation with an example, and a short quiz.",
+      "Teach it to a friend or family member who agrees to take part.",
+      "Ask what was unclear and improve your lesson."
+    ],
+    "outcome": "You experience planning, explaining and using feedback, the basic cycle of teaching.",
+    "safety": "Teach only people who agree to take part, and keep it friendly and short."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-16"
+}

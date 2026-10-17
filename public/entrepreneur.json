@@ -1,0 +1,97 @@
+{
+  "slug": "entrepreneur",
+  "overview": {
+    "summary": "Entrepreneurs start and run businesses, taking an idea for a product or service and trying to turn it into something people will pay for.",
+    "problems": "They look for problems that customers have and build ways to solve them.",
+    "worksWith": "Customers, suppliers, early team members, advisers, banks and sometimes investors.",
+    "workplaces": "Home offices, shared workspaces, shops, workshops and online. The setting depends on the kind of business."
+  },
+  "timeline": [
+    {
+      "time": "Morning",
+      "title": "Check the numbers and set priorities",
+      "description": "The entrepreneur looks at money coming in and going out, orders or sign-ups, and chooses the one or two most important tasks for the day.",
+      "why": "Small businesses can run into trouble when cash runs short, so tracking the basics matters.",
+      "skills": ["Financial awareness", "Prioritizing"]
+    },
+    {
+      "time": "Mid-morning",
+      "title": "Talk to customers",
+      "description": "Calls, messages or visits help the entrepreneur understand what customers need, what they dislike and what they would pay for.",
+      "why": "An idea only becomes useful when it solves a problem real people have.",
+      "skills": ["Listening", "Curiosity"]
+    },
+    {
+      "time": "Late morning to afternoon",
+      "title": "Build or improve the product or service",
+      "description": "The entrepreneur makes something, improves it or delivers orders. In the early days they often do this work themselves.",
+      "why": "The offer has to work well before anyone will recommend it.",
+      "skills": ["Making things", "Problem solving"]
+    },
+    {
+      "time": "Afternoon",
+      "title": "Sales and marketing",
+      "description": "Replying to enquiries, posting updates, contacting possible customers and negotiating with suppliers.",
+      "why": "Without customers there is no business.",
+      "skills": ["Persuasion", "Communication"]
+    },
+    {
+      "time": "Late afternoon",
+      "title": "Admin, legal and money tasks",
+      "description": "Sending invoices, paying bills, keeping records and handling licences and taxes.",
+      "why": "Rules and records protect the business and its owner.",
+      "skills": ["Organization", "Responsibility"]
+    },
+    {
+      "time": "Evening",
+      "title": "Review and learn",
+      "description": "The entrepreneur notes what worked and what did not, and decides what small experiment to try next.",
+      "why": "Small experiments reduce risk and speed up learning.",
+      "skills": ["Reflection", "Decision-making"]
+    }
+  ],
+  "responsibilities": [
+    "Finding a problem worth solving and deciding what to build",
+    "Deciding what to stop doing as well as what to start",
+    "Managing money and risk",
+    "Selling and acting on customer feedback",
+    "Hiring and leading other people as the business grows",
+    "Meeting legal and tax requirements"
+  ],
+  "challenges": [
+    "Income can be irregular, especially in the early period.",
+    "Many new businesses struggle or close, so planning for risk matters.",
+    "One person often has to do many different jobs at once.",
+    "Big decisions can feel lonely and stressful.",
+    "Work and personal life can blur together.",
+    "Rejection from customers or funders is common and has to be handled calmly."
+  ],
+  "skills": ["Communication", "Selling", "Financial literacy", "Problem solving", "Resilience", "Time management", "Leadership", "Adaptability"],
+  "workEnvironment": "It varies from a home desk or shared office to a shop, workshop or fully online work. Hours are often long and flexible, and weekends are common in the early stages.",
+  "rewards": [
+    "Building something of your own",
+    "Freedom to choose your direction",
+    "Learning quickly across many areas",
+    "The chance to create value and, later, jobs for others"
+  ],
+  "tradeoffs": [
+    "No guaranteed salary",
+    "Personal financial risk",
+    "Responsibility for everything that goes wrong",
+    "Results depend partly on timing and circumstances outside your control"
+  ],
+  "activity": {
+    "title": "Run a mini customer interview",
+    "steps": [
+      "Notice a small problem among classmates or family, for example finding a quiet place to study.",
+      "Write five open questions, such as how people solve the problem now and what they dislike about it.",
+      "With their permission, ask three to five people and write down their answers.",
+      "Look for a pattern: which problem was mentioned most?",
+      "Write one sentence about a possible solution and one cheap way to test it."
+    ],
+    "outcome": "You practise talking to possible customers and testing an idea before spending any money.",
+    "safety": "Ask only with permission, do not collect private or sensitive details, and do not spend money or make promises to others."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-16"
+}
