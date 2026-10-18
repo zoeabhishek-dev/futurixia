@@ -1,0 +1,99 @@
+{
+  "slug": "chef",
+  "overview": {
+    "summary": "Chefs plan menus and prepare food in professional kitchens, and head chefs lead the kitchen team.",
+    "problems": "They deliver tasty, safe food consistently, on time and within budget, often for many people at once.",
+    "worksWith": "Kitchen staff, waiters, suppliers, managers and customers.",
+    "workplaces": "Restaurants, hotels, catering companies, canteens, cruise ships and hospitals, and some chefs run their own businesses."
+  },
+  "timeline": [
+    {
+      "time": "Morning",
+      "title": "Ordering and checking ingredients",
+      "description": "The chef checks deliveries for freshness and quantity, stores food safely and plans what to prepare.",
+      "why": "Fresh, well-stored ingredients are the base of good food and food safety.",
+      "skills": ["Organization", "Food safety"]
+    },
+    {
+      "time": "Late morning",
+      "title": "Preparation",
+      "description": "The kitchen team washes, chops, marinates and makes sauces and stocks so that service can run smoothly.",
+      "why": "Preparation makes it possible to cook quickly when orders arrive.",
+      "skills": ["Knife skills", "Time management"]
+    },
+    {
+      "time": "Lunch service",
+      "title": "Cooking under pressure",
+      "description": "The chef cooks many dishes at once, calls out orders and keeps quality and timing under control.",
+      "why": "Customers expect consistent food on time.",
+      "skills": ["Teamwork", "Speed", "Staying calm"]
+    },
+    {
+      "time": "Afternoon",
+      "title": "Cleaning and reset",
+      "description": "The team cleans stations thoroughly, checks temperatures, stores leftovers correctly and restocks.",
+      "why": "Hygiene rules protect customers from illness.",
+      "skills": ["Hygiene", "Discipline"]
+    },
+    {
+      "time": "Evening",
+      "title": "Dinner service",
+      "description": "The kitchen repeats the busy service, which is often the busiest part of the day.",
+      "why": "Staying consistent through a long, busy shift is a core part of the job.",
+      "skills": ["Stamina", "Communication"]
+    },
+    {
+      "time": "After service",
+      "title": "Review and plan",
+      "description": "The chef checks waste, costs and feedback, then plans for the next day.",
+      "why": "Controlling waste and cost keeps a kitchen running.",
+      "skills": ["Planning", "Cost awareness"]
+    }
+  ],
+  "responsibilities": [
+    "Preparing food to a consistent standard",
+    "Following food safety and hygiene rules",
+    "Managing ingredients, stock and waste",
+    "Planning menus and recipes",
+    "Working with and training kitchen staff",
+    "Controlling costs",
+    "Keeping the kitchen clean and organized"
+  ],
+  "challenges": [
+    "Hours are long and irregular, often including evenings, weekends and holidays.",
+    "Kitchens are hot, noisy and fast-paced.",
+    "The work is physically tiring, with long periods on your feet.",
+    "Busy service periods create pressure.",
+    "Burns and cuts are a risk, managed with careful habits.",
+    "Pay can be modest early in the career in many places.",
+    "Some kitchens are stressful workplaces, so choosing an employer carefully matters."
+  ],
+  "skills": ["Cooking techniques", "Time management", "Teamwork", "Creativity", "Food safety knowledge", "Stamina", "Staying calm under pressure", "Organization"],
+  "workEnvironment": "Professional kitchens that are hot, busy and noisy, with set routines and clear roles. Hours often include evenings, weekends and holidays. Hotels, restaurants, catering and institutions differ in pace and style.",
+  "rewards": [
+    "Creating food that people enjoy",
+    "Creativity and craftsmanship",
+    "Teamwork in a busy kitchen",
+    "Skills that are useful in many countries and settings"
+  ],
+  "tradeoffs": [
+    "Unsocial working hours",
+    "Physically tiring work",
+    "Constant time pressure",
+    "Income and progression that vary with employer and place"
+  ],
+  "activity": {
+    "title": "Plan and cook a simple meal with an adult",
+    "steps": [
+      "Choose a simple recipe and write out the ingredients and the steps.",
+      "Do the preparation first: wash your hands, prepare the ingredients and set out the tools before turning on any heat.",
+      "Cook with an adult nearby and follow the recipe.",
+      "Taste the food and note one thing to improve.",
+      "Clean up afterwards and note how you felt about the pace and the work."
+    ],
+    "outcome": "You practise planning, preparing in order and cleaning as you go, which are habits of professional kitchens.",
+    "safety": "Always cook with an adult, handle knives and hot items with care, and wash your hands and surfaces."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-17"
+}

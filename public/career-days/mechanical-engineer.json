@@ -1,0 +1,98 @@
+{
+  "slug": "mechanical-engineer",
+  "overview": {
+    "summary": "Mechanical engineers design, test and improve machines, engines, tools and systems that involve moving parts, heat or forces.",
+    "problems": "They make products and equipment work reliably, safely and efficiently, from cooling systems to vehicles to factory machines.",
+    "worksWith": "Other engineers, technicians, designers, suppliers, factory staff and clients.",
+    "workplaces": "Design offices, laboratories, factories and workshops, and sometimes sites where equipment is installed."
+  },
+  "timeline": [
+    {
+      "time": "9:00 to 9:30",
+      "title": "Plan the day with the team",
+      "description": "The engineer reviews project status, deadlines and any problems reported from testing or production.",
+      "why": "Projects have many parts that must fit together.",
+      "skills": ["Communication", "Planning"]
+    },
+    {
+      "time": "9:30 to 12:30",
+      "title": "Design and calculations",
+      "description": "The engineer models parts in design software, calculates forces, heat or strength, and chooses materials.",
+      "why": "A design has to work on paper before money is spent on making it.",
+      "skills": ["Mathematics", "Design software", "Problem solving"]
+    },
+    {
+      "time": "13:30 to 15:00",
+      "title": "Testing or workshop time",
+      "description": "The engineer tests a prototype, measures how it performs, compares it with what was expected and looks for what failed.",
+      "why": "Testing shows things that calculations cannot.",
+      "skills": ["Measurement", "Analysis"]
+    },
+    {
+      "time": "15:00 to 16:30",
+      "title": "Working with suppliers and factory staff",
+      "description": "The engineer discusses how a part will be made, what it will cost and how precise it must be, and helps solve manufacturing problems.",
+      "why": "A good design can still be hard or costly to produce.",
+      "skills": ["Negotiation", "Practical thinking"]
+    },
+    {
+      "time": "16:30 to 17:30",
+      "title": "Reports and documentation",
+      "description": "The engineer records test results, updates drawings and writes reports.",
+      "why": "Clear records let others build and maintain the design.",
+      "skills": ["Writing", "Attention to detail"]
+    },
+    {
+      "time": "Varies",
+      "title": "Fixing problems on site",
+      "description": "Sometimes the engineer visits a factory or installation to work out why a machine is failing.",
+      "why": "Real equipment sometimes behaves differently from the design.",
+      "skills": ["Troubleshooting", "Safety awareness"]
+    }
+  ],
+  "responsibilities": [
+    "Designing and analyzing mechanical parts and systems",
+    "Selecting materials and manufacturing methods",
+    "Building and testing prototypes",
+    "Checking safety and standards",
+    "Estimating cost and time",
+    "Working with other engineering teams",
+    "Writing clear technical documents"
+  ],
+  "challenges": [
+    "Performance, cost, weight and safety often pull in different directions.",
+    "Designs that work in theory can fail in testing and need repeated redesign.",
+    "Deadlines and budgets add pressure.",
+    "Safety is a serious responsibility, because failures can hurt people.",
+    "Factory or site work can be noisy, hot or physically demanding.",
+    "Software and materials keep changing, so learning never stops."
+  ],
+  "skills": ["Mathematics and physics", "Design software", "Problem solving", "Practical hands-on sense", "Communication", "Teamwork", "Attention to detail", "Project management"],
+  "workEnvironment": "A mix of design office, laboratory and workshop or factory. Some roles are mostly computer based, and others involve regular time on the factory floor or at installation sites, where protective equipment is required.",
+  "rewards": [
+    "Seeing a machine you helped design work",
+    "A wide range of industries, from transport to energy to medical devices",
+    "A mix of thinking and hands-on work",
+    "The chance to improve everyday products"
+  ],
+  "tradeoffs": [
+    "Pressure from deadlines and budgets",
+    "Factory environments that can be noisy or uncomfortable",
+    "Responsibility for safety",
+    "Job types and pay that vary by industry, country and employer"
+  ],
+  "activity": {
+    "title": "Test how a ramp's height changes distance",
+    "steps": [
+      "Make a ramp from a board or thick cardboard resting on a stack of books.",
+      "Roll a small toy car or ball down the ramp and measure how far it travels on the floor.",
+      "Change only one thing, the ramp height. Test three heights, three tries each, and record the results.",
+      "Write the pattern you notice and one thing that could make your measurements unreliable.",
+      "Note whether testing and measuring felt enjoyable."
+    ],
+    "outcome": "You practise changing one thing at a time, measuring carefully and explaining your results.",
+    "safety": "Use light objects, work on the floor or a table in a clear space, and avoid steep ramps that send objects flying."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-17"
+}

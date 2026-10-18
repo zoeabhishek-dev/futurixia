@@ -1,0 +1,98 @@
+{
+  "slug": "architect",
+  "overview": {
+    "summary": "Architects design buildings and spaces, balancing how they look, how people use them, safety, cost and the surroundings.",
+    "problems": "They turn a client's needs into plans for homes, schools, offices and public places that are practical and safe to build.",
+    "worksWith": "Clients, engineers, builders, interior designers, planners and local authorities.",
+    "workplaces": "Architecture studios, construction companies and government bodies, and building sites during construction."
+  },
+  "timeline": [
+    {
+      "time": "9:30 to 10:00",
+      "title": "Plan the day's priorities",
+      "description": "The architect checks project deadlines and what each team member needs to finish.",
+      "why": "Projects have many stages and approvals with fixed dates.",
+      "skills": ["Planning", "Organization"]
+    },
+    {
+      "time": "10:00 to 12:30",
+      "title": "Designing and drawing",
+      "description": "The architect sketches ideas, develops plans in design software and tests layouts, light and how people will move through the building.",
+      "why": "Early design decisions shape how people will live and work in a space.",
+      "skills": ["Creativity", "Design software", "Spatial thinking"]
+    },
+    {
+      "time": "13:30 to 15:00",
+      "title": "Meeting a client",
+      "description": "The architect presents options, listens to feedback and discusses budget and changes.",
+      "why": "A building has to serve the people who will use it.",
+      "skills": ["Communication", "Listening"]
+    },
+    {
+      "time": "15:00 to 16:30",
+      "title": "Checking rules and details",
+      "description": "The architect checks building regulations, fire and accessibility requirements and coordinates drawings with engineers.",
+      "why": "Plans must meet legal and safety standards before anything is built.",
+      "skills": ["Attention to detail", "Problem solving"]
+    },
+    {
+      "time": "16:30 to 17:30",
+      "title": "Site visit or documents",
+      "description": "The architect visits a site to check progress against the drawings, or prepares documents for builders.",
+      "why": "What gets built should match what was designed.",
+      "skills": ["Observation", "Coordination"]
+    },
+    {
+      "time": "Varies",
+      "title": "Changes and deadlines",
+      "description": "Clients change their minds, costs rise and approvals take time, so designs have to adapt.",
+      "why": "Few projects go exactly to the first plan.",
+      "skills": ["Flexibility", "Patience"]
+    }
+  ],
+  "responsibilities": [
+    "Understanding what clients and users need",
+    "Producing concept designs and detailed drawings",
+    "Coordinating with engineers and other specialists",
+    "Making sure designs meet building rules",
+    "Estimating and managing cost and time",
+    "Visiting sites to check the work",
+    "Presenting and explaining ideas"
+  ],
+  "challenges": [
+    "Creative ideas have to be balanced against budgets and regulations.",
+    "Designs change often, and rework is common.",
+    "Projects can take years from first sketch to finished building.",
+    "Qualifying usually takes long study, supervised experience and often a licensing exam.",
+    "Deadlines can mean long hours.",
+    "Pay and working hours vary, and some studios work long hours before deadlines."
+  ],
+  "skills": ["Design and creativity", "Spatial thinking", "Drawing and design software", "Communication", "Problem solving", "Project management", "Attention to detail", "Teamwork"],
+  "workEnvironment": "Mostly studio and office work on computers and drawings, with meetings and site visits. The balance depends on the firm and the stage of the project.",
+  "rewards": [
+    "Seeing a building you designed being used",
+    "A mix of creativity and practical problem solving",
+    "Shaping places where people live and work",
+    "Variety of project types"
+  ],
+  "tradeoffs": [
+    "A long period of training",
+    "Clients and budgets that limit ideas",
+    "Deadlines that can mean long hours",
+    "Income and opportunities that vary by country, city and type of firm"
+  ],
+  "activity": {
+    "title": "Draw a floor plan of your own room",
+    "steps": [
+      "Measure the length and width of your room with a tape measure and note the doors and windows.",
+      "Draw it on squared paper, using one square for a fixed length such as 50 centimetres.",
+      "Add the furniture to scale.",
+      "Sketch a better layout, thinking about movement, light and storage.",
+      "Note whether planning a space felt interesting."
+    ],
+    "outcome": "You practise measuring, drawing to scale and thinking about how people use space.",
+    "safety": "Do not move heavy furniture alone, and do not climb on anything to take measurements."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-17"
+}

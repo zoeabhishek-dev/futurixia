@@ -1,0 +1,99 @@
+{
+  "slug": "nurse",
+  "overview": {
+    "summary": "Nurses care for patients, monitor their health, give treatments and medicines as directed, and support patients and families through illness and recovery.",
+    "problems": "They notice changes in a patient's condition early, help people recover, and teach people how to look after their own health.",
+    "worksWith": "Patients and families, doctors, other nurses, pharmacists, therapists and support staff.",
+    "workplaces": "Hospitals, clinics, care homes, community and home care, schools and workplaces."
+  },
+  "timeline": [
+    {
+      "time": "7:00 to 7:30",
+      "title": "Handover",
+      "description": "The nurse receives information about each patient from the previous shift: their condition, their treatments and any concerns.",
+      "why": "A clear handover prevents mistakes and keeps care continuous.",
+      "skills": ["Listening", "Accuracy"]
+    },
+    {
+      "time": "7:30 to 10:00",
+      "title": "Checking patients and giving care",
+      "description": "The nurse measures vital signs such as temperature, pulse and blood pressure, helps patients with washing, eating and moving, and gives medicines and treatments as prescribed.",
+      "why": "Regular checks help spot problems early.",
+      "skills": ["Observation", "Care", "Precision"]
+    },
+    {
+      "time": "10:00 to 12:00",
+      "title": "Working with the care team",
+      "description": "The nurse joins the ward round with doctors, reports changes, updates care plans and arranges tests.",
+      "why": "Nurses spend the most time with patients, so they often notice details others miss.",
+      "skills": ["Teamwork", "Communication"]
+    },
+    {
+      "time": "12:00 to 14:00",
+      "title": "Records and follow-up",
+      "description": "The nurse records observations, medicines given and how the patient responded, and checks that orders have been carried out.",
+      "why": "Accurate records keep patients safe and let colleagues continue their care.",
+      "skills": ["Writing", "Attention to detail"]
+    },
+    {
+      "time": "14:00 to 17:00",
+      "title": "Talking with patients and families",
+      "description": "The nurse explains what is happening, teaches patients how to manage medicines or wound care before going home, and comforts anxious families.",
+      "why": "Understanding helps recovery and reduces fear.",
+      "skills": ["Empathy", "Explaining"]
+    },
+    {
+      "time": "Varies",
+      "title": "Emergencies, nights and weekends",
+      "description": "Many healthcare services run around the clock, so nurses often work shifts, including nights, and may need to respond quickly when a patient's condition worsens.",
+      "why": "Patients need care at every hour of the day.",
+      "skills": ["Calm under pressure", "Prioritizing"]
+    }
+  ],
+  "responsibilities": [
+    "Monitoring and recording patients' health",
+    "Giving medicines and treatments safely, as directed",
+    "Helping patients with daily needs",
+    "Communicating with doctors and the care team",
+    "Teaching patients and families",
+    "Protecting patients' dignity and privacy",
+    "Following infection control and safety rules"
+  ],
+  "challenges": [
+    "Shift work often includes nights, weekends and holidays.",
+    "The job is physically demanding, with long periods on your feet and some lifting.",
+    "Seeing suffering and loss can be emotionally hard.",
+    "Some wards are very busy, and some workplaces are short of staff.",
+    "Responsibility is high, because small errors can matter.",
+    "Contact with infections is part of the job and is managed with strict procedures.",
+    "Patients or relatives who are upset or angry have to be handled calmly."
+  ],
+  "skills": ["Compassion", "Observation", "Communication", "Teamwork", "Attention to detail", "Stress management", "Physical stamina", "Clinical knowledge", "Time management"],
+  "workEnvironment": "Hospitals, clinics, care homes, patients' homes and community settings. Wards can be busy, noisy and emotionally intense. Many nurses work shifts, and roles range from bedside nursing to community health, teaching and specialist areas.",
+  "rewards": [
+    "Making a direct difference to people at difficult times",
+    "The trust and gratitude of patients and families",
+    "Many specialties and settings to move between",
+    "Chances to specialize or move into teaching or leadership"
+  ],
+  "tradeoffs": [
+    "Physically and emotionally tiring work",
+    "Shift patterns that affect sleep and social life",
+    "Workload and staffing that vary a lot between workplaces",
+    "Pay and conditions that differ by country and employer"
+  ],
+  "activity": {
+    "title": "Learn basic first aid and explain it to someone",
+    "steps": [
+      "Find a recognized first-aid organization in your country, such as your national Red Cross or Red Crescent society, and look for a beginner course or free learning module.",
+      "Learn the basics, such as how to respond to a minor burn or cut and when to call emergency services.",
+      "Write a one-page checklist in your own words called When to get help.",
+      "Explain the checklist to a family member.",
+      "Note whether learning and explaining care felt rewarding."
+    ],
+    "outcome": "You practise learning safety information and explaining it calmly, which nurses do every day.",
+    "safety": "This is for general knowledge only. In a real emergency, call your local emergency number, and do not treat serious injuries or give medicines to anyone."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-17"
+}

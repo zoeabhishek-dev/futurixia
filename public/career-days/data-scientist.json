@@ -1,0 +1,98 @@
+{
+  "slug": "data-scientist",
+  "overview": {
+    "summary": "Data scientists collect, clean and analyze data to answer questions and help organizations make better decisions, often using statistics and programming.",
+    "problems": "They find patterns, make predictions and measure whether things are working, such as which customers might leave or which approach seems to help.",
+    "worksWith": "Data engineers, software developers, business managers, researchers and sometimes customers or clinicians.",
+    "workplaces": "Technology companies, banks, hospitals, research institutes, government bodies, retailers and start-ups, often at a desk or remotely."
+  },
+  "timeline": [
+    {
+      "time": "9:30 to 10:00",
+      "title": "Agree on the question",
+      "description": "The data scientist meets colleagues to understand the problem and what decision the analysis will support.",
+      "why": "A clear question prevents weeks of analysis that nobody uses.",
+      "skills": ["Communication", "Curiosity"]
+    },
+    {
+      "time": "10:00 to 12:30",
+      "title": "Finding and cleaning data",
+      "description": "The data scientist gathers data, fixes errors, deals with missing values and checks that the data can be trusted.",
+      "why": "Results are only as reliable as the data behind them, and preparing data takes up a large share of the work.",
+      "skills": ["Programming", "Attention to detail"]
+    },
+    {
+      "time": "13:30 to 15:30",
+      "title": "Exploring and modelling",
+      "description": "The data scientist makes charts, tests ideas, builds simple statistical or machine learning models and checks how well they work.",
+      "why": "Exploring shows what the data can and cannot tell you.",
+      "skills": ["Statistics", "Problem solving"]
+    },
+    {
+      "time": "15:30 to 16:30",
+      "title": "Checking the results",
+      "description": "The data scientist tests the model on new data, looks for mistakes or bias and asks whether the result makes sense.",
+      "why": "A confident but wrong answer can mislead decisions.",
+      "skills": ["Critical thinking", "Honesty"]
+    },
+    {
+      "time": "16:30 to 17:30",
+      "title": "Explaining the findings",
+      "description": "The data scientist prepares a short summary or chart for people who are not technical and says what is certain and what is not.",
+      "why": "Analysis only helps if the people making decisions understand it.",
+      "skills": ["Communication", "Visualization"]
+    },
+    {
+      "time": "Varies",
+      "title": "Learning and documenting",
+      "description": "The data scientist reads about new methods and writes down how the analysis was done so others can repeat it.",
+      "why": "Methods change quickly, and work that cannot be repeated is hard to trust.",
+      "skills": ["Learning quickly", "Writing"]
+    }
+  ],
+  "responsibilities": [
+    "Turning business questions into questions that data can answer",
+    "Collecting and cleaning data",
+    "Analyzing data and building models",
+    "Checking results for errors and bias",
+    "Presenting findings clearly, including how uncertain they are",
+    "Documenting methods so the work can be repeated",
+    "Handling personal data responsibly"
+  ],
+  "challenges": [
+    "Much of the time goes on cleaning messy data.",
+    "Questions can be vague, and the data may not contain the answer.",
+    "Results are often uncertain, and explaining uncertainty to non-technical people is hard.",
+    "Tools and methods keep changing.",
+    "There can be pressure to deliver quick answers.",
+    "Ethical issues such as privacy and bias need careful thought."
+  ],
+  "skills": ["Statistics", "Programming", "Data visualization", "Critical thinking", "Communication", "Curiosity", "Attention to detail", "Learning quickly"],
+  "workEnvironment": "Mostly desk and computer based, in offices or remotely, working with teams of engineers and business colleagues. Hours are often regular, with busier periods before deadlines. The work varies by industry, from healthcare to finance to online services.",
+  "rewards": [
+    "Finding a pattern that helps people decide better",
+    "Variety of problems across industries",
+    "A mix of maths, coding and communication",
+    "Work that can be shown through projects"
+  ],
+  "tradeoffs": [
+    "A lot of repetitive data cleaning",
+    "Results that are often uncertain and can be disputed",
+    "Deadlines and requests that can change quickly",
+    "Job requirements, titles and pay that vary by country and employer"
+  ],
+  "activity": {
+    "title": "Collect a tiny dataset and look for a pattern",
+    "steps": [
+      "Choose something harmless to record for 7 days, such as the daily high temperature from a weather website or how many minutes you read each day.",
+      "Enter it in a spreadsheet with one row per day.",
+      "Make a simple chart.",
+      "Write two sentences about the pattern you see and one reason it might be misleading, such as having too few days.",
+      "Note whether you enjoyed working with numbers and charts."
+    ],
+    "outcome": "You practise collecting data, charting it and being careful about the conclusions you draw.",
+    "safety": "Record only information that is not private, and do not collect data about other people without their permission."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-17"
+}

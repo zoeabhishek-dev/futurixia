@@ -1,0 +1,99 @@
+{
+  "slug": "graphic-designer",
+  "overview": {
+    "summary": "Graphic designers create visual material, such as logos, posters, websites, packaging and social media graphics, that communicates a message clearly.",
+    "problems": "They help organizations and people explain ideas, attract attention and look consistent and professional.",
+    "worksWith": "Clients, marketing teams, writers, printers and other designers, and developers on web projects.",
+    "workplaces": "Design studios, advertising and marketing companies, in-house teams, publishers, and freelance or remote work."
+  },
+  "timeline": [
+    {
+      "time": "9:30 to 10:00",
+      "title": "Read the brief",
+      "description": "The designer goes through the client's request: the audience, the message, the size and the deadline.",
+      "why": "A good design solves a specific communication problem.",
+      "skills": ["Careful reading", "Asking questions"]
+    },
+    {
+      "time": "10:00 to 12:30",
+      "title": "Sketching and exploring ideas",
+      "description": "The designer sketches, makes mood boards and tries different layouts, colours and fonts.",
+      "why": "Trying many options leads to better final ideas.",
+      "skills": ["Creativity", "Visual thinking"]
+    },
+    {
+      "time": "13:30 to 16:00",
+      "title": "Designing in software",
+      "description": "The designer builds the chosen idea in design software, adjusts spacing, text and images, and checks that it works at different sizes.",
+      "why": "Small details of alignment and readability make the difference between clear and confusing.",
+      "skills": ["Software skills", "Attention to detail"]
+    },
+    {
+      "time": "16:00 to 17:00",
+      "title": "Getting feedback and revising",
+      "description": "The designer presents the work to a client or colleague, takes their feedback and revises the design.",
+      "why": "Designs usually change after feedback, and that is a normal part of the job.",
+      "skills": ["Communication", "Receiving feedback"]
+    },
+    {
+      "time": "17:00 to 17:30",
+      "title": "Preparing files",
+      "description": "The designer exports the files in the right formats and sizes for print or screen.",
+      "why": "A great design can fail if the files are prepared wrongly.",
+      "skills": ["Technical accuracy"]
+    },
+    {
+      "time": "Varies",
+      "title": "Tight deadlines and last-minute changes",
+      "description": "Clients sometimes ask for changes close to a deadline.",
+      "why": "Design work often runs to fixed launch or print dates.",
+      "skills": ["Flexibility", "Time management"]
+    }
+  ],
+  "responsibilities": [
+    "Understanding the client's goals and audience",
+    "Developing visual ideas and layouts",
+    "Choosing colours, fonts and images",
+    "Preparing files correctly for print or screen",
+    "Taking feedback and making revisions",
+    "Respecting copyright and licences",
+    "Meeting deadlines"
+  ],
+  "challenges": [
+    "Feedback can be subjective, and clients may want changes you do not agree with.",
+    "Deadlines are tight and last-minute edits are common.",
+    "Competition is strong, especially for freelance work.",
+    "Income can be irregular for freelancers.",
+    "The work involves long hours at a screen.",
+    "Software and trends keep changing.",
+    "Building a portfolio takes time, and it often matters more than qualifications."
+  ],
+  "skills": ["Visual design", "Creativity", "Software skills", "Communication", "Attention to detail", "Time management", "Receiving feedback", "Understanding audiences"],
+  "workEnvironment": "Mostly desk and computer based, in studios, offices or from home. The work is a mix of independent design time and meetings with clients or teams. Freelancers manage their own time and clients.",
+  "rewards": [
+    "Seeing your work in use",
+    "Creative problem solving",
+    "Flexibility, including freelance or remote work in some roles",
+    "A portfolio that shows what you can do"
+  ],
+  "tradeoffs": [
+    "Subjective opinions about your work",
+    "Frequent deadlines",
+    "Freelance income that can vary",
+    "Pay and demand that vary by country and employer"
+  ],
+  "activity": {
+    "title": "Redesign a poster for a school event",
+    "steps": [
+      "Pick a real or imaginary event and list the key facts: what, when and where.",
+      "Sketch three different layouts on paper.",
+      "Choose one and make it with a free design tool such as Canva, or by hand.",
+      "Show it to two people and ask what they noticed first and whether the key facts are clear.",
+      "Revise it once based on their feedback."
+    ],
+    "outcome": "You practise clear visual communication and using feedback to improve a design.",
+    "safety": "Use only images you own or that are free to use, and avoid putting personal details such as home addresses on anything you share."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-17"
+}

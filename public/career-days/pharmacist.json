@@ -1,0 +1,99 @@
+{
+  "slug": "pharmacist",
+  "overview": {
+    "summary": "Pharmacists make sure medicines are supplied safely and used correctly, and they advise patients and other health workers about them.",
+    "problems": "They help prevent medicine errors, explain how to take medicines properly and spot possible interactions or side effects.",
+    "worksWith": "Patients, doctors, nurses, pharmacy technicians and suppliers.",
+    "workplaces": "Community pharmacies, hospitals, clinics, pharmaceutical companies and health organizations."
+  },
+  "timeline": [
+    {
+      "time": "9:00 to 9:30",
+      "title": "Opening and checking stock",
+      "description": "The pharmacist checks that medicines are in date, correctly stored and available.",
+      "why": "Correct storage and labelling keep medicines safe.",
+      "skills": ["Organization", "Attention to detail"]
+    },
+    {
+      "time": "9:30 to 12:30",
+      "title": "Checking and dispensing prescriptions",
+      "description": "The pharmacist checks that each prescription is clear and safe, prepares and labels the medicine, and checks it again.",
+      "why": "A small error in a dose or a drug can harm a patient.",
+      "skills": ["Accuracy", "Pharmacy knowledge"]
+    },
+    {
+      "time": "12:30 to 14:00",
+      "title": "Advising patients",
+      "description": "The pharmacist explains how and when to take medicines, which side effects to watch for and when to see a doctor.",
+      "why": "Medicines work only when they are used properly.",
+      "skills": ["Communication", "Empathy"]
+    },
+    {
+      "time": "14:00 to 15:30",
+      "title": "Contacting doctors and other professionals",
+      "description": "The pharmacist clarifies unclear prescriptions, suggests alternatives and discusses concerns with prescribers.",
+      "why": "Pharmacists act as a safety check in the care system.",
+      "skills": ["Professionalism", "Clear communication"]
+    },
+    {
+      "time": "15:30 to 17:00",
+      "title": "Records and management",
+      "description": "The pharmacist keeps legally required records, manages controlled medicines, supervises technicians and orders stock.",
+      "why": "Rules protect patients and prevent misuse.",
+      "skills": ["Responsibility", "Management"]
+    },
+    {
+      "time": "Varies",
+      "title": "Busy periods and difficult moments",
+      "description": "Queues, shortages or upset customers can make the job stressful.",
+      "why": "Accuracy has to be kept even when the pharmacy is busy.",
+      "skills": ["Calm under pressure", "Patience"]
+    }
+  ],
+  "responsibilities": [
+    "Checking prescriptions and preparing medicines accurately",
+    "Advising patients on correct use and side effects",
+    "Checking for harmful interactions",
+    "Keeping legally required records",
+    "Supervising pharmacy staff",
+    "Storing medicines safely",
+    "Referring people to doctors when needed"
+  ],
+  "challenges": [
+    "Long periods of concentration are needed, because errors can seriously harm.",
+    "Busy periods bring queues and time pressure.",
+    "Shortages and supply problems make some medicines hard to get.",
+    "Customers can be frustrated, for example when a medicine is unavailable.",
+    "Strict legal and ethical rules apply.",
+    "Much of the day can be spent standing.",
+    "New medicines and guidance mean constant learning."
+  ],
+  "skills": ["Attention to detail", "Scientific knowledge", "Communication", "Responsibility", "Organization", "Empathy", "Time management", "Ethical judgment"],
+  "workEnvironment": "Community pharmacies, hospital pharmacies, laboratories, offices of health organizations and pharmaceutical companies. Community and hospital roles involve a lot of standing and talking to the public or staff, while industry and research roles are more laboratory or office based.",
+  "rewards": [
+    "Helping people use medicines safely",
+    "Being a trusted adviser in the community",
+    "A mix of science and people skills",
+    "Different kinds of workplaces to choose from"
+  ],
+  "tradeoffs": [
+    "Repetitive checking work",
+    "Pressure from queues and time",
+    "Working hours that can include evenings and weekends in some pharmacies",
+    "Pay and opportunities that vary by country and setting"
+  ],
+  "activity": {
+    "title": "Read a medicine information leaflet and summarize it",
+    "steps": [
+      "Take an information leaflet from a medicine at home that an adult in your family agrees you can read, or find a sample leaflet on a national medicines regulator website.",
+      "Find the sections on how to take it, side effects and when to seek help.",
+      "Write a one-page summary in plain language.",
+      "Pick two hard words and look them up.",
+      "Note whether careful reading felt interesting."
+    ],
+    "outcome": "You practise reading health information carefully and explaining it simply, as pharmacists do.",
+    "safety": "Do not give, take or share medicines based on this exercise. Ask a pharmacist or doctor about real medicine questions."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-17"
+}
