@@ -1,0 +1,99 @@
+{
+  "slug": "electrician",
+  "overview": {
+    "summary": "Electricians install, test, maintain and repair electrical wiring and equipment in homes, buildings and factories.",
+    "problems": "They help make sure electricity is delivered safely and reliably, and they fix faults that cause power failures or danger.",
+    "worksWith": "Customers, other tradespeople, engineers, builders and inspectors.",
+    "workplaces": "Homes, offices, shops, factories and construction sites, and some electricians are self-employed."
+  },
+  "timeline": [
+    {
+      "time": "7:30 to 8:00",
+      "title": "Plan the jobs and prepare tools",
+      "description": "The electrician checks the job list, drawings and materials and loads tools and safety equipment.",
+      "why": "Arriving with the right parts and a plan saves time and avoids risk.",
+      "skills": ["Planning", "Organization"]
+    },
+    {
+      "time": "8:00 to 9:00",
+      "title": "Safety checks before starting",
+      "description": "The electrician switches off and isolates the power, tests that the circuits are dead and sets up the work area.",
+      "why": "Electricity can seriously injure or kill, so this step is never skipped.",
+      "skills": ["Safety discipline", "Care"]
+    },
+    {
+      "time": "9:00 to 12:00",
+      "title": "Installing or repairing",
+      "description": "The electrician runs cables, fits sockets, switches and lighting, or traces a fault to its cause.",
+      "why": "Neat, correct work prevents faults and fires.",
+      "skills": ["Practical skill", "Problem solving"]
+    },
+    {
+      "time": "13:00 to 15:00",
+      "title": "Testing and fault finding",
+      "description": "The electrician uses test instruments to check that the circuit works and is safe, and works out why something failed.",
+      "why": "Testing proves that an installation is safe to use.",
+      "skills": ["Measurement", "Troubleshooting"]
+    },
+    {
+      "time": "15:00 to 16:30",
+      "title": "Talking with customers and writing records",
+      "description": "The electrician explains what was done, gives advice and completes the safety or test certificates and invoices that are required.",
+      "why": "Customers need to understand the work, and records are often a legal requirement.",
+      "skills": ["Communication", "Paperwork"]
+    },
+    {
+      "time": "Varies",
+      "title": "Emergency call-outs",
+      "description": "Power failures or faults can need an urgent visit outside normal hours.",
+      "why": "Homes and businesses depend on their electricity.",
+      "skills": ["Staying calm", "Reliability"]
+    }
+  ],
+  "responsibilities": [
+    "Installing and repairing wiring and electrical equipment",
+    "Testing circuits for safety",
+    "Following electrical codes and regulations",
+    "Reading drawings and diagrams",
+    "Completing required records and certificates",
+    "Working safely at height and in tight spaces",
+    "Explaining work and costs to customers"
+  ],
+  "challenges": [
+    "Electricity is dangerous, so strict safety habits are essential.",
+    "The work is physically demanding, including climbing, crawling and lifting.",
+    "Conditions can mean heat, cold, dust and tight spaces.",
+    "Emergency call-outs can happen at unusual hours.",
+    "Training takes years through an apprenticeship and exams.",
+    "Self-employed electricians handle their own paperwork and finding customers.",
+    "Regulations change, so learning continues."
+  ],
+  "skills": ["Technical knowledge", "Practical skill", "Safety discipline", "Problem solving", "Attention to detail", "Reading diagrams", "Communication", "Physical fitness"],
+  "workEnvironment": "Homes, commercial buildings, factories and building sites, indoors and outdoors. The work is physical, and conditions vary from comfortable to dusty or cramped. Many electricians travel between jobs, and some work for firms while others are self-employed.",
+  "rewards": [
+    "Practical skill that people depend on",
+    "Variety of jobs and places",
+    "The satisfaction of finding and fixing a fault",
+    "The option to become self-employed"
+  ],
+  "tradeoffs": [
+    "Physical strain",
+    "A serious responsibility for safety",
+    "Irregular call-outs",
+    "Earnings and demand that vary by country, area and employer"
+  ],
+  "activity": {
+    "title": "Build a simple battery circuit",
+    "steps": [
+      "Gather a small torch bulb with its holder, a battery holder and the matching batteries from a beginner electronics kit, plus some insulated wire.",
+      "Draw the circuit on paper first, showing the battery, wires and bulb in a loop.",
+      "Connect it and see the bulb light.",
+      "Make a switch from a paper clip and see how it breaks and completes the circuit.",
+      "Note whether building and testing felt enjoyable."
+    ],
+    "outcome": "You see how a circuit works and why electricians test and check carefully.",
+    "safety": "Use only small batteries. Never touch, open or experiment with mains electricity, sockets or household wiring, and ask a qualified electrician about anything connected to mains power."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-17"
+}
