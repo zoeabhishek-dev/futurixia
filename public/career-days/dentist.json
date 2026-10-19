@@ -1,0 +1,31 @@
+{
+"slug": "dentist",
+"overview": {
+"summary": "Dentists diagnose, treat and prevent problems of the teeth, gums and mouth, and advise people how to keep them healthy.",
+"problems": "They relieve pain, repair damaged teeth, treat gum disease and help people avoid decay.",
+"worksWith": "Patients of all ages, dental nurses, hygienists, dental technicians and other health professionals.",
+"workplaces": "Dental clinics, hospitals, community health services and private practice, and some dentists run their own practices."
+},
+"timeline": [
+{"time": "8:30 to 9:00", "title": "Prepare for patients", "description": "The dentist reviews the day's appointments and notes and checks that equipment is clean and ready.", "why": "Preparation and infection control protect patients.", "skills": ["Organization", "Hygiene"]},
+{"time": "9:00 to 12:30", "title": "Check-ups and treatments", "description": "The dentist examines teeth and gums, takes and reads X-rays, removes decay, fills teeth and explains what is found.", "why": "Finding problems early makes treatment simpler.", "skills": ["Manual dexterity", "Diagnosis", "Communication"]},
+{"time": "12:30 to 14:00", "title": "Records and planning", "description": "The dentist writes notes, plans longer treatments such as crowns or braces and contacts specialists.", "why": "Clear plans help patients understand cost and time.", "skills": ["Writing", "Planning"]},
+{"time": "14:00 to 17:00", "title": "More patients and procedures", "description": "The dentist carries out extractions, root canal treatment or other procedures, using anaesthetic to keep patients comfortable.", "why": "Skilled, calm work reduces fear and pain.", "skills": ["Precision", "Patience", "Reassurance"]},
+{"time": "17:00 to 17:30", "title": "Team debrief and admin", "description": "The dentist talks over the day with dental nurses and handles supplies and bookings.", "why": "A well-run team keeps patients safe and appointments on time.", "skills": ["Teamwork", "Management"]},
+{"time": "Varies", "title": "Emergencies and anxious patients", "description": "Some patients arrive in pain or are very nervous.", "why": "Patients who feel safe are more likely to seek care early.", "skills": ["Empathy", "Staying calm"]}
+],
+"responsibilities": ["Examining and diagnosing dental problems", "Treating decay, gum disease and injuries", "Taking and interpreting X-rays safely", "Giving local anaesthetic and managing pain", "Advising on prevention, such as brushing and diet", "Following infection control rules", "Keeping accurate, confidential records"],
+"challenges": ["The work is very precise and done in a small space, which can strain the neck and back.", "Some patients are nervous or in pain.", "A full appointment book creates time pressure.", "Infection control rules are strict.", "Qualifying is long and competitive.", "Running a practice involves business, staff and equipment costs.", "Techniques change, so learning continues."],
+"skills": ["Manual dexterity", "Attention to detail", "Communication", "Empathy", "Scientific knowledge", "Patience", "Time management", "Teamwork"],
+"workEnvironment": "Clean, well-lit treatment rooms in clinics, hospitals or community services, with a team that includes dental nurses. The work is seated or standing close to patients. Hours are often regular, and some dentists work evenings or Saturdays.",
+"rewards": ["Relieving pain and improving smiles and confidence", "Long-term relationships with patients", "A mix of science, craft and people skills", "The option to run your own practice"],
+"tradeoffs": ["Physical strain from precise posture", "Patients' fear and discomfort", "Long training and business responsibilities", "Income and conditions that vary by country and type of practice"],
+"activity": {
+"title": "Create a one-page guide to healthy teeth",
+"steps": ["Read about tooth decay and gum health on a trusted source such as your national dental association or health service.", "Write the three most useful habits for healthy teeth and why each works.", "Explain them aloud to a family member in simple words.", "Ask whether anything was unclear and improve the guide.", "Note whether explaining health to others felt rewarding."],
+"outcome": "You practise turning health information into clear advice, which dentists give every day.",
+"safety": "This is an information exercise only. Do not examine or treat anyone's teeth, and see a dentist for real dental problems."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

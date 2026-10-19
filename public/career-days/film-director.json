@@ -1,0 +1,31 @@
+{
+"slug": "film-director",
+"overview": {
+"summary": "Film directors lead the creative work of making a film, turning a script into images, sound and performances. The scale ranges from student films to big productions.",
+"problems": "They decide how a story is told, guiding actors and crew so the finished film connects with an audience.",
+"worksWith": "Writers, producers, actors, cinematographers, editors, composers and the whole crew.",
+"workplaces": "Film sets and locations, studios, editing rooms and offices, on film, TV, streaming and online projects."
+},
+"timeline": [
+{"time": "Before filming", "title": "Planning", "description": "The director reads the script, breaks it into scenes, plans shots and meets the team and actors.", "why": "Careful preparation saves time and money on set.", "skills": ["Vision", "Organization"]},
+{"time": "Early morning on set", "title": "Briefing the crew", "description": "The director explains the day's scenes, shots and goals.", "why": "Everyone needs to know the plan.", "skills": ["Leadership", "Communication"]},
+{"time": "Morning", "title": "Working with actors", "description": "The director rehearses and gives notes, helping actors find the performance the scene needs.", "why": "Performances carry the emotion of the story.", "skills": ["Empathy", "Clear direction"]},
+{"time": "Midday", "title": "Shooting scenes", "description": "The director decides camera positions, checks each take and moves on when the shot works.", "why": "Time on set is limited and expensive.", "skills": ["Decision-making", "Visual thinking"]},
+{"time": "Afternoon", "title": "Solving problems", "description": "Weather, equipment or schedule changes require quick creative decisions.", "why": "Few shoots go exactly to plan.", "skills": ["Flexibility", "Staying calm"]},
+{"time": "After the shoot", "title": "Editing and finishing", "description": "The director works with the editor and sound team to shape the final film.", "why": "Much of a film is made in editing.", "skills": ["Judgement", "Patience"]}
+],
+"responsibilities": ["Developing a creative vision for the film", "Guiding actors and key crew", "Planning shots and scenes with the team", "Making decisions quickly during filming", "Working within budget and schedule", "Overseeing editing, music and the final cut", "Collaborating with producers and writers"],
+"challenges": ["Getting a first chance can take years, with unpaid or low-paid early work.", "Income is irregular, with work usually project by project.", "Days on set are long, often at night, outdoors or away from home.", "Budget and time create pressure.", "There are many opinions to balance.", "Creative work can be criticized publicly.", "Projects often take a long time to finish."],
+"skills": ["Storytelling", "Leadership", "Communication", "Visual thinking", "Decision-making", "Collaboration", "Resilience", "Organization"],
+"workEnvironment": "Sets and locations that can be outdoors or in studios, plus editing rooms and offices. Hours on set can be long and irregular, and projects may need travel. Between projects, directors often develop ideas, write or work in related jobs.",
+"rewards": ["Telling stories that reach audiences", "Working with creative, talented people", "Variety from project to project", "Seeing a film go from idea to screen"],
+"tradeoffs": ["Irregular work and income", "Long hours and pressure on set", "A slow, competitive route to directing", "Opportunities and pay that vary a lot by country and industry"],
+"activity": {
+"title": "Make a one-minute story film",
+"steps": ["Write a simple story with a beginning, middle and end that can be filmed in five shots.", "Draw the five shots as quick sketches.", "Film them with a phone, with friends or family who agree to take part.", "Edit them together with a free editing app.", "Show it to two people and ask what they felt and understood."],
+"outcome": "You practise telling a story visually and working with others.",
+"safety": "Film only in safe places with permission, do not film strangers, do not stand near roads, heights or water, and keep personal details private."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

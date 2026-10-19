@@ -1,0 +1,31 @@
+{
+"slug": "army-officer",
+"overview": {
+"summary": "Army officers lead soldiers and manage military units, planning training and operations to defend their country and help in emergencies.",
+"problems": "They keep their units trained, safe and ready, and make decisions in demanding situations, including disaster relief at home.",
+"worksWith": "Soldiers of all ranks, other officers, engineers, medical staff and civilian authorities.",
+"workplaces": "Army bases, training areas and field postings, in some roles abroad or in remote or border regions."
+},
+"timeline": [
+{"time": "Early morning", "title": "Physical training and parade", "description": "The officer leads fitness and drills with the unit.", "why": "Fitness and discipline are part of readiness.", "skills": ["Leadership", "Fitness"]},
+{"time": "Morning", "title": "Planning and briefing", "description": "The officer plans training, tasks and duties for the day and briefs the team.", "why": "Clear orders prevent mistakes.", "skills": ["Planning", "Communication"]},
+{"time": "Late morning", "title": "Training exercises", "description": "The officer leads tactical, technical or field training.", "why": "Skills are built through realistic practice.", "skills": ["Decision-making", "Teaching"]},
+{"time": "Afternoon", "title": "Welfare and administration", "description": "The officer looks after the needs of soldiers and deals with leave, equipment and paperwork.", "why": "Leaders are responsible for their people.", "skills": ["Care", "Organization"]},
+{"time": "Evening", "title": "Study and preparation", "description": "The officer studies tactics, plans or professional courses and prepares for the next day.", "why": "Officers keep learning throughout their careers.", "skills": ["Learning", "Discipline"]},
+{"time": "Varies", "title": "Exercises, deployments and emergencies", "description": "Postings can mean time away from family, field exercises or disaster relief.", "why": "Armies must be ready when they are needed.", "skills": ["Resilience", "Adaptability"]}
+],
+"responsibilities": ["Leading and training soldiers", "Planning and carrying out missions and exercises", "Looking after soldiers' welfare and discipline", "Managing equipment and budgets", "Following military law and ethics", "Working with other services and civil authorities", "Continuing their own professional training"],
+"challenges": ["There is risk to life and health in some roles and operations.", "Long separations from family and frequent postings to remote places are common.", "Discipline is strict and personal choice about postings is limited.", "The physical and mental demands include stress and hardship.", "Selection and training are competitive and demanding.", "Leaving the service and finding a civilian career can be a challenge.", "Responsibility for other people's safety is heavy."],
+"skills": ["Leadership", "Physical fitness", "Decision-making", "Discipline", "Communication", "Teamwork", "Resilience", "Integrity"],
+"workEnvironment": "Bases, training grounds and field locations in all weather, with a structured, disciplined routine. Postings change every few years and may be remote or abroad. Hours are often long, with exercises and duty periods outside normal hours.",
+"rewards": ["Leading and developing people", "A sense of service to the country", "Adventure, training and travel", "Strong comradeship"],
+"tradeoffs": ["Risk and hardship", "Time away from family and frequent moves", "Limited choice about postings", "Pay, benefits and conditions that vary by country and rank"],
+"activity": {
+"title": "Lead a small team task",
+"steps": ["Choose a safe, useful task, such as cleaning up a local park with permission, with three or four friends and an adult supervisor.", "Make a simple plan: what must be done, who does what, and by when.", "Brief the team clearly before you start.", "During the task, check that everyone is safe and has what they need.", "Afterwards, ask the team what went well and what to improve."],
+"outcome": "You practise planning, briefing and caring for a team, which are core leadership skills.",
+"safety": "Do the task only with adult supervision, wear gloves and sensible shoes, avoid roads, water and anything sharp or dangerous, and do not use anything like weapons or military equipment."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

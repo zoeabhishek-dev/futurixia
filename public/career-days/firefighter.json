@@ -1,0 +1,31 @@
+{
+"slug": "firefighter",
+"overview": {
+"summary": "Firefighters respond to fires, accidents and other emergencies, rescue people and protect property, and also teach fire safety. Roles differ between city, rural, airport and industrial services, and some countries use volunteers.",
+"problems": "They save lives, limit damage and help communities prepare for and prevent fires and other emergencies.",
+"worksWith": "Other firefighters, ambulance and police crews, control room staff and members of the public.",
+"workplaces": "Fire stations and emergency scenes, and in some countries airports, industrial sites or forests."
+},
+"timeline": [
+{"time": "7:30 to 8:30", "title": "Shift handover and equipment checks", "description": "The crew checks vehicles, breathing equipment, hoses and tools.", "why": "Equipment must work the moment an alarm sounds.", "skills": ["Responsibility", "Attention to detail"]},
+{"time": "8:30 to 10:30", "title": "Training and fitness", "description": "Firefighters practise drills, rescues and first aid, and keep fit.", "why": "Skills have to be automatic under stress.", "skills": ["Fitness", "Teamwork"]},
+{"time": "10:30 to 12:30", "title": "Community fire safety", "description": "Firefighters visit schools or businesses, check safety equipment and teach people what to do in a fire.", "why": "Preventing a fire is better than fighting one.", "skills": ["Communication", "Teaching"]},
+{"time": "Any time", "title": "Emergency call-out", "description": "When an alarm rings, the crew travels to the scene, assesses the danger and works as a team to rescue people and control the incident.", "why": "Fast, coordinated action saves lives.", "skills": ["Decision-making", "Courage", "Teamwork"]},
+{"time": "Afternoon", "title": "Cleaning, reports and checks", "description": "The crew cleans and restocks equipment and writes incident reports.", "why": "Records and ready equipment prepare the team for the next call.", "skills": ["Accuracy", "Discipline"]},
+{"time": "Night shift", "title": "Standby and rest", "description": "Many firefighters work long shifts, including nights, and stay ready between calls.", "why": "Emergencies do not follow office hours.", "skills": ["Alertness", "Resilience"]}
+],
+"responsibilities": ["Responding to fires, rescues and accidents", "Giving first aid until medical help arrives", "Maintaining vehicles and equipment", "Training and staying physically fit", "Teaching fire prevention and safety", "Writing accurate reports", "Following strict safety procedures"],
+"challenges": ["There is danger from fire, smoke, heights and collapsing structures.", "Shifts are long and include nights and holidays.", "Seeing injury and death can affect mental health, so support matters.", "Physical tests and ongoing fitness standards apply.", "Entry is competitive in many places.", "Long waits can be broken by sudden, high-stress calls.", "Heavy protective gear is worn in extreme heat."],
+"skills": ["Physical fitness", "Teamwork", "Staying calm", "Decision-making", "Courage", "Communication", "Discipline", "First aid knowledge"],
+"workEnvironment": "Fire stations, vehicles and emergency scenes, indoors and outdoors in all weather. Many firefighters work long shifts, including nights, and stay close to the station during duty. Conditions at incidents can be hot, smoky, noisy and dangerous.",
+"rewards": ["Helping people on their worst days", "Strong teamwork and trust", "Variety, since no two days are the same", "Respect from the community"],
+"tradeoffs": ["Real physical danger", "Long and irregular shifts", "Emotional strain", "Demanding selection and fitness standards, with pay and conditions that vary by country"],
+"activity": {
+"title": "Make a home fire safety plan",
+"steps": ["With an adult, walk through your home and find two ways out of every room.", "Check that smoke alarms exist and ask an adult to test them.", "Draw a simple escape plan and mark a safe meeting place outside.", "Practise walking the plan calmly with your family.", "Note whether planning for emergencies felt interesting."],
+"outcome": "You practise thinking ahead about danger and teaching others, which are everyday firefighter skills.",
+"safety": "Do not light fires, handle flames or fireworks, or use real fire equipment. In a real emergency, get out and call your local emergency number."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

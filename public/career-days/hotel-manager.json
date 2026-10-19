@@ -1,0 +1,31 @@
+{
+"slug": "hotel-manager",
+"overview": {
+"summary": "Hotel managers run the daily operations of a hotel so that guests have a comfortable, safe and enjoyable stay.",
+"problems": "They coordinate rooms, food, cleaning, maintenance and staff, and solve problems for guests quickly.",
+"worksWith": "Guests, front desk, housekeeping, kitchen and restaurant staff, maintenance teams, suppliers and owners.",
+"workplaces": "Hotels, resorts and guesthouses of all sizes, and some work in serviced apartments or hospitality groups."
+},
+"timeline": [
+{"time": "Early morning", "title": "Review the day", "description": "The manager checks arrivals, departures, occupancy, events and any overnight issues.", "why": "The day's plan depends on who is arriving.", "skills": ["Planning", "Organization"]},
+{"time": "Morning", "title": "Walk around the hotel", "description": "The manager checks the lobby, rooms, restaurant and facilities and talks with staff.", "why": "Seeing the guest experience first-hand reveals problems.", "skills": ["Observation", "Attention to detail"]},
+{"time": "Late morning", "title": "Meeting guests and staff", "description": "The manager welcomes guests, handles requests and complaints, and briefs teams.", "why": "Guests remember how problems are handled.", "skills": ["Communication", "Empathy"]},
+{"time": "Afternoon", "title": "Managing budgets and bookings", "description": "The manager checks costs, prices, supplier orders and reviews.", "why": "Hotels must manage money and reputation.", "skills": ["Financial awareness", "Analysis"]},
+{"time": "Evening", "title": "Peak service", "description": "The manager supports the busiest period, with check-ins, dinner service and events.", "why": "Leaders are most needed when the hotel is busiest.", "skills": ["Leadership", "Staying calm"]},
+{"time": "Varies", "title": "Out-of-hours problems", "description": "Hotels are open all night, so problems can occur at any hour.", "why": "Guests expect help at any time.", "skills": ["Availability", "Decision-making"]}
+],
+"responsibilities": ["Managing hotel operations and standards", "Leading and training staff", "Handling guest requests and complaints", "Controlling budgets, costs and bookings", "Making sure the hotel is safe, clean and follows regulations", "Working with suppliers and partners", "Protecting the hotel's reputation"],
+"challenges": ["Hours are long and irregular, including evenings, weekends and holidays.", "Some guests are demanding or upset.", "Staff shortages and high turnover affect some places.", "Quality has to be balanced with cost.", "Responsibility for guests' safety and the hotel's reputation is serious.", "Demand changes with the seasons.", "Entry roles may start with low pay."],
+"skills": ["Leadership", "Communication", "Problem solving", "Customer service", "Organization", "Financial awareness", "Staying calm under pressure", "Teamwork"],
+"workEnvironment": "Hotels and resorts that are open 24 hours a day, with a lot of time on your feet, talking to guests and staff. Hours often include evenings, weekends and holidays. Managers move between the front desk, restaurant and back offices.",
+"rewards": ["Helping guests enjoy their stay", "Variety, and meeting people from many places", "Leading a team", "Career paths in hospitality around the world"],
+"tradeoffs": ["Long, irregular hours", "Dealing with complaints", "Seasonal pressure", "Pay and conditions that vary by country, location and size of hotel"],
+"activity": {
+"title": "Plan a stay for a pretend guest",
+"steps": ["Imagine your home is a small guesthouse and write a profile of a guest.", "Make a one-page welcome guide with check-in time, Wi-Fi, local places and emergency contacts.", "Write a checklist for preparing a room.", "Ask a family member to be the guest and give feedback.", "Note whether looking after others felt rewarding."],
+"outcome": "You practise planning, being organized and putting yourself in a guest's place.",
+"safety": "Do not share your real home address or private details outside the family, and do not invite strangers."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

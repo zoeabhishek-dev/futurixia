@@ -1,0 +1,31 @@
+{
+"slug": "air-traffic-controller",
+"overview": {
+"summary": "Air traffic controllers guide aircraft safely through the air and on the ground at airports, keeping them apart and moving in an orderly way.",
+"problems": "They prevent collisions and delays by giving pilots clear instructions about where to fly, when to climb or descend, and when to take off or land.",
+"worksWith": "Pilots by radio, other controllers, airport staff, weather services and airline operations.",
+"workplaces": "Airport control towers and area control centres, working in shifts in rooms with radar and screens."
+},
+"timeline": [
+{"time": "Start of shift", "title": "Briefing and handover", "description": "The controller learns about weather, closed runways, equipment faults and traffic from the previous controller.", "why": "A clear handover keeps safety continuous.", "skills": ["Listening", "Accuracy"]},
+{"time": "During the shift", "title": "Monitoring traffic", "description": "The controller watches screens or the runway, identifies each aircraft and plans the order of arrivals and departures.", "why": "Planning ahead prevents conflicts.", "skills": ["Concentration", "Spatial awareness"]},
+{"time": "During the shift", "title": "Giving instructions", "description": "The controller speaks clearly to pilots, giving headings, heights, speeds and clearances, using standard phrases.", "why": "Standard words prevent misunderstanding.", "skills": ["Clear speech", "Decision-making"]},
+{"time": "During the shift", "title": "Coordinating with other controllers", "description": "The controller hands aircraft over between sectors and airports.", "why": "Smooth handovers keep traffic flowing.", "skills": ["Teamwork", "Communication"]},
+{"time": "Busy periods or emergencies", "title": "Handling unusual situations", "description": "Weather, an aircraft with a problem or an equipment failure can require quick re-planning.", "why": "Calm decisions protect lives.", "skills": ["Calm under pressure", "Judgement"]},
+{"time": "Regular breaks", "title": "Rest", "description": "Concentration is demanding, so controllers take regular breaks and work set shifts. Patterns vary by country and unit.", "why": "Alertness is a safety requirement.", "skills": ["Self-awareness", "Discipline"]}
+],
+"responsibilities": ["Keeping aircraft safely separated", "Giving clear instructions to pilots", "Sequencing arrivals and departures", "Coordinating with other controllers and airports", "Responding to emergencies", "Following strict procedures and recording events", "Staying current through regular training and checks"],
+"challenges": ["Sustained concentration is needed, with little room for error.", "Shift work includes nights and weekends.", "Busy or emergency periods are stressful.", "Strict medical and ongoing assessment requirements apply.", "Selection and training are competitive and long.", "Responsibility is high and cannot be paused.", "Equipment faults and changing weather require quick adaptation."],
+"skills": ["Concentration", "Clear communication", "Decision-making", "Spatial awareness", "Memory", "Calm under pressure", "Teamwork", "Discipline"],
+"workEnvironment": "Control towers and control centres with radar, radio and screens, working set shifts with regular breaks. The work is seated or standing at a console and needs constant attention. Hours can include nights, weekends and holidays.",
+"rewards": ["Keeping thousands of people safe", "Responsibility and trust", "Teamwork and a clear sense of purpose", "Skills that are valued around the world"],
+"tradeoffs": ["Intense, sustained attention", "Shift work", "Strict health and performance checks", "Competitive selection, with pay and conditions that vary by country"],
+"activity": {
+"title": "Run a paper air traffic simulation",
+"steps": ["Draw a simple map on a large sheet with one runway and four routes meeting at a point.", "Use small paper planes or counters as aircraft, each with a name label.", "With a friend as the pilot, give clear one-sentence instructions to move the planes safely without overlapping.", "Add a surprise, such as a closed runway, and replan.", "Note whether the focus and clear speaking felt interesting."],
+"outcome": "You practise planning ahead, speaking clearly and staying calm when plans change.",
+"safety": "This is a paper game only. Do not use radios, drones or anything near real airports or aircraft."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

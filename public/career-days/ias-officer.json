@@ -1,0 +1,31 @@
+{
+"slug": "ias-officer",
+"overview": {
+"summary": "Officers of the Indian Administrative Service hold senior posts in central and state governments, running districts and departments and putting government policy into action. Roles vary with the posting.",
+"problems": "They help make sure public services, such as land records, welfare schemes, elections and disaster relief, reach people fairly.",
+"worksWith": "Elected leaders, police and other departments, local officials, citizens and community groups.",
+"workplaces": "District offices, state secretariats, government departments and central ministries, with a lot of time in the field."
+},
+"timeline": [
+{"time": "9:30 to 10:30", "title": "Reviewing files and plans", "description": "The officer reads reports, files and proposals that need decisions.", "why": "Decisions must follow the law and procedure.", "skills": ["Reading", "Judgement"]},
+{"time": "10:30 to 12:00", "title": "Meeting citizens", "description": "The officer hears complaints and requests and directs action on them.", "why": "Government exists to serve people.", "skills": ["Listening", "Fairness"]},
+{"time": "12:00 to 14:00", "title": "Reviews with departments", "description": "The officer checks the progress of schemes such as roads, schools or health programs with officials.", "why": "Many agencies must work together.", "skills": ["Coordination", "Leadership"]},
+{"time": "14:00 to 16:00", "title": "Field visits", "description": "The officer visits villages, offices, schools or projects to see conditions first-hand.", "why": "Seeing real conditions improves decisions.", "skills": ["Observation", "Communication"]},
+{"time": "16:00 to 18:00", "title": "Meetings and orders", "description": "The officer drafts orders, answers queries from higher authorities and prepares for elections or events.", "why": "Written orders turn decisions into action.", "skills": ["Writing", "Responsibility"]},
+{"time": "Varies", "title": "Emergencies and elections", "description": "Floods and other disasters, or elections, require long hours and quick decisions.", "why": "Public services must keep working in a crisis.", "skills": ["Resilience", "Decision-making"]}
+],
+"responsibilities": ["Implementing government policies and schemes", "Managing district or department administration", "Maintaining records and following the law", "Coordinating departments and agencies", "Handling grievances and public queries", "Managing elections and emergency response", "Reporting to elected leaders and senior officers"],
+"challenges": ["Selection is through a highly competitive national examination.", "Hours are long and unpredictable, especially in emergencies and elections.", "Frequent transfers affect family life.", "Pressure comes from many sides, including politics and public expectations.", "Paperwork is heavy and rules are strict.", "Decisions can have large consequences and receive public scrutiny.", "Resources are limited compared with needs."],
+"skills": ["Leadership", "Decision-making", "Integrity", "Communication", "Analytical thinking", "Coordination", "Resilience", "Knowledge of law and administration"],
+"workEnvironment": "Government offices and field locations, from city departments to rural districts. Time is divided between desk work, meetings and travel. Postings change every few years and may be in different states or remote areas.",
+"rewards": ["A chance to improve public services at scale", "Variety of roles over a career", "Responsibility from an early stage", "Respect when public duty is done well"],
+"tradeoffs": ["Heavy workload and unpredictable hours", "Frequent transfers", "Public and political pressure", "A very competitive selection"],
+"activity": {
+"title": "Write a one-page note on a local civic problem",
+"steps": ["Pick a safe, everyday problem such as litter near a school or a poorly lit road.", "Observe it from a safe public place and note the facts.", "Talk to two people who agree to share how it affects them.", "List two possible solutions, who would need to act and what each might cost.", "Write a one-page note recommending one option and naming one risk."],
+"outcome": "You practise gathering facts, weighing options and writing a clear proposal, which administrators do every day.",
+"safety": "Observe only from safe public places, do not photograph people, do not approach officials or anyone in a way that causes trouble, and ask an adult before sharing your note."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

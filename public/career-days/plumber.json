@@ -1,0 +1,31 @@
+{
+"slug": "plumber",
+"overview": {
+"summary": "Plumbers install, maintain and repair the pipes, fixtures and appliances that supply water and remove waste in homes and buildings.",
+"problems": "They keep water supply, drainage and heating working safely and hygienically, and fix leaks and blockages.",
+"worksWith": "Customers, builders, other tradespeople, suppliers and building inspectors.",
+"workplaces": "Homes, offices, shops, factories and building sites, and many plumbers are self-employed."
+},
+"timeline": [
+{"time": "7:30 to 8:00", "title": "Plan the jobs and load the van", "description": "The plumber checks the job list, customer details, parts and tools.", "why": "Arriving with the right parts avoids wasted trips.", "skills": ["Planning", "Organization"]},
+{"time": "8:00 to 10:00", "title": "Find the problem", "description": "The plumber asks the customer what happened, inspects pipes and fittings, and looks for the cause of a leak, blockage or low pressure.", "why": "Fixing the real cause prevents the problem coming back.", "skills": ["Problem solving", "Observation"]},
+{"time": "10:00 to 12:30", "title": "Repair or install", "description": "After shutting off the water, the plumber cuts and joins pipes and fits taps, toilets, boilers or drains.", "why": "Neat, correct joints prevent leaks and water damage.", "skills": ["Practical skill", "Precision"]},
+{"time": "13:30 to 15:00", "title": "Test and check", "description": "The plumber turns the water back on, tests for leaks, checks flow and drainage, and cleans up.", "why": "Testing proves the work is safe and sound.", "skills": ["Care", "Attention to detail"]},
+{"time": "15:00 to 16:30", "title": "Customer talk and paperwork", "description": "The plumber explains what was done, gives a price or invoice and advises how to avoid future problems.", "why": "Customers need to understand and trust the work.", "skills": ["Communication", "Honesty"]},
+{"time": "Varies", "title": "Emergency call-outs", "description": "Burst pipes and blocked drains cannot wait, so plumbers are sometimes called out at short notice.", "why": "Water damage grows quickly if nothing is done.", "skills": ["Staying calm", "Reliability"]}
+],
+"responsibilities": ["Installing and repairing pipes, taps, toilets and heating systems", "Finding the cause of leaks and blockages", "Following building and safety regulations", "Reading plans and measuring accurately", "Giving honest quotes and explaining the work", "Keeping tools and the work area tidy and safe", "Keeping records, and handling invoices if self-employed"],
+"challenges": ["The work is physically demanding, with kneeling, lifting and working in tight spaces.", "Some jobs are dirty or unpleasant, such as blocked drains.", "Emergency call-outs can come at any hour.", "Work on gas or heating needs specific training and licences in many places.", "Time and cost are hard to estimate when hidden problems appear.", "Self-employed plumbers must find customers and manage money.", "Regulations change, so learning continues."],
+"skills": ["Practical skill", "Problem solving", "Physical fitness", "Accurate measuring", "Customer communication", "Safety awareness", "Honesty", "Time management"],
+"workEnvironment": "Mostly on site in homes, commercial buildings and construction sites, often in tight, wet or dirty spaces. Many plumbers travel between jobs in a van. Some work for companies and others are self-employed, and hours can include emergency call-outs.",
+"rewards": ["Skill that people urgently need", "Variety of jobs and places", "The satisfaction of fixing a problem", "The option to run your own business"],
+"tradeoffs": ["Physical strain", "Unpleasant jobs and awkward spaces", "Irregular emergency hours", "Earnings and demand that vary by country, area and employer"],
+"activity": {
+"title": "Map the water system in your home",
+"steps": ["Walk around your home and note where water comes in, such as the main tap or meter, and where the taps, toilets and drains are.", "Sketch a simple plan showing these points.", "With an adult, find the main shut-off valve and learn how it turns off the water.", "Look for any slow drips and tell an adult.", "Note whether understanding how a system works felt interesting."],
+"outcome": "You see how water supply and drainage are connected, which is the first step in diagnosing plumbing problems.",
+"safety": "Do not repair pipes, touch gas or heating equipment or work under sinks with sharp tools. Ask a qualified plumber for any real repair."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

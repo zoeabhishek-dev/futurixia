@@ -1,0 +1,31 @@
+{
+"slug": "product-manager",
+"overview": {
+"summary": "Product managers decide what a product should do and why, and guide teams of designers and engineers to build it.",
+"problems": "They make sure a team builds the right thing for users and the business, in the right order.",
+"worksWith": "Engineers, designers, marketing and sales teams, customers, data analysts and senior managers.",
+"workplaces": "Technology companies, banks, start-ups and other organizations that make products or services, in offices or remotely."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Team stand-up", "description": "The product manager hears progress and problems and helps clear anything blocking the team.", "why": "Product managers keep work moving by removing obstacles.", "skills": ["Communication", "Leadership"]},
+{"time": "10:00 to 12:00", "title": "Talking to users and reading data", "description": "Customer calls, surveys and usage numbers show what people need.", "why": "Good decisions need evidence.", "skills": ["Curiosity", "Analysis"]},
+{"time": "13:00 to 14:30", "title": "Prioritizing", "description": "The product manager decides what to build first with limited time and people, and says no to good ideas that do not fit right now.", "why": "A team cannot do everything at once.", "skills": ["Judgement", "Negotiation"]},
+{"time": "14:30 to 16:00", "title": "Writing and explaining plans", "description": "The product manager writes clear descriptions of problems and goals so engineers and designers understand them.", "why": "Clear writing prevents wasted work.", "skills": ["Writing", "Clarity"]},
+{"time": "16:00 to 17:00", "title": "Meetings with stakeholders", "description": "The product manager updates managers, sales or support teams and collects feedback.", "why": "Other teams depend on what the product team decides.", "skills": ["Presentation", "Diplomacy"]},
+{"time": "Varies", "title": "Launches and problems", "description": "When something goes wrong after a launch, the product manager coordinates the response.", "why": "Fast, clear coordination limits harm to users.", "skills": ["Staying calm", "Coordination"]}
+],
+"responsibilities": ["Understanding what users and the business need", "Deciding priorities", "Writing clear goals and requirements", "Working with designers and engineers", "Measuring whether a product succeeds", "Communicating with managers and other teams", "Making trade-offs with limited time and budget"],
+"challenges": ["Responsibility is high while direct authority over the people is limited.", "Decisions often have to be made with incomplete information.", "Saying no can disappoint people.", "Different teams have competing demands.", "There is pressure to show results.", "Meetings and communication take a lot of time.", "Entry roles are limited and often need related experience."],
+"skills": ["Communication", "Problem solving", "Analytical thinking", "Prioritizing", "Empathy for users", "Leading without authority", "Writing", "Curiosity"],
+"workEnvironment": "Mostly office or remote work with a lot of meetings, messages and documents, at the centre of a team. Hours are often regular, with extra effort around launches.",
+"rewards": ["Shaping what a product becomes", "Working with many kinds of people", "A mix of strategy, people and details", "Learning about users and the business"],
+"tradeoffs": ["Many meetings and little hands-on building", "Pressure to get decisions right", "Balancing competing views", "Roles, titles and pay that vary by country and employer"],
+"activity": {
+"title": "Suggest one improvement for an app you use",
+"steps": ["Pick a free app you use often.", "List three problems users probably have with it, ideally after asking two or three people.", "Choose the most important problem and explain why.", "Describe one improvement and how you would tell whether it worked.", "Note whether deciding what matters most felt interesting."],
+"outcome": "You practise finding problems, choosing priorities and thinking about evidence, which is the heart of product work.",
+"safety": "Do not ask people for personal information, and do not contact the app's company with confidential details."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

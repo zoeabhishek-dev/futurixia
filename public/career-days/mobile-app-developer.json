@@ -1,0 +1,31 @@
+{
+"slug": "mobile-app-developer",
+"overview": {
+"summary": "Mobile app developers design, build and maintain apps for phones and tablets.",
+"problems": "They turn ideas such as ordering food, learning a language or banking safely into apps that work smoothly on small screens.",
+"worksWith": "Designers, product managers, other developers, testers and sometimes customers.",
+"workplaces": "Technology companies, start-ups, agencies, banks and other businesses, and freelance or remote work."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Team stand-up", "description": "The team shares progress and blockers and agrees the day's tasks.", "why": "Short check-ins keep everyone lined up.", "skills": ["Communication", "Prioritizing"]},
+{"time": "10:00 to 12:30", "title": "Building features", "description": "The developer writes code for new screens and actions and runs the app on a phone or emulator.", "why": "Features must work smoothly on small screens and many devices.", "skills": ["Programming", "Problem solving"]},
+{"time": "13:30 to 15:00", "title": "Testing on different devices", "description": "The developer checks how the app behaves on different phone sizes, software versions and slow connections.", "why": "A feature that works on one phone can fail on another.", "skills": ["Attention to detail", "Patience"]},
+{"time": "15:00 to 16:00", "title": "Fixing bugs", "description": "The developer reads crash reports and user reviews, finds the cause and fixes it.", "why": "Crashes quickly drive users away.", "skills": ["Debugging", "Persistence"]},
+{"time": "16:00 to 17:00", "title": "Design and code review", "description": "The developer checks designs with the designer and reviews teammates' code.", "why": "Reviews catch mistakes and keep the app consistent.", "skills": ["Collaboration", "Giving feedback"]},
+{"time": "Varies", "title": "Updates and app store rules", "description": "New phone software or store rules mean the app needs changes, and releases are prepared carefully.", "why": "An app that is not kept up to date can stop working or be removed.", "skills": ["Adaptability", "Learning quickly"]}
+],
+"responsibilities": ["Building and updating app features", "Testing on different devices and versions", "Fixing bugs and crashes", "Keeping apps fast, secure and respectful of privacy", "Following app store rules", "Working with designers and other developers", "Reading user feedback"],
+"challenges": ["There are many different devices and software versions to support.", "Phone and store rules change often.", "Apps must be fast and use little battery.", "Some bugs are hard to reproduce.", "Users can leave harsh reviews.", "Deadlines tighten before launches.", "Tools change constantly, so learning never stops."],
+"skills": ["Programming", "Problem solving", "Testing and debugging", "Attention to detail", "Communication", "Learning quickly", "Design sense", "Patience"],
+"workEnvironment": "Mostly desk and computer based, in offices or remotely, often in small teams. Hours are often regular, with busier periods before releases. Some developers work as freelancers or build their own apps.",
+"rewards": ["Seeing people use something you built on their own phone", "A fast-moving field", "Options to work for a company, freelance or build your own app", "Skills that can be shown through projects"],
+"tradeoffs": ["Constant change in tools and rules", "Pressure before releases", "Public reviews", "Job requirements and pay that vary by country and employer"],
+"activity": {
+"title": "Design and build a tiny app",
+"steps": ["Pick a simple idea, such as a quiz or a checklist.", "Sketch three screens on paper and show them to a friend.", "If you can, build a basic version with a free beginner app builder such as MIT App Inventor.", "Ask two people to try it and note where they got stuck.", "Fix one thing and note whether building and testing felt enjoyable."],
+"outcome": "You practise the plan, build, test and improve cycle used in app development.",
+"safety": "Do not collect other people's personal data, do not publish the app publicly without an adult, and use only your own images and text."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

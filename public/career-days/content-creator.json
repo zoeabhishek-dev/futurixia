@@ -1,0 +1,31 @@
+{
+"slug": "content-creator",
+"overview": {
+"summary": "Content creators make videos, posts, podcasts or articles for an online audience, sometimes as a career.",
+"problems": "They inform, teach or entertain people, and build an audience that can lead to income through partnerships, ads or products.",
+"worksWith": "Audiences, brands, editors, designers, and sometimes managers or agencies.",
+"workplaces": "Mostly home or small studios, often working independently or in small teams, online."
+},
+"timeline": [
+{"time": "Morning", "title": "Planning content", "description": "The creator chooses topics, does research and outlines ideas.", "why": "Planning stops you running out of ideas.", "skills": ["Creativity", "Planning"]},
+{"time": "Late morning", "title": "Creating", "description": "The creator writes, records or films.", "why": "Quality builds trust with an audience.", "skills": ["Making content", "Communication"]},
+{"time": "Afternoon", "title": "Editing", "description": "The creator cuts and polishes the piece and adds captions or graphics.", "why": "Editing often takes longer than recording.", "skills": ["Technical skill", "Patience"]},
+{"time": "Late afternoon", "title": "Publishing and replying", "description": "The creator posts the content, answers comments and checks what worked.", "why": "Replying builds a community.", "skills": ["Audience awareness", "Consistency"]},
+{"time": "Evening", "title": "Learning from data", "description": "The creator looks at views and feedback to guide the next piece.", "why": "Numbers show what the audience values.", "skills": ["Analysis", "Learning"]},
+{"time": "Varies", "title": "Business tasks", "description": "The creator handles emails with brands, invoices and plans for partnerships.", "why": "Creators who earn money are running a small business.", "skills": ["Organization", "Negotiation"]}
+],
+"responsibilities": ["Coming up with and researching ideas", "Creating and editing content regularly", "Understanding and engaging the audience", "Following platform rules and advertising disclosure laws", "Managing time and income", "Protecting personal privacy and safety", "Respecting copyright"],
+"challenges": ["Income can be small and unstable, and many creators earn little.", "Growth can be slow and unpredictable.", "Platform rules and algorithms change.", "Online criticism and negativity can affect wellbeing.", "Pressure to post constantly can lead to burnout.", "There are privacy and safety risks, especially for young people.", "The job needs many skills: writing, editing, marketing and business."],
+"skills": ["Creativity", "Communication", "Editing and technical skills", "Consistency", "Resilience", "Time management", "Understanding audiences", "Business awareness"],
+"workEnvironment": "Mostly independent work at home or in small studios, with flexible but often long and irregular hours. Creators manage their own schedule, money and workload. Collaboration with other creators and brands happens online or at events.",
+"rewards": ["Creative freedom", "Building a community around something you care about", "Skills in writing, video and marketing", "The flexibility of working for yourself"],
+"tradeoffs": ["Unstable and uncertain income", "Constant pressure to produce", "Public feedback", "Platform changes outside your control"],
+"activity": {
+"title": "Plan and make one piece of content privately",
+"steps": ["Choose a topic you know well and write who it is for.", "Outline three points in a short script.", "Record or write it, with an adult's help for any filming or online tools.", "Show it only to family or friends offline and ask what they liked and what was unclear.", "Improve it once and note whether making content felt enjoyable."],
+"outcome": "You practise planning, creating and improving content using feedback.",
+"safety": "Do not share your full name, school, address or location, check the age rules of any platform with an adult, use only your own or free-to-use material, and be kind to everyone."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

@@ -1,0 +1,31 @@
+{
+"slug": "environmental-scientist",
+"overview": {
+"summary": "Environmental scientists study the natural world and the effects of people on it, and advise how to protect air, water, soil and wildlife.",
+"problems": "They measure pollution, assess the impact of projects and help organizations and governments reduce harm to the environment.",
+"worksWith": "Engineers, planners, government agencies, companies, communities and other scientists.",
+"workplaces": "Government agencies, consultancies, universities, research institutes, companies and non-profits, in offices, laboratories and the field."
+},
+"timeline": [
+{"time": "Morning", "title": "Planning fieldwork", "description": "The scientist decides where and what to sample, checks the weather and prepares equipment.", "why": "Good planning gives reliable data.", "skills": ["Planning", "Organization"]},
+{"time": "Late morning", "title": "Collecting samples or measurements", "description": "The scientist collects water, soil or air samples, or surveys plants and animals.", "why": "Data must be collected carefully to be trusted.", "skills": ["Observation", "Care", "Physical fitness"]},
+{"time": "Afternoon", "title": "Laboratory or data analysis", "description": "The scientist analyzes samples and enters results into spreadsheets or software.", "why": "Measurements show how serious a problem is.", "skills": ["Analysis", "Statistics"]},
+{"time": "Late afternoon", "title": "Writing reports", "description": "The scientist explains findings and recommendations in a way that decision makers or clients can use.", "why": "Findings only help if people understand them.", "skills": ["Writing", "Communication"]},
+{"time": "Varies", "title": "Meetings with communities and officials", "description": "The scientist explains findings, listens to concerns and discusses solutions.", "why": "Solutions need people's cooperation.", "skills": ["Listening", "Diplomacy"]},
+{"time": "Varies", "title": "Weather and site problems", "description": "Storms or access problems can change plans.", "why": "Work outdoors depends on conditions outside anyone's control.", "skills": ["Adaptability", "Patience"]}
+],
+"responsibilities": ["Collecting and analyzing environmental data", "Assessing the impact of projects and pollution", "Writing clear, accurate reports", "Advising on regulations and good practice", "Working safely in the field and laboratory", "Explaining findings to non-specialists", "Keeping up with research and law"],
+"challenges": ["Fieldwork can be physically tiring and depends on the weather.", "Funding for research and projects can be limited.", "Results are often uncertain and can be disputed.", "Slow change can be discouraging.", "Environmental protection can conflict with economic interests.", "Report writing and paperwork take a large share of time.", "Competition for jobs is strong, and some roles need a master's degree or specialist skills."],
+"skills": ["Scientific knowledge", "Data analysis", "Observation", "Writing", "Communication", "Problem solving", "Fieldwork skills", "Attention to detail"],
+"workEnvironment": "A mix of outdoor fieldwork, laboratories and offices. Fieldwork can be in rural or remote places and in all weather. Some roles are mostly office based, writing reports and giving advice.",
+"rewards": ["Contributing to protecting nature and public health", "Variety of settings and topics", "A mix of outdoor and analytical work", "Chances to influence decisions"],
+"tradeoffs": ["Physical demands and weather", "Slow progress and uncertain results", "Funding limits", "Opportunities and pay that vary by country and employer"],
+"activity": {
+"title": "Do a 30-minute litter or nature survey",
+"steps": ["With an adult, choose a small, safe public area such as a park path.", "Count and group what you find, such as plastic, paper, metal or plants, in a table.", "Photograph only the litter, not people.", "Make a simple chart of your results.", "Suggest one action that could reduce the biggest category, and note whether the survey felt interesting."],
+"outcome": "You practise collecting data in the field, summarizing it and proposing a solution.",
+"safety": "Go with an adult, wear gloves, never touch glass, needles, chemicals or anything unknown, stay away from roads and water, and take litter to a bin."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

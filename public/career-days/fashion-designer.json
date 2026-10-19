@@ -1,0 +1,31 @@
+{
+"slug": "fashion-designer",
+"overview": {
+"summary": "Fashion designers create clothing, shoes and accessories, from the first sketch to the finished garment.",
+"problems": "They design things people want to wear, balancing style, comfort, cost and what can actually be made.",
+"worksWith": "Pattern makers, tailors and sewers, fabric and trim suppliers, buyers, models and marketing teams.",
+"workplaces": "Design studios, fashion brands, factories and workshops, retailers, and own labels, often with a mix of studio work and travel."
+},
+"timeline": [
+{"time": "Morning", "title": "Research and inspiration", "description": "The designer looks at trends, fabrics, colours and what customers want.", "why": "Good design responds to real people.", "skills": ["Curiosity", "Observation"]},
+{"time": "Late morning", "title": "Sketching and planning", "description": "The designer draws ideas and chooses fabrics, colours and details for a collection.", "why": "A collection needs a clear idea.", "skills": ["Drawing", "Creativity"]},
+{"time": "Afternoon", "title": "Pattern and sample making", "description": "The designer works with pattern makers and sewers to turn sketches into samples.", "why": "Ideas change once they become real garments.", "skills": ["Technical skill", "Practical thinking"]},
+{"time": "Late afternoon", "title": "Fittings and adjustments", "description": "The designer tries samples on a model or form, then adjusts the fit and details.", "why": "Fit and comfort decide whether people wear a garment.", "skills": ["Attention to detail", "Patience"]},
+{"time": "End of day", "title": "Costs and suppliers", "description": "The designer checks costs, fabric orders and production schedules.", "why": "A beautiful design still has to be affordable to make.", "skills": ["Business sense", "Negotiation"]},
+{"time": "Varies", "title": "Deadlines for shows and seasons", "description": "Collections must be ready for fixed dates.", "why": "The fashion calendar does not move.", "skills": ["Time management", "Resilience"]}
+],
+"responsibilities": ["Researching trends and customers", "Designing garments and collections", "Choosing fabrics, colours and trims", "Working with pattern makers and sewers", "Controlling costs and quality", "Meeting seasonal deadlines", "Promoting and presenting designs"],
+"challenges": ["Competition is strong and there is no guaranteed career.", "Early roles can be low paid, with long hours.", "Trends change quickly, and designs may not sell.", "Deadlines are tight before shows and seasons.", "Creativity has to be balanced with cost and practical limits.", "Self-employed designers must manage business and money.", "Fashion has environmental and ethical issues that designers increasingly have to consider."],
+"skills": ["Creativity", "Drawing and design skills", "Knowledge of fabrics and construction", "Attention to detail", "Time management", "Communication", "Business awareness", "Resilience"],
+"workEnvironment": "Design studios, workshops and factories, with some travel to suppliers, fairs and shows. The work is a mix of creative studio time, practical making and meetings. The pace is fastest before collection deadlines.",
+"rewards": ["Seeing people wear something you designed", "Creative and practical work", "A mix of art and business", "Many routes, from big brands to your own label"],
+"tradeoffs": ["Competitive entry", "Deadline pressure", "Income uncertainty at first", "Pay and opportunities that vary by country and employer"],
+"activity": {
+"title": "Design a three-outfit mini collection",
+"steps": ["Pick a theme, such as school sports day or a festival.", "Sketch three outfits that go together and choose colours.", "Collect scraps or fabric swatches at home and match them to your designs.", "With adult help, make one simple item, such as a bag or scarf.", "Ask two people which outfit they like and why."],
+"outcome": "You practise developing a theme, choosing materials and using feedback.",
+"safety": "Ask an adult to help with scissors, needles, sewing machines and irons, and use only fabrics and materials you own or have permission to use."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

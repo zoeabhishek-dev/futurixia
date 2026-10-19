@@ -1,0 +1,31 @@
+{
+"slug": "social-worker",
+"overview": {
+"summary": "Social workers support individuals, families and communities facing hardship, helping them reach services and make positive changes.",
+"problems": "They help people in difficult situations, such as poverty, illness, disability, family problems or risk of harm, to find safety, support and options.",
+"worksWith": "Clients and families, doctors, teachers, police, housing and benefits staff, and community organizations.",
+"workplaces": "Government agencies, hospitals, schools, non-profits, community centres and clients' homes."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Review the caseload and plan", "description": "The social worker checks messages, urgent cases and appointments.", "why": "Some situations cannot wait.", "skills": ["Prioritizing", "Organization"]},
+{"time": "9:30 to 12:00", "title": "Visits and meetings with clients", "description": "The social worker listens to people, understands their situation and agrees goals and next steps with them.", "why": "People are experts in their own lives, and trust makes change possible.", "skills": ["Listening", "Empathy", "Respect"]},
+{"time": "12:30 to 14:00", "title": "Coordinating services", "description": "The social worker phones schools, doctors, housing or support organizations to arrange help.", "why": "Few people can solve complex problems alone.", "skills": ["Negotiation", "Persistence"]},
+{"time": "14:00 to 15:30", "title": "Assessments and decisions", "description": "The social worker gathers information, assesses needs and risks, and decides what support to recommend, often together with a team.", "why": "Careful assessment keeps people safe and uses resources well.", "skills": ["Judgement", "Analysis"]},
+{"time": "15:30 to 17:00", "title": "Records and reports", "description": "The social worker writes case notes and reports under strict confidentiality rules.", "why": "Good records support safe, consistent help.", "skills": ["Writing", "Accuracy"]},
+{"time": "Varies", "title": "Urgent situations and supervision", "description": "Some cases need quick action outside normal hours, and social workers receive regular supervision to reflect and cope.", "why": "Looking after the worker helps them look after others.", "skills": ["Resilience", "Self-care"]}
+],
+"responsibilities": ["Assessing the needs and risks of clients", "Helping clients set goals and make plans", "Connecting people with services and benefits", "Working with other professionals", "Protecting vulnerable people and following safeguarding rules", "Keeping confidential records", "Speaking up for clients' rights"],
+"challenges": ["The work is emotionally demanding, with exposure to hardship, abuse or loss.", "Caseloads are high and resources limited in many places.", "Some decisions are difficult and have no perfect answer.", "Paperwork and procedures are heavy.", "Clients, families or the public can be angry or blame the worker.", "Some roles include out-of-hours work.", "There is a risk of burnout, so support and self-care matter."],
+"skills": ["Empathy", "Listening", "Communication", "Problem solving", "Resilience", "Respect for others", "Organization", "Ethical judgement"],
+"workEnvironment": "A mix of offices, clients' homes, schools, hospitals and community settings. Social workers travel for visits and meetings. Roles range from child protection to health, mental health, disability and community work, with hours that are usually regular but can include urgent evenings.",
+"rewards": ["Helping people through difficult periods", "Seeing clients gain stability and confidence", "Variety of settings and specialties", "Work with a clear social purpose"],
+"tradeoffs": ["Emotional strain", "High workload and limited resources", "Public criticism in difficult cases", "Pay and conditions that vary by country and employer"],
+"activity": {
+"title": "Map the support services in your area",
+"steps": ["Choose a need such as help for older people, young people or families.", "Using public websites and notice boards, list five local services that help, with what they do and how to reach them.", "Check that each listing is current and the information is clear.", "Write a one-page guide in plain language.", "Note whether finding and explaining help for others felt rewarding."],
+"outcome": "You practise research and plain-language writing, which social workers use to connect people with support.",
+"safety": "Use only public information, do not contact vulnerable people or ask anyone about private problems, and ask a trusted adult before sharing the guide."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}

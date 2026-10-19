@@ -1,0 +1,31 @@
+{
+"slug": "financial-analyst",
+"overview": {
+"summary": "Financial analysts study financial information about companies, markets and projects to help organizations make decisions about money.",
+"problems": "They estimate whether an investment or plan is likely to pay off, and track how a business is performing against its goals.",
+"worksWith": "Finance and accounting teams, managers, investors, clients and bankers.",
+"workplaces": "Banks, investment firms, company finance departments, consultancies, insurers and government bodies."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Check markets and news", "description": "The analyst reads overnight news and figures that may affect the company or its investments.", "why": "Prices and plans react to news.", "skills": ["Curiosity", "Awareness"]},
+{"time": "9:30 to 12:30", "title": "Gathering and cleaning data", "description": "The analyst collects financial statements and market data in spreadsheets and checks them.", "why": "Wrong numbers lead to wrong decisions.", "skills": ["Spreadsheets", "Accuracy"]},
+{"time": "13:30 to 15:30", "title": "Building models and forecasts", "description": "The analyst builds spreadsheet models that estimate future income, costs and risks.", "why": "Models help compare options.", "skills": ["Analysis", "Mathematics"]},
+{"time": "15:30 to 16:30", "title": "Checking assumptions", "description": "The analyst tests what happens if sales fall or costs rise.", "why": "Forecasts are uncertain, so ranges matter more than one number.", "skills": ["Critical thinking", "Honesty"]},
+{"time": "16:30 to 17:30", "title": "Writing a summary", "description": "The analyst turns the results into a short report or presentation with a clear recommendation and the risks.", "why": "Decision makers need clear, honest summaries.", "skills": ["Communication", "Writing"]},
+{"time": "Varies", "title": "Reporting season", "description": "Around quarter ends or results dates, hours can lengthen.", "why": "Reports are due on fixed dates.", "skills": ["Stamina", "Focus"]}
+],
+"responsibilities": ["Collecting and checking financial data", "Building and updating financial models", "Forecasting income, costs and risks", "Comparing investment or business options", "Writing reports and presenting findings", "Following rules and ethical standards", "Keeping information confidential"],
+"challenges": ["Forecasts are uncertain and can be wrong.", "Hours can be long around reporting deadlines.", "The spreadsheet work is detailed and repetitive.", "Decisions involving large amounts of money bring pressure.", "Competition for entry roles is strong.", "Rules and markets keep changing.", "Strict ethical duties and conflict-of-interest rules apply."],
+"skills": ["Mathematics", "Spreadsheet modelling", "Analytical thinking", "Attention to detail", "Communication", "Integrity", "Curiosity about business", "Time management"],
+"workEnvironment": "Mostly office based or remote, working on computers with spreadsheets and databases, often in teams. Hours are usually regular but can be long near deadlines. Some roles involve client meetings or travel.",
+"rewards": ["Understanding how businesses and markets work", "Skills that are useful in many industries", "A mix of numbers and storytelling", "Clear paths to specialize"],
+"tradeoffs": ["Pressure and long hours at busy times", "Uncertain results", "Detail-heavy work", "Pay and opportunities that vary by country, firm and market conditions"],
+"activity": {
+"title": "Compare two companies using public figures",
+"steps": ["Choose two well-known companies in the same business, such as two phone makers or two shops.", "Find their latest published yearly figures for sales and profit on their own investor pages or a trusted financial news site.", "Put them in a spreadsheet and work out how much each grew compared with the year before.", "Write three sentences on what the figures suggest and one thing the figures cannot tell you.", "Note whether this kind of analysis felt interesting."],
+"outcome": "You practise gathering figures, comparing them and being honest about their limits.",
+"safety": "This is a learning exercise, not investment advice. Do not invest real money or share financial information about your family."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-19"
+}
