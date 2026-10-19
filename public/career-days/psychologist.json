@@ -1,0 +1,99 @@
+{
+  "slug": "psychologist",
+  "overview": {
+    "summary": "Psychologists study how people think, feel and behave, and many help people with emotional or behavioural difficulties through assessment and talking therapies.",
+    "problems": "They help people understand themselves, cope with difficulties and improve their wellbeing, learning or work.",
+    "worksWith": "Clients or patients of all ages, families, teachers, doctors and other mental health professionals.",
+    "workplaces": "Clinics, hospitals, schools, universities, workplaces, research centres and private practice. The specialty, such as clinical, counselling, educational, organizational or research, changes the setting."
+  },
+  "timeline": [
+    {
+      "time": "9:00 to 9:30",
+      "title": "Prepare for sessions",
+      "description": "The psychologist reads notes and plans each session.",
+      "why": "Preparation helps make good use of limited time.",
+      "skills": ["Organization", "Planning"]
+    },
+    {
+      "time": "9:30 to 12:30",
+      "title": "Sessions with clients",
+      "description": "The psychologist listens carefully, asks questions and helps clients understand patterns and try new ways of coping. A session often lasts about an hour, though this varies.",
+      "why": "A trusting relationship is central to being able to help.",
+      "skills": ["Listening", "Empathy", "Patience"]
+    },
+    {
+      "time": "13:30 to 15:00",
+      "title": "Assessment and writing",
+      "description": "The psychologist carries out structured assessments or questionnaires and writes reports that explain the results.",
+      "why": "Careful assessment guides what kind of help is offered.",
+      "skills": ["Analysis", "Writing"]
+    },
+    {
+      "time": "15:00 to 16:00",
+      "title": "Supervision and team discussion",
+      "description": "The psychologist discusses cases with a supervisor or colleagues, which is a normal part of professional practice.",
+      "why": "Another point of view helps keep the work safe and ethical.",
+      "skills": ["Reflection", "Teamwork"]
+    },
+    {
+      "time": "16:00 to 17:00",
+      "title": "Records and follow-up",
+      "description": "The psychologist writes confidential notes and arranges next steps.",
+      "why": "Records support continuity of care and are protected by strict rules.",
+      "skills": ["Accuracy", "Confidentiality"]
+    },
+    {
+      "time": "Varies",
+      "title": "Research, teaching or consultation",
+      "description": "Some psychologists study behaviour, teach, or advise schools and organizations.",
+      "why": "Research and teaching keep the profession improving.",
+      "skills": ["Research", "Communication"]
+    }
+  ],
+  "responsibilities": [
+    "Assessing needs using suitable methods",
+    "Providing support or therapy within their training",
+    "Keeping client information confidential",
+    "Writing clear reports and notes",
+    "Working with other professionals",
+    "Following ethical codes",
+    "Staying up to date with research"
+  ],
+  "challenges": [
+    "Hearing painful stories can be emotionally heavy, so looking after yourself matters.",
+    "Progress with clients is often slow and uncertain.",
+    "Training is long, with study, supervised experience and, for clinical practice, often a postgraduate degree.",
+    "Strict ethical and legal duties, such as confidentiality, apply.",
+    "There is a lot of paperwork and record keeping.",
+    "Many services have waiting lists and limited resources.",
+    "It is important to be honest about what psychology can and cannot do."
+  ],
+  "skills": ["Listening", "Empathy", "Critical thinking", "Communication", "Research and statistics", "Patience", "Ethical judgment", "Self-awareness"],
+  "workEnvironment": "Quiet offices and consulting rooms, hospitals, schools or universities, usually with set appointments. Hours can include evenings in some roles. Research and organizational psychology are more office or laboratory based.",
+  "rewards": [
+    "Helping people understand themselves and cope better",
+    "Many specialties to explore",
+    "A mix of science and human contact",
+    "Meaningful, trusted relationships with clients"
+  ],
+  "tradeoffs": [
+    "Emotional demands and the need for self-care",
+    "A long and competitive training path",
+    "Results that can be slow to appear",
+    "Income and job availability that vary by country and specialty"
+  ],
+  "activity": {
+    "title": "Practise careful, non-judgmental listening",
+    "steps": [
+      "Ask a friend or family member who agrees to talk for five minutes about a recent happy or difficult school or work event.",
+      "Listen without interrupting or giving advice.",
+      "Then repeat back in your own words what you heard and ask one open question.",
+      "Ask them whether they felt listened to.",
+      "Note whether listening felt interesting or tiring."
+    ],
+    "outcome": "You practise active listening, which is a core skill in counselling and many other careers.",
+    "safety": "Talk only about everyday topics and do not push anyone to share things they find too private. Never try to diagnose or give mental health advice, and encourage anyone who is struggling to talk to a trusted adult or a qualified professional."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-18"
+}

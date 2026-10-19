@@ -1,0 +1,99 @@
+{
+  "slug": "marketing-manager",
+  "overview": {
+    "summary": "Marketing managers plan how a product, service or organization is promoted, and lead the people who carry out the plans.",
+    "problems": "They help the right people discover, understand and choose what an organization offers.",
+    "worksWith": "Sales teams, designers, writers, product teams, agencies, analysts and customers.",
+    "workplaces": "Companies of every size, advertising and marketing agencies, non-profits and government bodies, in offices or remotely."
+  },
+  "timeline": [
+    {
+      "time": "9:30 to 10:00",
+      "title": "Review results",
+      "description": "The manager checks how campaigns performed the day before: visits, sign-ups, sales and costs.",
+      "why": "Numbers show what is working and what is not.",
+      "skills": ["Analysis", "Curiosity"]
+    },
+    {
+      "time": "10:00 to 12:00",
+      "title": "Planning campaigns",
+      "description": "The manager decides the audience, message, channels, timing and budget for an upcoming campaign.",
+      "why": "A clear plan avoids wasting money.",
+      "skills": ["Strategic thinking", "Creativity"]
+    },
+    {
+      "time": "13:00 to 15:00",
+      "title": "Working with the creative team",
+      "description": "The manager briefs designers and writers, reviews drafts and gives feedback.",
+      "why": "Clear briefs and feedback lead to better work.",
+      "skills": ["Communication", "Leadership"]
+    },
+    {
+      "time": "15:00 to 16:00",
+      "title": "Understanding customers",
+      "description": "The manager reads customer feedback, surveys and market research to see what customers want.",
+      "why": "Marketing works better when it matches real needs.",
+      "skills": ["Empathy", "Research"]
+    },
+    {
+      "time": "16:00 to 17:00",
+      "title": "Budget and reporting",
+      "description": "The manager tracks spending, reports results to senior managers and explains the choices that were made.",
+      "why": "Organizations need to know that marketing money is well spent.",
+      "skills": ["Financial awareness", "Presentation"]
+    },
+    {
+      "time": "Varies",
+      "title": "Launch days and fast changes",
+      "description": "Product launches and events can mean long hours and quick changes of plan.",
+      "why": "Timing is often fixed by the launch date.",
+      "skills": ["Flexibility", "Resilience"]
+    }
+  ],
+  "responsibilities": [
+    "Planning marketing strategies and campaigns",
+    "Managing budgets and tracking results",
+    "Leading and coordinating teams and agencies",
+    "Researching customers and competitors",
+    "Protecting the organization's brand and reputation",
+    "Making sure promotion is honest and follows advertising rules",
+    "Reporting to senior managers"
+  ],
+  "challenges": [
+    "Results can be hard to measure and prove.",
+    "Budgets can be limited while expectations are high.",
+    "Platforms and trends change quickly.",
+    "There is pressure to deliver growth.",
+    "Deadlines cluster around launches.",
+    "Creativity has to be balanced with data and rules.",
+    "Brands compete hard for people's attention."
+  ],
+  "skills": ["Communication", "Creativity", "Analytical thinking", "Leadership", "Planning", "Understanding customers", "Writing", "Budget management"],
+  "workEnvironment": "Mostly office based, with a lot of meetings, teamwork and screen time. Roles range from in-house teams to agencies, where deadlines can be tighter. Some work involves events or travel.",
+  "rewards": [
+    "Seeing a campaign reach and persuade people",
+    "A mix of creativity and data",
+    "Variety of industries",
+    "Opportunities to lead teams"
+  ],
+  "tradeoffs": [
+    "Pressure to show results",
+    "Spikes of deadlines",
+    "Tools that change fast",
+    "Pay and roles that vary by country and employer"
+  ],
+  "activity": {
+    "title": "Plan a mini campaign for a school or community event",
+    "steps": [
+      "Choose a real or imaginary event and write who you want to attend.",
+      "Write one clear message in a single sentence.",
+      "Choose two ways to reach your audience, such as a poster and a message to a class group, with permission.",
+      "Decide how you would measure success, such as how many people say they will come.",
+      "If it is something small, run the plan and note what worked."
+    ],
+    "outcome": "You practise defining an audience, writing a clear message and judging results.",
+    "safety": "Be honest in what you say, do not use other people's photos or names without permission, and share only in places where it is allowed."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-18"
+}

@@ -1,0 +1,99 @@
+{
+  "slug": "journalist",
+  "overview": {
+    "summary": "Journalists find out what is happening, check the facts and report it to the public through newspapers, websites, radio, television or social media.",
+    "problems": "They help people understand events and issues, and hold powerful people and organizations to account.",
+    "worksWith": "Editors, photographers, sources and experts, members of the public, and other reporters.",
+    "workplaces": "Newsrooms, TV and radio stations, online news sites, magazines and news agencies, with a lot of reporting in the field and increasingly remote work."
+  },
+  "timeline": [
+    {
+      "time": "9:00 to 9:30",
+      "title": "News meeting",
+      "description": "The team discusses what is happening and who will cover which stories.",
+      "why": "Newsrooms have to decide quickly what matters most.",
+      "skills": ["Judgement", "Communication"]
+    },
+    {
+      "time": "9:30 to 12:00",
+      "title": "Researching and contacting sources",
+      "description": "The journalist reads documents, searches records, phones or messages people and arranges interviews.",
+      "why": "Reliable stories start with reliable sources.",
+      "skills": ["Research", "Persistence"]
+    },
+    {
+      "time": "12:00 to 15:00",
+      "title": "Interviews and reporting",
+      "description": "The journalist meets people, asks careful questions, attends events and takes notes or recordings.",
+      "why": "First-hand accounts and checked facts make stories trustworthy.",
+      "skills": ["Listening", "Questioning"]
+    },
+    {
+      "time": "15:00 to 17:00",
+      "title": "Writing and checking",
+      "description": "The journalist writes the story clearly, checks names, numbers and claims, and asks for a response from anyone who is criticized.",
+      "why": "Accuracy and fairness protect readers and the people in the story.",
+      "skills": ["Writing", "Fact-checking"]
+    },
+    {
+      "time": "17:00 to 18:00",
+      "title": "Editing and publishing",
+      "description": "The journalist works with an editor to improve the story and meet the deadline.",
+      "why": "A second pair of eyes catches mistakes and improves clarity.",
+      "skills": ["Accepting feedback", "Time management"]
+    },
+    {
+      "time": "Varies",
+      "title": "Breaking news",
+      "description": "Big events can change plans immediately and require working at any hour.",
+      "why": "News does not wait for convenient times.",
+      "skills": ["Speed", "Staying calm"]
+    }
+  ],
+  "responsibilities": [
+    "Finding and researching stories",
+    "Interviewing people fairly",
+    "Checking facts and sources",
+    "Writing clearly and accurately",
+    "Following legal and ethical rules, such as accuracy, fairness and protecting sources",
+    "Meeting tight deadlines",
+    "Correcting mistakes openly"
+  ],
+  "challenges": [
+    "Deadlines are tight and there is pressure to be fast and accurate.",
+    "Hours are irregular and often include weekends.",
+    "Reporting on sensitive or upsetting events can affect your wellbeing.",
+    "Journalists sometimes face criticism or abuse from the public or online.",
+    "Job security and pay vary, and the industry has changed a lot.",
+    "Some reporting involves personal risk.",
+    "Competition for jobs is strong, and building a portfolio of work takes time."
+  ],
+  "skills": ["Writing", "Curiosity", "Questioning", "Fact-checking", "Integrity", "Communication", "Time management", "Resilience"],
+  "workEnvironment": "Newsrooms, but also streets, courts, events and homes, plus work done remotely. Hours can be irregular, and the pace changes with the news. Some reporters specialize in areas such as health, sport, politics or business.",
+  "rewards": [
+    "Informing people and helping them understand issues",
+    "Variety, with new topics and people all the time",
+    "Meeting a wide range of people",
+    "Seeing your reporting make a difference"
+  ],
+  "tradeoffs": [
+    "Pressure and unpredictable hours",
+    "Exposure to distressing events",
+    "Public criticism",
+    "Job opportunities and income that vary a lot by country and organization"
+  ],
+  "activity": {
+    "title": "Write a short news report about a local event",
+    "steps": [
+      "Choose a safe, simple event, such as a school sports day or a local market, and get permission to write about it.",
+      "Collect the key facts: who, what, when, where and why.",
+      "Ask two people one question each and write down their answers accurately, with their permission.",
+      "Write about 150 words in a clear order, with the most important fact first.",
+      "Check every name and number, then ask someone to read it and say whether anything is unclear."
+    ],
+    "outcome": "You practise gathering facts, interviewing, writing clearly and checking accuracy.",
+    "safety": "Ask permission before quoting anyone, do not publish names, photos or private details of children without their guardians' consent, and write only what you can check."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-18"
+}

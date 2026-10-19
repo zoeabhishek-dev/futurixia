@@ -1,0 +1,99 @@
+{
+  "slug": "cybersecurity-analyst",
+  "overview": {
+    "summary": "Cybersecurity analysts protect computers, networks and data from attacks, misuse and accidents.",
+    "problems": "They watch for signs of attack, find weak points before attackers do, and respond when something goes wrong.",
+    "worksWith": "IT and network teams, software developers, managers and, sometimes, customers or the authorities.",
+    "workplaces": "Companies, banks, hospitals, government bodies and security firms, often in an office or remotely."
+  },
+  "timeline": [
+    {
+      "time": "9:00 to 9:30",
+      "title": "Review overnight alerts",
+      "description": "The analyst checks security tools for unusual activity recorded overnight.",
+      "why": "Finding a problem early limits the damage.",
+      "skills": ["Attention to detail", "Prioritizing"]
+    },
+    {
+      "time": "9:30 to 12:00",
+      "title": "Investigating suspicious activity",
+      "description": "The analyst looks into alerts, decides which are real threats and which are false alarms, and traces what happened.",
+      "why": "Most alerts turn out to be harmless, so spotting the real ones matters.",
+      "skills": ["Analysis", "Curiosity", "Problem solving"]
+    },
+    {
+      "time": "13:00 to 14:30",
+      "title": "Finding and fixing weaknesses",
+      "description": "The analyst checks systems for out-of-date software, weak settings or missing protections and works with IT to fix them.",
+      "why": "Fixing weaknesses stops attacks before they succeed.",
+      "skills": ["Technical knowledge", "Collaboration"]
+    },
+    {
+      "time": "14:30 to 16:00",
+      "title": "Helping people stay safe",
+      "description": "The analyst advises colleagues on safe habits such as strong passwords and spotting phishing emails, and reviews requests for access to systems.",
+      "why": "Many attacks begin with a human mistake.",
+      "skills": ["Communication", "Teaching"]
+    },
+    {
+      "time": "16:00 to 17:00",
+      "title": "Reporting and documentation",
+      "description": "The analyst writes incident notes, updates procedures and reports risks to managers.",
+      "why": "Records help the team learn and show what happened.",
+      "skills": ["Writing", "Accuracy"]
+    },
+    {
+      "time": "Varies",
+      "title": "Responding to incidents",
+      "description": "When a real incident happens, the team works quickly, sometimes outside normal hours.",
+      "why": "Speed and calm decisions can reduce the harm.",
+      "skills": ["Calm under pressure", "Teamwork"]
+    }
+  ],
+  "responsibilities": [
+    "Monitoring systems for threats",
+    "Investigating and responding to incidents",
+    "Finding and reporting weaknesses",
+    "Keeping security rules and tools up to date",
+    "Advising colleagues on safe practices",
+    "Keeping accurate records",
+    "Following laws about privacy and data protection"
+  ],
+  "challenges": [
+    "Attackers keep changing their methods, so learning never stops.",
+    "Many alerts are false alarms, and checking them can be repetitive.",
+    "Incidents can happen out of hours, and some roles include on-call duty.",
+    "Being responsible for protecting important data can be stressful.",
+    "Explaining risks to people who are not technical takes patience.",
+    "Strict rules about privacy and what you are allowed to do apply at all times.",
+    "Many roles ask for certifications or experience."
+  ],
+  "skills": ["Technical knowledge of networks and systems", "Analytical thinking", "Curiosity", "Attention to detail", "Communication", "Integrity", "Calm under pressure", "Continuous learning"],
+  "workEnvironment": "Mostly desk and computer based, in offices, security operations rooms or remotely. Some teams watch systems around the clock in shifts. The work mixes careful investigation with meetings and writing.",
+  "rewards": [
+    "Protecting people and organizations from real harm",
+    "Constant learning and problem solving",
+    "Many specialties, from investigation to testing",
+    "Skills that are needed in every industry"
+  ],
+  "tradeoffs": [
+    "On-call or shift work in some roles",
+    "Repetitive checking of alerts",
+    "Pressure during incidents",
+    "Requirements and pay that vary by country and employer"
+  ],
+  "activity": {
+    "title": "Check how strong your own online safety is",
+    "steps": [
+      "List your most important online accounts, such as email, without writing down any passwords.",
+      "For each one, check whether two-step verification is available and turn it on with an adult's help.",
+      "Learn what a phishing message looks like from a trusted guide, such as your national cybersecurity agency, and look at three examples.",
+      "Write a short list of five safety rules for a friend.",
+      "Note whether thinking like a defender felt interesting."
+    ],
+    "outcome": "You practise spotting weak points and explaining protections in simple words.",
+    "safety": "Look only at your own accounts and settings, with permission. Never test or try to break into anyone else's accounts, devices or networks, because that is illegal."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-18"
+}

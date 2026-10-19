@@ -1,0 +1,99 @@
+{
+  "slug": "veterinarian",
+  "overview": {
+    "summary": "Veterinarians diagnose and treat illness and injury in animals, advise owners about animal health and help prevent disease.",
+    "problems": "They keep pets, farm animals and other animals healthy, ease their suffering and help protect public health.",
+    "worksWith": "Animal owners and farmers, veterinary nurses, other vets, laboratories and public authorities.",
+    "workplaces": "Small-animal clinics, farms and field visits, animal hospitals, zoos, research laboratories, and government or public health bodies."
+  },
+  "timeline": [
+    {
+      "time": "8:00 to 8:30",
+      "title": "Check the day's patients",
+      "description": "The vet reviews the list of appointments, the animals staying in the hospital and any changes overnight.",
+      "why": "Preparation lets the team plan time, equipment and medicines.",
+      "skills": ["Organization", "Planning"]
+    },
+    {
+      "time": "8:30 to 12:30",
+      "title": "Consultations and examinations",
+      "description": "The vet talks with owners, examines animals, explains what is found and agrees a treatment plan.",
+      "why": "Animals cannot describe their symptoms, so careful observation and good questions to owners are key.",
+      "skills": ["Observation", "Communication", "Empathy"]
+    },
+    {
+      "time": "12:30 to 14:00",
+      "title": "Tests and procedures",
+      "description": "The vet takes samples, reads test results, gives vaccinations or carries out procedures.",
+      "why": "Tests help confirm what is wrong and guide treatment.",
+      "skills": ["Practical skill", "Precision"]
+    },
+    {
+      "time": "14:00 to 16:30",
+      "title": "Surgery or farm and field visits",
+      "description": "Depending on the practice, the vet performs surgery or travels to farms and other sites to treat animals there.",
+      "why": "Different kinds of practice need different skills and stamina.",
+      "skills": ["Stamina", "Adaptability"]
+    },
+    {
+      "time": "16:30 to 17:30",
+      "title": "Records and follow-up",
+      "description": "The vet writes notes, phones owners with results and prescribes medicines.",
+      "why": "Records and clear communication help animals recover and keep owners informed.",
+      "skills": ["Writing", "Clear communication"]
+    },
+    {
+      "time": "Varies",
+      "title": "Emergencies and on-call duty",
+      "description": "Animals can fall ill or be injured at any time, so many vets share on-call duty at nights or weekends.",
+      "why": "Emergencies do not follow clinic opening hours.",
+      "skills": ["Calm under pressure", "Decision-making"]
+    }
+  ],
+  "responsibilities": [
+    "Examining and diagnosing animals",
+    "Treating illness and injury, including surgery in some roles",
+    "Preventing disease through vaccination and advice",
+    "Communicating clearly and kindly with owners",
+    "Keeping accurate records",
+    "Following laws on animal welfare and medicines",
+    "Working with a team of nurses and other staff"
+  ],
+  "challenges": [
+    "Some moments are emotionally hard, including euthanasia and treating ill or neglected animals.",
+    "Hours can be long, and on-call duty is common.",
+    "There is a physical risk from bites and kicks, and farm conditions can be demanding.",
+    "Owners can be worried about cost.",
+    "Busy practices mean a heavy workload.",
+    "Entry is competitive and training is long.",
+    "Training costs compared with income vary by country."
+  ],
+  "skills": ["Animal handling", "Scientific knowledge", "Communication", "Empathy", "Decision-making", "Practical skill", "Stamina", "Stress management"],
+  "workEnvironment": "Clinics, animal hospitals, farms and field visits, with some roles in laboratories, zoos or government. The work involves handling animals, sometimes outdoors in all weather, and can include nights and weekends on call.",
+  "rewards": [
+    "Helping animals and the people who care for them",
+    "Variety across species and settings",
+    "Hands-on practical work",
+    "Contributing to animal welfare and public health"
+  ],
+  "tradeoffs": [
+    "Emotional strain",
+    "Long and irregular hours",
+    "Physical risk",
+    "Training that is long and costly, with pay that varies by country and type of practice"
+  ],
+  "activity": {
+    "title": "Learn to read an animal's body language",
+    "steps": [
+      "Choose a friendly pet that belongs to your family or a friend, with the owner's permission.",
+      "Read a guide from a reputable animal welfare organization on how dogs or cats show stress and comfort, such as their ears, tail and posture.",
+      "Watch the animal from a calm distance for ten minutes and note what you see.",
+      "Write what the signals may mean and when to stop or leave the animal alone.",
+      "Note whether observing animals closely felt interesting."
+    ],
+    "outcome": "You practise careful observation and learn why vets watch an animal before touching it.",
+    "safety": "Do not approach unfamiliar animals, and do not touch an animal that seems frightened or angry. Always have the owner present, and never treat an animal yourself: ask a vet."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-18"
+}

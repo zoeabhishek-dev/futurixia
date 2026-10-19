@@ -1,0 +1,99 @@
+{
+  "slug": "physiotherapist",
+  "overview": {
+    "summary": "Physiotherapists help people move and function better after injury, illness or surgery, or because of long-term conditions, using exercise, hands-on treatment and advice.",
+    "problems": "They reduce pain, improve movement and help people return to daily life, work or sport.",
+    "worksWith": "Patients of all ages, doctors, nurses, occupational therapists and sports coaches.",
+    "workplaces": "Hospitals, clinics, sports teams, rehabilitation centres, schools, care homes and patients' homes, and some therapists run private practices."
+  },
+  "timeline": [
+    {
+      "time": "8:30 to 9:00",
+      "title": "Review patient notes",
+      "description": "The physiotherapist reads the notes, goals and progress of the patients booked for the day.",
+      "why": "Each treatment builds on what was done before.",
+      "skills": ["Organization", "Clinical reasoning"]
+    },
+    {
+      "time": "9:00 to 12:00",
+      "title": "Assessing and treating patients",
+      "description": "The physiotherapist asks about symptoms, checks movement and strength, explains the findings and starts treatment with exercises or hands-on techniques.",
+      "why": "A careful assessment shows what is causing the problem.",
+      "skills": ["Observation", "Communication", "Hands-on skill"]
+    },
+    {
+      "time": "12:00 to 13:00",
+      "title": "Writing notes",
+      "description": "The physiotherapist records what was found and what was done.",
+      "why": "Records guide later treatment and protect patients.",
+      "skills": ["Accuracy", "Writing"]
+    },
+    {
+      "time": "13:00 to 16:00",
+      "title": "Exercise sessions and teaching",
+      "description": "The physiotherapist guides patients through exercises, adjusts them and teaches patients how to practise at home.",
+      "why": "Recovery depends a lot on what patients do between visits.",
+      "skills": ["Teaching", "Motivation", "Patience"]
+    },
+    {
+      "time": "16:00 to 17:00",
+      "title": "Teamwork and planning",
+      "description": "The physiotherapist talks with doctors, nurses or coaches and updates treatment plans.",
+      "why": "Good recovery plans involve everyone who looks after the patient.",
+      "skills": ["Teamwork", "Planning"]
+    },
+    {
+      "time": "Varies",
+      "title": "Home visits, sports events or ward work",
+      "description": "Some physiotherapists travel to patients' homes, work with sports teams or treat patients on hospital wards.",
+      "why": "Care is most useful when it happens where the patient needs it.",
+      "skills": ["Flexibility", "Adaptability"]
+    }
+  ],
+  "responsibilities": [
+    "Assessing movement, strength and pain",
+    "Planning treatment together with patients",
+    "Guiding exercises and teaching self-management",
+    "Using treatments safely",
+    "Recording progress",
+    "Referring patients to other professionals when needed",
+    "Motivating patients through slow recovery"
+  ],
+  "challenges": [
+    "The work is physically demanding and involves a lot of hands-on handling.",
+    "Recovery can be slow, and some patients make limited progress.",
+    "Motivating patients to keep exercising is not always easy.",
+    "Busy schedules can mean seeing many patients in a day.",
+    "Seeing people in pain or with serious conditions can be emotionally tiring.",
+    "New research means learning continues.",
+    "Pay and opportunities vary."
+  ],
+  "skills": ["Knowledge of anatomy and movement", "Communication", "Patience", "Motivation", "Observation", "Empathy", "Physical fitness", "Problem solving"],
+  "workEnvironment": "Clinics, hospitals, gyms, sports facilities and patients' homes. The work is active, with a lot of standing, moving and hands-on contact. Roles differ from hospital wards to sport settings to private practice.",
+  "rewards": [
+    "Seeing patients regain movement and independence",
+    "Active, varied work",
+    "Working closely with people over time",
+    "Many areas to specialize in"
+  ],
+  "tradeoffs": [
+    "Physical strain on the therapist",
+    "Slow or limited progress with some patients",
+    "Time pressure when appointment lists are full",
+    "Pay that varies by country and setting"
+  ],
+  "activity": {
+    "title": "Learn a gentle stretch and explain it clearly",
+    "steps": [
+      "Choose a simple, gentle stretch from a trusted public health website, such as your national health service.",
+      "Read why it is done, how to do it safely and when to stop.",
+      "Try it gently yourself, only if you have no pain or injury.",
+      "Explain it to a family member in your own words, including when to stop.",
+      "Note whether helping someone move better felt rewarding."
+    ],
+    "outcome": "You practise learning how the body moves and explaining an exercise clearly and safely.",
+    "safety": "Stretch gently and stop if anything hurts. Do not advise or treat anyone who has an injury or pain, because they should see a qualified health professional."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-18"
+}

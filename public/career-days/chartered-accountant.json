@@ -1,0 +1,99 @@
+{
+  "slug": "chartered-accountant",
+  "overview": {
+    "summary": "Chartered accountants prepare and check financial records, advise on tax and money matters, and give organizations reliable information about their finances. Titles and qualifications differ by country.",
+    "problems": "They help businesses and people understand where money comes from and goes, follow tax and reporting rules, and make sound financial decisions.",
+    "worksWith": "Business owners, finance teams, auditors, tax authorities, banks and clients.",
+    "workplaces": "Accounting and audit firms, company finance departments, banks, and government and non-profit organizations, and some run their own practices."
+  },
+  "timeline": [
+    {
+      "time": "9:00 to 9:30",
+      "title": "Plan the day's deadlines",
+      "description": "The accountant checks client or company deadlines such as tax filings, audits and reports.",
+      "why": "Many financial tasks have strict legal dates.",
+      "skills": ["Organization", "Time management"]
+    },
+    {
+      "time": "9:30 to 12:30",
+      "title": "Checking records and preparing accounts",
+      "description": "The accountant compares bank records, invoices and ledgers, prepares financial statements and looks for errors.",
+      "why": "Accurate records are the basis of every financial decision.",
+      "skills": ["Accuracy", "Numeracy"]
+    },
+    {
+      "time": "13:30 to 15:30",
+      "title": "Auditing or reviewing",
+      "description": "The accountant tests whether figures are supported by evidence, asks questions and notes anything unusual.",
+      "why": "Independent checking builds trust in financial information.",
+      "skills": ["Healthy scepticism", "Analysis"]
+    },
+    {
+      "time": "15:30 to 16:30",
+      "title": "Tax and advice",
+      "description": "The accountant calculates tax, considers the rules and advises clients on what to do.",
+      "why": "Following tax rules protects clients from penalties.",
+      "skills": ["Knowledge of rules", "Clear explanation"]
+    },
+    {
+      "time": "16:30 to 17:30",
+      "title": "Meeting clients and writing reports",
+      "description": "The accountant explains results and recommendations in simple language and writes reports.",
+      "why": "Numbers only help people who can understand them.",
+      "skills": ["Communication", "Writing"]
+    },
+    {
+      "time": "Varies",
+      "title": "Busy seasons",
+      "description": "Around deadlines such as the end of the financial year or tax filing dates, working hours can increase.",
+      "why": "Legal deadlines cannot be moved.",
+      "skills": ["Stamina", "Focus"]
+    }
+  ],
+  "responsibilities": [
+    "Preparing and checking financial statements",
+    "Auditing records for accuracy",
+    "Calculating and advising on tax",
+    "Keeping up with changing accounting and tax rules",
+    "Advising on budgets and financial decisions",
+    "Keeping client information confidential",
+    "Following professional ethics"
+  ],
+  "challenges": [
+    "Hours can be long and pressure is high around deadlines.",
+    "Professional exams are demanding and take years.",
+    "The work involves detailed and repetitive checking.",
+    "Rules and standards change often.",
+    "Responsibility for accuracy is serious, because errors can have large consequences.",
+    "Conversations can be difficult when clients disagree or problems are found.",
+    "Much of the day is spent sitting at a desk."
+  ],
+  "skills": ["Numeracy", "Attention to detail", "Analytical thinking", "Integrity", "Communication", "Knowledge of rules", "Time management", "Use of accounting software"],
+  "workEnvironment": "Mostly office based, at a firm, a company or from home, with visits to clients. The work follows a yearly cycle with busy peaks. Professional exams are usually taken while working.",
+  "rewards": [
+    "Being trusted with important financial matters",
+    "Clear career paths in many industries",
+    "Skills that are needed in all kinds of organizations",
+    "Problem solving with numbers"
+  ],
+  "tradeoffs": [
+    "Heavy workload at peak times",
+    "Long professional exams",
+    "Detailed, careful work",
+    "Pay and conditions that vary by country, firm and experience"
+  ],
+  "activity": {
+    "title": "Make a simple budget and check it",
+    "steps": [
+      "Track your pocket money, or a small family expense with permission, for two weeks, writing down each amount and what it was for.",
+      "Put the entries in a spreadsheet with categories such as food, travel and fun.",
+      "Add up each category and the total.",
+      "Check your arithmetic a second way and find any mistake.",
+      "Write one sentence on where most of the money went and one change you would make."
+    ],
+    "outcome": "You practise recording, grouping and checking figures, which are everyday accounting skills.",
+    "safety": "Use only your own pocket money or figures an adult agrees to share, and do not share bank details or account numbers."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-18"
+}

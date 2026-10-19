@@ -1,0 +1,99 @@
+{
+  "slug": "ui-ux-designer",
+  "overview": {
+    "summary": "UI/UX designers shape how digital products such as apps and websites look and feel, and how easy they are to use.",
+    "problems": "They find out what users struggle with and design screens and flows that help people get things done without confusion.",
+    "worksWith": "Product managers, developers, researchers, other designers and users.",
+    "workplaces": "Technology companies, agencies, banks, start-ups, in-house teams, and freelance or remote work."
+  },
+  "timeline": [
+    {
+      "time": "9:30 to 10:00",
+      "title": "Team check-in",
+      "description": "The designer shares progress and hears feedback from developers and any open design questions.",
+      "why": "Design decisions affect many people, so the team lines up early.",
+      "skills": ["Communication", "Collaboration"]
+    },
+    {
+      "time": "10:00 to 12:00",
+      "title": "Understanding users",
+      "description": "The designer reviews research notes, user interviews, usage numbers or support complaints to see where people get stuck.",
+      "why": "Designing without understanding users means guessing.",
+      "skills": ["Empathy", "Analysis"]
+    },
+    {
+      "time": "13:00 to 15:30",
+      "title": "Sketching and designing screens",
+      "description": "The designer sketches flows, then creates wireframes and layouts in design software, thinking about what appears on each screen and in what order.",
+      "why": "A good structure makes a product easy to use before any visual polish is added.",
+      "skills": ["Visual design", "Problem solving"]
+    },
+    {
+      "time": "15:30 to 16:30",
+      "title": "Prototype and testing",
+      "description": "The designer builds a clickable prototype and watches a few people try a task, noting where they hesitate.",
+      "why": "Testing with real people shows problems that designers miss.",
+      "skills": ["Observation", "Listening"]
+    },
+    {
+      "time": "16:30 to 17:30",
+      "title": "Working with developers",
+      "description": "The designer explains designs, answers questions and adjusts them when something is hard to build.",
+      "why": "A design only helps people if it can be built well.",
+      "skills": ["Collaboration", "Flexibility"]
+    },
+    {
+      "time": "Varies",
+      "title": "Feedback and revisions",
+      "description": "Managers and other stakeholders ask for changes, and the designer explains the reasons behind choices.",
+      "why": "Designs usually change several times before they are released.",
+      "skills": ["Receiving feedback", "Persuasion"]
+    }
+  ],
+  "responsibilities": [
+    "Researching what users need",
+    "Mapping how users move through a product",
+    "Creating wireframes, layouts and prototypes",
+    "Testing designs with real users",
+    "Keeping designs consistent and accessible",
+    "Working with developers while the product is built",
+    "Presenting and explaining design decisions"
+  ],
+  "challenges": [
+    "Opinions about design differ and can be subjective.",
+    "Business deadlines can leave little time for research and testing.",
+    "Users do not always behave the way designers expect.",
+    "Designs often change after feedback.",
+    "Products have to work for people with different abilities, which takes extra care.",
+    "Software and trends keep changing.",
+    "Competition for roles is strong, so a portfolio matters."
+  ],
+  "skills": ["Empathy for users", "Visual design", "Problem solving", "Communication", "Prototyping", "Research", "Attention to detail", "Receiving feedback"],
+  "workEnvironment": "Mostly desk and computer based, in offices or remotely, in close contact with product and engineering teams. The work mixes quiet design time with meetings, research sessions and workshops.",
+  "rewards": [
+    "Making products easier for people to use",
+    "A mix of creative and analytical thinking",
+    "Seeing real people use your design",
+    "A wide range of industries to work in"
+  ],
+  "tradeoffs": [
+    "Subjective feedback and many people with opinions",
+    "Deadlines that squeeze research time",
+    "Job titles, demand and pay that vary by employer and country",
+    "The need to keep a portfolio up to date"
+  ],
+  "activity": {
+    "title": "Test the usability of an everyday app or website",
+    "steps": [
+      "Choose a simple task, such as finding a school timetable on a website or setting an alarm on a phone.",
+      "Ask two or three people who agree to help to try it while you watch quietly.",
+      "Note where they hesitate, tap the wrong thing or look confused.",
+      "Sketch one change that would fix the biggest problem.",
+      "Note whether watching people and improving a design felt interesting."
+    ],
+    "outcome": "You practise watching real behaviour and turning it into design improvements.",
+    "safety": "Ask only people who agree to take part, never ask them to share passwords or personal information, and do not record them."
+  },
+  "source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+  "lastReviewed": "2026-10-18"
+}
