@@ -1,0 +1,31 @@
+{
+"slug": "wildlife-biologist",
+"overview": {
+"summary": "Wildlife biologists study wild animals and their habitats, and work to understand and protect species and ecosystems.",
+"problems": "They find out how animal populations are doing, what threatens them and how people and wildlife can share the land.",
+"worksWith": "Other scientists, park rangers, local communities, government agencies, conservation groups and landowners.",
+"workplaces": "Field sites such as forests, wetlands and parks, laboratories, universities, government agencies and conservation organizations."
+},
+"timeline": [
+{"time": "Early morning", "title": "Fieldwork", "description": "The biologist travels to a site and observes or counts animals, often at dawn when many are active.", "why": "Careful counts show whether a population is stable.", "skills": ["Observation", "Patience"]},
+{"time": "Late morning", "title": "Collecting data", "description": "The biologist records tracks, signs, camera images or samples using the right permits and methods.", "why": "Careful collection makes data trustworthy.", "skills": ["Care", "Accuracy"]},
+{"time": "Afternoon", "title": "Back at base", "description": "The biologist enters data, checks equipment and plans the next visit.", "why": "Organized records make analysis possible.", "skills": ["Organization", "Technical skill"]},
+{"time": "Late afternoon", "title": "Analysis and reports", "description": "The biologist uses statistics and maps to understand patterns and writes reports.", "why": "Evidence guides conservation decisions.", "skills": ["Analysis", "Writing"]},
+{"time": "Varies", "title": "Talking with people", "description": "The biologist meets local communities, landowners and agencies about what wildlife needs.", "why": "Conservation only works when people cooperate.", "skills": ["Communication", "Diplomacy"]},
+{"time": "Varies", "title": "Weather and remote travel", "description": "Fieldwork may involve long journeys, rough terrain and camping.", "why": "Wildlife is often found far from towns.", "skills": ["Resilience", "Adaptability"]}
+],
+"responsibilities": ["Planning and carrying out wildlife surveys", "Collecting and analyzing data", "Monitoring populations and habitats", "Writing reports and recommendations", "Following animal welfare and permit rules", "Working with communities and agencies", "Applying for funding"],
+"challenges": ["Fieldwork can be physically demanding, remote and in harsh weather.", "Jobs are competitive and often short-term or funded by grants.", "Much of the time goes on data and writing, not watching animals.", "Pay is low in some roles.", "Conservation problems are complex and results can be slow.", "Terrain, weather and wild animals bring safety risks.", "Postings may be far from home."],
+"skills": ["Biology and ecology", "Observation", "Data analysis", "Fieldwork skills", "Writing", "Patience", "Physical fitness", "Communication"],
+"workEnvironment": "A mix of outdoor field sites, laboratories and offices. Fieldwork can mean early starts, long days and remote locations in all weather. Office work includes data analysis and reports.",
+"rewards": ["Working with nature", "Contributing to conservation", "Outdoor fieldwork", "Variety of species and places"],
+"tradeoffs": ["Competitive and often short-term work", "Physical demands", "Remote locations", "Pay that varies by country and employer"],
+"activity": {
+"title": "Run a 20-minute bird or insect count",
+"steps": ["With an adult, choose a safe public spot such as a park or school garden.", "Sit quietly for 20 minutes and record each kind of bird or insect you see in a table.", "Repeat on another day or at another time and compare.", "Draw a simple chart.", "Note one reason your counts might not be complete."],
+"outcome": "You practise watching quietly, recording carefully and thinking about the limits of data.",
+"safety": "Go with an adult, never touch or chase wild animals, nests or insects that could sting, stay on paths and away from water and roads, and leave nature as you found it."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

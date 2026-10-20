@@ -1,0 +1,31 @@
+{
+"slug": "actuary",
+"overview": {
+"summary": "Actuaries use mathematics, statistics and financial theory to measure risk and uncertainty, especially in insurance, pensions and investment.",
+"problems": "They help organizations price insurance fairly, plan to pay future claims and pensions, and understand financial risk.",
+"worksWith": "Insurance and pension managers, underwriters, data analysts, accountants, lawyers and regulators.",
+"workplaces": "Insurance companies, consultancies, pension funds, banks and government bodies, mostly in offices."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Plan the day", "description": "The actuary reviews deadlines for reports and studies.", "why": "Many actuarial reports have legal deadlines.", "skills": ["Organization", "Planning"]},
+{"time": "9:30 to 12:30", "title": "Gathering and checking data", "description": "The actuary collects claims and population data and checks its quality.", "why": "Models rely on reliable data.", "skills": ["Accuracy", "Statistics"]},
+{"time": "13:30 to 15:30", "title": "Building and testing models", "description": "The actuary builds models that estimate future claims, costs or life expectancy, and tests them.", "why": "Models guide pricing and how much money is set aside.", "skills": ["Mathematics", "Programming"]},
+{"time": "15:30 to 16:30", "title": "Checking assumptions", "description": "The actuary asks what happens if assumptions change and writes down the uncertainties.", "why": "The future is uncertain, so ranges matter more than single numbers.", "skills": ["Critical thinking", "Honesty"]},
+{"time": "16:30 to 17:30", "title": "Explaining results", "description": "The actuary turns the numbers into plain language for managers and clients.", "why": "Decision makers need results they can understand.", "skills": ["Communication", "Writing"]},
+{"time": "Varies", "title": "Exam study", "description": "Many actuaries study for professional exams while working.", "why": "Qualifications are required to progress in the profession.", "skills": ["Discipline", "Persistence"]}
+],
+"responsibilities": ["Analyzing data on risk and uncertainty", "Building and testing financial and statistical models", "Pricing insurance and setting aside money for future claims", "Advising on pensions and investment risk", "Explaining results and uncertainty clearly", "Following professional standards and regulations", "Studying for professional qualifications"],
+"challenges": ["Professional exams are demanding and take years.", "The work involves heavy mathematical and spreadsheet work.", "Results are uncertain, and explaining uncertainty to non-experts is hard.", "Regulations and standards keep changing.", "Deadlines cluster around reporting dates.", "Much of the day is spent sitting at a computer.", "There are fewer roles than in some careers, so competition can be strong."],
+"skills": ["Mathematics and statistics", "Programming and spreadsheets", "Analytical thinking", "Attention to detail", "Communication", "Professional judgement", "Discipline", "Learning quickly"],
+"workEnvironment": "Mostly offices or remote work with computers and spreadsheets, working with teams and managers. Hours are usually regular, with study time for exams. Work follows reporting cycles with busy peaks.",
+"rewards": ["Using maths on real problems", "A respected professional qualification", "Variety of industries", "Clear progression through exams"],
+"tradeoffs": ["Years of exams", "Detail-heavy work", "Pressure at reporting deadlines", "Pay and opportunities that vary by country and firm"],
+"activity": {
+"title": "Estimate a simple risk with dice",
+"steps": ["Choose a simple event, such as getting at least one six when you roll a die four times.", "Predict how often it will happen.", "Run the experiment 50 times and record each result.", "Compare your result with your prediction and calculate the percentage.", "Write one sentence on why small experiments can differ from the theory."],
+"outcome": "You practise estimating probability, running a test and understanding uncertainty.",
+"safety": "Use only dice, coins or cards, do not gamble with money, and do not use this to make decisions about real risks."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

@@ -1,0 +1,31 @@
+{
+"slug": "optometrist",
+"overview": {
+"summary": "Optometrists examine eyes, test vision, detect eye conditions and prescribe glasses and contact lenses. Their legal role differs by country.",
+"problems": "They help people see clearly and comfortably, and spot eye and general health problems early.",
+"worksWith": "Patients of all ages, opticians and dispensers, eye doctors, family doctors and other health professionals.",
+"workplaces": "Opticians' practices, eye clinics, hospitals and optical retail chains, and some run their own practice."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Prepare for appointments", "description": "The optometrist reviews records and checks equipment.", "why": "Preparation saves time for patients.", "skills": ["Organization", "Attention to detail"]},
+{"time": "9:30 to 12:30", "title": "Eye examinations", "description": "The optometrist asks about symptoms and history, tests vision, checks eye health and measures the eye.", "why": "Early detection of problems protects sight.", "skills": ["Precision", "Communication"]},
+{"time": "12:30 to 14:00", "title": "Interpreting results", "description": "The optometrist works out the prescription and decides whether the patient needs further tests.", "why": "Correct decisions depend on careful interpretation.", "skills": ["Analysis", "Judgement"]},
+{"time": "14:00 to 16:30", "title": "Fitting and advice", "description": "The optometrist helps patients choose glasses or fits contact lenses and explains how to look after them.", "why": "Good fit and care make lenses comfortable and safe.", "skills": ["Patience", "Customer care"]},
+{"time": "16:30 to 17:30", "title": "Records and referrals", "description": "The optometrist writes notes and refers patients to eye doctors or family doctors when needed.", "why": "Some eye problems need specialist treatment.", "skills": ["Accuracy", "Responsibility"]},
+{"time": "Varies", "title": "Children and older patients", "description": "Some patients need extra time and different approaches.", "why": "Eye care has to suit every age.", "skills": ["Empathy", "Adaptability"]}
+],
+"responsibilities": ["Testing vision and examining eye health", "Prescribing glasses and contact lenses", "Detecting eye disease and referring when needed", "Advising patients on eye care", "Fitting lenses", "Keeping records", "Following health and safety rules"],
+"challenges": ["Examinations are repetitive and involve long periods sitting close to patients.", "Detecting serious problems and delivering difficult news is part of the job.", "Some patients are nervous, including children.", "There is pressure to sell products in some retail practices.", "Training is long and regulated.", "Rules about what optometrists may do differ by country.", "Technology changes quickly."],
+"skills": ["Attention to detail", "Communication", "Patience", "Scientific knowledge", "Manual dexterity", "Empathy", "Decision-making", "Customer service"],
+"workEnvironment": "Quiet, well-lit examination rooms in clinics and practices, with regular hours and appointments. The work is one-to-one, seated and precise. Some optometrists work in hospitals or manage a business.",
+"rewards": ["Helping people see better", "Spotting health problems early", "Regular hours", "The option to run your own practice"],
+"tradeoffs": ["Repetitive work", "Business pressure in retail settings", "Long training", "Pay and conditions that vary by country and setting"],
+"activity": {
+"title": "Learn how the eye works and explain it",
+"steps": ["Read about how the eye focuses light on a trusted source such as a national eye health or optometry association.", "Draw a simple diagram of the cornea, lens, retina and optic nerve.", "Learn two habits that protect eyes, such as screen breaks.", "Explain them to a family member and answer one question.", "Note whether the topic felt interesting."],
+"outcome": "You practise learning anatomy and giving clear health information.",
+"safety": "This is an information exercise only. Do not test anyone's eyes, shine bright lights into eyes or advise anyone on eye problems. See a qualified optometrist for real concerns."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

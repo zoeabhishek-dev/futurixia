@@ -1,0 +1,31 @@
+{
+"slug": "air-force-officer",
+"overview": {
+"summary": "Air force officers lead and manage people and operations in a national air force, with roles ranging from flying aircraft to engineering, logistics, air defence and administration.",
+"problems": "They help defend airspace, support the country in emergencies and keep aircraft and systems ready and safe.",
+"worksWith": "Pilots, engineers, technicians, air traffic and radar staff, other armed services and civil authorities.",
+"workplaces": "Air bases, squadrons, command centres and training institutions, and in some roles abroad or in remote regions."
+},
+"timeline": [
+{"time": "Early morning", "title": "Fitness and parade", "description": "The officer leads or joins physical training and drills.", "why": "Fitness and discipline are part of readiness.", "skills": ["Fitness", "Leadership"]},
+{"time": "Morning", "title": "Briefing and planning", "description": "The officer plans the day's training, flying or maintenance and briefs the team.", "why": "Aircraft operations depend on precise planning.", "skills": ["Planning", "Communication"]},
+{"time": "Late morning", "title": "Flying, technical or ground duties", "description": "Depending on the branch, this may be flying training, engineering checks, radar monitoring or logistics.", "why": "Each branch keeps the air force working. The flying branch is very selective and has strict medical standards.", "skills": ["Technical skill", "Focus"]},
+{"time": "Afternoon", "title": "Team and welfare", "description": "The officer looks after the training, welfare and discipline of the people they lead.", "why": "Leaders are responsible for their people.", "skills": ["Care", "Leadership"]},
+{"time": "Late afternoon", "title": "Reports and study", "description": "The officer completes paperwork, attends courses and studies professionally.", "why": "Officers keep learning throughout their careers.", "skills": ["Writing", "Discipline"]},
+{"time": "Varies", "title": "Exercises and deployments", "description": "Postings, exercises and emergencies can mean time away from home.", "why": "The air force must be ready when it is needed.", "skills": ["Resilience", "Adaptability"]}
+],
+"responsibilities": ["Leading and training airmen and airwomen", "Planning and supporting operations and exercises", "Keeping aircraft and equipment safe and ready", "Looking after the welfare and discipline of personnel", "Following military law and ethics", "Working with other services and civil authorities", "Continuing professional training"],
+"challenges": ["Selection is competitive and includes tough medical and fitness standards, especially for flying roles.", "There is risk to life in some roles and operations.", "Frequent postings and time away from family are common.", "Discipline is strict and choice over where you are sent is limited.", "Responsibility for people and expensive equipment is very high.", "Not everyone who applies can fly, even with strong ambition.", "Leaving the service and moving to a civilian career can be a challenge."],
+"skills": ["Leadership", "Discipline", "Technical knowledge", "Physical fitness", "Decision-making", "Communication", "Teamwork", "Resilience"],
+"workEnvironment": "Air bases, hangars, control rooms and training institutions, with a structured routine. Postings change every few years and may be remote or abroad. Hours can be long, with duty periods and exercises outside normal hours.",
+"rewards": ["Leading and developing people", "Service to the country", "Technical training and variety", "Strong teamwork and comradeship"],
+"tradeoffs": ["Risk and strict standards", "Time away from family and frequent moves", "Limited choice about postings", "Pay and conditions that vary by country and rank"],
+"activity": {
+"title": "Plan a team task with clear roles",
+"steps": ["Choose a safe task, such as organizing a school tidy-up or a small event, with three or four friends and an adult supervisor.", "Write a short plan: goal, roles, timings and what could go wrong.", "Brief the team clearly and check that everyone understands.", "After the task, hold a short review of what worked and what to improve.", "Note whether leading and organizing felt interesting."],
+"outcome": "You practise planning, briefing and reviewing, the cycle that military units use in training.",
+"safety": "Do the task only with adult supervision, avoid roads and anything unsafe, and do not use model weapons, drones, flares or anything near real airfields or aircraft."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

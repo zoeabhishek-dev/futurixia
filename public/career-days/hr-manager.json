@@ -1,0 +1,31 @@
+{
+"slug": "hr-manager",
+"overview": {
+"summary": "Human resources managers look after the people side of an organization: hiring, training, pay and benefits, workplace rules and employee wellbeing.",
+"problems": "They help organizations find and keep good people, follow employment law and build a fair, safe and productive workplace.",
+"worksWith": "Employees at all levels, managers, job candidates, trainers, lawyers and unions or employee groups.",
+"workplaces": "Companies of all sizes, hospitals, schools, government bodies, non-profits and consultancies."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Check priorities", "description": "The manager reviews urgent employee queries, interviews and deadlines.", "why": "HR work involves many time-sensitive matters.", "skills": ["Prioritizing", "Organization"]},
+{"time": "9:30 to 12:00", "title": "Recruitment", "description": "The manager reads applications, interviews candidates and coordinates with hiring managers.", "why": "Hiring well shapes a team for years.", "skills": ["Listening", "Fairness"]},
+{"time": "12:00 to 14:00", "title": "Supporting employees", "description": "The manager advises on policies, handles concerns and helps resolve conflicts.", "why": "People need a safe place to raise problems.", "skills": ["Empathy", "Confidentiality"]},
+{"time": "14:00 to 16:00", "title": "Pay, benefits and records", "description": "The manager works on payroll data, contracts and leave records accurately.", "why": "Mistakes with pay or records directly affect people.", "skills": ["Accuracy", "Discipline"]},
+{"time": "16:00 to 17:30", "title": "Training and planning", "description": "The manager organizes learning programs and plans future staffing needs.", "why": "Organizations need the right skills for the future.", "skills": ["Planning", "Teaching"]},
+{"time": "Varies", "title": "Difficult situations", "description": "Disciplinary cases, redundancies or complaints need careful, legally correct handling.", "why": "These situations seriously affect people's lives.", "skills": ["Judgement", "Staying calm"]}
+],
+"responsibilities": ["Recruiting and onboarding staff", "Advising managers and employees on policies", "Handling concerns and disputes fairly", "Managing pay, benefits and records", "Organizing training and development", "Making sure the organization follows employment law", "Keeping sensitive information confidential"],
+"challenges": ["Handling confidential, sensitive issues such as complaints and dismissals is part of the job.", "You can be caught between the interests of employees and the organization.", "Difficult conversations, including redundancies, are unavoidable.", "Employment law is complex and changes.", "Administration and records take a lot of time.", "HR can be seen as a support function with limited influence in some firms.", "There can be pressure to hire quickly while staying fair."],
+"skills": ["Communication", "Empathy", "Fairness", "Confidentiality", "Organization", "Judgement", "Knowledge of employment law", "Conflict resolution"],
+"workEnvironment": "Mostly offices or remote work with many meetings, interviews and conversations. Hours are usually regular but can extend during recruitment drives or crises.",
+"rewards": ["Helping people grow and be treated fairly", "Variety of tasks", "Shaping workplace culture", "Skills useful in every industry"],
+"tradeoffs": ["Sensitive and difficult situations", "Competing interests", "Administrative load", "Pay and responsibilities that vary by country and organization"],
+"activity": {
+"title": "Plan a fair interview",
+"steps": ["Imagine hiring a helper for a school event and write three skills the role needs.", "Write four questions that test those skills and nothing about age, appearance or family.", "Ask a friend or family member to answer as the candidate, and score each answer with the same simple scale.", "Reflect on whether the scoring was fair.", "Note whether thinking about fairness felt interesting."],
+"outcome": "You practise structuring fair, consistent questions, which is a core HR skill.",
+"safety": "Use made-up roles, do not ask private or sensitive questions, and do not use this exercise to judge real people."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

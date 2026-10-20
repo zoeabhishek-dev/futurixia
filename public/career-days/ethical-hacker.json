@@ -1,0 +1,31 @@
+{
+"slug": "ethical-hacker",
+"overview": {
+"summary": "Ethical hackers, also called penetration testers, are security professionals who are given legal permission to test whether computers, networks and applications can be broken into, so that weaknesses can be fixed first.",
+"problems": "They find security holes before criminals do and help organizations protect people's data.",
+"worksWith": "Security teams, developers, IT managers, clients and legal teams.",
+"workplaces": "Security firms, consultancies, banks, technology companies and government bodies, often in offices or remotely."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Agree the scope and rules", "description": "The tester confirms in writing exactly what may be tested, when and how.", "why": "Testing without permission is illegal.", "skills": ["Professionalism", "Attention to detail"]},
+{"time": "10:00 to 12:30", "title": "Researching the target", "description": "The tester gathers public information and works out how the system is built.", "why": "Understanding a system shows where it may be weak.", "skills": ["Curiosity", "Research"]},
+{"time": "13:30 to 15:30", "title": "Testing for weaknesses", "description": "The tester tries approved techniques to find holes such as weak passwords or out-of-date software, within the agreed rules.", "why": "Finding holes safely lets them be fixed.", "skills": ["Technical skill", "Problem solving"]},
+{"time": "15:30 to 17:00", "title": "Recording evidence", "description": "The tester writes down what was found and how to reproduce it.", "why": "Clear evidence lets others confirm and fix the problem.", "skills": ["Writing", "Accuracy"]},
+{"time": "17:00 to 18:00", "title": "Reporting and advising", "description": "The tester explains the risks in plain language and recommends fixes.", "why": "A finding that is not understood does not get fixed.", "skills": ["Communication", "Integrity"]},
+{"time": "Varies", "title": "Learning", "description": "New weaknesses appear constantly, so testers study and practise legally.", "why": "Attackers keep changing their methods.", "skills": ["Learning quickly", "Persistence"]}
+],
+"responsibilities": ["Testing systems only with written permission", "Finding and documenting security weaknesses", "Reporting clearly and honestly", "Recommending practical fixes", "Keeping client information confidential", "Following laws and professional codes", "Keeping skills up to date"],
+"challenges": ["Strict legal and ethical limits apply, and testing without permission is a crime.", "Constant learning is needed as attackers change methods.", "Short projects bring deadlines and pressure.", "Explaining technical risk to non-technical people is hard.", "Some tests find nothing, and results are not always dramatic.", "Competition for roles is strong and skills must be shown through certifications or experience.", "Responsibility is high because mistakes can damage systems."],
+"skills": ["Technical knowledge", "Problem solving", "Curiosity", "Integrity", "Writing", "Communication", "Persistence", "Continuous learning"],
+"workEnvironment": "Mostly desk and computer based, in offices or remotely, often working in small teams on time-limited projects. Some work involves travel to client sites. Hours are usually regular but deadlines can lengthen them.",
+"rewards": ["Protecting people and organizations", "Constant puzzle solving", "High demand for security skills in many places", "A legal, rewarding use of curiosity"],
+"tradeoffs": ["Strict rules", "Constant learning", "Project deadlines", "Requirements and pay that vary by country and employer"],
+"activity": {
+"title": "Practise on a legal, safe training site",
+"steps": ["Learn the basics of how websites and passwords work from a free beginner course on a recognized learning platform.", "Read why hacking without permission is illegal and what ethical hackers must agree before testing.", "With an adult's permission, try a beginner puzzle on a site built for legal practice, such as a beginner capture-the-flag training site.", "Write down what you learned and what felt hard.", "Note whether this way of thinking felt interesting."],
+"outcome": "You practise security thinking within legal limits.",
+"safety": "Practise only on sites and systems built for training. Never test or try to access anyone else's accounts, devices, school systems or websites, because that is illegal. Do not share passwords."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

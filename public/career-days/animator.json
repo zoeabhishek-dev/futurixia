@@ -1,0 +1,31 @@
+{
+"slug": "animator",
+"overview": {
+"summary": "Animators create moving images for films, television, games, advertising and online content, using drawing, 3D software and storytelling.",
+"problems": "They bring characters, objects and stories to life, explaining ideas and entertaining audiences.",
+"worksWith": "Directors, writers, other animators, sound designers, game developers and producers.",
+"workplaces": "Animation studios, game companies, advertising agencies, film studios, and freelance or remote work."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Team review", "description": "The animator checks the director's feedback on yesterday's shots.", "why": "Animation is built in small steps that must match.", "skills": ["Receiving feedback", "Communication"]},
+{"time": "10:00 to 12:30", "title": "Planning shots", "description": "The animator studies the storyboard and plans the timing and key poses.", "why": "Planning saves hours of redrawing.", "skills": ["Planning", "Visual thinking"]},
+{"time": "13:30 to 16:30", "title": "Animating", "description": "The animator creates movement frame by frame or by posing digital characters, checking timing and weight.", "why": "Believable movement makes a character feel alive.", "skills": ["Observation", "Patience", "Software skills"]},
+{"time": "16:30 to 17:30", "title": "Reviewing and revising", "description": "The animator watches the shot, compares it with the plan and refines it.", "why": "Small adjustments often make the biggest difference.", "skills": ["Self-critique", "Attention to detail"]},
+{"time": "Varies", "title": "Reference and learning", "description": "The animator watches people and animals move and studies other animation.", "why": "Good movement comes from careful observation.", "skills": ["Observation", "Curiosity"]},
+{"time": "Varies", "title": "Deadlines", "description": "Films and games have fixed release dates.", "why": "Many people depend on each shot being finished on time.", "skills": ["Time management", "Resilience"]}
+],
+"responsibilities": ["Creating movement and expression for characters or objects", "Following storyboards and the director's notes", "Meeting shot deadlines", "Working with other departments", "Revising work after feedback", "Keeping files organized", "Learning new software and techniques"],
+"challenges": ["The work is detailed and slow, with seconds of film taking days to make.", "Revisions are frequent and feedback can be demanding.", "Deadlines can mean long hours in some studios.", "Contracts are often project-based, so job security varies.", "Competition is strong and a good showreel is essential.", "Software and styles change quickly.", "Much of the day is spent at a screen."],
+"skills": ["Drawing or 3D skills", "Observation of movement", "Storytelling", "Patience", "Software skills", "Teamwork", "Receiving feedback", "Time management"],
+"workEnvironment": "Studios or home offices with computers and drawing tablets, working in teams with regular reviews. Hours are often regular but can lengthen near deadlines. Many animators are freelance.",
+"rewards": ["Bringing characters to life", "Creative problem solving", "Collaboration with talented people", "Seeing your work on screen"],
+"tradeoffs": ["Slow, detailed work", "Project-based job security", "Deadline pressure", "Pay and opportunities that vary by country and studio"],
+"activity": {
+"title": "Make a simple flipbook",
+"steps": ["Take a small stack of sticky notes or paper.", "Draw a simple object, such as a ball, in a slightly different position on each page, with small changes between pages.", "Flip the pages quickly to watch it move.", "Change the spacing of the drawings to make it look faster, slower, heavier or lighter.", "Note whether the patient, step-by-step work felt enjoyable."],
+"outcome": "You practise the basic principle of animation: small changes in sequence create motion.",
+"safety": "Use only paper and pencils, and keep sharp tools such as scissors for an adult to help with."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

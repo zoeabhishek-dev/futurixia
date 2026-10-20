@@ -1,0 +1,31 @@
+{
+"slug": "urban-planner",
+"overview": {
+"summary": "Urban planners shape how towns and cities grow, planning where homes, workplaces, schools, parks, transport and services should go.",
+"problems": "They balance housing, jobs, transport, the environment and the needs of different communities, now and in the future.",
+"worksWith": "Local authorities, architects, engineers, developers, residents, and transport and environment specialists.",
+"workplaces": "Local and regional government, planning consultancies, developers, universities and non-profits."
+},
+"timeline": [
+{"time": "9:00 to 10:00", "title": "Review plans and proposals", "description": "The planner reads applications and development plans.", "why": "Each decision shapes how people live.", "skills": ["Reading", "Judgement"]},
+{"time": "10:00 to 12:00", "title": "Site visits", "description": "The planner visits areas, checks conditions and takes notes and photos.", "why": "Seeing a place first-hand reveals what maps miss.", "skills": ["Observation", "Curiosity"]},
+{"time": "13:00 to 15:00", "title": "Analyzing data and maps", "description": "The planner uses maps, population and traffic data to test ideas.", "why": "Evidence helps choose between options.", "skills": ["Analysis", "Software skills"]},
+{"time": "15:00 to 16:30", "title": "Meeting people", "description": "The planner holds consultations with residents, businesses and officials.", "why": "Plans work better when communities help shape them.", "skills": ["Listening", "Diplomacy"]},
+{"time": "16:30 to 17:30", "title": "Writing reports", "description": "The planner writes recommendations that follow laws and policies.", "why": "Decisions must be clear and justified.", "skills": ["Writing", "Clarity"]},
+{"time": "Evening", "title": "Public meetings", "description": "Consultations are often held after work so that residents can attend.", "why": "Many people can only take part outside working hours.", "skills": ["Patience", "Communication"]}
+],
+"responsibilities": ["Preparing and reviewing plans for land use and development", "Analyzing data on population, traffic and the environment", "Consulting residents and stakeholders", "Applying planning laws and policies", "Writing reports and recommendations", "Working with other professionals", "Helping balance growth with sustainability"],
+"challenges": ["Competing interests mean residents, developers and politicians often disagree.", "Decisions can be slow, political and controversial.", "Plans take years to show results.", "Public meetings can be tense.", "Budgets and powers are limited.", "Short-term needs always have to be balanced with long-term effects.", "Evening meetings are common."],
+"skills": ["Analytical thinking", "Mapping and GIS", "Communication", "Negotiation", "Writing", "Creativity", "Knowledge of planning law", "Problem solving"],
+"workEnvironment": "Offices and meeting rooms, with regular site visits and public consultations. The work involves maps, data, documents and many discussions. Hours are usually regular but evening meetings are common.",
+"rewards": ["Shaping places people live in", "A mix of analysis and creativity", "Working with communities", "Long-term impact"],
+"tradeoffs": ["Conflict and slow change", "Evening meetings", "Limited power to decide", "Pay and roles that vary by country and sector"],
+"activity": {
+"title": "Audit your neighbourhood for walkability",
+"steps": ["With an adult, walk a short route around your neighbourhood.", "Note safe crossings, pavements, lighting, shade, seating and anything that makes walking hard.", "Mark the problems on a simple sketch map.", "Suggest three improvements and who would need to act on each.", "Note whether looking at a place like a planner felt interesting."],
+"outcome": "You practise observing a place, mapping problems and proposing improvements.",
+"safety": "Walk with an adult, stay on safe public paths, do not photograph people, and do not enter private property."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

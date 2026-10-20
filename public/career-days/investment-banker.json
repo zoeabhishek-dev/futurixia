@@ -1,0 +1,31 @@
+{
+"slug": "investment-banker",
+"overview": {
+"summary": "Investment bankers help companies, governments and other organizations raise money and make big financial decisions, such as selling shares, borrowing or buying other companies.",
+"problems": "They connect organizations that need money with those that can provide it, and advise on the best way to structure deals.",
+"worksWith": "Company leaders, lawyers, accountants, investors, analysts and other bankers.",
+"workplaces": "Investment banks and financial firms, usually in offices in major financial centres."
+},
+"timeline": [
+{"time": "8:30 to 9:30", "title": "Read the markets", "description": "The banker checks news and market moves that affect clients.", "why": "Deals depend on market conditions.", "skills": ["Awareness", "Curiosity"]},
+{"time": "9:30 to 12:30", "title": "Building financial models", "description": "Analysts and associates build spreadsheet models to value companies and test scenarios.", "why": "Valuation shows what a deal might be worth.", "skills": ["Spreadsheets", "Analysis"]},
+{"time": "13:30 to 15:30", "title": "Preparing presentations", "description": "The team turns analysis into clear slides and documents for clients.", "why": "Clients decide based on what they can understand.", "skills": ["Writing", "Presentation"]},
+{"time": "15:30 to 17:30", "title": "Calls and meetings", "description": "The banker talks to clients, lawyers and other teams about progress and changes.", "why": "A deal involves many parties who must agree.", "skills": ["Communication", "Negotiation"]},
+{"time": "Evening", "title": "Revisions", "description": "The team works in feedback and fixes details, often late into the evening.", "why": "Deals move to deadlines.", "skills": ["Stamina", "Accuracy"]},
+{"time": "Varies", "title": "Deal crunch time", "description": "When a deal is closing, hours can be very long.", "why": "Both sides want a deal finished by a set date.", "skills": ["Resilience", "Focus"]}
+],
+"responsibilities": ["Analyzing financial information and valuing companies", "Preparing documents and presentations for clients", "Helping structure and carry out deals", "Working with lawyers, accountants and other advisers", "Managing client relationships", "Following financial rules and ethics", "Keeping information confidential"],
+"challenges": ["Hours are often very long, including evenings and weekends, especially for junior staff.", "Pressure is high and deadlines are tight.", "Entry is competitive and recruitment is demanding.", "Results depend on markets, and deals can fall through after much work.", "Spreadsheet and presentation work is detailed and repetitive.", "Strict rules cover confidential information and conflicts of interest.", "The role can affect health and personal life if it is not managed carefully."],
+"skills": ["Financial analysis", "Spreadsheet modelling", "Communication", "Attention to detail", "Resilience", "Time management", "Integrity", "Teamwork"],
+"workEnvironment": "Offices of banks in financial centres, with open-plan desks and many meetings and calls. Hours are often long and unpredictable, with peaks during deals. Some travel to clients is common.",
+"rewards": ["Exposure to major business decisions", "Rapid learning", "Skills useful in many finance careers", "Working with capable colleagues"],
+"tradeoffs": ["Very long hours", "High pressure", "Competitive, uncertain deals", "Pay and conditions that vary by firm, country and market"],
+"activity": {
+"title": "Value a lemonade stand",
+"steps": ["Imagine a simple business such as a lemonade stand and write down its costs and expected sales per day.", "Calculate the profit for a week in a spreadsheet.", "Test two scenarios: sales 20 percent lower and costs 20 percent higher.", "Write three sentences explaining what the results mean for a buyer or investor.", "Note whether modelling a business felt interesting."],
+"outcome": "You practise building a simple financial model and testing scenarios.",
+"safety": "Use made-up numbers, do not trade or invest real money, and treat this only as a learning exercise."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

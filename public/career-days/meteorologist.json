@@ -1,0 +1,31 @@
+{
+"slug": "meteorologist",
+"overview": {
+"summary": "Meteorologists study the atmosphere to understand and forecast weather and climate.",
+"problems": "They help people, farmers, pilots, emergency services and governments prepare for storms, heat, floods and everyday weather.",
+"worksWith": "Other scientists, forecasters, pilots, emergency managers, media and the public.",
+"workplaces": "National weather services, airports, research institutes, universities, broadcasters and private forecasting companies."
+},
+"timeline": [
+{"time": "Morning", "title": "Reviewing observations", "description": "The meteorologist looks at overnight data from weather stations, satellites, radar and balloons.", "why": "Forecasts start from what the atmosphere is doing now.", "skills": ["Attention to detail", "Analysis"]},
+{"time": "Late morning", "title": "Running and checking models", "description": "Computer models produce forecasts, and the forecaster checks them for errors and compares them.", "why": "Models are tools, not final answers.", "skills": ["Critical thinking", "Scientific knowledge"]},
+{"time": "Midday", "title": "Writing forecasts", "description": "The meteorologist prepares forecasts and warnings in clear, plain language.", "why": "A forecast only helps if people understand it.", "skills": ["Writing", "Clarity"]},
+{"time": "Afternoon", "title": "Briefing users", "description": "The meteorologist talks with aviation, emergency or media clients about what the weather means for them.", "why": "Different users need different details.", "skills": ["Communication", "Judgement"]},
+{"time": "Evening", "title": "Monitoring", "description": "The meteorologist keeps watching for developing storms or changes.", "why": "Weather keeps changing after the forecast is issued.", "skills": ["Alertness", "Staying calm"]},
+{"time": "Varies", "title": "Severe weather", "description": "Storms, floods or heatwaves can require quick warnings and long shifts.", "why": "Timely warnings can save lives.", "skills": ["Resilience", "Decision-making"]}
+],
+"responsibilities": ["Collecting and analyzing weather data", "Running and checking forecast models", "Issuing accurate, clear forecasts and warnings", "Explaining uncertainty to the public", "Supporting aviation, farming and emergency services", "Working in shifts", "Researching climate and weather patterns"],
+"challenges": ["Forecasts can be wrong because the atmosphere is complex, and public criticism follows.", "Shift work includes nights, weekends and holidays.", "Pressure is high during severe weather warnings.", "Communicating uncertainty clearly is hard.", "Strong maths and physics are needed.", "Government roles may have limited positions.", "Computer screens take up much of the work."],
+"skills": ["Physics and mathematics", "Data analysis", "Computer skills", "Critical thinking", "Communication", "Attention to detail", "Calm under pressure", "Teamwork"],
+"workEnvironment": "Forecasting offices, control rooms and research institutes with screens and data. Many forecasters work in shifts around the clock. Some work in the field, at airports or as broadcasters.",
+"rewards": ["Helping people prepare and stay safe", "Using science every day", "Variety of weather and clients", "Contributing to understanding of climate"],
+"tradeoffs": ["Shift work", "Public expectations and uncertainty", "Pressure in extreme weather", "Pay and roles that vary by country and employer"],
+"activity": {
+"title": "Keep a one-week weather log and make a forecast",
+"steps": ["Each day at the same time, record the temperature, cloud cover, wind and whether it rained, using your senses and a simple thermometer.", "Note the forecast from a trusted weather service and compare it with what happened.", "After a week, predict the next day's weather using your notes.", "Compare your prediction with the real result.", "Write one reason forecasting is hard."],
+"outcome": "You practise observing, recording and comparing data, and thinking about uncertainty.",
+"safety": "Observe weather only from safe places. Never go outside during storms, lightning, flooding or extreme heat or cold to take measurements."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

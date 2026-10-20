@@ -1,0 +1,31 @@
+{
+"slug": "flight-attendant",
+"overview": {
+"summary": "Flight attendants, also called cabin crew, look after passengers' safety and comfort on aircraft.",
+"problems": "They keep passengers safe, deal with emergencies and medical issues, and make flights comfortable.",
+"worksWith": "Pilots, other cabin crew, passengers, ground staff and airline operations.",
+"workplaces": "Aircraft cabins, airports and crew hotels, with a lot of travel and time away from home."
+},
+"timeline": [
+{"time": "Before the flight (1 to 2 hours)", "title": "Briefing", "description": "The crew meets, reviews safety information, weather, passengers with special needs and the service plan.", "why": "Safety comes first.", "skills": ["Teamwork", "Attention to detail"]},
+{"time": "Before boarding", "title": "Safety checks", "description": "The crew checks emergency equipment, doors, catering and the cabin.", "why": "Equipment must work when it is needed.", "skills": ["Care", "Accuracy"]},
+{"time": "Boarding", "title": "Welcoming passengers", "description": "The crew greets passengers, helps with seats and bags and gives the safety demonstration.", "why": "A calm start sets the tone for the flight.", "skills": ["Friendliness", "Communication"]},
+{"time": "In flight", "title": "Service and monitoring", "description": "The crew serves drinks and food, checks seat belts and watches the cabin for problems.", "why": "Staying alert spots problems early.", "skills": ["Customer care", "Observation"]},
+{"time": "Any time", "title": "Handling situations", "description": "The crew helps a passenger who is unwell or upset, or responds to turbulence or emergencies using their training.", "why": "Cabin crew are trained first responders on board.", "skills": ["Calm under pressure", "First aid"]},
+{"time": "After landing", "title": "Disembarking and reports", "description": "The crew helps passengers leave, reports issues and rests within duty limits.", "why": "Reports keep the airline informed and rest keeps crews alert.", "skills": ["Reliability", "Reporting"]}
+],
+"responsibilities": ["Safety and emergency procedures", "First aid and helping passengers in difficulty", "Welcoming and serving passengers", "Checking safety equipment", "Following regulations and company rules", "Working as a team with the pilots and crew", "Reporting incidents accurately"],
+"challenges": ["Schedules are irregular, with nights, time zone changes and time away from home.", "The work is tiring, with long periods on your feet and disturbed sleep.", "Difficult passengers, delays and emergencies have to be handled.", "Some airlines have strict rules on training, appearance and health.", "Job security and conditions can change with economic conditions.", "Frequent travel can affect relationships and routines.", "Pay varies and can start modestly."],
+"skills": ["Customer service", "Calm under pressure", "Teamwork", "Communication", "First aid and safety knowledge", "Adaptability", "Stamina", "Languages"],
+"workEnvironment": "Aircraft cabins, airports and crew hotels, with irregular hours and nights away from home. The work is on your feet in a narrow space, often with long duty days. Routes and schedules vary by airline.",
+"rewards": ["Travel and meeting people", "Teamwork", "Variety of days and places", "Responsibility for passenger safety"],
+"tradeoffs": ["Irregular hours", "Time away from home", "Tiring work", "Pay and conditions that vary by airline and country"],
+"activity": {
+"title": "Learn a safety card and teach it",
+"steps": ["Find an airline safety information card or an official safety video online.", "Learn the key messages, such as seat belts, exits and oxygen masks.", "Explain them clearly and calmly to a family member in your own words.", "Ask them what they would do in a pretend situation, such as finding the nearest exit on a plan of a plane.", "Note whether keeping people calm and informed felt rewarding."],
+"outcome": "You practise explaining safety information clearly and calmly.",
+"safety": "This is a talking exercise only. Do not practise emergency actions or first aid on real people, and never joke about emergencies on or near real aircraft."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

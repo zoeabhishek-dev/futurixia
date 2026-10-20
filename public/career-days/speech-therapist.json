@@ -1,0 +1,31 @@
+{
+"slug": "speech-therapist",
+"overview": {
+"summary": "Speech and language therapists assess and help people with difficulties in speaking, understanding language, voice, fluency and swallowing.",
+"problems": "They help children and adults communicate and eat and drink safely, so they can take part in school, work and life.",
+"worksWith": "Patients and families, teachers, doctors, nurses, psychologists and other therapists.",
+"workplaces": "Hospitals, clinics, schools, community health services, rehabilitation centres and private practice."
+},
+"timeline": [
+{"time": "8:30 to 9:00", "title": "Plan sessions", "description": "The therapist reviews notes and prepares activities.", "why": "Therapy has to match each person's needs.", "skills": ["Organization", "Creativity"]},
+{"time": "9:00 to 12:00", "title": "Assessments and therapy", "description": "The therapist uses games, conversation and exercises to assess and build speech and language skills.", "why": "Play makes practice engaging for children.", "skills": ["Patience", "Observation"]},
+{"time": "12:00 to 13:00", "title": "Writing notes", "description": "The therapist records progress and plans.", "why": "Clear records support good, consistent care.", "skills": ["Accuracy", "Writing"]},
+{"time": "13:00 to 15:30", "title": "Working with families and teachers", "description": "The therapist teaches parents and school staff how to support practice at home and in class.", "why": "Daily practice matters more than weekly sessions.", "skills": ["Teaching", "Communication"]},
+{"time": "15:30 to 17:00", "title": "Team meetings", "description": "The therapist talks with doctors and other therapists about care plans.", "why": "Communication problems often go with other needs.", "skills": ["Teamwork", "Collaboration"]},
+{"time": "Varies", "title": "Swallowing and hospital work", "description": "Some therapists assess swallowing in hospital patients after illness.", "why": "Safe swallowing prevents choking and chest infections.", "skills": ["Care", "Precision"]}
+],
+"responsibilities": ["Assessing speech, language, voice and swallowing", "Planning and delivering therapy", "Teaching families and teachers to support progress", "Working with other professionals", "Keeping confidential records", "Following ethical and safety standards", "Keeping up with research"],
+"challenges": ["Progress can be slow and uneven.", "Caseloads are high and waiting lists long in many services.", "Working with children and families facing difficulties is emotionally demanding.", "Writing reports and keeping records takes time.", "Training is long and regulated.", "Different settings and roles need flexible skills.", "Services and funding vary by country."],
+"skills": ["Communication", "Patience", "Observation", "Empathy", "Creativity", "Teamwork", "Knowledge of language and anatomy", "Organization"],
+"workEnvironment": "Quiet therapy rooms, classrooms, hospital wards and clinics, with regular hours. Much of the work is one-to-one or in small groups, often with games and activities for children.",
+"rewards": ["Helping people communicate", "Seeing progress", "Variety of ages and settings", "Working with families"],
+"tradeoffs": ["Slow progress", "Caseloads and paperwork", "Emotional load", "Pay and conditions that vary by country and setting"],
+"activity": {
+"title": "Learn how speech sounds are made",
+"steps": ["Read about how the tongue, lips and teeth make different sounds on a trusted site, such as a national speech and language association.", "Choose three sounds and watch yourself in a mirror as you say them.", "Make a simple game to help a younger sibling or friend listen for sounds, such as finding objects that start with a certain sound.", "Play it for a few minutes with someone who agrees.", "Note whether helping someone play with language felt rewarding."],
+"outcome": "You practise explaining how speech works and making practice fun.",
+"safety": "This is a fun learning exercise only. Do not try to assess or treat anyone's speech, and suggest a qualified speech and language therapist if someone has real difficulties."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

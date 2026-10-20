@@ -1,0 +1,31 @@
+{
+"slug": "cardiologist",
+"overview": {
+"summary": "Cardiologists are doctors who specialize in the heart and blood vessels, diagnosing and treating conditions such as high blood pressure, heart rhythm problems and heart attacks.",
+"problems": "They help prevent, detect and treat heart disease, and help patients live well with long-term heart conditions.",
+"worksWith": "Patients and families, nurses, other doctors, technicians who run heart tests, surgeons and rehabilitation teams.",
+"workplaces": "Hospitals, heart clinics, specialist procedure rooms and private practice."
+},
+"timeline": [
+{"time": "7:30 to 8:30", "title": "Ward round and handover", "description": "The cardiologist reviews patients on the heart ward, checks test results and updates plans.", "why": "Heart patients can change quickly.", "skills": ["Clinical judgement", "Communication"]},
+{"time": "8:30 to 12:30", "title": "Clinic consultations", "description": "The cardiologist listens to symptoms, takes a history, examines patients, reads tests and agrees treatment, including lifestyle advice.", "why": "Many heart problems are managed over years.", "skills": ["Listening", "Diagnosis"]},
+{"time": "12:30 to 14:00", "title": "Reading tests", "description": "The cardiologist looks at heart traces, ultrasound scans and blood tests with the team.", "why": "Tests show how the heart is working.", "skills": ["Analysis", "Attention to detail"]},
+{"time": "14:00 to 16:30", "title": "Procedures", "description": "The cardiologist carries out or supervises procedures such as angiograms in specialist rooms with a team.", "why": "Procedures can open blocked vessels or help the heart rhythm.", "skills": ["Precision", "Calm under pressure"]},
+{"time": "16:30 to 17:30", "title": "Records and family talks", "description": "The cardiologist writes notes and explains results and plans to patients and relatives.", "why": "Patients who understand their condition follow treatment better.", "skills": ["Empathy", "Clear explanation"]},
+{"time": "Varies", "title": "Emergencies and on-call duty", "description": "Heart attacks need rapid treatment at any hour, so many cardiologists share on-call duty.", "why": "Fast treatment can save heart muscle and lives.", "skills": ["Decision-making", "Stamina"]}
+],
+"responsibilities": ["Diagnosing heart and blood vessel conditions", "Interpreting heart tests", "Planning and explaining treatment", "Performing or supervising procedures in some roles", "Advising on prevention and lifestyle", "Working with a wider care team", "Keeping accurate, confidential records"],
+"challenges": ["Training is very long: medical school followed by years of specialist training.", "Emergencies and on-call work disrupt sleep and personal time.", "Serious illness and sometimes death are part of the work.", "Responsibility is high and there is little room for error.", "Hours can be long at busy hospitals.", "Entry to training places is competitive.", "Evidence and technology change constantly."],
+"skills": ["Clinical reasoning", "Communication", "Attention to detail", "Decision-making", "Empathy", "Teamwork", "Manual precision", "Continuous learning"],
+"workEnvironment": "Hospitals, clinics and specialist procedure rooms, with a mix of ward work, outpatient clinics and procedures. The setting can be busy and emotionally intense, and many cardiologists share on-call duty.",
+"rewards": ["Helping people avoid or recover from serious illness", "Using science and technology", "Long-term relationships with patients", "A wide range of subspecialties"],
+"tradeoffs": ["Very long training", "On-call and emergency work", "Emotional strain", "Pay and conditions that vary by country and setting"],
+"activity": {
+"title": "Learn how the heart works and explain it",
+"steps": ["Read about how the heart pumps blood on a trusted public health site, such as your national heart foundation or health service.", "Draw a simple diagram of the four chambers and the direction of blood flow.", "Learn three everyday habits that support heart health and why they help.", "Explain it to a family member and ask what was unclear.", "Note whether the topic felt interesting."],
+"outcome": "You practise learning a complex system and explaining it clearly, as cardiologists do with patients.",
+"safety": "This is an information exercise only. Do not check anyone's heart for medical reasons, give health advice or ignore real symptoms. Chest pain or breathing trouble needs urgent medical help."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

@@ -1,0 +1,31 @@
+{
+"slug": "bank-probationary-officer",
+"overview": {
+"summary": "Probationary officers are entry-level officers at banks, usually joining through competitive exams, who are trained to become branch and bank managers. The title and path are common in Indian banks.",
+"problems": "They help customers with accounts, loans and payments, and help the bank follow rules and serve its community.",
+"worksWith": "Customers, branch staff and managers, loan and compliance teams, and the rules set by regulators.",
+"workplaces": "Bank branches, regional offices and head offices, with training periods in different departments."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Branch briefing", "description": "The officer reviews the day's targets, queries and any new rules.", "why": "Banking rules and products change often.", "skills": ["Attention to detail", "Communication"]},
+{"time": "10:00 to 13:00", "title": "Helping customers", "description": "The officer opens accounts, explains products, answers queries and solves problems.", "why": "Trust depends on clear, honest service.", "skills": ["Customer care", "Patience"]},
+{"time": "14:00 to 15:30", "title": "Loans and checks", "description": "The officer gathers documents, checks eligibility and follows lending rules.", "why": "Careful checks reduce risk for the bank and the customer.", "skills": ["Analysis", "Accuracy"]},
+{"time": "15:30 to 17:00", "title": "Reports and compliance", "description": "The officer completes forms, reconciles figures and follows rules about identity checks and fraud.", "why": "Rules protect customers and the bank.", "skills": ["Organization", "Integrity"]},
+{"time": "Late afternoon", "title": "Team and training", "description": "The officer meets staff, learns new products and discusses targets.", "why": "Probationers are being trained for future management roles.", "skills": ["Teamwork", "Learning"]},
+{"time": "Varies", "title": "Month-end and audits", "description": "Closing figures and inspections can lengthen the day.", "why": "Banks must report accurately on fixed dates.", "skills": ["Stamina", "Accuracy"]}
+],
+"responsibilities": ["Serving customers and handling queries", "Helping with accounts, loans and payments", "Following banking, identity and anti-fraud rules", "Supporting branch operations", "Learning products and policies", "Meeting service and business goals", "Training in several departments during probation"],
+"challenges": ["Selection exams are very competitive.", "Targets and pressure to sell products can be stressful.", "Transfers can move you to different towns.", "Hours can be long at busy times and during audits.", "Customers can be upset when money matters go wrong.", "Strict rules mean mistakes can have serious consequences.", "Pay and progression depend on the bank and promotion exams."],
+"skills": ["Numeracy", "Communication", "Customer service", "Attention to detail", "Integrity", "Problem solving", "Time management", "Learning quickly"],
+"workEnvironment": "Bank branches and offices, mostly indoors, with set working hours that can extend at busy times. Probationers train in different departments and may be posted in different towns.",
+"rewards": ["A stable career path", "Variety of work and training", "Direct contact with customers and the chance to help them", "Growth into management roles"],
+"tradeoffs": ["Competitive exams", "Targets and transfers", "Busy periods", "Pay and conditions that vary by bank and country"],
+"activity": {
+"title": "Compare two savings options using simple interest",
+"steps": ["Imagine saving a small amount of pocket money for a year.", "Look up the published interest rates of two kinds of accounts on bank websites.", "Calculate how much you would earn from each, using a calculator and showing your working.", "Write one paragraph explaining which is better for what kind of person.", "Note whether this kind of money maths felt interesting."],
+"outcome": "You practise using rates, comparing products and explaining financial choices plainly.",
+"safety": "This is a learning exercise only. Do not open real accounts, share bank details or treat it as financial advice."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

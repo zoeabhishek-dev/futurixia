@@ -1,0 +1,31 @@
+{
+"slug": "naval-officer",
+"overview": {
+"summary": "Naval officers lead sailors and manage ships, submarines, aircraft and shore units in a navy, with roles such as seamanship, engineering, aviation, logistics and communications.",
+"problems": "They help protect a country's seas and coasts, keep ships and crews safe and respond to emergencies at sea.",
+"worksWith": "Sailors of all ranks, other officers, engineers, medical staff, coast guard and civil authorities.",
+"workplaces": "Ships and submarines, naval bases, dockyards, air stations and training institutions."
+},
+"timeline": [
+{"time": "Early morning", "title": "Muster and inspection", "description": "The officer gathers the crew, checks duties and looks at the condition of the ship or unit.", "why": "Order and readiness matter at sea.", "skills": ["Leadership", "Attention to detail"]},
+{"time": "Morning", "title": "Watchkeeping and duties", "description": "The officer stands watch on the bridge or in the operations or engineering rooms, monitoring navigation, systems and the sea around the ship.", "why": "A constant watch keeps the ship safe.", "skills": ["Concentration", "Teamwork"]},
+{"time": "Late morning", "title": "Drills and training", "description": "The crew practises firefighting, damage control, man overboard and other emergency drills.", "why": "Crews must react without hesitation.", "skills": ["Decision-making", "Staying calm"]},
+{"time": "Afternoon", "title": "Maintenance and administration", "description": "The officer checks equipment, supervises repairs and handles paperwork and welfare.", "why": "Ships need constant care to stay safe at sea.", "skills": ["Organization", "Care"]},
+{"time": "Evening", "title": "Study and rest", "description": "The officer studies professionally and rests, because watches run around the clock.", "why": "Rest keeps the crew alert.", "skills": ["Discipline", "Self-care"]},
+{"time": "Varies", "title": "Deployments", "description": "Time at sea can last weeks or months, away from family.", "why": "Ships are most useful when they are at sea.", "skills": ["Resilience", "Adaptability"]}
+],
+"responsibilities": ["Leading and training sailors", "Keeping watch and navigating safely", "Maintaining ships and equipment", "Running drills and emergency response", "Looking after crew welfare and discipline", "Following naval law and ethics", "Planning and supporting operations and exercises"],
+"challenges": ["Long periods at sea mean time away from family and limited communication.", "Watches run around the clock, which disrupts sleep.", "There are risks from weather, accidents and operations.", "Living conditions on ships and submarines are confined.", "Discipline is strict and there is little control over postings.", "Selection is competitive, with demanding medical and fitness standards.", "Responsibility for people and expensive equipment is heavy."],
+"skills": ["Leadership", "Seamanship and navigation", "Technical knowledge", "Teamwork", "Discipline", "Calm under pressure", "Physical fitness", "Communication"],
+"workEnvironment": "Ships, submarines, dockyards and bases, with a structured routine. At sea the work runs in watches around the clock, and living space is shared and limited. Shore postings involve offices, training and maintenance.",
+"rewards": ["Leading people", "Travel and adventure", "Technical training", "Service to the country and close teamwork"],
+"tradeoffs": ["Long separations", "Confined, demanding conditions", "Strict hierarchy and discipline", "Pay and conditions that vary by country and rank"],
+"activity": {
+"title": "Plan a route on a map",
+"steps": ["Find a free map of a coastline or lake online, or use a printed atlas.", "Choose two places and plan a route that avoids obstacles such as shallow areas marked on the map.", "Work out the distance using the scale and estimate the travel time at a chosen speed.", "Note two things that could change your plan, such as weather or tides.", "Explain your plan to a family member."],
+"outcome": "You practise navigation basics, estimating and planning for risk.",
+"safety": "This is a desk exercise only. Do not try to use a boat or go near water to test it without a qualified adult, and always wear a life jacket on any real water."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}
