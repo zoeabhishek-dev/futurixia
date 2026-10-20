@@ -1,0 +1,31 @@
+{
+"slug": "statistician",
+"overview": {
+"summary": "Statisticians collect, analyze and interpret data to answer questions and help people make decisions under uncertainty.",
+"problems": "They design studies, find patterns and measure how confident we can be in results, in areas such as health, government, business and science.",
+"worksWith": "Researchers, doctors, government agencies, business managers, data scientists and engineers.",
+"workplaces": "Government statistics offices, hospitals and research institutes, universities, banks, and technology and marketing companies."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Clarify the question", "description": "The statistician meets colleagues to understand what they want to know.", "why": "A clear question guides the whole analysis.", "skills": ["Communication", "Curiosity"]},
+{"time": "9:30 to 12:00", "title": "Designing the study or checking data", "description": "The statistician plans how to collect data fairly or checks the quality of existing data.", "why": "Poor data gives poor answers.", "skills": ["Careful thinking", "Attention to detail"]},
+{"time": "13:00 to 15:30", "title": "Analyzing", "description": "The statistician uses statistical software to test ideas, build models and measure uncertainty.", "why": "Numbers need careful analysis to mean anything.", "skills": ["Mathematics", "Programming"]},
+{"time": "15:30 to 16:30", "title": "Checking and interpreting", "description": "The statistician asks whether results make sense and what else could explain them.", "why": "Patterns can be misleading.", "skills": ["Critical thinking", "Honesty"]},
+{"time": "16:30 to 17:30", "title": "Explaining", "description": "The statistician writes a clear summary with charts and says what is and is not certain.", "why": "Results are only useful if people understand them.", "skills": ["Writing", "Visualization"]},
+{"time": "Varies", "title": "Reviewing others' work", "description": "The statistician checks studies for errors or bias.", "why": "Independent checking improves the reliability of research.", "skills": ["Fairness", "Rigour"]}
+],
+"responsibilities": ["Designing studies and surveys", "Collecting and cleaning data", "Analyzing data and building models", "Measuring and explaining uncertainty", "Presenting findings clearly", "Following ethical and privacy rules", "Reviewing the quality of studies"],
+"challenges": ["People often want a certainty that data cannot give.", "Explaining uncertainty to non-experts is difficult.", "Data is often messy and incomplete.", "There can be pressure to produce a particular result.", "Advanced degrees are common for many roles.", "Software and methods change.", "Data science roles have overlapping skills, which adds competition."],
+"skills": ["Statistics and mathematics", "Programming", "Critical thinking", "Attention to detail", "Communication", "Honesty", "Problem solving", "Curiosity"],
+"workEnvironment": "Mostly offices or remote work with computers and statistical software, in teams with other specialists. Hours are usually regular. Some roles involve fieldwork such as surveys, or work in laboratories and hospitals.",
+"rewards": ["Helping decisions rest on evidence", "Variety of fields", "A mix of maths and real-world questions", "Strong skills that carry across industries"],
+"tradeoffs": ["Uncertain, imperfect data", "Pressure from expectations", "Detail-heavy work", "Pay and opportunities that vary by country and sector"],
+"activity": {
+"title": "Run a mini survey and chart it",
+"steps": ["Choose a harmless question such as which school subject people like best.", "Ask 15 classmates or family members who agree, and record the answers without names.", "Make a bar chart.", "Write two sentences about what it shows and one reason it might not represent everyone, such as asking only your friends.", "Note whether finding patterns in data felt interesting."],
+"outcome": "You practise collecting data, charting it and thinking about bias.",
+"safety": "Ask only harmless questions, get permission, do not record names or private information, and do not pressure anyone to answer."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

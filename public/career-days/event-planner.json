@@ -1,0 +1,31 @@
+{
+"slug": "event-planner",
+"overview": {
+"summary": "Event planners organize events such as weddings, conferences, concerts and parties, managing everything from budgets and venues to schedules and suppliers.",
+"problems": "They turn ideas into well-run events that stay on time and on budget.",
+"worksWith": "Clients, venues, caterers, decorators, performers, suppliers and volunteers.",
+"workplaces": "Event companies, hotels, corporate and government teams, non-profits, and self-employed practice, with a lot of time on site."
+},
+"timeline": [
+{"time": "Morning", "title": "Client and supplier calls", "description": "The planner confirms details, answers questions and negotiates prices.", "why": "Events depend on many suppliers delivering on time.", "skills": ["Communication", "Negotiation"]},
+{"time": "Late morning", "title": "Planning and budgeting", "description": "The planner updates schedules, budgets and checklists.", "why": "Good records keep many moving parts under control.", "skills": ["Organization", "Financial awareness"]},
+{"time": "Midday", "title": "Venue visits", "description": "The planner checks spaces, layouts, access and safety.", "why": "A venue can look perfect in photos but not work in practice.", "skills": ["Observation", "Spatial thinking"]},
+{"time": "Afternoon", "title": "Problem solving", "description": "The planner fixes last-minute changes, such as a late supplier or a changed guest count.", "why": "Something always changes before an event.", "skills": ["Flexibility", "Staying calm"]},
+{"time": "Event day", "title": "Running the event", "description": "The planner arrives early, briefs staff, manages timing and solves problems quietly.", "why": "Guests should never see the stress.", "skills": ["Leadership", "Composure"]},
+{"time": "After the event", "title": "Wrap-up", "description": "The planner settles bills, collects feedback and reviews what to improve.", "why": "Reviewing helps the next event run better.", "skills": ["Reflection", "Reporting"]}
+],
+"responsibilities": ["Planning timelines, budgets and logistics", "Booking and managing venues and suppliers", "Coordinating staff and volunteers", "Managing guests and communication", "Following safety, legal and licensing rules", "Solving problems on the day", "Reviewing results and feedback"],
+"challenges": ["Hours are long and irregular, including evenings and weekends.", "Pressure is high on event day, when things can go wrong.", "Clients have high expectations and tight budgets.", "Many people and suppliers have to be coordinated.", "Work is seasonal and income can be uneven for freelancers.", "The job is physically tiring, with a lot of standing and moving equipment.", "Responsibility for safety and legal compliance is serious."],
+"skills": ["Organization", "Communication", "Negotiation", "Problem solving", "Time management", "Leadership", "Budgeting", "Staying calm under pressure"],
+"workEnvironment": "A mix of office planning and on-site work at venues, often outdoors or in hotels, with long days around events. Hours are irregular and include weekends and evenings. Freelancers manage their own clients and finances.",
+"rewards": ["Seeing a plan come to life", "Variety of events and people", "Creativity and problem solving", "Happy clients"],
+"tradeoffs": ["Stressful event days", "Unsocial hours", "Uneven income", "Pay and demand that vary by country and market"],
+"activity": {
+"title": "Plan a small event with a budget and timeline",
+"steps": ["Imagine a birthday party or school event for ten people and write the goal.", "Make a budget and list what you would need.", "Write a timeline for the day, from setting up to cleaning.", "Write three things that could go wrong and how you would handle each.", "Ask a family member to review the plan and note what you would change."],
+"outcome": "You practise planning, budgeting and preparing for problems.",
+"safety": "Plan on paper or with adult supervision, do not collect money from others, and do not plan anything unsafe or unsuitable for your age."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

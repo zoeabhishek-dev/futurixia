@@ -1,0 +1,31 @@
+{
+"slug": "public-relations-specialist",
+"overview": {
+"summary": "Public relations specialists manage how an organization or person is seen by the public, working with the media, communities and staff to share honest, clear messages.",
+"problems": "They help organizations explain what they do, respond to problems and build trust.",
+"worksWith": "Journalists, managers, marketing and legal teams, communities and clients.",
+"workplaces": "PR agencies, companies, government bodies, non-profits and universities, in offices or remotely."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Media monitoring", "description": "The specialist reads the news and social media for mentions of the organization.", "why": "Problems and opportunities appear quickly.", "skills": ["Awareness", "Speed"]},
+{"time": "9:30 to 12:00", "title": "Writing", "description": "The specialist writes press releases, statements and speeches.", "why": "Clear, accurate words matter.", "skills": ["Writing", "Clarity"]},
+{"time": "12:00 to 14:00", "title": "Talking to journalists", "description": "The specialist pitches stories and answers questions.", "why": "Good relationships with the media help stories be told fairly.", "skills": ["Communication", "Relationship building"]},
+{"time": "14:00 to 16:00", "title": "Planning campaigns and events", "description": "The specialist plans how to share a message with the right audience.", "why": "The right message in the wrong place does not reach people.", "skills": ["Strategy", "Creativity"]},
+{"time": "16:00 to 17:30", "title": "Advising leaders", "description": "The specialist briefs managers on what to say and prepares them for interviews.", "why": "Leaders speak for the whole organization.", "skills": ["Judgement", "Honesty"]},
+{"time": "Varies", "title": "Crisis response", "description": "When something goes wrong, the PR team works fast, sometimes outside normal hours.", "why": "Early, honest communication limits damage to trust.", "skills": ["Staying calm", "Integrity"]}
+],
+"responsibilities": ["Writing press releases and statements", "Building relationships with journalists", "Planning communication campaigns", "Preparing leaders for interviews", "Monitoring media and public opinion", "Managing reputation and crises honestly", "Following the law and ethics, including honesty"],
+"challenges": ["Crises can arrive suddenly and bring long hours.", "Clients or managers sometimes want a message that is not fully accurate, so ethical limits matter.", "Honesty and fairness are essential to the job.", "The media can be critical and unpredictable.", "Results are hard to measure.", "Deadlines are set by the constant news cycle.", "Competition for jobs is strong."],
+"skills": ["Writing", "Communication", "Relationship building", "Judgement", "Integrity", "Creativity", "Calm under pressure", "Time management"],
+"workEnvironment": "Mostly office or remote work with many calls, meetings and writing, plus events and media interviews. Hours are usually regular but crises and events can extend them. Agency roles are often faster paced.",
+"rewards": ["Shaping how stories are told", "Variety of clients and topics", "A mix of creativity and strategy", "Working with media and leaders"],
+"tradeoffs": ["Crisis pressure", "Ethical challenges", "News deadlines", "Pay and roles that vary by country and sector"],
+"activity": {
+"title": "Write a short press release for a school event",
+"steps": ["Choose a real or imaginary school event and list the facts: what, when, where and who.", "Write a title and a 120-word press release with the most important fact first.", "Add one quote from an imaginary organizer.", "Write answers to three hard questions a reporter might ask, with honest replies.", "Ask someone to read it and say what is unclear."],
+"outcome": "You practise clear, honest writing and preparing for questions.",
+"safety": "Use made-up or permission-based facts, do not use real people's names or quotes without permission, and be accurate."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

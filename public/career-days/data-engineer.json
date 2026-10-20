@@ -1,0 +1,31 @@
+{
+"slug": "data-engineer",
+"overview": {
+"summary": "Data engineers build and maintain the systems that collect, store and move data so that analysts and data scientists can use it.",
+"problems": "They make sure data is accurate, organized and available when people need it, even when it comes from many sources.",
+"worksWith": "Data scientists, analysts, software engineers, business teams and cloud or security engineers.",
+"workplaces": "Technology companies, banks, retailers, hospitals and other organizations that use data, often in offices or remotely."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Check data pipelines", "description": "The engineer looks for overnight failures or delays in data flows.", "why": "Many reports depend on data arriving on time.", "skills": ["Attention to detail", "Prioritizing"]},
+{"time": "10:00 to 12:30", "title": "Building pipelines", "description": "The engineer writes code that collects data from different sources, cleans it and loads it into storage.", "why": "Reliable pipelines are the base of analytics.", "skills": ["Programming", "Problem solving"]},
+{"time": "13:30 to 15:00", "title": "Fixing data problems", "description": "The engineer finds out why numbers do not match, such as missing values or duplicate records.", "why": "Wrong data leads to wrong decisions.", "skills": ["Debugging", "Persistence"]},
+{"time": "15:00 to 16:30", "title": "Working with analysts", "description": "The engineer learns what data analysts need and shapes it for them.", "why": "Data is only useful if people can use it.", "skills": ["Communication", "Collaboration"]},
+{"time": "16:30 to 17:30", "title": "Documentation and testing", "description": "The engineer writes tests and notes so others can trust and maintain the work.", "why": "Tested, documented systems break less often.", "skills": ["Writing", "Care"]},
+{"time": "Varies", "title": "On-call and incidents", "description": "When a pipeline breaks, the team restores it, sometimes out of hours.", "why": "Business decisions may depend on the data being fresh.", "skills": ["Staying calm", "Troubleshooting"]}
+],
+"responsibilities": ["Building and maintaining data pipelines", "Cleaning and organizing data", "Designing storage systems such as databases and warehouses", "Making data secure and following privacy rules", "Testing and monitoring data quality", "Supporting analysts and data scientists", "Documenting how data flows"],
+"challenges": ["Data from different sources is often messy and inconsistent.", "Pipeline failures can affect many reports and need quick repair.", "The work is often invisible until something breaks.", "Tools and technologies change quickly.", "Privacy and security rules need careful handling.", "Some roles include on-call duty.", "Strong programming and database skills are usually needed before entry."],
+"skills": ["Programming", "Databases and SQL", "Problem solving", "Attention to detail", "Data modelling", "Communication", "Cloud basics", "Learning quickly"],
+"workEnvironment": "Mostly desk and computer based, in offices or remotely, working with analysts and developers. Hours are often regular but data problems can bring urgent work.",
+"rewards": ["Building the base that data work depends on", "Strong demand for data skills in many sectors", "A mix of coding and design", "Satisfying, tidy systems"],
+"tradeoffs": ["Invisible work", "Messy data", "On-call pressure", "Titles and pay that vary by country and employer"],
+"activity": {
+"title": "Clean a messy table",
+"steps": ["In a spreadsheet, type a small made-up table of ten students with names, ages and favourite subjects, with mistakes such as different spellings of the same subject, a missing age and a duplicate row.", "Find and fix each problem, making the format consistent.", "Write a short list of the rules you used.", "Count how many problems you found.", "Note whether tidying data felt satisfying."],
+"outcome": "You practise spotting and fixing data quality problems and writing rules.",
+"safety": "Use only made-up data, never real names or personal details of other people, and do not upload data to any website without an adult."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

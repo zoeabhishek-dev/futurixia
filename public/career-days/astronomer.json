@@ -1,0 +1,31 @@
+{
+"slug": "astronomer",
+"overview": {
+"summary": "Astronomers study planets, stars, galaxies and the universe, using telescopes, space missions and computer analysis to understand how it works.",
+"problems": "They try to answer big questions about how the universe began, how stars and planets form and whether life might exist elsewhere.",
+"worksWith": "Other scientists, engineers, telescope technicians, students and sometimes space agencies.",
+"workplaces": "Universities, observatories, research institutes and space agencies, mostly in offices and computer rooms, with some time at telescopes."
+},
+"timeline": [
+{"time": "Morning", "title": "Reading and planning", "description": "The astronomer reads new papers and plans observations or analysis.", "why": "Science builds on earlier work.", "skills": ["Reading", "Curiosity"]},
+{"time": "Late morning", "title": "Analyzing data", "description": "The astronomer processes images and measurements from telescopes using software.", "why": "Most astronomy is now done with computers.", "skills": ["Programming", "Statistics"]},
+{"time": "Afternoon", "title": "Writing code and models", "description": "The astronomer builds simulations and tests ideas.", "why": "Models show whether an idea fits what is observed.", "skills": ["Mathematics", "Problem solving"]},
+{"time": "Late afternoon", "title": "Meetings and teaching", "description": "The astronomer discusses results with colleagues and teaches or guides students.", "why": "Research is shared and checked by others.", "skills": ["Communication", "Teaching"]},
+{"time": "Night, some weeks", "title": "Observing", "description": "The astronomer uses telescopes, often remotely, in clear weather.", "why": "Good observing time is rare and valuable.", "skills": ["Patience", "Technical skill"]},
+{"time": "Varies", "title": "Applying and writing", "description": "The astronomer applies for telescope time and funding and writes papers.", "why": "Access to telescopes and money is competitive.", "skills": ["Writing", "Persistence"]}
+],
+"responsibilities": ["Observing and analyzing astronomical data", "Building models and simulations", "Writing papers and reports", "Applying for telescope time and funding", "Teaching and supervising students", "Sharing results with other scientists and the public", "Maintaining instruments where needed"],
+"challenges": ["Jobs are very competitive and often short-term, especially early in a career.", "A PhD is normally required.", "Telescope time depends on weather and competition.", "Much of the work is computer analysis and writing.", "Funding is limited.", "Results may take years to appear.", "Night observing disrupts sleep."],
+"skills": ["Physics and mathematics", "Programming and data analysis", "Curiosity", "Writing", "Problem solving", "Patience", "Communication", "Persistence"],
+"workEnvironment": "Offices, computer rooms and sometimes observatories, which can be on mountains or in remote places. Work is often independent, with regular collaboration and conferences. Hours can include nights for observing.",
+"rewards": ["Exploring the biggest questions", "Using maths and physics", "International collaboration", "Sharing wonder with the public"],
+"tradeoffs": ["Competitive, short-term jobs early on", "Long training", "Funding limits", "Pay and opportunities that vary by country and institution"],
+"activity": {
+"title": "Sketch the Moon for a week",
+"steps": ["With an adult, find a safe spot where you can see the Moon in the evening sky.", "Each clear evening for a week, draw its shape and note the date and time.", "Compare your drawings and describe how it changes.", "Read a trusted guide on why the Moon has phases.", "Note whether patient observing felt interesting."],
+"outcome": "You practise regular observation, recording and explaining a pattern.",
+"safety": "Never look directly at the Sun, even with binoculars or a telescope, because it can cause permanent blindness. Observe at night only with an adult nearby and away from roads."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

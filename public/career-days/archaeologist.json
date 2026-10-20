@@ -1,0 +1,31 @@
+{
+"slug": "archaeologist",
+"overview": {
+"summary": "Archaeologists study the human past by finding, recording and interpreting the objects, buildings and landscapes people left behind.",
+"problems": "They help us understand how people lived, and protect heritage sites for the future.",
+"worksWith": "Other archaeologists, specialists in bones, pottery and dating, builders and planners, heritage bodies and local communities.",
+"workplaces": "Excavation sites, museums, laboratories, universities, heritage agencies and consultancies, with development-led work in many countries."
+},
+"timeline": [
+{"time": "Morning", "title": "Planning and briefing", "description": "The archaeologist reviews the site plan, safety rules and the day's tasks.", "why": "Digging destroys what it studies, so careful planning matters.", "skills": ["Planning", "Care"]},
+{"time": "Late morning", "title": "Excavating", "description": "The archaeologist removes soil layer by layer with trowels and brushes and records what is found.", "why": "The position of objects tells their story.", "skills": ["Patience", "Attention to detail"]},
+{"time": "Afternoon", "title": "Recording", "description": "The archaeologist draws, photographs and measures features and labels finds.", "why": "A site can only be dug once, so records are the lasting result.", "skills": ["Accuracy", "Organization"]},
+{"time": "Late afternoon", "title": "Washing and sorting finds", "description": "The archaeologist cleans, sorts and catalogues objects.", "why": "Clean, labelled finds can be studied later.", "skills": ["Care", "Observation"]},
+{"time": "Varies", "title": "Analysis and writing", "description": "The archaeologist studies finds, compares them with other sites and writes reports.", "why": "Findings only matter once they are shared.", "skills": ["Analysis", "Writing"]},
+{"time": "Varies", "title": "Weather and site work", "description": "Fieldwork happens outdoors in all weather.", "why": "Sites cannot wait for good weather.", "skills": ["Resilience", "Stamina"]}
+],
+"responsibilities": ["Excavating and recording sites carefully", "Identifying and cataloguing finds", "Interpreting evidence about the past", "Following laws and ethics about heritage", "Writing reports and publishing results", "Working safely on site", "Sharing knowledge with the public"],
+"challenges": ["Jobs are competitive and often short-term or seasonal.", "Pay is modest in many places.", "Fieldwork is physically demanding and outdoors in all weather.", "A lot of time goes on recording and report writing, not finding treasure.", "Many roles need a degree and often a master's.", "Funding for research and heritage is limited.", "Work can be far from home."],
+"skills": ["Observation", "Patience", "Attention to detail", "Recording and drawing", "Analytical thinking", "Writing", "Physical fitness", "Teamwork"],
+"workEnvironment": "A mix of outdoor excavation sites, laboratories, museums and offices. Fieldwork is often seasonal and physical, in all weather. Many jobs are with consultancies that survey sites before building work.",
+"rewards": ["Discovering how people lived", "Working outdoors", "Teamwork", "Protecting heritage"],
+"tradeoffs": ["Short-term and seasonal work", "Modest pay in many places", "Physical conditions", "Competition for roles"],
+"activity": {
+"title": "Run a pretend dig in a box",
+"steps": ["With an adult, fill a box or tub with sand or soil.", "Ask a friend to bury five household objects in different layers without telling you where.", "Dig carefully with a spoon and brush, recording on squared paper where each object was found.", "Write what the objects and their positions might tell someone about the people who used them.", "Note whether careful recording felt interesting."],
+"outcome": "You practise digging carefully, recording position and interpreting evidence.",
+"safety": "Do this only in a box or tub at home. Never dig at real archaeological or historic sites, which is illegal and destroys evidence, and ask an adult before digging in a garden. Wash your hands afterwards."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

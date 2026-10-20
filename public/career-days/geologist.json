@@ -1,0 +1,31 @@
+{
+"slug": "geologist",
+"overview": {
+"summary": "Geologists study the Earth, its rocks, minerals, water and natural processes such as earthquakes and volcanoes, to understand the planet and to find and manage its resources.",
+"problems": "They help find water and minerals, assess natural hazards such as landslides, and guide construction and environmental protection.",
+"worksWith": "Engineers, mining and energy companies, environmental agencies, planners, other scientists and local communities.",
+"workplaces": "Field sites, mines, quarries, laboratories, universities, government surveys and consultancies."
+},
+"timeline": [
+{"time": "Morning", "title": "Planning fieldwork", "description": "The geologist studies maps and earlier reports and prepares equipment and safety plans.", "why": "Good planning makes field days safe and productive.", "skills": ["Planning", "Safety awareness"]},
+{"time": "Late morning", "title": "Fieldwork", "description": "The geologist walks the site, examines rock outcrops, takes measurements and collects samples.", "why": "Rocks record the Earth's history.", "skills": ["Observation", "Physical fitness"]},
+{"time": "Afternoon", "title": "Mapping and notes", "description": "The geologist records what was seen and marks it on maps.", "why": "Accurate records let others use the findings.", "skills": ["Accuracy", "Mapping"]},
+{"time": "Late afternoon", "title": "Laboratory or analysis", "description": "The geologist studies samples and data.", "why": "Tests show what the eye cannot.", "skills": ["Analysis", "Technical skill"]},
+{"time": "Varies", "title": "Reports and advice", "description": "The geologist writes reports for clients or agencies and explains risks and options.", "why": "Decisions about land and resources depend on clear advice.", "skills": ["Writing", "Communication"]},
+{"time": "Varies", "title": "Remote work", "description": "Some jobs involve camping, long travel or work at mines and drill sites.", "why": "Geology happens where the rocks are.", "skills": ["Resilience", "Adaptability"]}
+],
+"responsibilities": ["Studying rocks, soil, water and landforms", "Mapping geology and collecting samples", "Assessing natural hazards and resources", "Analyzing data and writing reports", "Advising engineers, planners and companies", "Following safety rules on field sites", "Keeping records of observations"],
+"challenges": ["Fieldwork can be physically demanding, remote and in harsh weather.", "Many jobs are tied to mining and energy, which move with market conditions.", "Hazards include unstable ground, heat and machinery.", "Projects can mean time away from home.", "Much time goes on reports and data.", "Competition for some roles is strong.", "Some roles need a master's degree."],
+"skills": ["Earth science knowledge", "Observation", "Mapping and data analysis", "Fieldwork skills", "Writing", "Physical fitness", "Problem solving", "Safety awareness"],
+"workEnvironment": "A mix of outdoor fieldwork, laboratories and offices. Fieldwork can be in remote places and in all weather, sometimes at mines or construction sites. Office work includes mapping, analysis and reports.",
+"rewards": ["Working outdoors", "Understanding the planet", "Variety of sites and projects", "Contributing to safety and resource management"],
+"tradeoffs": ["Remote, physical work", "Jobs that depend on markets", "Time away from home", "Pay that varies by country and industry"],
+"activity": {
+"title": "Study rocks you can find safely",
+"steps": ["With an adult, collect three small loose stones from a garden or a safe public area where collecting is allowed.", "Describe each one: colour, texture, weight and whether you can see grains.", "Compare them with pictures on a trusted geological survey website.", "Draw a simple table of your findings and guess what each might be.", "Note whether noticing small details felt interesting."],
+"outcome": "You practise careful description and comparison, the first step in identifying rocks.",
+"safety": "Do not hit or break rocks, do not visit cliffs, quarries, mines or riverbanks, and take stones only where collecting is allowed. Wash your hands afterwards."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

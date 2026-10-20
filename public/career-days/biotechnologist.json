@@ -1,0 +1,31 @@
+{
+"slug": "biotechnologist",
+"overview": {
+"summary": "Biotechnologists use living things, such as cells, bacteria and enzymes, to develop products and processes in areas like medicine, food, farming and the environment.",
+"problems": "They help make medicines, vaccines, sustainable materials and better crops, and find new ways to clean up pollution.",
+"worksWith": "Other scientists, technicians, doctors, engineers, regulators and company managers.",
+"workplaces": "Laboratories in universities, hospitals, pharmaceutical and food companies, research institutes and start-ups."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Plan experiments", "description": "The biotechnologist reviews the day's tasks and safety steps.", "why": "Experiments need careful planning and safe procedures.", "skills": ["Planning", "Safety awareness"]},
+{"time": "9:30 to 12:30", "title": "Laboratory work", "description": "The biotechnologist prepares samples, grows cells or bacteria in controlled conditions and runs tests.", "why": "Precise technique gives reliable results.", "skills": ["Technical skill", "Precision"]},
+{"time": "13:30 to 15:00", "title": "Recording data", "description": "The biotechnologist writes careful notes of what was done and observed.", "why": "Records let others repeat and trust the work.", "skills": ["Accuracy", "Organization"]},
+{"time": "15:00 to 16:30", "title": "Analyzing results", "description": "The biotechnologist uses statistics and software to understand the data.", "why": "Data only helps when it is interpreted correctly.", "skills": ["Analysis", "Critical thinking"]},
+{"time": "16:30 to 17:30", "title": "Team meetings", "description": "The biotechnologist shares findings and plans next steps with colleagues.", "why": "Biotechnology projects need several kinds of specialist.", "skills": ["Collaboration", "Communication"]},
+{"time": "Varies", "title": "Repeating and checking", "description": "Many experiments fail or need to be repeated.", "why": "Science depends on results that can be repeated.", "skills": ["Patience", "Persistence"]}
+],
+"responsibilities": ["Designing and carrying out laboratory experiments", "Following safety and ethical rules for working with living material", "Recording and analyzing data", "Developing and testing products or processes", "Writing reports and papers", "Working with quality and regulation requirements", "Keeping equipment and samples in good condition"],
+"challenges": ["Experiments often fail or give unclear results.", "Research takes a long time and funding is limited.", "Safety, ethics and regulation requirements are strict.", "The work is detailed and repetitive.", "Competition for research positions is strong and advanced degrees are often needed.", "Long hours can be needed when experiments have to be monitored.", "Some technologies raise ethical debates."],
+"skills": ["Biology and chemistry knowledge", "Laboratory technique", "Attention to detail", "Data analysis", "Patience", "Teamwork", "Problem solving", "Scientific writing"],
+"workEnvironment": "Laboratories with equipment, protective clothing and strict safety rules, plus offices for analysis and writing. Hours are usually regular but experiments can require extra monitoring. Some roles are in manufacturing or quality control.",
+"rewards": ["Contributing to medicines, food and environmental solutions", "A mix of hands-on and analytical work", "Constant discovery", "Many sectors to work in"],
+"tradeoffs": ["Failed experiments", "Slow progress", "Strict regulation", "Pay and opportunities that vary by country and sector"],
+"activity": {
+"title": "Watch yeast make gas",
+"steps": ["With an adult, put half a teaspoon of dried baker's yeast, a teaspoon of sugar and warm, not hot, water in a clean plastic bottle.", "Stretch a balloon over the top.", "Watch for 30 minutes and record any changes.", "Repeat with no sugar and compare.", "Write what you think the yeast did and why."],
+"outcome": "You practise running a fair test and observing a living process.",
+"safety": "Use only baker's yeast, sugar and warm tap water in plastic bottles, with adult supervision. Do not taste anything, do not try to grow bacteria or unknown organisms, wash your hands, and clean up when finished."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

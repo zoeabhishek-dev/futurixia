@@ -1,0 +1,31 @@
+{
+"slug": "marine-biologist",
+"overview": {
+"summary": "Marine biologists study life in the oceans and other salt water, from tiny plankton to whales, and the ecosystems they live in.",
+"problems": "They help understand and protect ocean life, fisheries and coasts, and study how oceans are changing.",
+"worksWith": "Other scientists, divers and boat crews, fisheries and conservation groups, government agencies and local communities.",
+"workplaces": "Research vessels, coastal stations, aquariums, laboratories, universities and conservation organizations."
+},
+"timeline": [
+{"time": "Morning", "title": "Preparing fieldwork", "description": "The biologist checks the weather, equipment and safety plans.", "why": "Sea conditions can change quickly.", "skills": ["Planning", "Safety awareness"]},
+{"time": "Late morning", "title": "At sea or on the shore", "description": "The biologist collects samples, surveys species or monitors habitats, sometimes by diving or from a boat.", "why": "Direct observation gives data you cannot get elsewhere.", "skills": ["Observation", "Physical fitness"]},
+{"time": "Afternoon", "title": "Processing samples", "description": "The biologist identifies and counts species in the laboratory.", "why": "Careful identification is the base of any study.", "skills": ["Attention to detail", "Technical skill"]},
+{"time": "Late afternoon", "title": "Data analysis", "description": "The biologist uses statistics and software to study patterns.", "why": "Patterns show whether populations are healthy.", "skills": ["Analysis", "Mathematics"]},
+{"time": "Varies", "title": "Writing and communicating", "description": "The biologist writes reports and talks to communities and managers.", "why": "Findings only protect the ocean when people act on them.", "skills": ["Writing", "Communication"]},
+{"time": "Varies", "title": "Weather and long trips", "description": "Bad weather can cancel plans, and research cruises can last weeks.", "why": "Work at sea depends on conditions.", "skills": ["Resilience", "Adaptability"]}
+],
+"responsibilities": ["Surveying and monitoring marine life", "Collecting and analyzing samples and data", "Studying ocean ecosystems and threats", "Following safety rules for boats and diving", "Writing reports and papers", "Working with communities and managers", "Applying for funding"],
+"challenges": ["Jobs are competitive and often short-term or grant-funded.", "Fieldwork can be physically demanding and depends on the weather.", "Seasickness and time away from home on research trips can be hard.", "There are safety risks at sea and in diving.", "Much of the time goes on data and writing.", "Funding for research is limited.", "Many roles need a master's degree or PhD."],
+"skills": ["Biology and ecology", "Observation", "Data analysis", "Fieldwork and safety skills", "Writing", "Patience", "Physical fitness", "Communication"],
+"workEnvironment": "A mix of boats, shores, laboratories and offices. Fieldwork can be on research vessels or at coastal sites, in all weather. Office and laboratory work includes analysis and reports.",
+"rewards": ["Working with ocean life", "Contributing to conservation", "Outdoor and sea experiences", "Variety of species and places"],
+"tradeoffs": ["Competitive, short-term work", "Physical and weather demands", "Time away from home", "Pay that varies by country and employer"],
+"activity": {
+"title": "Build an ocean food web",
+"steps": ["Choose an ocean habitat such as a kelp forest or a coral reef.", "Using trusted sources such as a public aquarium or marine science website, list eight species that live there.", "Draw arrows from each food to the animal that eats it, making a web.", "Pick one species and write what would happen if it disappeared.", "Note whether thinking about connections felt interesting."],
+"outcome": "You practise researching, linking facts and thinking about how ecosystems depend on each other.",
+"safety": "This is a desk exercise. If you visit a beach, go with an adult, watch tides and waves, never go out alone, and do not touch or remove living animals."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

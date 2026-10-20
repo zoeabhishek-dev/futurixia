@@ -1,0 +1,31 @@
+{
+"slug": "cloud-architect",
+"overview": {
+"summary": "Cloud architects design how an organization's software and data run on cloud computing platforms, choosing services that are reliable, secure and affordable.",
+"problems": "They make sure applications can handle many users, stay available when something fails, protect data and keep costs under control.",
+"worksWith": "Software developers, DevOps and security engineers, managers, and business and finance teams.",
+"workplaces": "Technology companies, banks, consultancies, cloud providers and large organizations, mostly in offices or remotely."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Check priorities and incidents", "description": "The architect reviews any problems with live systems and the day's design work.", "why": "Live systems must stay available.", "skills": ["Prioritizing", "Awareness"]},
+{"time": "10:00 to 12:00", "title": "Designing systems", "description": "The architect draws how the parts of a system fit together, such as servers, databases, networks and storage, and what happens if one part fails.", "why": "Good design prevents outages later.", "skills": ["Systems thinking", "Problem solving"]},
+{"time": "13:00 to 14:30", "title": "Reviewing security and costs", "description": "The architect checks access controls, data protection and cloud bills.", "why": "Security mistakes and surprise costs are common.", "skills": ["Security awareness", "Cost awareness"]},
+{"time": "14:30 to 16:00", "title": "Advising teams", "description": "The architect answers developers' questions and reviews their designs.", "why": "Good advice early saves rework later.", "skills": ["Communication", "Mentoring"]},
+{"time": "16:00 to 17:30", "title": "Documentation and proposals", "description": "The architect writes design documents and explains trade-offs to managers.", "why": "Decisions need clear reasons that others can check.", "skills": ["Writing", "Persuasion"]},
+{"time": "Varies", "title": "Incidents and migrations", "description": "Moving systems to the cloud or fixing outages can need extra hours.", "why": "Some work has to happen when systems are least busy.", "skills": ["Staying calm", "Planning"]}
+],
+"responsibilities": ["Designing reliable, secure, cost-effective cloud systems", "Choosing services and technologies", "Reviewing teams' designs", "Planning migrations from older systems", "Managing security, access and data protection", "Controlling cloud costs", "Writing clear design documents"],
+"challenges": ["Services and best practices change quickly.", "Design mistakes can cause large outages or costs.", "Trade-offs between cost, speed, security and reliability are constant.", "The role usually needs years of hands-on experience first.", "Other teams have to live with your decisions.", "Pressure is high during outages.", "Certifications and learning take continuing effort."],
+"skills": ["Systems thinking", "Cloud platform knowledge", "Networking and security", "Problem solving", "Communication", "Documentation", "Cost awareness", "Continuous learning"],
+"workEnvironment": "Mostly desk and computer based, in offices or remotely, with many meetings and design discussions. Hours are usually regular, though outages can bring urgent work. The role is often reached after several years as a developer or engineer.",
+"rewards": ["Designing systems that serve many people", "A mix of technical depth and big-picture thinking", "Strong demand for cloud skills in many places", "Constant learning"],
+"tradeoffs": ["Pressure for reliability", "Constant change", "Years of experience needed first", "Pay and requirements that vary by country and employer"],
+"activity": {
+"title": "Design a system on paper and plan for failure",
+"steps": ["Imagine a simple school library app where students reserve books.", "Draw boxes for the parts: the app, a database of books, a login system and storage for images.", "Add arrows to show how they talk to each other.", "Pick one box and write what should happen if it stops working.", "Note whether thinking about how parts fit together felt interesting."],
+"outcome": "You practise thinking about systems, dependencies and failure, which is the heart of architecture.",
+"safety": "Use an imaginary app, do not create real cloud accounts or enter payment details without an adult, and never put personal data into a public tool."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

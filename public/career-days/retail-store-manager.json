@@ -1,0 +1,31 @@
+{
+"slug": "retail-store-manager",
+"overview": {
+"summary": "Retail store managers run shops, leading the team and making sure customers find what they need, products are available and the store makes money.",
+"problems": "They keep shelves stocked, service friendly and costs under control while meeting sales goals.",
+"worksWith": "Customers, shop staff, suppliers, area or head-office managers and security staff.",
+"workplaces": "Supermarkets, department stores, clothing, electronics and specialty shops, and online retail teams."
+},
+"timeline": [
+{"time": "Early morning", "title": "Open the store", "description": "The manager checks the premises, cash and stock deliveries and briefs the team.", "why": "A good opening sets up the day.", "skills": ["Organization", "Leadership"]},
+{"time": "Morning", "title": "Stock and displays", "description": "The manager checks shelves, prices and displays and plans restocking.", "why": "Customers cannot buy what they cannot find.", "skills": ["Attention to detail", "Planning"]},
+{"time": "Midday", "title": "Serving customers and staff", "description": "The manager helps customers, resolves complaints and supports staff at busy times.", "why": "Good service brings customers back.", "skills": ["Customer care", "Patience"]},
+{"time": "Afternoon", "title": "Admin and numbers", "description": "The manager reviews sales, costs, staffing and orders.", "why": "Margins in retail are often small.", "skills": ["Analysis", "Budgeting"]},
+{"time": "Evening", "title": "Closing", "description": "The manager counts cash, checks security and prepares for the next day.", "why": "Accurate cash handling and security protect the business.", "skills": ["Accuracy", "Responsibility"]},
+{"time": "Varies", "title": "Busy seasons", "description": "Festivals and sale periods mean long days and extra staff.", "why": "Much of a shop's income comes at peak times.", "skills": ["Stamina", "Flexibility"]}
+],
+"responsibilities": ["Leading and scheduling staff", "Meeting sales and service targets", "Managing stock and orders", "Handling customer complaints", "Controlling costs and cash", "Following health, safety and legal rules", "Presenting and arranging the store"],
+"challenges": ["Hours are long and include weekends, evenings and holidays.", "There is pressure to meet targets with small margins.", "Customers can be difficult or upset.", "Staff turnover means constant training.", "You are on your feet most of the day.", "Busy seasons and sales events bring extra pressure.", "Online shopping brings strong competition."],
+"skills": ["Leadership", "Customer service", "Organization", "Communication", "Numeracy", "Problem solving", "Stamina", "Time management"],
+"workEnvironment": "Stores and shop floors, standing and moving through the day, with some office time for admin. Hours often include weekends, evenings and holidays. The pace is busiest at opening, lunchtime and sale periods.",
+"rewards": ["Leading a team", "Seeing results quickly", "Variety of people and tasks", "Clear career steps into area management"],
+"tradeoffs": ["Long and irregular hours", "Target pressure", "Dealing with complaints", "Pay and conditions that vary by country and retailer"],
+"activity": {
+"title": "Design a mini shop display and staff plan",
+"steps": ["Choose five items at home and imagine them for sale in a small shop.", "Arrange them on a table so customers can see and reach them, and make price labels.", "Ask family members to shop and note what they notice first.", "Write a simple plan for how many staff you would need at a busy time and at a quiet time.", "Note whether organizing a shop felt interesting."],
+"outcome": "You practise displaying products, planning staffing and observing customers.",
+"safety": "Use only items you own, do not handle real money for sale, and be fair and honest in what you label."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

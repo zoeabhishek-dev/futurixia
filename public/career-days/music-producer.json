@@ -1,0 +1,31 @@
+{
+"slug": "music-producer",
+"overview": {
+"summary": "Music producers guide the making of recordings, working with artists to shape the sound, arrangement and final mix of songs and albums.",
+"problems": "They turn ideas into finished tracks that sound good and fit the artist's vision and audience.",
+"worksWith": "Artists, songwriters, session musicians, sound engineers, labels and managers.",
+"workplaces": "Recording studios, home studios, live venues and online collaborations."
+},
+"timeline": [
+{"time": "Morning", "title": "Listening and preparing", "description": "The producer reviews demos, references and the session plan.", "why": "Preparation saves studio time.", "skills": ["Listening", "Planning"]},
+{"time": "Late morning", "title": "Setting up and recording", "description": "The producer sets up microphones and instruments and records takes.", "why": "Good recording captures the performance.", "skills": ["Technical skill", "Patience"]},
+{"time": "Afternoon", "title": "Directing performances", "description": "The producer gives feedback to musicians and chooses the best takes.", "why": "Artists often perform best with clear, encouraging direction.", "skills": ["Communication", "Musical taste"]},
+{"time": "Late afternoon", "title": "Arranging and editing", "description": "The producer shapes the structure, adds parts and edits with software.", "why": "Arrangement decides how a song feels from start to finish.", "skills": ["Creativity", "Software skills"]},
+{"time": "Evening", "title": "Mixing", "description": "The producer balances levels and effects so every part is heard.", "why": "A mix decides how music sounds on different speakers.", "skills": ["Critical listening", "Attention to detail"]},
+{"time": "Varies", "title": "Business and deadlines", "description": "The producer manages budgets, schedules and release dates.", "why": "Projects must be finished and paid for.", "skills": ["Organization", "Negotiation"]}
+],
+"responsibilities": ["Guiding the creative direction of recordings", "Recording, editing and arranging music", "Working with artists and musicians", "Mixing and preparing tracks for release", "Managing schedules and budgets", "Protecting hearing and using volume safely", "Keeping up with technology and trends"],
+"challenges": ["Income is often uneven and project-based.", "Competition is intense and success is hard to predict.", "Hours are long and irregular, often at night.", "Hearing can be damaged if volumes are too high for long periods.", "Creative differences with artists are common.", "You need to build a track record and contacts.", "Technology changes quickly."],
+"skills": ["Critical listening", "Music knowledge", "Technical audio skills", "Creativity", "Communication", "Patience", "Organization", "Teamwork"],
+"workEnvironment": "Studios with equipment and soundproof rooms, home studios and sometimes live venues. Hours are often long and irregular, including evenings. Many producers work freelance on several projects.",
+"rewards": ["Shaping music people enjoy", "Creative collaboration", "Variety of artists and styles", "A mix of technical and creative work"],
+"tradeoffs": ["Uneven income", "Irregular hours", "A competitive industry", "Pay and opportunities that vary widely"],
+"activity": {
+"title": "Make a three-layer loop",
+"steps": ["Using a phone or free music software, record or choose three simple sounds, such as a rhythm, a bass note and a melody.", "Layer them so they play together as a short loop.", "Adjust the volume of each so none covers the others.", "Play it for two people and ask what they hear first and what could improve.", "Make one change and note whether shaping sound felt enjoyable."],
+"outcome": "You practise layering, balancing and using feedback, which are the basics of production.",
+"safety": "Keep volume moderate and take listening breaks to protect your hearing, use only your own sounds or royalty-free ones, and ask an adult before creating online accounts."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

@@ -1,0 +1,31 @@
+{
+"slug": "foreign-service-officer",
+"overview": {
+"summary": "Foreign service officers, or diplomats, represent their country abroad, building relationships, reporting on events and helping their country's citizens and interests. Titles and paths differ by country.",
+"problems": "They help countries cooperate, solve disputes peacefully, trade and protect their citizens overseas.",
+"worksWith": "Government officials, embassy colleagues, local people and leaders, citizens abroad and international organizations.",
+"workplaces": "Embassies, consulates and foreign ministry offices, with postings in different countries."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Read the news and messages", "description": "The officer reviews local news and messages from the home ministry.", "why": "Diplomats must understand what is happening around them.", "skills": ["Awareness", "Analysis"]},
+{"time": "9:30 to 12:00", "title": "Meetings with local officials", "description": "The officer discusses shared issues, such as trade, education or security, and builds relationships.", "why": "Trust takes time to build.", "skills": ["Diplomacy", "Listening"]},
+{"time": "12:00 to 14:00", "title": "Public and community events", "description": "The officer attends events, meets people and explains their country's views.", "why": "Public understanding supports good relations.", "skills": ["Communication", "Cultural awareness"]},
+{"time": "14:00 to 16:00", "title": "Reporting", "description": "The officer writes reports and analysis for the home government.", "why": "Governments rely on accurate reporting to decide.", "skills": ["Writing", "Judgement"]},
+{"time": "16:00 to 17:30", "title": "Helping citizens", "description": "The officer handles passport, visa and emergency requests.", "why": "Citizens abroad may have nowhere else to turn.", "skills": ["Care", "Following procedure"]},
+{"time": "Varies", "title": "Crises and visits", "description": "Emergencies and high-level visits require quick changes of plan.", "why": "International events do not wait for office hours.", "skills": ["Resilience", "Composure"]}
+],
+"responsibilities": ["Representing their country's interests", "Building relationships with officials and communities", "Reporting on and analyzing local developments", "Providing consular help to citizens", "Negotiating and managing agreements", "Following protocol and confidentiality", "Learning languages and cultures"],
+"challenges": ["Selection is highly competitive, often through demanding exams and interviews.", "Frequent moves between countries affect family life and friendships.", "Postings may be in difficult or unsafe places.", "Work can be slow and results hard to see.", "Strict confidentiality and protocol apply.", "Hours can be long during crises or visits.", "Learning languages and cultures never stops."],
+"skills": ["Communication", "Diplomacy", "Cultural awareness", "Analytical thinking", "Languages", "Writing", "Integrity", "Adaptability"],
+"workEnvironment": "Embassies, consulates and ministry offices, combining desk work, meetings and social or public events. Postings usually last a few years, in different countries, with periods in the home country.",
+"rewards": ["Living and working in different cultures", "Representing your country", "Variety of issues", "Skills in languages and negotiation"],
+"tradeoffs": ["Frequent moves", "Postings in difficult places", "Slow, indirect results", "Pay and benefits that vary by country"],
+"activity": {
+"title": "Write a briefing note on a country",
+"steps": ["Choose a country and use public sources such as its official tourism or government website and a reputable news site.", "Write one page covering geography, languages, customs for greeting people and two issues in the news.", "Add three polite tips for visiting.", "Present the note aloud to a family member.", "Note whether understanding another country felt interesting."],
+"outcome": "You practise research, balanced summary and cultural awareness.",
+"safety": "Use only public information, be respectful about people and cultures, and do not contact embassies or officials with questions about sensitive matters."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

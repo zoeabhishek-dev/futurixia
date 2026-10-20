@@ -1,0 +1,31 @@
+{
+"slug": "robotics-engineer",
+"overview": {
+"summary": "Robotics engineers design, build and test robots and automated machines, combining mechanical design, electronics and software.",
+"problems": "They create machines that help in factories, hospitals, homes, farms and dangerous places.",
+"worksWith": "Mechanical, electrical and software engineers, technicians, researchers and customers.",
+"workplaces": "Laboratories, factories, research institutes and technology companies, in design offices and workshops."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Team check-in", "description": "The engineer reviews progress and problems with the robot project.", "why": "Robotics needs mechanical, electrical and software teams to match.", "skills": ["Communication", "Planning"]},
+{"time": "9:30 to 12:30", "title": "Designing and programming", "description": "The engineer designs parts, chooses sensors and motors and writes code to control movement.", "why": "Each part must work with the others.", "skills": ["Programming", "Mechanical sense"]},
+{"time": "13:30 to 15:30", "title": "Building and testing", "description": "The engineer assembles prototypes and tests how they move and respond.", "why": "Testing shows what design on paper cannot.", "skills": ["Practical skill", "Patience"]},
+{"time": "15:30 to 16:30", "title": "Debugging", "description": "The engineer finds why a robot behaves unexpectedly, which may be a software bug, a loose wire or a faulty sensor.", "why": "Problems can hide in software, electronics or mechanics.", "skills": ["Troubleshooting", "Persistence"]},
+{"time": "16:30 to 17:30", "title": "Safety checks and documentation", "description": "The engineer checks safety measures and records the results.", "why": "Moving machines can hurt people if safety is neglected.", "skills": ["Safety awareness", "Writing"]},
+{"time": "Varies", "title": "Demonstrations and deadlines", "description": "Demonstrations for customers or competitions can mean long hours.", "why": "Fixed dates need working machines.", "skills": ["Resilience", "Time management"]}
+],
+"responsibilities": ["Designing and building robots and automated systems", "Writing control software", "Testing and improving prototypes", "Making systems safe around people", "Working across engineering teams", "Documenting designs and tests", "Keeping up with new technology"],
+"challenges": ["Problems can come from software, electronics or mechanics, which makes fault finding hard.", "Prototypes often fail before they work.", "Safety responsibility is serious.", "Long projects and deadlines for demonstrations add pressure.", "The role needs a wide mix of skills.", "Competition for jobs is strong and an engineering degree is often needed.", "Technology changes quickly."],
+"skills": ["Programming", "Mechanical and electronics knowledge", "Mathematics", "Problem solving", "Teamwork", "Patience", "Safety awareness", "Creativity"],
+"workEnvironment": "Laboratories, workshops and offices, with a mix of design, building and testing. Hours are usually regular, with extra effort before demonstrations. Some roles involve visits to factories or customers.",
+"rewards": ["Seeing a machine you built move and work", "A mix of hardware and software", "Applications in many industries", "Creative problem solving"],
+"tradeoffs": ["Many failures before success", "Safety responsibility", "Deadline pressure", "Pay and opportunities that vary by country and employer"],
+"activity": {
+"title": "Write robot instructions for a human robot",
+"steps": ["Place a small object on a table and choose a start spot.", "Write step-by-step instructions for a friend, who acts as a robot, to pick it up and place it in a box, using only simple commands such as step forward, turn left and grab.", "Test the instructions exactly as written, with no extra help from your friend.", "Fix the instructions where the robot got stuck.", "Note whether this kind of precise thinking felt interesting."],
+"outcome": "You practise breaking tasks into exact steps and debugging, the way robots are programmed.",
+"safety": "Do this in a clear space with no sharp or breakable objects, and do not build machines that use mains power or heat."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

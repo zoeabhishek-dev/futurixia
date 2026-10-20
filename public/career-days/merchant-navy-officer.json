@@ -1,0 +1,31 @@
+{
+"slug": "merchant-navy-officer",
+"overview": {
+"summary": "Merchant navy officers navigate and operate commercial ships that carry cargo and passengers around the world, working in the deck, engine or electro-technical departments.",
+"problems": "They keep ships moving safely and efficiently, protect crew, cargo and the sea, and follow international rules.",
+"worksWith": "The ship's crew, port authorities, pilots, shipping companies and inspectors.",
+"workplaces": "Cargo ships, tankers, container vessels and passenger ships, ports and shipping company offices."
+},
+"timeline": [
+{"time": "Before a watch", "title": "Handover and checks", "description": "The officer takes over the watch and checks the course, weather and equipment.", "why": "A clear handover keeps the ship safe.", "skills": ["Attention to detail", "Communication"]},
+{"time": "During a watch", "title": "Bridge or engine watch", "description": "The officer navigates, monitors radar, charts and engines and keeps a lookout. Ships run around the clock, so watches are shared between officers.", "why": "Constant attention prevents collisions and groundings.", "skills": ["Concentration", "Navigation"]},
+{"time": "After a watch", "title": "Maintenance and paperwork", "description": "The officer carries out inspections and maintenance and completes cargo records and reports.", "why": "Ships need constant care to stay safe at sea.", "skills": ["Organization", "Responsibility"]},
+{"time": "Regularly", "title": "Drills", "description": "The crew practises fire, abandon-ship and pollution drills.", "why": "Crew must know what to do at once in an emergency.", "skills": ["Teamwork", "Staying calm"]},
+{"time": "In port", "title": "Cargo and port operations", "description": "The officer supervises loading and unloading and inspections, often with long hours and tight schedules.", "why": "Port time is short and expensive.", "skills": ["Coordination", "Stamina"]},
+{"time": "Between watches", "title": "Rest and contact", "description": "The officer rests, exercises and contacts home when connections allow.", "why": "Rest and wellbeing keep crews alert on long contracts.", "skills": ["Self-care", "Resilience"]}
+],
+"responsibilities": ["Safe navigation and watchkeeping", "Operating and maintaining ship systems", "Managing cargo operations", "Following international safety and environmental rules", "Leading and training crew", "Running drills and emergency response", "Keeping accurate logs and documents"],
+"challenges": ["Contracts at sea often last months, away from family.", "Contact is limited and living space is shared and confined.", "Watch patterns disrupt sleep.", "There are risks from weather, accidents and, in some areas, piracy.", "Strict qualifications, medical checks and certificates are required.", "Fatigue and isolation affect wellbeing.", "Port stays can be busy and short."],
+"skills": ["Navigation and seamanship", "Technical knowledge", "Responsibility", "Teamwork", "Communication", "Discipline", "Resilience", "Problem solving"],
+"workEnvironment": "Ships at sea and in port, with shared cabins and watches around the clock. Contracts often last months, with leave in between. Offices and training are part of shore periods.",
+"rewards": ["Travel to many countries", "Responsibility from a young age", "Leave periods between contracts", "Skills that are recognized internationally"],
+"tradeoffs": ["Long separations", "Confined living and isolation", "Irregular sleep", "Pay and conditions that vary by company, country and rank"],
+"activity": {
+"title": "Plan a shipping route using maps",
+"steps": ["Choose a product, such as bananas, and a port it travels from and to.", "Using an online map or an atlas, trace a sea route and note the main seas, straits or canals it passes.", "Estimate the distance from the map scale and the travel time at a typical ship speed.", "List three things that could delay the ship.", "Note whether planning a journey felt interesting."],
+"outcome": "You practise using maps, estimating and thinking about risks at sea.",
+"safety": "This is a desk exercise only. Do not go near water to test anything without a qualified adult, and wear a life jacket on any real water."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}
