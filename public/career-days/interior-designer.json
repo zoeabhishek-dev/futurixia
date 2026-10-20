@@ -1,0 +1,31 @@
+{
+"slug": "interior-designer",
+"overview": {
+"summary": "Interior designers plan and decorate indoor spaces so they are functional, safe and attractive.",
+"problems": "They make homes, shops, offices and public buildings easier to use and nicer to be in, within a budget.",
+"worksWith": "Clients, architects, builders, electricians, suppliers and furniture makers.",
+"workplaces": "Design studios, architecture and construction firms, furniture and retail companies, and self-employed practice, with many visits to client sites."
+},
+"timeline": [
+{"time": "Morning", "title": "Meeting the client", "description": "The designer listens to what the client needs, how they use the space and what their budget is.", "why": "A design has to fit the people who use it.", "skills": ["Listening", "Asking questions"]},
+{"time": "Late morning", "title": "Measuring and planning", "description": "The designer measures the space and draws layouts with software.", "why": "Accurate measurements prevent expensive mistakes.", "skills": ["Measuring", "Design software"]},
+{"time": "Afternoon", "title": "Choosing materials", "description": "The designer picks colours, flooring, lighting, furniture and fabrics and builds a mood board.", "why": "Materials affect cost, comfort, safety and look.", "skills": ["Creativity", "Colour sense"]},
+{"time": "Late afternoon", "title": "Presenting ideas", "description": "The designer shows drawings and samples and explains the choices.", "why": "Clients decide better when they understand the thinking behind a design.", "skills": ["Communication", "Persuasion"]},
+{"time": "Varies", "title": "Site visits", "description": "The designer checks the work of builders and suppliers, solves problems and makes sure deliveries arrive.", "why": "Designs have to be built as planned.", "skills": ["Coordination", "Problem solving"]},
+{"time": "Varies", "title": "Budget and changes", "description": "Clients change their minds and costs shift, so plans have to be adjusted.", "why": "Few projects stay exactly on the first plan.", "skills": ["Flexibility", "Negotiation"]}
+],
+"responsibilities": ["Understanding client needs and budgets", "Drawing layouts and 3D visuals", "Selecting materials, furniture and lighting", "Following building and safety rules", "Coordinating suppliers and trades", "Managing timelines and costs", "Presenting ideas to clients"],
+"challenges": ["Clients can have strong opinions that differ from yours.", "Budgets are often tight.", "Projects depend on many other people and can be delayed.", "Mistakes in measuring or ordering can be costly.", "Freelance work can bring uneven income.", "Fashions change and competition is strong.", "Some work is physical, such as carrying samples and visiting sites."],
+"skills": ["Creativity", "Spatial thinking", "Drawing and design software", "Communication", "Project management", "Attention to detail", "Knowledge of materials", "Negotiation"],
+"workEnvironment": "Studios and offices for design work, plus client homes, shops and building sites. The work mixes creative time, meetings and practical site visits. Some designers work for firms and others are self-employed.",
+"rewards": ["Transforming spaces people use", "A mix of creativity and practical problem solving", "Variety of projects", "Seeing a design built"],
+"tradeoffs": ["Budget and client limits", "Deadlines and coordination stress", "Uneven income when self-employed", "Pay and demand that vary by country and market"],
+"activity": {
+"title": "Redesign one corner of your room on paper",
+"steps": ["Measure the corner and draw it to scale on squared paper.", "List how you use it: studying, sleeping or storing things.", "Draw a new layout and choose colours and lighting ideas, making a small mood board from magazine cuttings or free images.", "Ask a family member what they like and what is impractical.", "Revise your plan once."],
+"outcome": "You practise measuring, planning around how people use a space and using feedback.",
+"safety": "Do not move heavy furniture alone, do not climb to take measurements, and ask permission before changing anything in a shared space."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

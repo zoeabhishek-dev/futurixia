@@ -1,0 +1,31 @@
+{
+"slug": "personal-trainer",
+"overview": {
+"summary": "Personal trainers design and guide exercise programs to help people improve fitness, strength and health.",
+"problems": "They help clients reach goals such as getting stronger, more active or more confident, safely.",
+"worksWith": "Clients of all ages, gym managers, physiotherapists, doctors and nutritionists.",
+"workplaces": "Gyms, fitness studios, clients' homes, parks and online, and many trainers are self-employed."
+},
+"timeline": [
+{"time": "Early morning", "title": "Sessions with clients", "description": "Many people train before work, so mornings are busy with one-to-one sessions.", "why": "Clients often fit training around work.", "skills": ["Energy", "Motivation"]},
+{"time": "Mid-morning", "title": "Planning programs", "description": "The trainer writes plans for each client based on their goals and ability.", "why": "A good plan is safe, realistic and varied.", "skills": ["Planning", "Exercise knowledge"]},
+{"time": "Midday", "title": "Own training and learning", "description": "The trainer keeps up their own fitness and reads about new research.", "why": "Trainers lead by example and need current knowledge.", "skills": ["Discipline", "Learning"]},
+{"time": "Afternoon", "title": "Assessments and consultations", "description": "The trainer meets new clients, asks about their health and goals and checks how they move.", "why": "A safe program starts with understanding the person.", "skills": ["Listening", "Observation"]},
+{"time": "Evening", "title": "Sessions and classes", "description": "The trainer runs sessions and group classes, which is the busiest time for many gyms.", "why": "Many clients can only train after work.", "skills": ["Stamina", "Enthusiasm"]},
+{"time": "Varies", "title": "Admin and marketing", "description": "The trainer handles bookings, invoices and finding clients, especially if self-employed.", "why": "A steady client list keeps the work going.", "skills": ["Organization", "Business sense"]}
+],
+"responsibilities": ["Assessing clients' goals and fitness", "Designing safe, suitable programs", "Demonstrating and coaching exercises with good technique", "Motivating and encouraging clients", "Tracking progress", "Following health, safety and first aid rules", "Knowing when to refer clients to a doctor or physiotherapist"],
+"challenges": ["Hours often include early mornings, evenings and weekends.", "Income can be uneven, especially when self-employed.", "Many trainers compete for clients.", "Clients can lose motivation or stop turning up.", "There is physical strain and injury risk for the trainer.", "You must stay within your training and refer medical issues to professionals.", "Staying credible means keeping certifications and knowledge up to date."],
+"skills": ["Exercise knowledge", "Communication", "Motivation", "Observation", "Empathy", "Organization", "Business sense", "Fitness"],
+"workEnvironment": "Gyms, studios, parks and clients' homes, on your feet and active most of the day. Hours are often early mornings and evenings. Self-employed trainers manage bookings, money and marketing.",
+"rewards": ["Helping people become healthier and more confident", "Active, social work", "Flexible schedules in some roles", "Seeing clear progress"],
+"tradeoffs": ["Irregular and unsocial hours", "Uneven income", "Competition", "Pay that varies by country and gym"],
+"activity": {
+"title": "Plan a gentle 20-minute routine for a willing family member",
+"steps": ["Ask a healthy family member who agrees to take part about their comfort level and goals.", "Plan a routine with a warm-up, five easy exercises such as marching on the spot or gentle stretches, and a cool-down.", "Write simple instructions for each exercise.", "Lead the session with an adult present and ask how it felt.", "Note what you would change."],
+"outcome": "You practise planning, explaining and adapting exercise safely.",
+"safety": "Keep it gentle, stop if anyone feels pain or dizziness, do not lead anyone with a health condition or injury without a doctor's advice, and avoid heavy weights or extreme exercises."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

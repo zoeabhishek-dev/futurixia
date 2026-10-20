@@ -1,0 +1,31 @@
+{
+"slug": "actor",
+"overview": {
+"summary": "Actors bring characters to life in theatre, film, television, radio and online, using voice, movement and emotion.",
+"problems": "They help audiences feel, imagine and understand stories by performing convincingly.",
+"worksWith": "Directors, other actors, writers, producers, casting directors, agents, and camera and stage crews.",
+"workplaces": "Theatres, film and TV sets, studios, rehearsal rooms and audition venues, often travelling for work."
+},
+"timeline": [
+{"time": "Morning", "title": "Warm-up and preparation", "description": "The actor does voice and body warm-ups, learns lines and reads the script again.", "why": "A prepared body and voice allow a better performance.", "skills": ["Discipline", "Memory"]},
+{"time": "Late morning", "title": "Rehearsal", "description": "The actor works with the director and cast and tries different ways of playing a scene.", "why": "Rehearsal is where performances are shaped.", "skills": ["Collaboration", "Openness"]},
+{"time": "Afternoon", "title": "Performing or filming", "description": "On a film set the actor shoots scenes in short pieces, often repeating them many times. In theatre the actor rehearses for the evening.", "why": "Staying consistent from take to take matters for film.", "skills": ["Focus", "Emotional control"]},
+{"time": "Late afternoon", "title": "Auditions and self-tapes", "description": "The actor prepares and records auditions for new roles.", "why": "Most roles are won through auditions, and most auditions do not lead to a role.", "skills": ["Resilience", "Preparation"]},
+{"time": "Evening", "title": "Performance or study", "description": "Stage actors perform in the evening, while others study scripts and plan the next day.", "why": "Theatre audiences gather after the working day.", "skills": ["Stamina", "Commitment"]},
+{"time": "Between jobs", "title": "Other work and training", "description": "Many actors take other jobs and keep training between roles.", "why": "Acting work is often project by project.", "skills": ["Adaptability", "Persistence"]}
+],
+"responsibilities": ["Learning lines and preparing characters", "Taking direction and working well in a team", "Attending rehearsals and calls on time", "Auditioning regularly", "Looking after voice, body and wellbeing", "Managing irregular income", "Promoting yourself through showreels and contacts"],
+"challenges": ["Work and income are irregular, and many actors have other jobs.", "Rejection at auditions is common.", "Hours are long and unusual, including nights, weekends and time away.", "Competition is intense and there is no guaranteed career.", "There can be public criticism and pressure about appearance.", "Some roles are emotionally demanding.", "Contracts and rights can be complex."],
+"skills": ["Voice and movement", "Memory", "Emotional range", "Listening", "Resilience", "Teamwork", "Discipline", "Adaptability"],
+"workEnvironment": "Theatres, film and television sets, studios and rehearsal rooms. Hours can be long and irregular, with early starts on film sets and evening performances in theatre. Many actors travel and work project to project.",
+"rewards": ["Creative expression", "Moving or entertaining audiences", "Variety of roles and places", "Working with other creative people"],
+"tradeoffs": ["Uncertain income", "Frequent rejection", "Irregular hours and travel", "Opportunities and pay that vary widely by country and industry"],
+"activity": {
+"title": "Perform a one-minute scene",
+"steps": ["Write a one-minute scene or monologue in your own words about a character in a simple situation.", "Decide what your character wants and how they feel.", "Practise it three times, each with a different emotion.", "Perform it for family or friends who agree to watch.", "Ask which version felt most believable and why."],
+"outcome": "You practise preparing a character, using voice and expression and taking feedback.",
+"safety": "Use your own words or public-domain text, keep scenes kind and suitable for your age, and perform only for people you know."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

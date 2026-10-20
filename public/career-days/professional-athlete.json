@@ -1,0 +1,31 @@
+{
+"slug": "professional-athlete",
+"overview": {
+"summary": "Professional athletes compete in sport as their job, training and performing at a high level for clubs, teams or as individuals. Very few people who play sport when young become full-time professionals.",
+"problems": "They entertain and inspire spectators, and train to push physical and mental limits.",
+"worksWith": "Coaches, teammates, physiotherapists, doctors, nutritionists, sports psychologists, agents and managers.",
+"workplaces": "Training grounds, gyms, stadiums and competition venues, with a lot of travel."
+},
+"timeline": [
+{"time": "Early morning", "title": "Training session", "description": "The athlete practises skills, tactics and fitness work set by the coach.", "why": "Elite performance comes from repeated, focused practice.", "skills": ["Discipline", "Skill"]},
+{"time": "Late morning", "title": "Strength and conditioning", "description": "The athlete does gym work to build strength, speed and resilience to injury.", "why": "A stronger body copes better with the demands of the sport.", "skills": ["Consistency", "Body awareness"]},
+{"time": "Midday", "title": "Recovery and nutrition", "description": "The athlete eats planned meals, rests and uses recovery methods such as stretching.", "why": "Recovery is when the body adapts to training.", "skills": ["Self-care", "Planning"]},
+{"time": "Afternoon", "title": "Team meetings and video analysis", "description": "The athlete studies performances and plans for the next opponent.", "why": "Understanding the game improves decisions during it.", "skills": ["Analysis", "Teamwork"]},
+{"time": "Evening", "title": "Second session, treatment or media", "description": "Some athletes train again, receive physiotherapy or do interviews and sponsor commitments.", "why": "Looking after the body and the public side of the job are both part of the work.", "skills": ["Communication", "Professionalism"]},
+{"time": "Match days", "title": "Competing", "description": "The athlete travels, warms up and performs under pressure.", "why": "Everything else in the week prepares for this.", "skills": ["Focus", "Composure"]}
+],
+"responsibilities": ["Training regularly and following the coach's plan", "Looking after your body through sleep, nutrition and recovery", "Competing and performing under pressure", "Working with coaches and medical staff", "Following rules, anti-doping and ethics", "Managing public image and contracts", "Planning life after sport"],
+"challenges": ["Very few people reach professional level, and many do not make it despite great effort.", "Injuries can end a career early.", "Careers are often short, so planning for life after sport matters.", "There is performance pressure and public criticism.", "Frequent travel means time away from family.", "Income varies hugely between sports and levels.", "Rules about doping, diet and behaviour are strict."],
+"skills": ["Physical fitness", "Discipline", "Teamwork", "Mental resilience", "Focus", "Coachability", "Time management", "Communication"],
+"workEnvironment": "Training grounds, gyms and competition venues, with frequent travel and a structured routine. Match and training schedules decide your week, including weekends and holidays. Athletes work closely with a support team.",
+"rewards": ["Doing what you love at a high level", "Teamwork and competition", "Travel and experiences", "Inspiring others"],
+"tradeoffs": ["Short and uncertain careers", "Injury risk", "Pressure and public scrutiny", "Pay and opportunities that vary hugely by sport, country and level"],
+"activity": {
+"title": "Keep a four-week skill log for one sport skill",
+"steps": ["Choose one safe skill in a sport you play, such as free throws, a passing drill or a running distance.", "Test your starting level and write it down.", "Practise three times a week for about 20 minutes, with a warm-up, and record your results.", "After four weeks, compare your first and last numbers and note what helped.", "Ask your coach or a teacher what to improve next."],
+"outcome": "You practise setting a goal, training regularly and measuring progress.",
+"safety": "Warm up and cool down, stop if anything hurts, and talk to a doctor, coach or teacher before any intense training. Do not use supplements or follow extreme diets."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

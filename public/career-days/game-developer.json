@@ -1,0 +1,31 @@
+{
+"slug": "game-developer",
+"overview": {
+"summary": "Game developers design and build video games, combining programming, art, sound and story.",
+"problems": "They create experiences people enjoy, from mobile puzzles to large console worlds, and make sure they run smoothly.",
+"worksWith": "Designers, artists, writers, sound designers, testers, producers and other programmers.",
+"workplaces": "Game studios, large publishers, small independent teams, and freelance or solo work, often in offices or remotely."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Team stand-up", "description": "The team shares progress and plans the day.", "why": "Games involve many specialists whose work must fit together.", "skills": ["Communication", "Planning"]},
+{"time": "10:00 to 12:30", "title": "Programming features", "description": "The developer writes code for character movement, game rules or menus and tests it in the game.", "why": "Smooth play depends on well-built systems.", "skills": ["Programming", "Problem solving"]},
+{"time": "13:30 to 15:00", "title": "Fixing bugs", "description": "The developer finds why something behaves wrongly, such as a character stuck in a wall, and fixes it.", "why": "Bugs break the feeling of play.", "skills": ["Debugging", "Patience"]},
+{"time": "15:00 to 16:00", "title": "Playtesting and feedback", "description": "The developer plays the latest version, watches other people play and notes what is confusing or boring.", "why": "Fun has to be tested, not assumed.", "skills": ["Observation", "Open-mindedness"]},
+{"time": "16:00 to 17:30", "title": "Working with artists and designers", "description": "The developer adjusts code to fit new art, sound or level designs.", "why": "A game feels right when all its parts work together.", "skills": ["Collaboration", "Flexibility"]},
+{"time": "Varies", "title": "Crunch before deadlines", "description": "Some studios work longer hours before a release.", "why": "Release dates are often fixed.", "skills": ["Resilience", "Time management"]}
+],
+"responsibilities": ["Writing and testing game code", "Building game features such as controls, physics and artificial intelligence", "Fixing bugs and improving performance", "Working with designers, artists and testers", "Making games run on different devices", "Keeping builds stable", "Documenting work"],
+"challenges": ["Crunch time before releases can mean long hours in some studios.", "The industry is competitive and jobs can be unstable, with studios closing or projects cancelled.", "Projects can be cancelled after a lot of work.", "Tools and technology change quickly.", "Players can be very critical.", "Pay can be lower than in other software jobs in some places.", "Finishing a game takes many different skills and a lot of persistence."],
+"skills": ["Programming", "Problem solving", "Maths and logic", "Creativity", "Teamwork", "Debugging", "Communication", "Persistence"],
+"workEnvironment": "Mostly desk and computer based, in studios or remotely, working in teams with regular meetings and play sessions. Hours are often regular but can lengthen before a release. Independent developers work alone or in very small teams.",
+"rewards": ["Creating something people play and enjoy", "A mix of art, logic and story", "Collaboration with creative people", "A portfolio of playable projects"],
+"tradeoffs": ["Crunch in some studios", "Job instability", "Public criticism", "Pay and conditions that vary by country and studio"],
+"activity": {
+"title": "Design a simple game and test it",
+"steps": ["Invent a simple game for two players using paper, dice or cards, with a clear goal and three rules.", "Play it with a friend and watch for moments that are confusing or boring.", "Change one rule and play again.", "If you want to try coding, make a very small version with a free beginner tool such as Scratch.", "Note which part you enjoyed most: designing, testing or building."],
+"outcome": "You practise designing rules, testing with players and improving, which is the core loop of game development.",
+"safety": "Use your own ideas and images, do not share personal details online, and ask an adult before creating accounts on any website."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

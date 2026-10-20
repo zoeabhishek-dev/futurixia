@@ -1,0 +1,31 @@
+{
+"slug": "judge",
+"overview": {
+"summary": "Judges listen to the evidence and arguments in legal cases and make fair, reasoned decisions that follow the law. Courts and routes to the bench differ by country.",
+"problems": "They settle disputes, decide whether laws have been broken and decide what should happen next, protecting people's rights.",
+"worksWith": "Lawyers, court staff, witnesses, the people involved in a case and other judges.",
+"workplaces": "Courtrooms, judges' chambers and offices, in local, district, appeal and higher courts."
+},
+"timeline": [
+{"time": "9:00 to 10:00", "title": "Preparing for hearings", "description": "The judge reads case files, earlier decisions and the law that applies to the day's cases.", "why": "Fair decisions start with knowing the facts and the law.", "skills": ["Reading", "Preparation"]},
+{"time": "10:00 to 13:00", "title": "Hearings in court", "description": "The judge listens to both sides, asks questions, keeps order in the courtroom and makes sure the rules are followed.", "why": "Everyone is entitled to be heard fairly.", "skills": ["Listening", "Impartiality"]},
+{"time": "14:00 to 16:00", "title": "Weighing evidence and law", "description": "The judge considers what happened, which law applies and what the fair outcome is.", "why": "Decisions can change people's lives.", "skills": ["Analysis", "Judgement"]},
+{"time": "16:00 to 18:00", "title": "Writing decisions", "description": "The judge writes clear reasons so the people involved understand the decision and higher courts can review it.", "why": "Reasons make decisions open to scrutiny.", "skills": ["Writing", "Precision"]},
+{"time": "Varies", "title": "Managing the court's work", "description": "The judge helps schedule cases and makes sure they move on in good time.", "why": "Long delays can be a form of injustice.", "skills": ["Organization", "Fairness"]},
+{"time": "Varies", "title": "Keeping up to date", "description": "The judge reads new laws and decisions and attends training.", "why": "Laws and procedures change.", "skills": ["Learning", "Discipline"]}
+],
+"responsibilities": ["Hearing cases fairly and without bias", "Applying the law to the facts", "Deciding what evidence can be used", "Giving clear written reasons", "Keeping court proceedings orderly", "Following judicial ethics and keeping confidences", "Managing a heavy caseload"],
+"challenges": ["Decisions can seriously affect people's lives and freedom.", "Caseloads are heavy and there are long hours of reading.", "There is pressure to be fair, and to be seen to be fair, even when cases are upsetting.", "Decisions face public scrutiny and criticism.", "Judges must keep a distance from the people in a case, which can feel isolating.", "Becoming a judge usually needs many years as a lawyer or success in a competitive judicial exam.", "Staying unbiased is difficult when cases involve painful subjects."],
+"skills": ["Impartiality", "Analytical thinking", "Reading and writing", "Listening", "Integrity", "Judgement", "Patience", "Staying calm"],
+"workEnvironment": "Courtrooms, chambers and offices. The work combines hearing cases in court with long periods of reading and writing alone. Judges follow formal procedures and dress codes, and the workload depends on the court.",
+"rewards": ["Helping resolve disputes fairly", "Intellectual challenge", "Respect for the role", "Contributing to justice"],
+"tradeoffs": ["Heavy responsibility", "Long periods of reading and writing", "Public scrutiny", "A long route to the bench, with routes and pay that vary by country"],
+"activity": {
+"title": "Write a fair decision for a pretend dispute",
+"steps": ["Invent a small, harmless dispute, such as two classmates who both say they were first to book a computer.", "Write the facts each side would give and the rule that applies, such as a first-come booking list.", "List one good argument for each side.", "Write a short decision with reasons.", "Ask a friend whether your reasoning seems fair and clear."],
+"outcome": "You practise weighing facts, applying a rule and explaining reasons, which judges do every day.",
+"safety": "Use only made-up disputes, never judge or comment on real people's arguments, and remember this is not legal advice."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

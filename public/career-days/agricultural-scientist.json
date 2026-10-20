@@ -1,0 +1,31 @@
+{
+"slug": "agricultural-scientist",
+"overview": {
+"summary": "Agricultural scientists study crops, soil, animals and farming methods to help farmers grow food safely, efficiently and sustainably.",
+"problems": "They work on better crop varieties, healthier soils, pest and disease control and ways of farming with less harm to the environment.",
+"worksWith": "Farmers, researchers, agronomists, government agencies, food companies and engineers.",
+"workplaces": "Research stations, laboratories, universities, farms and field sites, government departments and agribusiness companies."
+},
+"timeline": [
+{"time": "Morning", "title": "Field visit", "description": "The scientist checks experimental plots, measures plant growth and looks for pests or disease.", "why": "Careful observation shows how crops respond to different conditions.", "skills": ["Observation", "Patience"]},
+{"time": "Late morning", "title": "Collecting samples", "description": "The scientist takes soil or plant samples to test in the laboratory.", "why": "Samples have to be taken carefully to give reliable results.", "skills": ["Care", "Fieldwork"]},
+{"time": "Afternoon", "title": "Laboratory work", "description": "The scientist analyzes samples for nutrients, disease or water content.", "why": "Tests show what the eye cannot.", "skills": ["Technical skill", "Accuracy"]},
+{"time": "Late afternoon", "title": "Data and reports", "description": "The scientist enters results, runs statistics and writes up the findings.", "why": "Good data shows what works.", "skills": ["Analysis", "Writing"]},
+{"time": "Varies", "title": "Advising farmers", "description": "The scientist explains research findings and suggests practical changes.", "why": "Research only helps when farmers can use it.", "skills": ["Communication", "Listening"]},
+{"time": "Seasonal", "title": "Planting and harvest times", "description": "Work follows the growing season, with busy periods at planting and harvest.", "why": "Crops cannot wait for a convenient time.", "skills": ["Flexibility", "Stamina"]}
+],
+"responsibilities": ["Designing and running field and laboratory experiments", "Collecting and analyzing data", "Advising farmers and policymakers", "Testing soil, crops and plant health", "Studying pests and diseases", "Following safety and environmental rules", "Writing research reports"],
+"challenges": ["Work depends on seasons and weather, which can disrupt experiments.", "Research takes a long time, often several growing seasons.", "Funding can be limited.", "Fieldwork is physically demanding and outdoors.", "Farmers may be reluctant to change methods that have worked for them.", "Results must be reliable, so careful repeating is needed.", "Rural postings can be far from cities."],
+"skills": ["Biology and chemistry", "Data analysis", "Observation", "Fieldwork skills", "Problem solving", "Communication", "Patience", "Attention to detail"],
+"workEnvironment": "A mix of outdoor fieldwork, laboratories and offices. Work follows the growing seasons, with busy times at planting and harvest. Many roles are in rural areas or at research stations.",
+"rewards": ["Helping food production and farmers", "A mix of outdoor and laboratory work", "Contributing to sustainable farming", "Variety of crops and topics"],
+"tradeoffs": ["Dependence on weather and seasons", "Slow research results", "Rural locations", "Funding and pay that vary by country and employer"],
+"activity": {
+"title": "Grow seeds under two conditions and compare",
+"steps": ["Plant three bean or cress seeds in each of two cups with soil.", "Change only one thing, such as light on a windowsill versus a darker spot, and keep everything else the same.", "Water both equally and measure growth every two days for two weeks, recording the results in a table.", "Draw a simple chart.", "Write what you found and one reason your test might be unreliable."],
+"outcome": "You practise running a fair test, measuring regularly and explaining results.",
+"safety": "Wash your hands after handling soil, do not eat the plants or seeds, and use only ordinary soil and tap water."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

@@ -1,0 +1,31 @@
+{
+"slug": "radiologist",
+"overview": {
+"summary": "Radiologists are doctors who use medical imaging, such as X-rays, ultrasound, CT and MRI scans, to help diagnose illness and injury, and some carry out image-guided procedures.",
+"problems": "They find out what is happening inside the body without surgery, helping other doctors choose the right treatment.",
+"worksWith": "Other doctors and surgeons, radiographers who take the images, nurses, physicists and patients.",
+"workplaces": "Hospitals and imaging centres, mostly in reading rooms with screens, and in procedure rooms for some interventional work."
+},
+"timeline": [
+{"time": "8:00 to 9:00", "title": "Review urgent requests", "description": "The radiologist checks which scans need to be read first.", "why": "Some conditions cannot wait.", "skills": ["Prioritizing", "Judgement"]},
+{"time": "9:00 to 12:30", "title": "Reading images", "description": "The radiologist studies scans carefully on screen, compares them with earlier images and notes the findings.", "why": "Careful viewing finds small but important changes.", "skills": ["Visual attention", "Medical knowledge"]},
+{"time": "12:30 to 14:00", "title": "Writing reports", "description": "The radiologist dictates or writes clear reports that tell the referring doctor what was found.", "why": "The report guides the patient's treatment.", "skills": ["Clear writing", "Accuracy"]},
+{"time": "14:00 to 15:30", "title": "Discussing cases", "description": "The radiologist talks with surgeons and other specialists in team meetings.", "why": "Images are more useful when read together with the patient's story.", "skills": ["Teamwork", "Communication"]},
+{"time": "15:30 to 17:00", "title": "Procedures or supervision", "description": "Some radiologists perform image-guided procedures or supervise scans and radiation safety.", "why": "Imaging can guide treatment as well as diagnosis.", "skills": ["Precision", "Staying calm"]},
+{"time": "Varies", "title": "On-call work", "description": "Emergency scans may need to be read at night.", "why": "Urgent cases arrive at any hour.", "skills": ["Stamina", "Decision-making"]}
+],
+"responsibilities": ["Interpreting medical images and reporting results", "Advising other doctors on which scan is best", "Making sure imaging is safe, including radiation protection", "Performing image-guided procedures in some roles", "Taking part in team meetings", "Keeping confidential records", "Keeping up with new technology"],
+"challenges": ["Long periods of concentration are needed when looking at screens.", "Missing a finding can have serious consequences.", "Scan volumes are high and there is time pressure.", "Many roles involve limited direct contact with patients.", "Training is long: medical school followed by specialist training.", "On-call work and emergencies happen.", "Technology changes quickly."],
+"skills": ["Visual attention", "Medical knowledge", "Analytical thinking", "Clear writing", "Communication", "Attention to detail", "Decision-making", "Continuous learning"],
+"workEnvironment": "Hospital reading rooms with screens, often dimly lit, and imaging departments. Much of the work is seated at a workstation, with meetings and some procedures. Some roles include on-call duties.",
+"rewards": ["Helping reach diagnoses", "Using technology and medical knowledge", "Variety across body systems", "Working with many specialties"],
+"tradeoffs": ["Long training", "Screen-based work", "Pressure to be accurate and fast", "Pay and conditions that vary by country and setting"],
+"activity": {
+"title": "Practise careful observation with spot-the-difference puzzles",
+"steps": ["Find a spot-the-difference puzzle with two similar pictures.", "Study each picture in a set pattern, such as left to right and top to bottom.", "Time yourself and record how many differences you find.", "Read a patient information page about how X-rays or scans work, from a trusted site such as RadiologyInfo.org.", "Note whether close observation felt interesting."],
+"outcome": "You practise systematic looking and explaining how imaging works, which radiologists use every day.",
+"safety": "This is for learning only. Never try to read or interpret anyone's medical images or give medical advice, and talk to a doctor about real health concerns."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

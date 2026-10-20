@@ -1,0 +1,31 @@
+{
+"slug": "welder",
+"overview": {
+"summary": "Welders join metal parts together using heat, and work on structures such as buildings, bridges, ships, pipelines and machines.",
+"problems": "They make strong, safe joints and repair metal structures and equipment.",
+"worksWith": "Engineers, fitters, fabricators, inspectors, site managers and other tradespeople.",
+"workplaces": "Workshops, factories, construction sites, shipyards and pipelines, sometimes outdoors or at height."
+},
+"timeline": [
+{"time": "Start of shift", "title": "Read plans and prepare", "description": "The welder reads drawings and welding instructions and checks the materials and equipment.", "why": "Correct preparation makes the joint strong.", "skills": ["Reading drawings", "Planning"]},
+{"time": "Morning", "title": "Prepare the metal", "description": "The welder cuts, grinds and cleans surfaces and sets up clamps.", "why": "Clean, well-fitted metal gives a better weld.", "skills": ["Practical skill", "Care"]},
+{"time": "Late morning", "title": "Welding", "description": "The welder joins pieces with the correct method, wearing protective gear and keeping steady control.", "why": "Joint quality depends on skill and consistency.", "skills": ["Steady hands", "Concentration"]},
+{"time": "Afternoon", "title": "Inspect and finish", "description": "The welder checks welds for defects, grinds and cleans them and repairs faults.", "why": "A hidden fault in a weld can fail later.", "skills": ["Quality checks", "Attention to detail"]},
+{"time": "Throughout", "title": "Safety checks", "description": "The welder checks for fire risks, ventilation and protective equipment.", "why": "Welding involves heat, sparks and fumes.", "skills": ["Safety discipline", "Awareness"]},
+{"time": "Varies", "title": "Site work", "description": "Jobs on site may involve climbing, confined spaces or working outdoors.", "why": "Many structures are welded where they stand.", "skills": ["Adaptability", "Stamina"]}
+],
+"responsibilities": ["Reading drawings and welding specifications", "Preparing and joining metal accurately", "Inspecting and testing welds", "Following safety rules and wearing protective equipment", "Maintaining welding equipment", "Keeping records where required", "Working with other trades and inspectors"],
+"challenges": ["Hazards include heat, sparks, fumes and bright light, so strict safety habits are essential.", "The work can be physically demanding, in awkward positions or outdoors.", "Some jobs are noisy and dusty.", "Certification and tests are often needed for specific methods.", "Work can involve travel or shifts.", "Quality standards are strict, and faulty welds can have serious consequences.", "Skills have to be kept up to date as methods and materials change."],
+"skills": ["Practical skill", "Steady hands", "Concentration", "Reading drawings", "Safety awareness", "Physical fitness", "Attention to detail", "Problem solving"],
+"workEnvironment": "Workshops, factories, shipyards and construction sites, indoors and outdoors. The work is physical and uses protective equipment such as helmets, gloves and boots. Some welders travel for projects or work at height.",
+"rewards": ["Skilled work that is in demand in many industries", "Seeing structures you helped build", "Variety of materials and sites", "The option to specialize or work for yourself"],
+"tradeoffs": ["Physical hazards and discomfort", "Demanding conditions", "Certification requirements", "Pay and demand that vary by country and industry"],
+"activity": {
+"title": "Test how different joins hold",
+"steps": ["Cut four equal strips of thick cardboard.", "Join pairs of strips in different ways, such as tape, glue, folding or overlapping, using only safe, non-toxic materials.", "Hang small weights such as coins from each join and record how many each one holds before it fails.", "Write which join was strongest and why.", "Read the protective-equipment guidance on a trusted site such as the American Welding Society and note three safety rules."],
+"outcome": "You practise testing joins and learning why safety equipment matters.",
+"safety": "Do not attempt welding, cutting metal, or anything involving sparks, flame, gas, electricity or bright arcs. Welding needs proper training and equipment, and a bright welding arc can damage eyes in seconds."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

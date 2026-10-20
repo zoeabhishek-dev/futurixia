@@ -1,0 +1,31 @@
+{
+"slug": "devops-engineer",
+"overview": {
+"summary": "DevOps engineers connect software development and operations, building the tools and systems that let teams release software quickly and keep it running reliably.",
+"problems": "They automate repeated tasks, reduce human error and help teams release updates safely.",
+"worksWith": "Software developers, testers, security teams, system administrators and product managers.",
+"workplaces": "Technology companies, banks, start-ups and other organizations that run software, often remotely or in offices."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Check system health", "description": "The engineer looks at dashboards and alerts for problems overnight.", "why": "Many services must be available all day.", "skills": ["Attention to detail", "Prioritizing"]},
+{"time": "10:00 to 12:30", "title": "Automating tasks", "description": "The engineer writes scripts and configuration that build, test and release software automatically.", "why": "Automation reduces mistakes and saves time.", "skills": ["Scripting", "Problem solving"]},
+{"time": "13:30 to 15:00", "title": "Helping developers", "description": "The engineer fixes failures in the release pipeline, answers questions and improves tools.", "why": "Developers work faster when their tools work well.", "skills": ["Collaboration", "Patience"]},
+{"time": "15:00 to 16:30", "title": "Improving reliability and security", "description": "The engineer updates systems, adds monitoring and reviews who has access to what.", "why": "Preventing problems is better than fixing them.", "skills": ["Security awareness", "Care"]},
+{"time": "16:30 to 17:30", "title": "Documentation and planning", "description": "The engineer writes instructions and plans upgrades.", "why": "Clear notes help the whole team and future colleagues.", "skills": ["Writing", "Planning"]},
+{"time": "Varies", "title": "On-call and incidents", "description": "When a service fails, the team investigates and restores it, sometimes at night.", "why": "Users depend on services being available.", "skills": ["Staying calm", "Troubleshooting"]}
+],
+"responsibilities": ["Building and maintaining automated release pipelines", "Managing servers and cloud services", "Monitoring systems and responding to problems", "Improving security and reliability", "Helping developers deliver safely", "Writing clear documentation", "Planning upgrades and capacity"],
+"challenges": ["On-call duty can interrupt evenings and weekends.", "Tools and platforms change quickly.", "Small configuration mistakes can cause big outages.", "Many technologies have to be learned at once.", "Pressure is high when services fail and users are affected.", "Speed of release has to be balanced with safety.", "The work is often invisible: people notice when things break, not when they work."],
+"skills": ["Scripting and programming", "Linux and systems knowledge", "Cloud platforms", "Problem solving", "Communication", "Attention to detail", "Security awareness", "Learning quickly"],
+"workEnvironment": "Mostly desk and computer based, in offices or remotely, working closely with developers. Work includes steady build time, meetings and, in some teams, on-call rotations. Hours are often regular, but incidents can change them.",
+"rewards": ["Making teams faster and systems more reliable", "Solving puzzles at scale", "Varied technologies", "Skills needed in many industries"],
+"tradeoffs": ["On-call pressure", "Constant learning", "Being invisible when things go well", "Titles and pay that vary by country and employer"],
+"activity": {
+"title": "Automate a boring task on your own computer",
+"steps": ["Pick a repeated task, such as sorting downloaded files into folders by type.", "Write the manual steps down.", "Follow a free beginner tutorial for a simple script in a language such as Python.", "Run the script only on a copy of a folder you made yourself and compare the time with doing it by hand.", "Note whether automating felt satisfying."],
+"outcome": "You practise breaking a task into steps and automating it, which is the core idea of DevOps.",
+"safety": "Test only on copies of your own files, never run scripts from unknown sources, and do not change system settings or use administrator access without an adult."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

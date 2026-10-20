@@ -1,0 +1,31 @@
+{
+"slug": "supply-chain-manager",
+"overview": {
+"summary": "Supply chain managers plan and oversee how goods move from raw materials to factories, warehouses, shops and customers.",
+"problems": "They make sure the right products are in the right place at the right time and at the right cost.",
+"worksWith": "Suppliers, factory and warehouse staff, transport companies, purchasing and sales teams, and customers.",
+"workplaces": "Manufacturers, retailers, logistics firms, e-commerce companies and government or aid organizations, in offices, warehouses and sometimes ports."
+},
+"timeline": [
+{"time": "Morning", "title": "Check overnight updates", "description": "The manager looks at shipments, delays, stock levels and orders.", "why": "Early warning allows quick fixes.", "skills": ["Attention to detail", "Analysis"]},
+{"time": "Late morning", "title": "Planning demand and orders", "description": "The manager forecasts what customers will need and places orders with suppliers.", "why": "Too little stock loses sales and too much wastes money.", "skills": ["Forecasting", "Planning"]},
+{"time": "Midday", "title": "Solving delays", "description": "A late truck, a port problem or a missing part needs quick alternatives.", "why": "One broken link can hold up the whole chain.", "skills": ["Problem solving", "Staying calm"]},
+{"time": "Afternoon", "title": "Working with suppliers and carriers", "description": "The manager negotiates prices, checks quality and agrees delivery times.", "why": "Good supplier relationships make the chain more reliable.", "skills": ["Negotiation", "Communication"]},
+{"time": "Late afternoon", "title": "Analyzing costs and performance", "description": "The manager looks at delivery times, costs and errors to find improvements.", "why": "Small improvements add up across thousands of orders.", "skills": ["Analytical thinking", "Spreadsheets"]},
+{"time": "Varies", "title": "Peak seasons", "description": "Busy periods such as festivals or sales add pressure.", "why": "Demand can jump quickly at certain times of year.", "skills": ["Stamina", "Flexibility"]}
+],
+"responsibilities": ["Planning and forecasting demand", "Managing suppliers and orders", "Coordinating transport and storage", "Controlling stock and costs", "Solving delivery problems quickly", "Measuring and improving performance", "Following trade, safety and environmental rules"],
+"challenges": ["Disruptions such as weather, strikes or shortages can upset plans.", "Many things must work together, and any link can fail.", "There is pressure to cut costs while keeping quality and speed.", "Hours can be long at peak times.", "Data from many systems may be messy.", "You deal with many suppliers and cultures.", "Responsibility for large budgets is heavy."],
+"skills": ["Planning", "Analytical thinking", "Negotiation", "Problem solving", "Communication", "Attention to detail", "Spreadsheet and software skills", "Calm under pressure"],
+"workEnvironment": "Mostly offices, with visits to warehouses, factories and ports. The work involves computers, calls and meetings, and busy periods when disruptions occur. Some roles involve travel.",
+"rewards": ["Seeing the whole journey of products", "Variety of industries", "A mix of numbers and people", "Solving real puzzles"],
+"tradeoffs": ["Pressure from disruptions", "Peak-season hours", "Complex coordination", "Pay and roles that vary by country and industry"],
+"activity": {
+"title": "Trace the journey of an everyday product",
+"steps": ["Pick a simple product, such as a pencil, a chocolate bar or a T-shirt.", "Research or guess its steps: raw materials, factory, transport, warehouse, shop and you.", "Draw it as a flow chart.", "Mark three places where things could go wrong and say what you would do.", "Suggest one change to make the journey faster or cheaper."],
+"outcome": "You practise thinking about systems, risks and improvements.",
+"safety": "Use public information, do not contact businesses with questions about confidential matters, and do not visit factories or warehouses without permission."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

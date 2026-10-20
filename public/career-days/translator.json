@@ -1,0 +1,31 @@
+{
+"slug": "translator",
+"overview": {
+"summary": "Translators change written text from one language into another so that its meaning, tone and purpose are kept. Interpreters do the same for speech.",
+"problems": "They help people, businesses and governments communicate across languages.",
+"worksWith": "Clients, project managers, editors, subject experts and other translators.",
+"workplaces": "Translation agencies, companies, international organizations, publishers and courts, and many translators work freelance from home."
+},
+"timeline": [
+{"time": "Morning", "title": "Read the brief and the source text", "description": "The translator checks the subject, audience and style and reads the whole text first.", "why": "Understanding the whole text prevents wrong choices.", "skills": ["Reading", "Planning"]},
+{"time": "Late morning", "title": "Research terms", "description": "The translator looks up specialized words, names and style guides.", "why": "Accuracy depends on correct terms.", "skills": ["Research", "Attention to detail"]},
+{"time": "Midday", "title": "Translating", "description": "The translator writes the translation, keeping the meaning, tone and style natural in the target language.", "why": "A good translation reads as if it were written in that language.", "skills": ["Writing", "Language knowledge"]},
+{"time": "Afternoon", "title": "Checking and editing", "description": "The translator reads the translation on its own, compares it with the original and fixes errors.", "why": "A fresh read catches mistakes.", "skills": ["Proofreading", "Patience"]},
+{"time": "Late afternoon", "title": "Client communication", "description": "The translator asks questions, delivers on time and handles feedback.", "why": "Clear communication avoids misunderstandings.", "skills": ["Communication", "Professionalism"]},
+{"time": "Varies", "title": "Deadlines and big projects", "description": "Urgent texts can mean long hours.", "why": "Clients often need translations by fixed dates.", "skills": ["Time management", "Focus"]}
+],
+"responsibilities": ["Translating accurately and naturally", "Researching terminology", "Keeping information confidential", "Meeting deadlines", "Using translation software tools sensibly", "Proofreading their own work", "Keeping up with both languages and their subject fields"],
+"challenges": ["Income can be uneven for freelancers.", "Rates can be low because of competition and machine translation.", "Deadlines can be tight.", "Some texts are difficult, technical or emotionally heavy.", "The work means long hours at a computer.", "Specializing in a field such as legal or medical text usually needs extra training.", "Keeping both languages fresh takes continuous effort."],
+"skills": ["Excellent knowledge of at least two languages", "Writing", "Research", "Attention to detail", "Cultural awareness", "Time management", "Subject knowledge", "Discipline"],
+"workEnvironment": "Mostly desk and computer based, at home, in agencies or in organizations. Freelancers manage their own clients, rates and schedule. Interpreters work in meetings, courts or events and may travel.",
+"rewards": ["Connecting people across languages", "Working with language and culture", "Flexibility, especially for freelancers", "Variety of subjects"],
+"tradeoffs": ["Uneven income", "Competition from machine translation", "Tight deadlines", "Pay that varies by language, field and country"],
+"activity": {
+"title": "Translate a short paragraph and have it checked",
+"steps": ["Write an 80-word paragraph about something simple, such as your day, in a language you know well.", "Translate it into another language you are learning or know.", "Underline words that did not translate directly and note how you handled them.", "Ask a speaker of that language, such as a teacher or friend, to read it and say whether it sounds natural.", "Revise it and note whether the careful word work felt interesting."],
+"outcome": "You practise choosing words for meaning, not just word for word, and using feedback.",
+"safety": "Use only your own writing, not copyrighted texts, and do not share personal information in what you translate or ask others to check."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

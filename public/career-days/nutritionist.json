@@ -1,0 +1,31 @@
+{
+"slug": "nutritionist",
+"overview": {
+"summary": "Nutritionists and dietitians advise people on food and eating to support health, using scientific evidence. Job titles and legal protection of the names differ by country.",
+"problems": "They help people understand what to eat for health, manage conditions through diet and make food choices that suit their lives.",
+"worksWith": "Clients and patients, doctors, nurses, schools, sports teams, food companies and community groups.",
+"workplaces": "Hospitals, clinics, schools, sports clubs, community health programs, food companies and private practice."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Prepare for appointments", "description": "The nutritionist reviews client notes and goals.", "why": "Each person's situation is different.", "skills": ["Organization", "Attention to detail"]},
+{"time": "9:30 to 12:30", "title": "Consultations", "description": "The nutritionist talks with clients about their eating, health and goals and agrees realistic, step-by-step changes.", "why": "Small changes that people can keep work better than strict rules.", "skills": ["Listening", "Empathy", "Counselling"]},
+{"time": "13:30 to 15:00", "title": "Planning meals and advice", "description": "The nutritionist writes easy-to-follow suggestions and guides based on evidence.", "why": "Clear advice is easier to follow.", "skills": ["Scientific knowledge", "Clear writing"]},
+{"time": "15:00 to 16:00", "title": "Teaching groups", "description": "The nutritionist runs talks or workshops in schools, workplaces or community centres.", "why": "Group teaching reaches more people.", "skills": ["Presenting", "Simplifying"]},
+{"time": "16:00 to 17:00", "title": "Records and follow-up", "description": "The nutritionist notes progress, adjusts plans and works with doctors when needed.", "why": "Follow-up shows what is working.", "skills": ["Accuracy", "Teamwork"]},
+{"time": "Varies", "title": "Keeping up with research", "description": "The nutritionist reads new studies and guidance, because nutrition advice changes as evidence improves.", "why": "Good advice depends on current evidence.", "skills": ["Critical thinking", "Learning"]}
+],
+"responsibilities": ["Assessing nutritional needs within the limits of their training", "Giving evidence-based, personalized advice", "Supporting clients to make lasting changes", "Working with doctors and other health professionals", "Teaching groups", "Keeping confidential records", "Referring clients to doctors when needed"],
+"challenges": ["Nutrition advice in the media can be confusing or wrong, so you often have to correct myths.", "Clients may find change hard and progress can be slow.", "Some people have a difficult relationship with food and need careful, sensitive handling and specialist support.", "Competition and different job titles can make the field confusing.", "Rules about who may give advice vary by country.", "Evidence changes, so learning continues.", "Paperwork and appointment scheduling take time."],
+"skills": ["Scientific knowledge of food and health", "Communication", "Empathy", "Counselling skills", "Critical thinking", "Patience", "Organization", "Teaching"],
+"workEnvironment": "Clinics, hospitals, schools, community settings and offices, with a lot of one-to-one conversation and some group teaching. Hours are usually regular. Some nutritionists work in food companies, research or sport.",
+"rewards": ["Helping people feel better through food", "Variety of settings", "A mix of science and people skills", "Seeing positive changes in clients' lives"],
+"tradeoffs": ["Slow progress and myths to overcome", "The need for emotional sensitivity", "Competition and unclear titles", "Pay that varies by country and setting"],
+"activity": {
+"title": "Learn to read a food label",
+"steps": ["Choose three packaged foods at home, with an adult's permission.", "Find the serving size and the sugar, salt and fibre amounts on each label.", "Compare them per 100 grams, using a trusted guide to reading labels from a national health service.", "Write a simple one-page guide for a friend on what to look for.", "Note whether this kind of detective work felt interesting."],
+"outcome": "You practise reading evidence and explaining it clearly, which is a core nutrition skill.",
+"safety": "This is a reading exercise only. Do not diet, weigh yourself or cut out foods because of it, and talk to a doctor or registered dietitian about your own nutrition."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

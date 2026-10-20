@@ -1,0 +1,31 @@
+{
+"slug": "real-estate-agent",
+"overview": {
+"summary": "Real estate agents help people buy, sell and rent property, matching buyers and sellers and guiding them through the process.",
+"problems": "They help people find a suitable home or business space, set a fair price and handle the steps and paperwork.",
+"worksWith": "Buyers, sellers, tenants, landlords, lawyers, banks, surveyors and other agents.",
+"workplaces": "Real estate offices and agencies, properties and clients' homes, with a lot of time on the road."
+},
+"timeline": [
+{"time": "Morning", "title": "Follow-ups and planning", "description": "The agent replies to enquiries, checks new listings and plans viewings.", "why": "Quick replies help win clients.", "skills": ["Organization", "Responsiveness"]},
+{"time": "Late morning", "title": "Property viewings", "description": "The agent shows homes to buyers or renters, points out features and answers questions honestly.", "why": "Honest information builds trust.", "skills": ["Communication", "Knowledge of the market"]},
+{"time": "Afternoon", "title": "Valuing and listing", "description": "The agent visits a seller's property, researches similar sales and suggests a price and a marketing plan.", "why": "A fair price helps a property sell without wasting time.", "skills": ["Research", "Judgement"]},
+{"time": "Late afternoon", "title": "Negotiating", "description": "The agent passes offers between buyer and seller and works towards an agreement.", "why": "Both sides want to feel the deal is fair.", "skills": ["Negotiation", "Diplomacy"]},
+{"time": "Evening", "title": "Meetings and paperwork", "description": "The agent meets clients who work during the day and prepares documents, while lawyers usually handle the legal parts.", "why": "Many clients are only free after work.", "skills": ["Accuracy", "Flexibility"]},
+{"time": "Varies", "title": "Weekends and open days", "description": "Many viewings happen when people are free, including weekends.", "why": "Buyers choose homes when they have time to look.", "skills": ["Stamina", "Availability"]}
+],
+"responsibilities": ["Marketing properties accurately and honestly", "Showing properties to clients", "Valuing properties and advising on prices", "Negotiating offers", "Preparing paperwork and working with lawyers and banks", "Following laws on licences, fairness and handling money", "Building a network of clients and contacts"],
+"challenges": ["Income can be commission-based and uneven.", "Hours are long and include evenings and weekends.", "Competition among agents is strong.", "Deals can fall through after much work.", "Markets rise and fall, which affects the amount of work.", "Big decisions bring strong emotions that have to be managed.", "Strict rules and licensing apply in many places."],
+"skills": ["Communication", "Negotiation", "Market knowledge", "Honesty", "Organization", "Persistence", "Customer care", "Time management"],
+"workEnvironment": "Offices, properties and the road. The work is mobile and people-focused, with flexible but often irregular hours. Many agents are self-employed or work on commission within an agency.",
+"rewards": ["Helping people find a home or sell one", "Variety, and meeting many people", "Flexibility, and potential for good earnings in strong markets", "Building your own client base"],
+"tradeoffs": ["Uneven income", "Long and irregular hours", "Dependence on the property market", "Rules, pay and structures that vary by country"],
+"activity": {
+"title": "Write a listing for an imaginary property",
+"steps": ["Imagine a small flat or house and invent its size, rooms and neighbourhood, or use a public listing as a model.", "Write a 100-word description that is attractive but completely honest.", "List three questions a buyer would ask and your answers.", "Practise a two-minute walkthrough aloud to a family member.", "Ask what they found convincing and what seemed unclear."],
+"outcome": "You practise honest marketing, answering questions and explaining value.",
+"safety": "Use an imaginary property, do not share a real address or photos of your home, and never visit properties alone or with strangers."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

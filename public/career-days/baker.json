@@ -1,0 +1,31 @@
+{
+"slug": "baker",
+"overview": {
+"summary": "Bakers make bread, pastries, cakes and other baked goods, from small bakeries to large production lines.",
+"problems": "They provide fresh, safe, tasty baked foods and keep quality consistent, often starting very early in the morning.",
+"worksWith": "Bakery staff, pastry chefs, shop and delivery staff, suppliers and customers.",
+"workplaces": "Bakeries, supermarkets, hotels, restaurants and food factories, and some bakers run their own shops."
+},
+"timeline": [
+{"time": "Very early morning", "title": "Mixing and shaping dough", "description": "The baker measures ingredients, mixes dough and shapes loaves or rolls.", "why": "Fresh bread needs early starts.", "skills": ["Accuracy", "Physical stamina"]},
+{"time": "Early morning", "title": "Baking", "description": "The baker loads the ovens, watches time and temperature and takes the baked goods out at the right moment.", "why": "Small timing errors change the result.", "skills": ["Timing", "Attention to detail"]},
+{"time": "Morning", "title": "Finishing and displaying", "description": "The baker decorates pastries and cakes, packs orders and stocks the shelves.", "why": "Look matters as well as taste.", "skills": ["Creativity", "Presentation"]},
+{"time": "Late morning", "title": "Customers and orders", "description": "The baker serves customers or prepares special orders, such as celebration cakes.", "why": "Customers remember good service.", "skills": ["Customer care", "Organization"]},
+{"time": "Midday", "title": "Cleaning and food safety", "description": "The baker cleans equipment and checks hygiene and temperatures.", "why": "Food safety rules protect customers.", "skills": ["Hygiene", "Discipline"]},
+{"time": "Afternoon", "title": "Planning and ordering", "description": "The baker orders ingredients, plans tomorrow's batches and prepares doughs that rest overnight.", "why": "Planning keeps ingredients fresh and waste low.", "skills": ["Planning", "Stock control"]}
+],
+"responsibilities": ["Mixing, shaping and baking products to a consistent standard", "Following recipes and measuring accurately", "Following food safety and hygiene rules", "Ordering and storing ingredients", "Cleaning equipment and workspaces", "Developing new recipes", "Serving customers in some roles"],
+"challenges": ["Starts are very early, often in the middle of the night.", "Ovens are hot and the work is physically demanding, including lifting heavy sacks.", "Tasks are repetitive and involve long periods standing.", "Burns, cuts and flour dust are risks managed by careful habits.", "Busy periods come before festivals and holidays.", "Profit margins are small in some bakeries.", "Pay can be modest early on in many places."],
+"skills": ["Baking techniques", "Accuracy", "Time management", "Physical stamina", "Hygiene", "Creativity", "Teamwork", "Organization"],
+"workEnvironment": "Bakeries and kitchens that are warm, floury and busy, often starting before dawn. The work is physical and detailed, and many bakers work in small teams. Hours often include early mornings, weekends and holidays.",
+"rewards": ["Making food people enjoy", "Craft and creativity", "The satisfaction of a finished loaf", "The option to open your own bakery"],
+"tradeoffs": ["Very early hours", "Physical demands", "Modest pay at first", "Pay and conditions that vary by country and employer"],
+"activity": {
+"title": "Bake a simple recipe and change one thing",
+"steps": ["With an adult, choose a simple recipe such as plain biscuits or bread rolls.", "Measure the ingredients carefully and write down the baking time and temperature.", "Bake a first batch and note how it looks and tastes.", "Change one thing, such as the baking time by a minute, and bake a second batch.", "Compare the results and note whether the precise work felt enjoyable."],
+"outcome": "You practise measuring accurately, changing one variable at a time and learning from results.",
+"safety": "Always bake with an adult, use oven gloves, keep hot trays away from children and pets, wash your hands, and check for food allergies before sharing."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}
