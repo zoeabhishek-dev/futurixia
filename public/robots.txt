@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /dashboard
+Disallow: /create-profile
+Disallow: /coach
+Disallow: /report
+Disallow: /certificate/
+Disallow: /reset-password
+Disallow: /verify
+
+Sitemap: https://futurixia-delta.vercel.app/sitemap.xml
