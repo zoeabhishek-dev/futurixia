@@ -1,0 +1,31 @@
+{
+"slug": "yoga-instructor",
+"overview": {
+"summary": "Yoga instructors teach yoga classes, guiding people through postures, breathing and relaxation to improve flexibility, strength and wellbeing.",
+"problems": "They help people build fitness and manage everyday stress safely at their own level, without making medical claims.",
+"worksWith": "Students of all ages, studio owners and managers, gyms, community groups and other teachers.",
+"workplaces": "Yoga studios, gyms, schools, community centres, workplaces and online, and many instructors are self-employed."
+},
+"timeline": [
+{"time": "Morning", "title": "Plan the class", "description": "The instructor chooses sequences and music for the level of the students.", "why": "A good plan makes the class safe and varied.", "skills": ["Planning", "Knowledge"]},
+{"time": "Early morning", "title": "Teaching a class", "description": "The instructor leads warm-up, postures, breathing and relaxation, adjusting for beginners and anyone with limits.", "why": "Students at different levels need different options.", "skills": ["Teaching", "Observation"]},
+{"time": "Midday", "title": "Personal practice", "description": "The instructor practises and studies to keep improving.", "why": "Teachers keep learning.", "skills": ["Discipline", "Learning"]},
+{"time": "Afternoon", "title": "Admin and marketing", "description": "The instructor handles bookings and messages and promotes classes.", "why": "Self-employed teachers also run a small business.", "skills": ["Organization", "Business sense"]},
+{"time": "Evening", "title": "Teaching a class", "description": "Many classes are held after work.", "why": "Students often practise after their working day.", "skills": ["Stamina", "Energy"]},
+{"time": "Varies", "title": "Workshops and training", "description": "The instructor attends courses and teaches special sessions.", "why": "Training keeps teaching safe and fresh.", "skills": ["Learning", "Adaptability"]}
+],
+"responsibilities": ["Planning and leading safe classes", "Giving clear instructions and options for different levels", "Watching students and adjusting", "Knowing when to suggest students check with a doctor", "Keeping a welcoming, respectful atmosphere", "Following studio rules and insurance requirements", "Continuing training"],
+"challenges": ["Income can be modest and uneven, especially when starting.", "Classes are often early in the morning, in the evening and at weekends.", "Many instructors work for several studios.", "Students' injuries and limits require care and clear boundaries.", "Instructors are not doctors and must avoid medical claims.", "Competition is strong and certificate courses vary in quality.", "You need to market yourself."],
+"skills": ["Teaching", "Communication", "Knowledge of yoga and basic anatomy", "Observation", "Empathy", "Calm presence", "Organization", "Self-discipline"],
+"workEnvironment": "Studios, gyms, community spaces and online, in quiet, calm settings. Hours are often early mornings and evenings. Many instructors combine teaching with other work.",
+"rewards": ["Helping people feel stronger and calmer", "Flexible, active work", "Community", "Personal growth"],
+"tradeoffs": ["Uneven income", "Unsocial hours", "Responsibility for safety", "Pay and opportunities that vary by country and setting"],
+"activity": {
+"title": "Practise a gentle sequence and teach it",
+"steps": ["With an adult, choose three simple, gentle poses from a trusted source, such as a national health service or a well-known yoga organization.", "Practise slowly on a soft mat, breathing evenly, and stop if anything feels uncomfortable.", "Write simple instructions for each pose, including how to make it easier.", "Teach it gently to a willing family member and ask how it felt.", "Note whether guiding others felt rewarding."],
+"outcome": "You practise explaining movement clearly and adapting it for different people.",
+"safety": "Move gently and never force a pose, stop if anything hurts, do not teach anyone with an injury, medical condition or pregnancy without a doctor's advice, and do not claim yoga cures illness."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

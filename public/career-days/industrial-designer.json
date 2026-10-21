@@ -1,0 +1,31 @@
+{
+"slug": "industrial-designer",
+"overview": {
+"summary": "Industrial designers design products that are made in large numbers, such as phones, chairs, appliances, tools and vehicles, so that they work well, look good and can be produced affordably.",
+"problems": "They make everyday products easier, safer and more enjoyable to use.",
+"worksWith": "Engineers, marketing teams, manufacturers, users and other designers.",
+"workplaces": "Design studios, manufacturing companies, consultancies and in-house design teams."
+},
+"timeline": [
+{"time": "Morning", "title": "Research and observation", "description": "The designer watches how people use similar products and notes their frustrations.", "why": "Good design starts with real use.", "skills": ["Observation", "Empathy"]},
+{"time": "Late morning", "title": "Sketching ideas", "description": "The designer draws many quick concepts.", "why": "Many rough ideas lead to better final ones.", "skills": ["Drawing", "Creativity"]},
+{"time": "Midday", "title": "Developing concepts", "description": "The designer builds 3D models in software and makes simple physical mock-ups.", "why": "Holding a model shows what a drawing cannot.", "skills": ["3D design", "Practical skill"]},
+{"time": "Afternoon", "title": "Testing with people", "description": "The designer lets users try mock-ups and notes the problems.", "why": "Users find problems designers miss.", "skills": ["Listening", "Receiving feedback"]},
+{"time": "Late afternoon", "title": "Working with engineers and makers", "description": "The designer checks materials, costs and how a design can be manufactured.", "why": "A design has to be possible to make.", "skills": ["Collaboration", "Problem solving"]},
+{"time": "Varies", "title": "Deadlines and revisions", "description": "Designs change as limits appear.", "why": "Few designs survive unchanged from first sketch to factory.", "skills": ["Flexibility", "Time management"]}
+],
+"responsibilities": ["Researching user needs", "Sketching and developing product concepts", "Building models and prototypes", "Choosing materials and finishes", "Working with engineers and manufacturers", "Considering cost, safety and sustainability", "Presenting designs to clients"],
+"challenges": ["Ideas must fit budgets, safety rules and manufacturing limits.", "Designs change many times.", "Competition is strong and portfolios matter.", "Product timelines are long.", "Compromises with engineering and marketing are constant.", "Deadlines build up before launches.", "Waste and environmental impact are increasingly part of the job."],
+"skills": ["Creativity", "Drawing and 3D design", "Understanding of materials and manufacturing", "Empathy for users", "Problem solving", "Communication", "Teamwork", "Attention to detail"],
+"workEnvironment": "Studios and workshops, with computers, sketching and model-making, plus meetings and visits to factories or users. Hours are usually regular, with extra effort before deadlines.",
+"rewards": ["Seeing products you designed in use", "A mix of art and engineering", "Hands-on making", "Improving daily life"],
+"tradeoffs": ["Many compromises", "Deadline pressure", "A competitive field", "Pay and opportunities that vary by country and industry"],
+"activity": {
+"title": "Redesign an everyday object",
+"steps": ["Choose a simple object, such as a water bottle or a school bag, and watch two people use it, noting any problems.", "Sketch three different improvements.", "Pick one and make a quick model from cardboard, paper and tape.", "Ask someone to try it and say what is awkward.", "Improve it once."],
+"outcome": "You practise observing users, sketching ideas, making a model and improving it.",
+"safety": "Use only paper, cardboard and tape, ask an adult for help with scissors, and avoid hot glue or sharp tools without supervision."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

@@ -1,0 +1,31 @@
+{
+"slug": "cinematographer",
+"overview": {
+"summary": "Cinematographers, also called directors of photography, are responsible for how a film or video looks, choosing camera, lighting and framing to tell the story visually.",
+"problems": "They turn the director's vision into images that create the right mood and clarity.",
+"worksWith": "Directors, camera operators, lighting crews, production designers and editors.",
+"workplaces": "Film and TV sets, studios and locations, and increasingly commercials, music videos and online content."
+},
+"timeline": [
+{"time": "Before filming", "title": "Planning shots", "description": "The cinematographer reads the script, talks with the director and plans the look, lenses and lighting.", "why": "Planning avoids costly changes on set.", "skills": ["Visual thinking", "Communication"]},
+{"time": "Early morning on set", "title": "Setting up", "description": "The cinematographer plans camera positions and lighting with the crew.", "why": "A well-run set saves time and money.", "skills": ["Leadership", "Technical knowledge"]},
+{"time": "Morning", "title": "Lighting the scene", "description": "The cinematographer shapes light and shadow to create mood.", "why": "Light is one of the most powerful storytelling tools.", "skills": ["Lighting skills", "Creativity"]},
+{"time": "Midday", "title": "Filming", "description": "The cinematographer directs the camera team, checks framing and focus and repeats takes.", "why": "Every take has to look right as well as work for the story.", "skills": ["Concentration", "Teamwork"]},
+{"time": "Afternoon", "title": "Solving problems", "description": "Weather, time and equipment problems need quick decisions.", "why": "Few shoots go exactly to plan.", "skills": ["Flexibility", "Staying calm"]},
+{"time": "After filming", "title": "Checking the look", "description": "The cinematographer works with editors and colour specialists to finish the images.", "why": "The final look is shaped in post-production too.", "skills": ["Judgement", "Collaboration"]}
+],
+"responsibilities": ["Designing the visual style", "Choosing cameras, lenses and lighting", "Leading the camera and lighting crews", "Framing and composing shots", "Working within budget and schedule", "Keeping equipment and people safe", "Reviewing and finishing the look in post-production"],
+"challenges": ["Days on set are long, often 12 hours or more.", "The work is physical, with carrying equipment and working outdoors in all weather.", "Work is project-based and income is uneven.", "Competition is strong and the climb from assistant roles is long.", "Budgets and schedules are tight.", "Many people's opinions have to be balanced.", "Technology changes quickly."],
+"skills": ["Visual composition", "Knowledge of cameras and lighting", "Creativity", "Leadership", "Communication", "Problem solving", "Stamina", "Attention to detail"],
+"workEnvironment": "Film sets and locations, indoors and outdoors, in all weather, with long and irregular hours. Work is project-based and can involve travel. Some cinematographers work in studios or on commercials and online content.",
+"rewards": ["Creating images audiences remember", "A mix of art and technology", "Collaboration with talented crews", "Variety of locations"],
+"tradeoffs": ["Long days", "Uneven work", "Physical demands", "Pay and opportunities that vary by country and industry"],
+"activity": {
+"title": "Shoot a five-shot sequence with window light",
+"steps": ["Choose a simple action, such as a person opening a door and sitting down.", "Plan five shots, such as wide, medium, close-up, detail and over-the-shoulder.", "Film them with a phone near a window, with friends who agree to take part.", "Compare how light from the window changes the mood when the subject faces it or has their back to it.", "Edit the shots together and ask what viewers noticed."],
+"outcome": "You practise framing, lighting and planning shots for a story.",
+"safety": "Film only in safe places with permission, do not film strangers, do not walk while looking at the screen, and avoid climbing or standing on furniture."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

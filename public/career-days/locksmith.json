@@ -1,0 +1,31 @@
+{
+"slug": "locksmith",
+"overview": {
+"summary": "Locksmiths install, repair and maintain locks and security systems, and help people who are locked out, always checking first that they have the right to enter.",
+"problems": "They keep homes, businesses and vehicles secure and help people get back in safely and legally.",
+"worksWith": "Home and business owners, property managers, landlords, builders and sometimes police or insurers.",
+"workplaces": "Workshops, shops, vehicles and customers' premises, and many locksmiths are self-employed."
+},
+"timeline": [
+{"time": "Morning", "title": "Plan jobs and load the van", "description": "The locksmith checks bookings, parts and tools.", "why": "The right parts save return trips.", "skills": ["Organization", "Planning"]},
+{"time": "Morning", "title": "Fitting and upgrading locks", "description": "The locksmith installs new locks and strengthens doors for customers who want better security.", "why": "Good fitting makes security work.", "skills": ["Practical skill", "Precision"]},
+{"time": "Midday", "title": "Cutting keys and repairs", "description": "The locksmith cuts keys and repairs or replaces worn locks.", "why": "Keys and locks wear out and need care.", "skills": ["Accuracy", "Craft"]},
+{"time": "Afternoon", "title": "Lockout calls", "description": "The locksmith verifies the customer's identity and right to enter before helping.", "why": "Helping the wrong person could enable a break-in.", "skills": ["Integrity", "Care"]},
+{"time": "Late afternoon", "title": "Advising customers", "description": "The locksmith suggests sensible security upgrades for the property.", "why": "Good advice prevents break-ins.", "skills": ["Communication", "Honesty"]},
+{"time": "Varies", "title": "Emergency call-outs", "description": "People get locked out or doors are damaged at any hour.", "why": "Security problems cannot always wait.", "skills": ["Reliability", "Staying calm"]}
+],
+"responsibilities": ["Fitting, repairing and replacing locks", "Cutting keys", "Helping people who are locked out after checking they are entitled to enter", "Advising on security", "Following the law and professional codes", "Keeping customer information private", "Managing invoices if self-employed"],
+"challenges": ["Emergency call-outs happen at night and at weekends.", "Customers can be stressed or locked out in bad weather.", "Strict legal and ethical duties apply, including checking identity.", "Self-employed locksmiths must find customers and manage money.", "Scams in the industry make customer trust important.", "Tools and locks keep changing.", "Training, background checks or licensing are required in many places."],
+"skills": ["Practical skill", "Mechanical understanding", "Integrity", "Problem solving", "Customer service", "Attention to detail", "Reliability", "Communication"],
+"workEnvironment": "Mobile work at customers' homes, businesses and vehicles, plus a workshop for key cutting and repairs. Hours often include emergency call-outs. Many locksmiths run their own small business.",
+"rewards": ["Practical, in-demand skill", "Variety of jobs", "Helping people in stressful moments", "The option to run your own business"],
+"tradeoffs": ["Irregular call-outs", "Legal responsibilities", "Business pressures", "Earnings that vary by country and area"],
+"activity": {
+"title": "Learn how a lock works and explain it",
+"steps": ["Read how a basic pin-tumbler lock and key work from a trusted educational source.", "Draw a diagram showing the key, the pins and the cylinder.", "Build a simple model from cardboard and straws to show how the right key lines up the pins.", "Explain it to a family member.", "Note whether understanding mechanisms felt interesting."],
+"outcome": "You practise understanding a mechanism and explaining it clearly.",
+"safety": "Do not try to open, pick or tamper with any lock that is not yours, and ask an adult before taking anything apart. Opening locks without permission is illegal."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

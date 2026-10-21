@@ -1,0 +1,31 @@
+{
+"slug": "genetic-counselor",
+"overview": {
+"summary": "Genetic counselors help people understand genetic information, such as how conditions can run in families or what genetic test results mean, and support them in making decisions.",
+"problems": "They explain complex genetics clearly and sensitively, and help people think through choices about testing and care.",
+"worksWith": "Patients and families, doctors, nurses, laboratory staff and other health professionals.",
+"workplaces": "Hospitals, clinics, laboratories, universities and genetic testing companies."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Prepare for appointments", "description": "The counselor reviews a patient's records and test results.", "why": "Careful preparation avoids mistakes with sensitive information.", "skills": ["Organization", "Preparation"]},
+{"time": "9:30 to 12:30", "title": "Counselling sessions", "description": "The counselor listens to concerns, takes a family history and explains what genetic tests can and cannot show.", "why": "People decide best when they understand.", "skills": ["Empathy", "Clear explanation"]},
+{"time": "12:30 to 14:00", "title": "Reviewing results", "description": "The counselor works with laboratory staff and doctors to interpret test results.", "why": "Results can be complex and uncertain.", "skills": ["Analysis", "Scientific knowledge"]},
+{"time": "14:00 to 15:30", "title": "Writing letters and notes", "description": "The counselor summarizes advice for patients and doctors.", "why": "Clear written summaries help people remember and act.", "skills": ["Writing", "Accuracy"]},
+{"time": "15:30 to 17:00", "title": "Team meetings and research", "description": "The counselor discusses cases and keeps up with new findings.", "why": "Genetics knowledge changes quickly.", "skills": ["Teamwork", "Learning"]},
+{"time": "Varies", "title": "Emotional conversations", "description": "Some results are difficult to hear, and the counselor supports people through them.", "why": "Support matters as much as information.", "skills": ["Compassion", "Staying calm"]}
+],
+"responsibilities": ["Taking and interpreting family health histories", "Explaining genetic conditions and test results", "Supporting patients' decisions without pressuring them", "Working with doctors and laboratories", "Keeping genetic information private", "Following ethical and legal rules", "Keeping up with new research"],
+"challenges": ["Delivering difficult news and supporting people through emotional decisions is part of the job.", "Genetic information is complex and can be uncertain.", "Privacy and ethical rules are strict.", "Training is long, usually including a master's degree.", "There are relatively few roles, and many are in larger centres.", "Waiting times for patients can be long.", "The science changes fast."],
+"skills": ["Communication", "Empathy", "Scientific knowledge", "Listening", "Ethical judgement", "Attention to detail", "Patience", "Teamwork"],
+"workEnvironment": "Clinics, hospitals and offices, with a lot of one-to-one conversation and some laboratory contact. Hours are usually regular. Some counselors work for testing companies or in research.",
+"rewards": ["Helping people understand and decide", "A mix of science and people skills", "Meaningful conversations", "Working at the edge of medicine"],
+"tradeoffs": ["Emotional demands", "Long training", "Few roles in some places", "Pay and opportunities that vary by country"],
+"activity": {
+"title": "Work through a pretend inheritance puzzle",
+"steps": ["Read how a pea plant can have tall or short stems depending on gene versions, from a trusted school biology source.", "Draw a Punnett square for a cross between two pretend plants.", "Work out what share of offspring would be tall or short.", "Write a three-sentence plain-language explanation for a friend.", "Note whether explaining science clearly felt interesting."],
+"outcome": "You practise using a simple inheritance model and explaining it in plain words.",
+"safety": "Use only pretend plants. Do not try to predict anyone's real health or traits, and remember that genetic information about real people is private and needs a qualified professional."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

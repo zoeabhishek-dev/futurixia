@@ -1,0 +1,31 @@
+{
+"slug": "court-reporter",
+"overview": {
+"summary": "Court reporters create exact written records of what is said in court hearings, depositions and meetings, using specialist machines or recording and transcription methods. Methods differ by country.",
+"problems": "They provide accurate official records that judges, lawyers and the public can rely on.",
+"worksWith": "Judges, lawyers, witnesses, court staff and the people involved in cases.",
+"workplaces": "Courtrooms, law offices and meeting rooms, plus remote or captioning work for broadcasts and events."
+},
+"timeline": [
+{"time": "Before the hearing", "title": "Preparation", "description": "The reporter reads case names, terms and speakers' names and tests equipment.", "why": "Knowing the terms helps accuracy.", "skills": ["Preparation", "Attention to detail"]},
+{"time": "During the hearing", "title": "Recording every word", "description": "The reporter captures speech accurately and keeps up with fast speakers, using shorthand machines or approved methods.", "why": "The record may be used in appeals.", "skills": ["Concentration", "Speed"]},
+{"time": "During the hearing", "title": "Asking for clarification", "description": "The reporter politely interrupts when something cannot be heard or understood.", "why": "An accurate record matters more than flow.", "skills": ["Professionalism", "Confidence"]},
+{"time": "After the hearing", "title": "Editing the transcript", "description": "The reporter checks, corrects and formats the full record.", "why": "Small errors can change meaning.", "skills": ["Accuracy", "Proofreading"]},
+{"time": "Later", "title": "Delivering and certifying", "description": "The reporter provides the transcript and signs that it is accurate.", "why": "The certificate lets courts trust the record.", "skills": ["Responsibility", "Integrity"]},
+{"time": "Varies", "title": "Captioning and other work", "description": "Some reporters caption live broadcasts or events.", "why": "Live captions make events accessible to more people.", "skills": ["Adaptability", "Speed"]}
+],
+"responsibilities": ["Recording proceedings accurately", "Producing and certifying transcripts", "Keeping information confidential", "Preparing names and terms in advance", "Maintaining and testing equipment", "Meeting transcript deadlines", "Following court rules and ethics"],
+"challenges": ["Intense concentration is needed for long periods.", "Reaching very high speed and accuracy takes years of training.", "Some hearings include upsetting material.", "Transcript deadlines are strict.", "Digital recording and speech-to-text tools are changing the field.", "Long hours are spent sitting.", "Qualification and certification rules vary by country."],
+"skills": ["Listening", "Typing or shorthand speed", "Accuracy", "Concentration", "Vocabulary", "Confidentiality", "Time management", "Professionalism"],
+"workEnvironment": "Courtrooms and meeting rooms for live work, and offices or home for editing transcripts. Hours depend on hearings and deadlines. Some reporters work freelance or in captioning.",
+"rewards": ["Playing a key role in justice", "Skilled, respected work", "Flexibility in some freelance roles", "Variety of cases"],
+"tradeoffs": ["Intense concentration", "Long training", "Changing technology", "Pay and demand that vary by country and setting"],
+"activity": {
+"title": "Transcribe a short recording accurately",
+"steps": ["Ask a friend or family member who agrees to read aloud a short passage they wrote for one minute, and record it with a phone.", "Play it back and type exactly what is said, including pauses.", "Check your transcript by listening again and fix mistakes.", "Count the words and errors and work out your accuracy.", "Note whether the concentration felt interesting."],
+"outcome": "You practise careful listening, fast accurate typing and checking your work.",
+"safety": "Record only people who agree, use their own text and not copyrighted material, and delete recordings when you finish if the speaker asks."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

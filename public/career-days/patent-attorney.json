@@ -1,0 +1,31 @@
+{
+"slug": "patent-attorney",
+"overview": {
+"summary": "Patent attorneys, called patent agents in some countries, help inventors and companies protect inventions through patents, combining technical and legal knowledge.",
+"problems": "They help people secure exclusive rights to new inventions and avoid infringing other people's rights.",
+"worksWith": "Inventors, engineers and scientists, companies, patent offices and other lawyers.",
+"workplaces": "Patent law firms, companies' legal departments and patent offices, mostly in offices."
+},
+"timeline": [
+{"time": "9:00 to 10:00", "title": "Review the invention", "description": "The attorney reads the inventor's description and drawings.", "why": "You need to understand an invention before you can protect it.", "skills": ["Technical understanding", "Attention to detail"]},
+{"time": "10:00 to 12:30", "title": "Searching existing patents", "description": "The attorney searches public databases to see whether similar ideas already exist.", "why": "An invention must be new to be patented.", "skills": ["Research", "Analysis"]},
+{"time": "13:30 to 16:00", "title": "Drafting the application", "description": "The attorney writes a precise description and the claims that define what is protected.", "why": "The wording decides how strong the protection is.", "skills": ["Writing", "Precision"]},
+{"time": "16:00 to 17:00", "title": "Talking to inventors", "description": "The attorney asks questions and explains the process and costs.", "why": "Inventors need to understand their choices.", "skills": ["Communication", "Explaining"]},
+{"time": "Varies", "title": "Responding to patent offices", "description": "The attorney answers objections from examiners and amends applications.", "why": "Most applications need some discussion before they are granted.", "skills": ["Argument", "Persistence"]},
+{"time": "Varies", "title": "Deadlines", "description": "Patent processes have strict time limits in each country.", "why": "A missed date can lose valuable rights.", "skills": ["Organization", "Responsibility"]}
+],
+"responsibilities": ["Understanding new inventions", "Searching for earlier inventions", "Drafting patent applications and claims", "Responding to patent office objections", "Advising on rights and risks", "Keeping inventors' ideas confidential", "Meeting deadlines in different countries"],
+"challenges": ["Qualifying usually needs both a science or engineering degree and further legal training and exams.", "Drafting is slow and demands extreme precision.", "Deadlines are strict, and a missed date can lose rights.", "Processes take years.", "Billing and time pressure affect work in firms.", "Technology and law keep changing.", "There are fewer roles than in many careers, so competition can be strong."],
+"skills": ["Technical knowledge", "Legal reasoning", "Writing", "Attention to detail", "Research", "Communication", "Patience", "Integrity"],
+"workEnvironment": "Mostly offices, with reading, writing and meetings with inventors and patent offices. Hours are usually regular but can be long near deadlines. Some work remotely or across countries.",
+"rewards": ["Working at the edge of new technology", "Helping inventors protect ideas", "A mix of science and law", "Intellectually challenging work"],
+"tradeoffs": ["Long qualification", "Heavy reading and writing", "Deadline pressure", "Pay and routes that vary by country"],
+"activity": {
+"title": "Describe a pretend invention and search for similar ones",
+"steps": ["Imagine a simple invention, such as a lunch box that keeps food cold without ice.", "Write a one-page description, then three sentences saying what is new about it.", "Using a free public patent search site, such as a national patent office's, look for similar ideas.", "Note how yours differs from what you find.", "Note whether careful, precise writing felt interesting."],
+"outcome": "You practise explaining an idea precisely and checking whether it is new.",
+"safety": "This is a learning exercise only and not legal advice. Do not share a real invention idea publicly or online before asking an adult, because doing so can affect the chance of patenting it."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

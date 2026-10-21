@@ -1,0 +1,31 @@
+{
+"slug": "sommelier",
+"overview": {
+"summary": "Sommeliers are trained wine and beverage professionals in restaurants, hotels and shops who advise guests on drinks and how they go with food. The role is for adults, because legal drinking ages apply.",
+"problems": "They help guests choose drinks they will enjoy, run the drinks list and make sure drinks are stored and served well.",
+"worksWith": "Guests, chefs, restaurant managers, waiters, suppliers and producers.",
+"workplaces": "Restaurants, hotels, wine shops, importers and drinks companies."
+},
+"timeline": [
+{"time": "Morning", "title": "Stock and cellar", "description": "The sommelier checks deliveries, storage conditions and stock levels.", "why": "Drinks must be stored correctly.", "skills": ["Organization", "Attention to detail"]},
+{"time": "Late morning", "title": "Planning the list", "description": "The sommelier chooses drinks to match the menu and budget.", "why": "A good list suits the food and the guests.", "skills": ["Knowledge", "Planning"]},
+{"time": "Afternoon", "title": "Tasting and learning", "description": "The sommelier tastes and compares drinks professionally, spitting rather than swallowing, and takes notes.", "why": "Training the senses is a core skill.", "skills": ["Sensory skill", "Memory"]},
+{"time": "Service", "title": "Advising guests", "description": "The sommelier listens to what guests like and suggests drinks and pairings, including non-alcoholic options.", "why": "Good advice makes a meal better.", "skills": ["Communication", "Customer care"]},
+{"time": "Service", "title": "Serving", "description": "The sommelier opens, pours and presents drinks correctly.", "why": "Careful service shows respect for the guest and the product.", "skills": ["Precision", "Poise"]},
+{"time": "Varies", "title": "Training staff and events", "description": "The sommelier teaches team members and runs tastings.", "why": "A confident team serves guests better.", "skills": ["Teaching", "Leadership"]}
+],
+"responsibilities": ["Selecting and buying drinks", "Storing and managing stock", "Advising guests and matching drinks with food", "Serving responsibly and refusing service to anyone who should not be served", "Training staff", "Following alcohol licensing laws", "Keeping records and managing costs"],
+"challenges": ["Work is mostly in the evenings, at weekends and on holidays.", "Hours on your feet in restaurants are long.", "Professional qualifications and exams take years of study.", "Responsibility for alcohol laws and guests' safety is serious.", "Jobs can be competitive and based in particular regions.", "There is always more to learn about regions and producers.", "Alcohol is a health and social issue, so professionals must work responsibly."],
+"skills": ["Sensory skills, taste and smell", "Product knowledge", "Communication", "Memory", "Responsibility", "Customer service", "Organization", "Teamwork"],
+"workEnvironment": "Restaurants, hotels, cellars and shops, with a lot of standing and evening work. Service periods are busy, with study and tastings in between. Roles are for adults because of drinking-age laws.",
+"rewards": ["Sharing knowledge and helping guests enjoy their meal", "Variety of regions and products", "Craft and sensory training", "Chances to travel to producing regions"],
+"tradeoffs": ["Unsocial hours", "Long study", "Alcohol responsibilities", "Pay and opportunities that vary by country and setting"],
+"activity": {
+"title": "Run a blind tasting of non-alcoholic drinks",
+"steps": ["With an adult, pick three similar drinks, such as three kinds of apple juice or three teas.", "Pour each into a labelled cup so you do not see which is which.", "For each, write how it looks, smells and tastes, using words like sweet, sour, fruity or earthy.", "Pick your favourite and guess which was which.", "Pair each with a plain food and note what works."],
+"outcome": "You practise using your senses carefully and describing what you notice.",
+"safety": "This activity uses only non-alcoholic drinks. Never taste or drink alcohol, because it is illegal for under-age people and harmful, and check for food allergies before tasting anything."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

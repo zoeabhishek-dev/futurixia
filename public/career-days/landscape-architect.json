@@ -1,0 +1,31 @@
+{
+"slug": "landscape-architect",
+"overview": {
+"summary": "Landscape architects plan and design outdoor spaces such as parks, gardens, streets, campuses and waterfronts, combining design, nature and engineering.",
+"problems": "They create outdoor spaces that are attractive, usable, safe and good for people and the environment.",
+"worksWith": "Clients, architects, engineers, planners, builders, ecologists and local communities.",
+"workplaces": "Design studios, local government, consultancies and construction companies, with many site visits."
+},
+"timeline": [
+{"time": "Morning", "title": "Site visit", "description": "The designer studies the land, soil, slopes, plants, water and how people use the space.", "why": "Good design fits its site.", "skills": ["Observation", "Curiosity"]},
+{"time": "Late morning", "title": "Analyzing and sketching", "description": "The designer draws maps of what is on the site and sketches ideas.", "why": "Mapping what exists shows what a design must work around.", "skills": ["Drawing", "Spatial thinking"]},
+{"time": "Midday", "title": "Meeting clients and communities", "description": "The designer presents ideas and listens to needs.", "why": "Spaces work best when the people who use them help shape them.", "skills": ["Communication", "Listening"]},
+{"time": "Afternoon", "title": "Detailed design", "description": "The designer uses software to draw plans, choose plants and materials and plan drainage.", "why": "Details decide whether a design works and lasts.", "skills": ["Technical drawing", "Knowledge of plants"]},
+{"time": "Late afternoon", "title": "Costs and permits", "description": "The designer estimates costs and checks rules.", "why": "Plans have to be affordable and allowed.", "skills": ["Organization", "Budgeting"]},
+{"time": "Varies", "title": "Visiting construction", "description": "The designer checks that the work matches the plans.", "why": "What gets built should match what was designed.", "skills": ["Coordination", "Problem solving"]}
+],
+"responsibilities": ["Surveying and analyzing sites", "Designing layouts, planting and materials", "Considering water, climate and wildlife", "Making spaces safe and accessible", "Preparing drawings and cost estimates", "Working with other professionals", "Supervising construction"],
+"challenges": ["Projects depend on weather, seasons and budgets.", "Clients' wishes can conflict with the site or the rules.", "Timelines are long from design to full growth.", "Competition is strong and a good portfolio is needed.", "Site work can be outdoors in poor weather.", "Licensing or registration is required in many places.", "Plants and climate change mean constant learning."],
+"skills": ["Design and creativity", "Knowledge of plants and ecology", "Drawing and design software", "Spatial thinking", "Communication", "Problem solving", "Project management", "Attention to detail"],
+"workEnvironment": "A mix of design studios and outdoor sites. Time is split between drawing, meetings and site visits in all weather. Roles are in private firms, councils and developers.",
+"rewards": ["Shaping places people enjoy", "A mix of art, nature and technical work", "Working outdoors", "Seeing a design grow over time"],
+"tradeoffs": ["Slow results", "Weather and budget limits", "Competitive entry", "Pay that varies by country and sector"],
+"activity": {
+"title": "Design a small school garden plan",
+"steps": ["With permission, observe a school or home outdoor space and note where there is sun, shade and water.", "Draw it to scale on squared paper.", "Place paths, seating and planting areas so that everyone, including wheelchair users, can move around.", "Choose plants that suit your local climate from a trusted gardening source.", "Show the plan to someone and ask what they would change."],
+"outcome": "You practise reading a site, designing for people and thinking about plants and climate.",
+"safety": "Draw on paper only. Do not dig or plant anything without permission and adult help, and avoid poisonous plants where young children play."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

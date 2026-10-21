@@ -1,0 +1,31 @@
+{
+"slug": "paralegal",
+"overview": {
+"summary": "Paralegals support lawyers by researching, preparing documents and organizing cases, doing much of the detailed legal work under a lawyer's supervision. Their exact role depends on the country.",
+"problems": "They help legal work run accurately and on time, so lawyers can focus on advice and court work.",
+"worksWith": "Lawyers, clients, court staff, other paralegals and administrators.",
+"workplaces": "Law firms, company legal teams, courts, government bodies and non-profits."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Check deadlines", "description": "The paralegal reviews the case calendar and the day's tasks.", "why": "Missing a legal deadline can seriously harm a client.", "skills": ["Organization", "Attention to detail"]},
+{"time": "9:30 to 12:00", "title": "Research", "description": "The paralegal looks up laws, earlier cases and facts.", "why": "Legal work rests on accurate sources.", "skills": ["Research", "Analysis"]},
+{"time": "12:00 to 14:00", "title": "Drafting documents", "description": "The paralegal prepares drafts of letters, contracts or court papers for a lawyer to review.", "why": "Precise wording matters in legal documents.", "skills": ["Writing", "Accuracy"]},
+{"time": "14:00 to 16:00", "title": "Organizing case files", "description": "The paralegal arranges evidence, makes indexes and prepares bundles for meetings or court.", "why": "Organized files save time and prevent errors.", "skills": ["Organization", "Care"]},
+{"time": "16:00 to 17:30", "title": "Client and court contact", "description": "The paralegal handles client questions within allowed limits and files documents.", "why": "Clients and courts need prompt, correct paperwork.", "skills": ["Communication", "Professionalism"]},
+{"time": "Varies", "title": "Trial preparation", "description": "Before a hearing, hours can be long.", "why": "Everything has to be ready when the case is heard.", "skills": ["Stamina", "Teamwork"]}
+],
+"responsibilities": ["Researching law and facts", "Drafting and proofreading documents", "Organizing and maintaining case files", "Preparing for meetings and hearings", "Communicating with clients and courts within limits", "Keeping information confidential", "Working under lawyers' supervision and following ethics"],
+"challenges": ["Paralegals cannot give legal advice or represent clients in many places.", "The work is detailed and repetitive, with little room for error.", "Deadlines and workloads are heavy.", "Hours can be long before hearings or deals.", "Promotion routes can be limited without further qualification, such as becoming a lawyer.", "Pay can be modest.", "Some cases involve distressing information."],
+"skills": ["Organization", "Legal research", "Writing", "Attention to detail", "Communication", "Confidentiality", "Time management", "Computer skills"],
+"workEnvironment": "Mostly offices, with files, computers and some visits to courts or clients. Hours are usually regular but can be long before deadlines. Some paralegals specialize in areas such as property, family or corporate law.",
+"rewards": ["Learning law in practice", "Being part of a legal team", "A route into law for some", "Variety of cases"],
+"tradeoffs": ["Limited authority", "Detailed work", "Deadline pressure", "Pay and roles that vary by country"],
+"activity": {
+"title": "Build an organized case file for a pretend dispute",
+"steps": ["Invent a small dispute, such as a lost library book, and write down five key facts with dates.", "Create a timeline in a table.", "List the documents you would collect as evidence.", "Make an index with page numbers for a pretend file.", "Check that someone else could follow the story from your file alone."],
+"outcome": "You practise organizing facts and documents clearly, which is the core paralegal skill.",
+"safety": "Use made-up facts only, do not write about real people's disputes, and remember this is not legal advice."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

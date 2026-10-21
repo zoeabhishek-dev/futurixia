@@ -1,0 +1,31 @@
+{
+"slug": "tax-consultant",
+"overview": {
+"summary": "Tax consultants help people and businesses understand tax rules, file returns correctly and plan so they pay the right amount, no more and no less.",
+"problems": "They help clients follow the law, avoid penalties and use legal reliefs and allowances they are entitled to.",
+"worksWith": "Individuals, business owners, accountants, lawyers and tax authorities.",
+"workplaces": "Accounting and tax firms, companies' finance teams and self-employed practice, mostly in offices."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Deadlines and priorities", "description": "The consultant checks upcoming filing dates and client requests.", "why": "Late filing can lead to penalties.", "skills": ["Organization", "Time management"]},
+{"time": "9:30 to 12:00", "title": "Reviewing documents", "description": "The consultant goes through clients' income records, invoices and receipts.", "why": "Accurate records are the base of a correct return.", "skills": ["Accuracy", "Attention to detail"]},
+{"time": "12:00 to 14:00", "title": "Preparing returns", "description": "The consultant calculates tax and completes the forms.", "why": "Mistakes can cost money or cause disputes.", "skills": ["Numeracy", "Knowledge of rules"]},
+{"time": "14:00 to 16:00", "title": "Advising clients", "description": "The consultant explains options and the effect of decisions, such as buying equipment or starting a business.", "why": "Clients decide better when they understand the tax effect.", "skills": ["Communication", "Judgement"]},
+{"time": "16:00 to 17:30", "title": "Keeping up with the rules", "description": "The consultant reads updates to tax laws and notices from authorities.", "why": "Tax rules change often.", "skills": ["Learning", "Research"]},
+{"time": "Varies", "title": "Busy filing seasons", "description": "Around deadlines, hours can increase sharply.", "why": "Many clients file at the same time.", "skills": ["Stamina", "Focus"]}
+],
+"responsibilities": ["Preparing and checking tax returns", "Advising on tax rules and planning within the law", "Keeping up to date with changes", "Representing clients with tax authorities where allowed", "Keeping client information confidential", "Spotting errors and risks", "Following professional ethics"],
+"challenges": ["Peak seasons bring very long hours.", "Rules are complex and keep changing.", "Mistakes can cause penalties or disputes.", "Clients may dislike the amount they owe or ask for improper shortcuts, which must be refused.", "The work is detailed and repetitive.", "Deadlines are strict.", "Qualification and registration requirements vary by country."],
+"skills": ["Numeracy", "Knowledge of tax rules", "Attention to detail", "Communication", "Integrity", "Organization", "Research", "Time management"],
+"workEnvironment": "Mostly offices or remote work with computers and documents, with a strong yearly cycle. Hours are usually regular but long at filing deadlines. Some consultants work with individuals, others with companies.",
+"rewards": ["Helping clients with confusing rules", "Steady demand", "Clear, valuable skills", "Variety of clients"],
+"tradeoffs": ["Seasonal overload", "Constant rule changes", "Detail-heavy work", "Pay and rules that vary by country"],
+"activity": {
+"title": "Work out a pretend tax bill",
+"steps": ["Invent a pretend person with a made-up yearly income.", "Invent three simple tax bands, for example no tax up to a low amount, a low rate on the next part and a higher rate above that.", "Calculate the tax step by step in a spreadsheet.", "Check your answer a second way.", "Write one sentence explaining the result to the pretend person."],
+"outcome": "You practise applying rules step by step and explaining results clearly.",
+"safety": "Use made-up numbers and made-up rules, never use real people's finances, and do not treat this as tax advice."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

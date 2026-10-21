@@ -1,0 +1,31 @@
+{
+"slug": "blockchain-developer",
+"overview": {
+"summary": "Blockchain developers build software for blockchains, which are shared digital records that many computers keep in sync, and for applications such as digital payments and smart contracts.",
+"problems": "They create systems where people can record and check information without relying on a single central owner.",
+"worksWith": "Software engineers, security specialists, product managers, lawyers and the open-source community.",
+"workplaces": "Technology and financial technology companies, start-ups, banks and open-source projects, often remote."
+},
+"timeline": [
+{"time": "9:30 to 10:00", "title": "Check the network and alerts", "description": "The developer looks at test results, tool updates and any security warnings.", "why": "Mistakes in blockchain code can be hard to undo.", "skills": ["Attention to detail", "Awareness"]},
+{"time": "10:00 to 12:30", "title": "Writing code", "description": "The developer builds and tests smart contracts or supporting software.", "why": "Careful code is the main product of the role.", "skills": ["Programming", "Problem solving"]},
+{"time": "13:30 to 15:00", "title": "Testing and security review", "description": "The developer tests many cases and reviews code for weaknesses.", "why": "Bugs can lead to lost money.", "skills": ["Care", "Security awareness"]},
+{"time": "15:00 to 16:30", "title": "Working with the team", "description": "The developer discusses designs, reviews code and agrees plans.", "why": "Several pairs of eyes catch more errors.", "skills": ["Collaboration", "Communication"]},
+{"time": "16:30 to 17:30", "title": "Learning and documentation", "description": "The developer reads about new tools and writes notes.", "why": "The field changes quickly.", "skills": ["Learning quickly", "Writing"]},
+{"time": "Varies", "title": "Urgent fixes", "description": "If a problem appears in live code, the team may need to act quickly.", "why": "Problems in live systems can affect real people's money.", "skills": ["Staying calm", "Decision-making"]}
+],
+"responsibilities": ["Writing and testing blockchain software", "Reviewing code for security", "Designing how data and rules are stored", "Working with other engineers", "Explaining technical ideas to non-technical people", "Following legal and regulatory requirements", "Keeping up with fast-changing tools"],
+"challenges": ["The field changes quickly, and some projects fail or turn out to be scams.", "Prices and demand for jobs can rise and fall sharply with market conditions.", "Mistakes in deployed code can be expensive and hard to fix.", "Rules and laws are still developing in many countries.", "Strong programming and security skills are needed.", "Hype and public scepticism make it hard to judge which projects are sound.", "You should never put money you cannot afford to lose into any digital asset."],
+"skills": ["Programming", "Security awareness", "Problem solving", "Mathematics and logic", "Attention to detail", "Communication", "Learning quickly", "Teamwork"],
+"workEnvironment": "Mostly desk and computer based, in offices or remotely, often across time zones. Hours can vary with projects and launches. Many roles are in start-ups or open-source communities.",
+"rewards": ["Working on new technology", "Challenging technical problems", "Remote options", "Skills in security and distributed systems that apply more widely"],
+"tradeoffs": ["A volatile industry", "High-stakes bugs", "Uncertain regulation", "Pay and job stability that vary by country and employer"],
+"activity": {
+"title": "Simulate a chain of blocks on paper",
+"steps": ["Write five short messages on separate cards, such as pretend transactions between friends.", "On each card add the message, a number for its position and a short code made from the message, such as the number of letters.", "Also copy the code of the previous card onto each card to link them.", "Change one message and see how the codes no longer match along the chain.", "Note what this shows about spotting changes in records."],
+"outcome": "You practise understanding how linked records make tampering visible, which is the idea behind blockchains.",
+"safety": "Use only paper and made-up messages. Do not buy or trade digital currency, never share wallet details or passwords, and ignore anyone who promises easy money."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

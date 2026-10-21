@@ -1,0 +1,31 @@
+{
+"slug": "insurance-underwriter",
+"overview": {
+"summary": "Insurance underwriters decide whether to offer insurance to a person or business and on what terms, by assessing the risk of something going wrong.",
+"problems": "They help insurers price cover fairly and stay financially sound, so claims can be paid when they happen.",
+"worksWith": "Insurance brokers and agents, actuaries, claims teams, customers' representatives and managers.",
+"workplaces": "Insurance companies, reinsurers and brokers, mostly in offices."
+},
+"timeline": [
+{"time": "9:00 to 9:30", "title": "Review new applications", "description": "The underwriter checks the queue of requests and any urgent ones.", "why": "Quick, fair responses keep customers and brokers.", "skills": ["Prioritizing", "Organization"]},
+{"time": "9:30 to 12:00", "title": "Assessing risk", "description": "The underwriter reads applications, checks details such as age, location, past claims or building features, and judges how likely and how large a loss could be.", "why": "Good decisions depend on careful, consistent assessment.", "skills": ["Analysis", "Judgement"]},
+{"time": "12:00 to 14:00", "title": "Using guidelines and models", "description": "The underwriter applies the company's rules, price models and limits, and asks for more information if details are missing.", "why": "Consistent rules keep decisions fair.", "skills": ["Attention to detail", "Following rules"]},
+{"time": "14:00 to 15:30", "title": "Talking to brokers", "description": "The underwriter explains decisions, negotiates terms and asks questions.", "why": "Clear communication avoids misunderstandings about what is covered.", "skills": ["Communication", "Negotiation"]},
+{"time": "15:30 to 17:00", "title": "Referrals and records", "description": "The underwriter passes unusual or large risks to senior colleagues and records decisions.", "why": "Big risks deserve more than one pair of eyes.", "skills": ["Accuracy", "Responsibility"]},
+{"time": "Varies", "title": "Reviewing claims trends", "description": "The underwriter looks at which kinds of claims are increasing and adjusts guidelines.", "why": "Risks change over time.", "skills": ["Curiosity", "Analysis"]}
+],
+"responsibilities": ["Assessing risk and deciding whether to accept it", "Setting terms and prices within guidelines", "Checking information for accuracy and fraud", "Communicating decisions clearly", "Working with brokers, actuaries and claims teams", "Following legal and fairness rules", "Keeping records"],
+"challenges": ["Fair treatment of customers has to be balanced with the insurer's financial needs.", "Decisions often have to be made on incomplete or unclear information.", "Reading and checking are detailed and repetitive.", "Sales targets and brokers create pressure.", "Rules about fairness and discrimination are strict.", "Large or unusual risks carry heavy responsibility.", "Much of the work is at a desk."],
+"skills": ["Analytical thinking", "Attention to detail", "Numeracy", "Judgement", "Communication", "Integrity", "Negotiation", "Time management"],
+"workEnvironment": "Mostly offices or remote work, with computers, policy documents and calls to brokers. Hours are usually regular. Specialist roles exist for property, health, marine, aviation and other types of cover.",
+"rewards": ["Using judgement and numbers together", "Variety of industries insured", "A clear career path with training", "Stable demand for risk skills"],
+"tradeoffs": ["Detailed desk work", "Pressure to balance fairness and profit", "Targets", "Pay and roles that vary by country and company"],
+"activity": {
+"title": "Rate the risk for pretend bicycle insurance",
+"steps": ["Invent four pretend applicants with details such as age, where they ride and whether they have locks and helmets.", "List the factors that make loss more or less likely, such as theft in the area or safe storage.", "Score each applicant from 1 to 5 for risk and give a pretend price.", "Write one fair reason for each score.", "Check that you treated similar applicants the same."],
+"outcome": "You practise assessing risk consistently and explaining decisions fairly.",
+"safety": "Use only made-up people, never judge or collect information about real people, and do not use this as real insurance advice."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

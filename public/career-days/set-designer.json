@@ -1,0 +1,31 @@
+{
+"slug": "set-designer",
+"overview": {
+"summary": "Set designers design the physical surroundings for theatre, film, television and events, creating the places where stories happen.",
+"problems": "They turn a script and the director's vision into rooms, streets and worlds that look right and work for the actors and the camera.",
+"worksWith": "Directors, producers, art directors, builders, prop and costume teams, lighting designers and actors.",
+"workplaces": "Theatres, film and TV studios, workshops and location sites, and design offices."
+},
+"timeline": [
+{"time": "Morning", "title": "Read and research", "description": "The designer reads the script and researches the period, place and mood.", "why": "The set must support the story.", "skills": ["Research", "Imagination"]},
+{"time": "Late morning", "title": "Sketching and model making", "description": "The designer draws plans and builds small scale models to test ideas.", "why": "Small models show problems before big builds.", "skills": ["Drawing", "Spatial thinking"]},
+{"time": "Midday", "title": "Meeting the director and team", "description": "The designer presents ideas and adjusts to feedback.", "why": "The set must work for the whole production.", "skills": ["Communication", "Flexibility"]},
+{"time": "Afternoon", "title": "Planning construction", "description": "The designer draws technical plans, chooses materials and calculates costs for the builders.", "why": "Designs must be buildable and affordable.", "skills": ["Technical drawing", "Budgeting"]},
+{"time": "Late afternoon", "title": "Visiting the workshop or set", "description": "The designer checks progress and solves problems with carpenters and painters.", "why": "Ideas often need adjusting while they are built.", "skills": ["Coordination", "Practical sense"]},
+{"time": "Varies", "title": "Tight deadlines", "description": "Sets must be ready before shooting or opening night.", "why": "Productions have fixed dates.", "skills": ["Time management", "Resilience"]}
+],
+"responsibilities": ["Researching and designing sets", "Making sketches, plans and models", "Working with directors and crews", "Managing budgets and timelines", "Making sure sets are safe for performers and crew", "Supervising building and painting", "Adapting designs when plans change"],
+"challenges": ["Work is project-based and income can be uneven.", "Budgets and deadlines are tight.", "Days are long when a production is close to opening.", "Competition for jobs is strong, and portfolios and connections matter.", "Sets often exist only for a short time.", "Workshops and sets involve physical work and some risks.", "Many people's needs have to be balanced."],
+"skills": ["Creativity", "Drawing and model making", "Technical drawing", "Knowledge of materials", "Communication", "Organization", "Problem solving", "Teamwork"],
+"workEnvironment": "Design offices, workshops, theatres and film sets, often with long days near production deadlines. Work moves between drawing, meetings and practical building. Many set designers work freelance.",
+"rewards": ["Creating worlds for stories", "A mix of art, craft and practical work", "Collaborating with creative people", "Seeing your design on stage or screen"],
+"tradeoffs": ["Project-based income", "Tight deadlines", "Short-lived work", "Pay that varies by country and sector"],
+"activity": {
+"title": "Build a shoebox model of a scene",
+"steps": ["Choose a scene from a story or write a short one, such as a kitchen at night.", "Sketch how the room should look and what the audience needs to see.", "Build it inside a shoebox with paper, card and fabric scraps.", "Light it with a torch to see how the mood changes.", "Ask someone what story it tells and revise."],
+"outcome": "You practise turning a story into a space and testing the mood.",
+"safety": "Use only paper, card and a torch, ask an adult for help with scissors, and avoid candles, hot glue or anything that heats."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

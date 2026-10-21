@@ -1,0 +1,31 @@
+{
+"slug": "voice-actor",
+"overview": {
+"summary": "Voice actors perform with their voices for animation, video games, advertising, audiobooks, documentaries and many other media.",
+"problems": "They bring characters and messages to life without being seen.",
+"worksWith": "Directors, producers, sound engineers, writers, casting agents and clients.",
+"workplaces": "Recording studios, home studios and sometimes live or remote sessions."
+},
+"timeline": [
+{"time": "Morning", "title": "Vocal warm-up and script reading", "description": "The actor warms up the voice and reads the script, marking where to breathe and which words to stress.", "why": "A prepared voice lasts longer.", "skills": ["Voice care", "Preparation"]},
+{"time": "Late morning", "title": "Recording session", "description": "The actor performs lines in a booth following the director's notes and tries several versions.", "why": "Directors want options to choose from.", "skills": ["Acting", "Flexibility"]},
+{"time": "Midday", "title": "Rest and hydration", "description": "The actor rests the voice and drinks water.", "why": "Voices tire and can be damaged by strain.", "skills": ["Self-care", "Discipline"]},
+{"time": "Afternoon", "title": "Auditions", "description": "The actor records demo takes for new jobs, often several a day.", "why": "Most work comes from auditions.", "skills": ["Resilience", "Quick adaptation"]},
+{"time": "Late afternoon", "title": "Editing and delivering", "description": "The actor cleans up recordings and sends files.", "why": "Clean audio is part of the job for many home-studio actors.", "skills": ["Technical skill", "Organization"]},
+{"time": "Varies", "title": "Marketing and training", "description": "The actor updates demo reels, finds clients and keeps practising.", "why": "Freelancers must keep finding work and improving.", "skills": ["Business sense", "Persistence"]}
+],
+"responsibilities": ["Performing scripts with the right tone and emotion", "Taking direction and making quick changes", "Auditioning regularly", "Looking after your voice", "Recording and editing audio at home in some roles", "Managing contracts and invoices", "Marketing yourself"],
+"challenges": ["Work is competitive and uneven, with many auditions for few jobs.", "Many voice actors are freelance and handle their own business.", "Voice strain and fatigue need care.", "Advances in synthetic voices are changing some kinds of work.", "Good recording quality needs equipment and a quiet space.", "Rejection is common.", "Rates vary widely."],
+"skills": ["Voice control", "Acting", "Listening", "Reading aloud", "Flexibility", "Self-discipline", "Technical audio skills", "Business sense"],
+"workEnvironment": "Quiet studios, from professional booths to home setups, with irregular hours and project-based work. Sessions are often short, with a lot of auditioning between. Many voice actors work from home.",
+"rewards": ["Creative, flexible work", "Variety of projects", "Performing without being seen", "Working from home in many cases"],
+"tradeoffs": ["Uneven income", "Heavy competition", "The need to care for your voice", "Pay and opportunities that vary by country and market"],
+"activity": {
+"title": "Record three versions of a line",
+"steps": ["Choose a short sentence you write yourself, such as a message from a cartoon character.", "Record it on a phone three times: cheerful, tired and mysterious.", "Listen back and note which changes in pace, pitch and volume made the difference.", "Play them for a friend and ask which was which.", "Improve one version."],
+"outcome": "You practise using voice to show character and emotion.",
+"safety": "Do not shout or strain your voice, drink water, use your own words, and do not share recordings that include personal details."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}

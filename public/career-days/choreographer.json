@@ -1,0 +1,31 @@
+{
+"slug": "choreographer",
+"overview": {
+"summary": "Choreographers create dance routines and sequences for stage, film, television, music videos, events and schools, shaping how bodies move to music and story.",
+"problems": "They turn ideas, emotions and stories into movement that dancers can perform and audiences can feel.",
+"worksWith": "Dancers, directors, musicians, costume and lighting designers, producers and teachers.",
+"workplaces": "Dance studios, theatres, film and TV sets, schools and companies, and freelance projects."
+},
+"timeline": [
+{"time": "Morning", "title": "Research and ideas", "description": "The choreographer listens to music, develops concepts and sketches ideas or notes.", "why": "Strong ideas shape the whole piece.", "skills": ["Creativity", "Musicality"]},
+{"time": "Late morning", "title": "Warm-up and rehearsal", "description": "The choreographer leads a warm-up and teaches steps to dancers.", "why": "Warm-ups protect dancers' bodies.", "skills": ["Teaching", "Clear communication"]},
+{"time": "Afternoon", "title": "Creating and refining", "description": "The choreographer shapes sequences, tests them with dancers and changes what does not work.", "why": "Ideas often change once real bodies try them.", "skills": ["Problem solving", "Adaptability"]},
+{"time": "Late afternoon", "title": "Working with the team", "description": "The choreographer coordinates with music, costume and lighting teams.", "why": "Dance on stage or screen depends on everything working together.", "skills": ["Collaboration", "Planning"]},
+{"time": "Evening", "title": "Rehearsal or performance", "description": "The choreographer rehearses run-throughs or watches a performance.", "why": "Seeing a piece in full shows what to improve.", "skills": ["Observation", "Stamina"]},
+{"time": "Varies", "title": "Auditions and funding", "description": "The choreographer holds auditions, applies for funding and manages budgets.", "why": "Projects need dancers and money.", "skills": ["Organization", "Persistence"]}
+],
+"responsibilities": ["Creating original movement and routines", "Teaching and directing dancers", "Planning rehearsals and schedules", "Working with music and design teams", "Keeping dancers safe, with warm-ups and rest", "Adapting work for different venues", "Managing contracts, budgets and funding"],
+"challenges": ["Work is often project-based and income is uneven.", "The field is competitive, with few full-time jobs.", "Dancers' bodies can be injured, and careers in dance can be short, so planning for change matters.", "Hours are long and irregular, including evenings and weekends.", "Creative work is judged subjectively.", "Funding is limited.", "Demonstrating moves is physically demanding."],
+"skills": ["Creativity", "Knowledge of dance styles", "Musicality", "Teaching", "Communication", "Leadership", "Observation", "Resilience"],
+"workEnvironment": "Dance studios, theatres and sets, with a lot of standing, moving and rehearsing. Hours often include evenings and weekends. Many choreographers work freelance and also teach.",
+"rewards": ["Creating movement that moves people", "Working with talented performers", "Variety of projects", "Creative freedom"],
+"tradeoffs": ["Uneven income", "Competitive, project-based work", "Physical wear", "Pay and opportunities that vary by country and sector"],
+"activity": {
+"title": "Create a 30-second routine",
+"steps": ["Choose a short piece of music, your own or royalty-free, and listen for the beats and changes.", "Plan five or six simple moves that match the changes.", "Practise and adjust until it flows.", "Teach it to a friend or family member and see where they get confused.", "Change one part to make it clearer."],
+"outcome": "You practise creating, teaching and refining movement.",
+"safety": "Warm up first, use a clear, non-slippery space, stop if anything hurts, avoid risky jumps or lifts, and do not copy a copyrighted routine."
+},
+"source": "Written by Futurixia from general knowledge of how this profession works. It is illustrative and is not based on interviews or surveys.",
+"lastReviewed": "2026-10-20"
+}
