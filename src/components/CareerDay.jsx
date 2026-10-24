@@ -13,6 +13,7 @@ import {
   MapPin,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
+import FeedbackBox from "./FeedbackBox"
 
 const QUESTIONS = [
   {
@@ -452,6 +453,14 @@ function CareerDay({ career, userId }) {
                   </div>
                 </Section>
               )}
+
+              <Section title="Was this section helpful?">
+                <FeedbackBox
+                  careerId={career.id}
+                  section="day"
+                  question="Did this help you picture the work?"
+                />
+              </Section>
 
               <Section title="Career reality check">
                 {!submitted ? (

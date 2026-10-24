@@ -498,7 +498,7 @@ function Home() {
           responding to you.
         </p>
         <p style={{ marginTop: "14px" }}>
-          You can edit your profile information at any time from your Dashboard. If you answer the reflection questions on a career page, your answers are saved privately in your account and are not shown to anyone else. If you earn a completion certificate, anyone who has its certificate ID can confirm your name, the career and the completion date on our verification page.
+          You can edit your profile information at any time from your Dashboard. If you answer the reflection questions on a career page, your answers are saved privately in your account and are not shown to anyone else. If you answer Yes or No in a "Was this helpful?" box, we store that answer, with an optional short comment, together with a random ID kept in your browser. We do not store your name or email with it. If you earn a completion certificate, anyone who has its certificate ID can confirm your name, the career and the completion date on our verification page.
         </p>
       </InfoModal>
 

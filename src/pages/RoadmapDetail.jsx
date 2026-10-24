@@ -118,6 +118,7 @@ import {
 import { supabase } from "../supabaseClient"
 import PricingModal from "../components/PricingModal"
 import CareerDay from "../components/CareerDay"
+import FeedbackBox from "../components/FeedbackBox"
 import { Award } from "lucide-react"
 import {
   getPersonalizedRoadmap,
@@ -963,6 +964,22 @@ function RoadmapDetail() {
             Roadmap content for this career is being added soon!
           </p>
         )}
+      </div>
+
+      <div
+        style={{
+          position: "relative",
+          zIndex: 1,
+          maxWidth: "760px",
+          margin: "0 auto",
+          padding: "0 24px 70px",
+        }}
+      >
+        <FeedbackBox
+          careerId={career.id}
+          section="career"
+          question="Was this career page helpful?"
+        />
       </div>
 
       <PricingModal
