@@ -118,6 +118,7 @@ import {
 import { supabase } from "../supabaseClient"
 import PricingModal from "../components/PricingModal"
 import CareerDay from "../components/CareerDay"
+import { usePageMeta, trimText } from "../lib/seo"
 import FeedbackBox from "../components/FeedbackBox"
 import { Award } from "lucide-react"
 import {
@@ -193,6 +194,17 @@ function RoadmapDetail() {
   const [showCareerInfo, setShowCareerInfo] = useState(false)
 
   const isPro = myTier === "pro" || myTier === "pro_max"
+
+  usePageMeta(
+    career
+      ? {
+          title: `${career.title} Career Roadmap | Futurixia`,
+          description: trimText(
+            `${career.short_description || ""} See the step-by-step roadmap, skills, exams and what a typical day looks like.`
+          ),
+        }
+      : null
+  )
 
   useEffect(() => {
     const load = async () => {

@@ -1,6 +1,6 @@
-
 import { Routes, Route } from "react-router-dom"
-
+import "./App.css"
+import "./styles/responsive.css"
 import Home from "./pages/Home"
 import Auth from "./pages/Auth"
 import Dashboard from "./pages/Dashboard"
@@ -14,7 +14,6 @@ import Certificate from "./pages/Certificate"
 import VerifyCertificate from "./pages/VerifyCertificate"
 import Coach from "./pages/Coach"
 import Report from "./pages/Report"
-
 import RouteMeta from "./components/RouteMeta"
 import WelcomeTour from "./components/WelcomeTour"
 
@@ -23,7 +22,6 @@ function App() {
     <>
       <RouteMeta />
       <WelcomeTour />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Auth />} />
