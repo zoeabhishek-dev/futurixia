@@ -310,12 +310,12 @@ function WelcomeTour() {
         setUserId(user.id)
         setReady(true)
 
-        if (row.tour_seen === false && !readLocalSeen(user.id)) {
+        if (row.tour_seen !== true && !readLocalSeen(user.id)) {
           timer = setTimeout(() => {
             if (!active) return
             setIndex(0)
             setOpen(true)
-          }, 1000)
+          }, 1600)
         }
       } catch (err) {
         // The tour is optional, so any problem simply means it does not start.
@@ -586,7 +586,7 @@ function WelcomeTour() {
   return (
     <>
       {!open && (
-        <button data-tour-ui style={s.helpBtn} onClick={replay} aria-label="Take the tour" title="Take the tour">
+        <button data-tour-ui className="fx-tour-fab" style={s.helpBtn} onClick={replay} aria-label="Take the tour" title="Take the tour">
           <HelpCircle size={22} />
         </button>
       )}

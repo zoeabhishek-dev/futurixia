@@ -135,3 +135,28 @@ select option {
   background-color: #12142a;
   color: #ffffff;
 }
+
+.fx-google-btn:hover:not(:disabled) {
+  background: #f6f7f8 !important;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3) !important;
+}
+
+.fx-google-btn:active:not(:disabled) {
+  background: #eceff1 !important;
+}
+
+@media (max-width: 640px) {
+  .fx-tour-fab {
+    width: 38px !important;
+    height: 38px !important;
+    right: 12px !important;
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px)) !important;
+    opacity: 0.88;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .fx-tour-fab svg {
+    width: 18px;
+    height: 18px;
+  }
+}

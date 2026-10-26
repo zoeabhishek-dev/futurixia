@@ -37,6 +37,43 @@ function Home() {
   const [showContactModal, setShowContactModal] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [infoModalType, setInfoModalType] = useState(null)
+  const [toast, setToast] = useState("")
+
+  const showToast = (message) => {
+    setToast(message)
+    setTimeout(() => setToast(""), 2600)
+  }
+
+  const copySiteLink = async (e) => {
+    e.preventDefault()
+    const url = window.location.origin
+    try {
+      await navigator.clipboard.writeText(url)
+      showToast("Link copied. You can paste it anywhere.")
+    } catch (err) {
+      window.prompt("Copy this link:", url)
+    }
+  }
+
+  const shareSite = async (e) => {
+    e.preventDefault()
+    const url = window.location.origin
+    const text =
+      "Futurixia helps students explore careers and follow a personalized step-by-step roadmap. It is free to start."
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "Futurixia", text, url })
+      } catch (err) {
+        // The person closed the share sheet.
+      }
+    } else {
+      window.open(
+        `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`,
+        "_blank",
+        "noopener,noreferrer"
+      )
+    }
+  }
 
   const openInfo = (type) => (e) => {
     e.preventDefault()
@@ -83,6 +120,8 @@ function Home() {
       text: "A personalized, step-by-step path to get there.",
     },
   ]
+
+  const SHOW_STATS = false
 
   const stats = [
     { icon: Award, value: "100+", label: "Careers Mapped" },
@@ -253,7 +292,7 @@ function Home() {
       </section>
 
       {/* STATS BAR */}
-      <section className="stats-bar">
+      <section className="stats-bar" style={{ display: SHOW_STATS ? undefined : "none" }}>
         {stats.map((stat, i) => {
           const Icon = stat.icon
           return (
@@ -386,10 +425,20 @@ function Home() {
             <div className="nav-logo">Futurixia</div>
             <p>Guiding students to their dream careers, worldwide.</p>
             <div className="footer-socials">
-              <a href="#"><MessageCircle size={18} /></a>
-              <a href="#"><Link2 size={18} /></a>
-              <a href="#"><Send size={18} /></a>
-              <a href="#"><Mail size={18} /></a>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault()
+                  setShowContactModal(true)
+                }}
+                aria-label="Send us a message"
+                title="Send us a message"
+              >
+                <MessageCircle size={18} />
+              </a>
+              <a href="#" onClick={copySiteLink} aria-label="Copy the Futurixia link" title="Copy link"><Link2 size={18} /></a>
+              <a href="#" onClick={shareSite} aria-label="Share Futurixia" title="Share Futurixia"><Send size={18} /></a>
+              <a href="mailto:zoeabhishek@gmail.com" aria-label="Email us" title="Email us"><Mail size={18} /></a>
             </div>
           </div>
 
@@ -446,6 +495,28 @@ function Home() {
       </footer>
 
       <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
+
+      {toast && (
+        <div
+          role="status"
+          style={{
+            position: "fixed",
+            left: "50%",
+            bottom: "28px",
+            transform: "translateX(-50%)",
+            background: "#0f1120",
+            color: "#fff",
+            padding: "12px 20px",
+            borderRadius: "30px",
+            fontSize: "0.88rem",
+            fontWeight: 600,
+            boxShadow: "0 10px 30px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.12)",
+            zIndex: 300,
+          }}
+        >
+          {toast}
+        </div>
+      )}
 
       <PricingModal
         isOpen={infoModalType === "pricing-modal"}

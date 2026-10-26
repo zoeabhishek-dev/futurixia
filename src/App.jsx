@@ -16,11 +16,13 @@ import Coach from "./pages/Coach"
 import Report from "./pages/Report"
 import RouteMeta from "./components/RouteMeta"
 import WelcomeTour from "./components/WelcomeTour"
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   return (
     <>
       <RouteMeta />
+      <ScrollToTop />
       <WelcomeTour />
       <Routes>
         <Route path="/" element={<Home />} />
