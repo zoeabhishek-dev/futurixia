@@ -160,3 +160,7 @@ select option {
     height: 18px;
   }
 }
+
+.fx-tour-fab {
+  display: none !important;
+}

@@ -19,6 +19,8 @@ import {
   buildPlan,
 } from "../lib/coachTools"
 
+const REPORT_FOR_EVERYONE = true
+
 const TYPE_LABELS = {
   education: "Education",
   skill: "Skill",
@@ -87,7 +89,7 @@ function Report() {
         }
         setProfile(profileData)
 
-        if (profileData.subscription_tier !== "pro_max") {
+        if (!REPORT_FOR_EVERYONE && profileData.subscription_tier !== "pro_max") {
           setPageStatus("locked")
           return
         }
@@ -185,6 +187,8 @@ function Report() {
   const nextSteps = remaining.slice(0, 5)
   const resourceGroups = useMemo(() => {
     if (!career) return []
+    const tier = profile ? profile.subscription_tier : null
+    if (tier !== "pro" && tier !== "pro_max") return []
     return nextSteps
       .map((step) => ({
         step,
@@ -582,7 +586,9 @@ function Report() {
                   <h3 style={s.sectionTitle}>6. Free resources for your next steps</h3>
                   {resourceGroups.length === 0 ? (
                     <p style={s.text}>
-                      Resources appear here when your next steps match our free learning sites.
+                      {profile && (profile.subscription_tier === "pro" || profile.subscription_tier === "pro_max")
+                        ? "Resources appear here when your next steps match our free learning sites."
+                        : "Free learning resources, videos and websites for each step are part of the Pro plan."}
                     </p>
                   ) : (
                     resourceGroups.map((g) => (

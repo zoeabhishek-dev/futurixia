@@ -105,7 +105,7 @@ const STEPS = [
     icon: FileText,
     title: "My Report",
     body: [
-      "Another Pro Max tool. It builds a printable report with your profile, career facts, progress, skill check, study plan and free resources. You can save it as a PDF.",
+      "It builds a printable report with your profile, career facts, progress, skill check and study plan. Pro members also get free resources for each step. You can save it as a PDF, and it is free for everyone.",
     ],
     target: { tags: BUTTON_TAGS, pattern: /my report/i },
   },
@@ -169,9 +169,9 @@ const STEPS = [
     title: "Your plan",
     body: ["Futurixia has three plans, and a lock icon marks anything that needs an upgrade:"],
     bullets: [
-      "Free: every career, the full roadmap, the quiz, compare, progress tracking and your history.",
+      "Free: every career, the full roadmap, the quiz, compare, progress tracking, your history and the personal career report.",
       "Pro: adds free resources, videos and detailed guidance on every step.",
-      "Pro Max: adds certificates, the Smart Coach and the personal career report.",
+      "Pro Max: adds certificates and the Smart Coach.",
       "You can see the plans any time from the Pricing link in the footer of the home page.",
     ],
   },
@@ -328,6 +328,16 @@ function WelcomeTour() {
       if (timer) clearTimeout(timer)
     }
   }, [onDashboard])
+
+  useEffect(() => {
+    const start = () => {
+      setIndex(0)
+      setSpot(null)
+      setOpen(true)
+    }
+    window.addEventListener("fx-start-tour", start)
+    return () => window.removeEventListener("fx-start-tour", start)
+  }, [])
 
   const finish = useCallback(async () => {
     setOpen(false)

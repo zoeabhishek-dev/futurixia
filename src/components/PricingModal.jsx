@@ -27,6 +27,7 @@ function PricingModal({ isOpen, onClose, studentCountry }) {
         "Complete step-by-step roadmap for every career",
         "Personalized starting steps for your stage",
         "Progress tracking and completion history",
+        "Printable personal career report",
         "Discovery quiz and career comparison",
       ],
       locked: [
