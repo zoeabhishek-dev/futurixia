@@ -411,8 +411,14 @@ function CareerSearch() {
                   transition={{ duration: 0.4, delay: Math.min(i * 0.05, 0.5) }}
                   whileHover={{ y: -6 }}
                   style={{ ...styles.card, ...(selected ? styles.cardSelected : {}) }}
-                  className="fx-card"
+                  className={`fx-card fx-glow fx-glow-hover${selected ? " fx-glow-on" : ""}`}
                   onClick={() => navigate(`/career/${career.slug}`)}
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" && e.target === e.currentTarget) {
+                      navigate(`/career/${career.slug}`)
+                    }
+                  }}
                 >
                   <div style={styles.cardTopRow}>
                     <div style={styles.cardIcon}>
@@ -676,7 +682,7 @@ const styles = {
     transition: "box-shadow 0.3s ease",
   },
   cardSelected: {
-    boxShadow: "0 0 0 2px rgba(34,211,238,0.7), 0 0 28px rgba(34,211,238,0.18), 0 10px 40px rgba(0,0,0,0.35)",
+    boxShadow: "0 0 0 1px rgba(34,211,238,0.5), 0 10px 40px rgba(0,0,0,0.35)",
   },
   cardTopRow: {
     display: "flex",

@@ -30,9 +30,10 @@ const PLAN_LABELS = { free: "Free plan", pro: "Pro plan", pro_max: "Pro Max plan
 
 function greetingFor(date = new Date()) {
   const hour = date.getHours()
-  if (hour < 12) return "Good morning"
-  if (hour < 17) return "Good afternoon"
-  return "Good evening"
+  if (hour >= 5 && hour < 12) return "Good morning"
+  if (hour >= 12 && hour < 17) return "Good afternoon"
+  if (hour >= 17 && hour < 21) return "Good evening"
+  return "Good night"
 }
 
 function relativeDay(value) {
@@ -94,6 +95,7 @@ function Dashboard() {
   const [recommendedProjects, setRecommendedProjects] = useState([])
   const [completionHistory, setCompletionHistory] = useState([])
   const [totalDone, setTotalDone] = useState(0)
+  const [, setClockTick] = useState(0)
 
   useEffect(() => {
     const load = async () => {
@@ -225,6 +227,18 @@ function Dashboard() {
     load()
   }, [navigate])
 
+  useEffect(() => {
+    const timer = setInterval(() => setClockTick((t) => t + 1), 60000)
+    const onVisible = () => {
+      if (!document.hidden) setClockTick((t) => t + 1)
+    }
+    document.addEventListener("visibilitychange", onVisible)
+    return () => {
+      clearInterval(timer)
+      document.removeEventListener("visibilitychange", onVisible)
+    }
+  }, [])
+
   const handleLogout = async () => {
     await supabase.auth.signOut()
     navigate("/")
@@ -265,8 +279,7 @@ function Dashboard() {
   const skillTags = profile.skills?.split(", ").filter(Boolean) || []
   const tier = profile.subscription_tier || "free"
   const firstName = (profile.full_name || "").trim().split(" ")[0] || "there"
-  const isNewStudent = totalDone === 0 && completionHistory.length === 0
-  const headline = isNewStudent ? "Welcome" : greetingFor()
+  const headline = greetingFor()
 
   const stats = [
     { icon: ListChecks, value: totalDone, label: "Steps completed", color: "#67e8f9" },
@@ -307,27 +320,26 @@ function Dashboard() {
       <div style={styles.wrap} className="fxd-wrap">
         <div style={styles.hero} className="fxd-hero">
           <div style={styles.heroTop} className="fxd-hero-top">
-            <div style={styles.avatar}>{(firstName.charAt(0) || "?").toUpperCase()}</div>
+            <div style={styles.avatar} className="fxd-avatar">
+              {(firstName.charAt(0) || "?").toUpperCase()}
+            </div>
 
             <div style={{ flex: 1, minWidth: 0 }}>
-              <h1 style={styles.heroTitle}>
+              <h1 style={styles.heroTitle} title={`${headline}, ${firstName}!`}>
                 {headline}, {firstName}!
               </h1>
               <p style={styles.heroSub}>
-                {[profile.class_or_course, profile.country].filter(Boolean).join(" · ")}
+                <span>{[profile.class_or_course, profile.country].filter(Boolean).join(" · ")}</span>
+                <span style={{ ...styles.planBadge, ...(tier === "free" ? {} : styles.planBadgePaid) }}>
+                  {tier !== "free" && <Crown size={13} />}
+                  {PLAN_LABELS[tier] || PLAN_LABELS.free}
+                </span>
+                {tier !== "pro_max" && (
+                  <button style={styles.upgradeBtn} onClick={() => setShowPricing(true)}>
+                    See plans
+                  </button>
+                )}
               </p>
-            </div>
-
-            <div style={styles.planWrap}>
-              <span style={{ ...styles.planBadge, ...(tier === "free" ? {} : styles.planBadgePaid) }}>
-                {tier !== "free" && <Crown size={13} />}
-                {PLAN_LABELS[tier] || PLAN_LABELS.free}
-              </span>
-              {tier !== "pro_max" && (
-                <button style={styles.upgradeBtn} onClick={() => setShowPricing(true)}>
-                  See plans
-                </button>
-              )}
             </div>
           </div>
 
@@ -346,7 +358,7 @@ function Dashboard() {
           {stats.map((stat) => {
             const Icon = stat.icon
             return (
-              <div style={styles.statCard} key={stat.label}>
+              <div style={styles.statCard} className="fx-glow fx-glow-live" key={stat.label}>
                 <div style={{ ...styles.statIcon, color: stat.color }}>
                   <Icon size={18} />
                 </div>
@@ -496,6 +508,7 @@ function Dashboard() {
                       </span>
                       <span style={styles.tileTitle}>{tile.title}</span>
                       <span style={styles.tileSub}>{tile.sub}</span>
+                      <ArrowRight size={16} className="fxd-arrow" style={styles.tileArrow} aria-hidden="true" />
                       {tile.locked && (
                         <span style={styles.tileLock}>
                           <Lock size={10} />
@@ -610,7 +623,10 @@ const css = `
 .fxd-col { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
 .fxd-tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .fxd-tile { transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease; }
-.fxd-tile:hover { transform: translateY(-3px); background: rgba(99,102,241,0.16) !important; box-shadow: 0 10px 28px rgba(0,0,0,0.35); }
+.fxd-tile:hover { transform: translateY(-3px); background: linear-gradient(135deg, #2563eb 0%, #3b82f6 55%, #38bdf8 100%) !important; box-shadow: 0 12px 28px rgba(37,99,235,0.5), inset 0 1px 0 rgba(255,255,255,0.3) !important; }
+.fxd-tile:active { transform: translateY(0) scale(0.97); box-shadow: 0 4px 10px rgba(37,99,235,0.4), inset 0 1px 0 rgba(255,255,255,0.2) !important; }
+.fxd-tile:focus-visible { outline: 3px solid #ffffff; outline-offset: 3px; }
+.fxd-tile:hover .fxd-arrow { transform: translateX(4px); }
 @media (max-width: 900px) {
   .fxd-layout { display: flex; flex-direction: column; gap: 20px; }
   .fxd-col { display: contents; }
@@ -621,9 +637,13 @@ const css = `
   .fxd-wrap { padding: 0 14px 40px !important; margin-top: 12px !important; }
   .fxd-tour-label { display: none; }
   .fxd-hero { padding: 22px 18px !important; }
-  .fxd-hero-top { flex-wrap: wrap; }
+  .fxd-hero-top { gap: 12px !important; }
+  .fxd-avatar { width: 48px !important; height: 48px !important; font-size: 1.25rem !important; }
 }
-@media (prefers-reduced-motion: reduce) { .fxd-tile { transition: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .fxd-tile, .fxd-arrow { transition: none !important; }
+  .fxd-tile:hover, .fxd-tile:active { transform: none !important; }
+}
 `
 
 const styles = {
@@ -714,18 +734,34 @@ const styles = {
     fontWeight: 800,
     flexShrink: 0,
   },
-  heroTitle: { fontSize: "1.7rem", fontWeight: 800, lineHeight: 1.2, margin: 0 },
-  heroSub: { color: "#b6bacf", fontSize: "0.92rem", marginTop: "6px" },
-  planWrap: { display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap" },
+  heroTitle: {
+    fontSize: "clamp(1.05rem, 4.8vw, 1.9rem)",
+    fontWeight: 800,
+    lineHeight: 1.2,
+    margin: 0,
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+  },
+  heroSub: {
+    color: "#b6bacf",
+    fontSize: "0.92rem",
+    marginTop: "8px",
+    display: "flex",
+    flexWrap: "wrap",
+    alignItems: "center",
+    gap: "8px",
+    lineHeight: 1.4,
+  },
   planBadge: {
     display: "inline-flex",
     alignItems: "center",
     gap: "6px",
     background: "rgba(255,255,255,0.1)",
     color: "#e0e1ff",
-    fontSize: "0.78rem",
+    fontSize: "0.74rem",
     fontWeight: 700,
-    padding: "7px 14px",
+    padding: "5px 12px",
     borderRadius: "30px",
   },
   planBadgePaid: { background: "rgba(253,224,71,0.16)", color: "#fde047" },
@@ -733,9 +769,9 @@ const styles = {
     background: "linear-gradient(90deg, #6366f1, #22d3ee)",
     color: "#fff",
     border: "none",
-    padding: "8px 16px",
+    padding: "6px 14px",
     borderRadius: "30px",
-    fontSize: "0.78rem",
+    fontSize: "0.74rem",
     fontWeight: 700,
     cursor: "pointer",
     fontFamily: "inherit",
@@ -756,7 +792,6 @@ const styles = {
     background: "rgba(255,255,255,0.05)",
     borderRadius: "18px",
     padding: "18px",
-    boxShadow: "0 0 0 1px rgba(255,255,255,0.07)",
   },
   statIcon: {
     display: "flex",
@@ -876,12 +911,13 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     gap: "4px",
-    background: "rgba(255,255,255,0.05)",
-    color: "#fff",
+    background: "linear-gradient(135deg, #1d4ed8 0%, #2563eb 60%, #3b82f6 100%)",
+    color: "#ffffff",
     textDecoration: "none",
-    padding: "14px",
+    padding: "14px 40px 14px 14px",
+    minHeight: "108px",
     borderRadius: "16px",
-    boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08)",
+    boxShadow: "0 6px 16px rgba(37,99,235,0.35), inset 0 1px 0 rgba(255,255,255,0.22)",
   },
   tileIcon: {
     display: "flex",
@@ -890,12 +926,20 @@ const styles = {
     width: "34px",
     height: "34px",
     borderRadius: "10px",
-    background: "rgba(99,102,241,0.22)",
-    color: "#c7d2fe",
+    background: "rgba(255,255,255,0.2)",
+    color: "#ffffff",
     marginBottom: "6px",
   },
-  tileTitle: { fontSize: "0.88rem", fontWeight: 700 },
-  tileSub: { fontSize: "0.72rem", color: "#9599b0", lineHeight: 1.4 },
+  tileTitle: { fontSize: "0.9rem", fontWeight: 700, color: "#ffffff" },
+  tileSub: { fontSize: "0.74rem", color: "rgba(255,255,255,0.9)", lineHeight: 1.4 },
+  tileArrow: {
+    position: "absolute",
+    right: "14px",
+    bottom: "14px",
+    color: "#ffffff",
+    opacity: 0.9,
+    transition: "transform 0.2s ease",
+  },
   tileLock: {
     position: "absolute",
     top: "10px",
@@ -903,8 +947,8 @@ const styles = {
     display: "inline-flex",
     alignItems: "center",
     gap: "4px",
-    background: "rgba(253,224,71,0.14)",
-    color: "#fde047",
+    background: "rgba(7,16,52,0.55)",
+    color: "#fde68a",
     fontSize: "0.62rem",
     fontWeight: 700,
     padding: "3px 8px",

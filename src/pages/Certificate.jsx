@@ -4,6 +4,7 @@ import {
   ArrowLeft,
   Printer,
   Link2,
+  Share2,
   Loader2,
   Lock,
   AlertTriangle,
@@ -12,6 +13,36 @@ import {
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import PricingModal from "../components/PricingModal"
+
+function Spinner() {
+  return (
+    <div style={{ display: "flex", justifyContent: "center", marginBottom: "12px" }}>
+      <Loader2 size={26} color="#a5b4fc" style={{ animation: "fxspin 0.9s linear infinite" }} />
+    </div>
+  )
+}
+
+function Corner({ pos }) {
+  const places = {
+    tl: { top: 14, left: 14, transform: "none" },
+    tr: { top: 14, right: 14, transform: "scaleX(-1)" },
+    bl: { bottom: 14, left: 14, transform: "scaleY(-1)" },
+    br: { bottom: 14, right: 14, transform: "scale(-1, -1)" },
+  }
+  return (
+    <svg
+      width="58"
+      height="58"
+      viewBox="0 0 58 58"
+      aria-hidden="true"
+      style={{ position: "absolute", ...places[pos] }}
+    >
+      <path d="M2 56V8Q2 2 8 2h48" fill="none" stroke="#c9a24b" strokeWidth="2.2" strokeLinecap="round" />
+      <path d="M10 56V14Q10 10 14 10h42" fill="none" stroke="#c9a24b" strokeWidth="1" opacity="0.65" />
+      <circle cx="2" cy="2" r="3.2" fill="#c9a24b" />
+    </svg>
+  )
+}
 
 function Certificate() {
   const { slug } = useParams()
@@ -116,6 +147,20 @@ function Certificate() {
     }
   }
 
+  const shareCertificate = async () => {
+    if (!cert) return
+    const text = `I completed the ${cert.career_title} career roadmap on Futurixia.`
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "My Futurixia certificate", text, url: verifyUrl })
+      } catch (err) {
+        // The person closed the share sheet.
+      }
+    } else {
+      copyLink()
+    }
+  }
+
   const issuedDate = cert
     ? new Date(cert.issued_at).toLocaleDateString(undefined, {
         year: "numeric",
@@ -127,14 +172,20 @@ function Certificate() {
   return (
     <div style={styles.page} className="fx-cert-page">
       <style>{`
-        @page { size: A4 landscape; margin: 10mm; }
+        @keyframes fxspin { to { transform: rotate(360deg); } }
+        @page { size: A4 landscape; margin: 8mm; }
         .fx-cert { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        @media (max-width: 560px) {
+          .fx-cert-footer { grid-template-columns: 1fr !important; text-align: center !important; gap: 18px !important; }
+          .fx-cert-footer > div { text-align: center !important; }
+        }
         @media print {
           body { background: #ffffff !important; }
           .no-print { display: none !important; }
           .aurora-bg { display: none !important; }
-          .fx-cert-page { background: #ffffff !important; padding: 0 !important; min-height: auto !important; }
-          .fx-cert { box-shadow: none !important; max-width: 100% !important; }
+          .fx-cert-page { background: #ffffff !important; padding: 0 !important; min-height: auto !important; overflow: visible !important; }
+          .fx-cert { box-shadow: none !important; max-width: 100% !important; break-inside: avoid; page-break-inside: avoid; }
+          .fx-cert-body { padding: 8mm 14mm !important; }
         }
       `}</style>
 
@@ -145,18 +196,14 @@ function Certificate() {
       </div>
 
       <div style={styles.container}>
-        <button
-          className="no-print"
-          style={styles.backBtn}
-          onClick={() => navigate("/dashboard")}
-        >
+        <button className="no-print" style={styles.backBtn} onClick={() => navigate("/dashboard")}>
           <ArrowLeft size={16} />
           Dashboard
         </button>
 
         {status === "loading" && (
           <div style={styles.messageCard} className="no-print">
-            <motionSpinner />
+            <Spinner />
             <p style={styles.messageText}>Preparing your certificate...</p>
           </div>
         )}
@@ -209,46 +256,84 @@ function Certificate() {
                 <Printer size={16} />
                 Print or Save as PDF
               </button>
+              <button style={styles.secondaryBtn} onClick={shareCertificate}>
+                <Share2 size={16} />
+                Share
+              </button>
               <button style={styles.secondaryBtn} onClick={copyLink}>
                 {copied ? <CheckCircle2 size={16} color="#4ade80" /> : <Link2 size={16} />}
                 {copied ? "Link copied" : "Copy Verification Link"}
               </button>
             </div>
 
-            <div style={styles.cert} className="fx-cert">
-              <div style={styles.certInner}>
-                <div style={styles.seal}>
-                  <Award size={30} color="#ffffff" />
-                </div>
-                <div style={styles.certBrand}>Futurixia</div>
-                <div style={styles.certKicker}>Certificate of Completion</div>
+            <p className="no-print" style={styles.printTip}>
+              Tip: when printing, switch off "Headers and footers" for a clean certificate.
+            </p>
 
-                <p style={styles.certLine}>This certifies that</p>
-                <h1 style={styles.certName}>{cert.student_name}</h1>
-                <p style={styles.certLine}>
-                  has completed every step of the Futurixia career roadmap for
-                </p>
-                <h2 style={styles.certCareer}>{cert.career_title}</h2>
-                <p style={styles.certMeta}>
-                  {cert.total_steps} of {cert.total_steps} steps completed
-                </p>
+            <div style={styles.certOuter} className="fx-cert">
+              <div style={styles.certPaper}>
+                <div style={styles.innerBorder} aria-hidden="true" />
+                <Corner pos="tl" />
+                <Corner pos="tr" />
+                <Corner pos="bl" />
+                <Corner pos="br" />
 
-                <div style={styles.certFooter}>
-                  <div style={styles.certFooterItem}>
-                    <span style={styles.certFooterLabel}>Date issued</span>
-                    <strong style={styles.certFooterValue}>{issuedDate}</strong>
+                <div style={styles.certBody} className="fx-cert-body">
+                  <div style={styles.brandRow}>
+                    <span style={styles.brandMark}>F</span>
+                    <span style={styles.brandName}>Futurixia</span>
                   </div>
-                  <div style={styles.certFooterItem}>
-                    <span style={styles.certFooterLabel}>Certificate ID</span>
-                    <strong style={styles.certFooterValue}>{cert.id}</strong>
-                  </div>
-                </div>
+                  <p style={styles.kicker}>Career Roadmap Achievement</p>
 
-                <p style={styles.certVerify}>Verify this certificate at {verifyUrl}</p>
-                <p style={styles.certDisclaimer}>
-                  This certificate recognises completion of a self-guided learning roadmap on
-                  Futurixia. It is not a professional licence or an academic qualification.
-                </p>
+                  <h1 style={styles.certTitle}>Certificate</h1>
+                  <p style={styles.certSubtitle}>of Completion</p>
+
+                  <div style={styles.dividerRow} aria-hidden="true">
+                    <span style={styles.dividerLine} />
+                    <Award size={18} color="#c9a24b" />
+                    <span style={styles.dividerLine} />
+                  </div>
+
+                  <p style={styles.presented}>This certificate is proudly presented to</p>
+                  <h2 style={styles.certName}>{cert.student_name}</h2>
+                  <div style={styles.nameRule} aria-hidden="true" />
+
+                  <p style={styles.certLine}>
+                    for successfully completing every step of the Futurixia career roadmap for
+                  </p>
+                  <h3 style={styles.certCareer}>{cert.career_title}</h3>
+                  <p style={styles.certMeta}>
+                    {cert.total_steps} of {cert.total_steps} steps completed
+                  </p>
+
+                  <div style={styles.footerGrid} className="fx-cert-footer">
+                    <div style={{ textAlign: "left" }}>
+                      <span style={styles.footerLabel}>Date issued</span>
+                      <strong style={styles.footerValue}>{issuedDate}</strong>
+                    </div>
+
+                    <div style={styles.sealWrap} aria-hidden="true">
+                      <div style={styles.ribbonL} />
+                      <div style={styles.ribbonR} />
+                      <div style={styles.sealOuter}>
+                        <div style={styles.sealInner}>
+                          <Award size={26} color="#6b4e0f" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style={{ textAlign: "right" }}>
+                      <span style={styles.footerLabel}>Certificate ID</span>
+                      <strong style={styles.footerValue}>{cert.id}</strong>
+                    </div>
+                  </div>
+
+                  <p style={styles.verify}>Verify this certificate at {verifyUrl}</p>
+                  <p style={styles.disclaimer}>
+                    This certificate recognises completion of a self-guided learning roadmap on
+                    Futurixia. It is not a professional licence or an academic qualification.
+                  </p>
+                </div>
               </div>
             </div>
           </>
@@ -264,14 +349,7 @@ function Certificate() {
   )
 }
 
-function motionSpinner() {
-  return (
-    <div style={{ display: "flex", justifyContent: "center", marginBottom: "12px" }}>
-      <Loader2 size={26} color="#a5b4fc" style={{ animation: "fxspin 0.9s linear infinite" }} />
-      <style>{`@keyframes fxspin { to { transform: rotate(360deg); } }`}</style>
-    </div>
-  )
-}
+const SERIF = 'Georgia, "Times New Roman", serif'
 
 const styles = {
   page: {
@@ -286,7 +364,7 @@ const styles = {
   container: {
     position: "relative",
     zIndex: 1,
-    maxWidth: "900px",
+    maxWidth: "940px",
     margin: "0 auto",
     display: "flex",
     flexDirection: "column",
@@ -340,6 +418,7 @@ const styles = {
     fontSize: "0.9rem",
     fontWeight: 700,
     cursor: "pointer",
+    fontFamily: "inherit",
   },
   secondaryBtn: {
     display: "inline-flex",
@@ -355,81 +434,232 @@ const styles = {
     fontWeight: 700,
     cursor: "pointer",
     boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
+    fontFamily: "inherit",
   },
   actionsRow: { display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" },
-  cert: {
+  printTip: { color: "#7d8299", fontSize: "0.78rem", textAlign: "center", marginTop: "-8px" },
+
+  certOuter: {
     width: "100%",
-    maxWidth: "860px",
-    background: "linear-gradient(135deg, #6366f1, #22d3ee)",
-    padding: "6px",
+    maxWidth: "900px",
+    background: "linear-gradient(135deg, #3730a3, #0e7490 50%, #c9a24b)",
+    padding: "8px",
     borderRadius: "20px",
-    boxShadow: "0 30px 80px rgba(0,0,0,0.5)",
+    boxShadow: "0 30px 80px rgba(0,0,0,0.55)",
   },
-  certInner: {
-    background: "#fffdf8",
-    color: "#1b1d2e",
-    borderRadius: "15px",
-    padding: "clamp(24px, 5vw, 52px)",
+  certPaper: {
+    position: "relative",
+    background:
+      "radial-gradient(circle at 50% 0%, rgba(99,102,241,0.08), transparent 55%), radial-gradient(circle at 100% 100%, rgba(201,162,75,0.12), transparent 45%), #fffdf6",
+    borderRadius: "13px",
+    color: "#1e1b4b",
+    overflow: "hidden",
+  },
+  innerBorder: {
+    position: "absolute",
+    inset: "12px",
+    border: "1px solid rgba(201,162,75,0.75)",
+    borderRadius: "6px",
+    pointerEvents: "none",
+  },
+  certBody: {
+    position: "relative",
+    padding: "clamp(34px, 6vw, 58px) clamp(26px, 6vw, 70px) clamp(26px, 5vw, 40px)",
     textAlign: "center",
   },
-  seal: {
+  brandRow: { display: "flex", alignItems: "center", justifyContent: "center", gap: "10px" },
+  brandMark: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    width: "64px",
-    height: "64px",
-    borderRadius: "50%",
-    background: "#4f46e5",
-    margin: "0 auto 14px",
-    boxShadow: "0 0 0 6px #e0e7ff",
-  },
-  certBrand: { fontSize: "1.3rem", fontWeight: 800, color: "#4f46e5", marginBottom: "4px" },
-  certKicker: {
-    fontSize: "0.78rem",
-    fontWeight: 700,
-    letterSpacing: "0.2em",
-    textTransform: "uppercase",
-    color: "#0891b2",
-    marginBottom: "26px",
-  },
-  certLine: { fontSize: "0.95rem", color: "#4b4f66", margin: "8px 0" },
-  certName: {
-    display: "inline-block",
-    fontSize: "clamp(1.8rem, 5vw, 2.8rem)",
+    width: "30px",
+    height: "30px",
+    borderRadius: "9px",
+    background: "linear-gradient(135deg, #4338ca, #0891b2)",
+    color: "#ffffff",
     fontWeight: 800,
-    color: "#1b1d2e",
-    padding: "4px 18px 8px",
-    borderBottom: "2px solid #c7d2fe",
-    margin: "8px 0",
+    fontSize: "1rem",
+    fontFamily: "Inter, system-ui, sans-serif",
+  },
+  brandName: {
+    fontSize: "1.35rem",
+    fontWeight: 800,
+    color: "#3730a3",
+    fontFamily: "Inter, system-ui, sans-serif",
+    letterSpacing: "0.02em",
+  },
+  kicker: {
+    marginTop: "6px",
+    fontSize: "0.7rem",
+    fontWeight: 700,
+    letterSpacing: "0.32em",
+    textTransform: "uppercase",
+    color: "#0e7490",
+    fontFamily: "Inter, system-ui, sans-serif",
+  },
+  certTitle: {
+    marginTop: "18px",
+    fontFamily: SERIF,
+    fontSize: "clamp(2rem, 6.5vw, 3.5rem)",
+    fontWeight: 700,
+    letterSpacing: "0.16em",
+    textTransform: "uppercase",
+    color: "#1e1b4b",
+    lineHeight: 1.1,
+  },
+  certSubtitle: {
+    marginTop: "6px",
+    fontFamily: SERIF,
+    fontSize: "clamp(0.78rem, 2vw, 1rem)",
+    letterSpacing: "0.5em",
+    textTransform: "uppercase",
+    color: "#9a7b2f",
+    paddingLeft: "0.5em",
+  },
+  dividerRow: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "14px",
+    margin: "18px auto 14px",
+    maxWidth: "340px",
+  },
+  dividerLine: {
+    flex: 1,
+    height: "1px",
+    background: "linear-gradient(90deg, transparent, #c9a24b, transparent)",
+  },
+  presented: {
+    fontFamily: SERIF,
+    fontStyle: "italic",
+    fontSize: "clamp(0.85rem, 2.4vw, 1.02rem)",
+    color: "#4b4f66",
+  },
+  certName: {
+    margin: "10px auto 4px",
+    fontFamily: SERIF,
+    fontStyle: "italic",
+    fontWeight: 700,
+    fontSize: "clamp(1.9rem, 6.5vw, 3.2rem)",
+    color: "#111827",
+    lineHeight: 1.15,
     wordBreak: "break-word",
   },
+  nameRule: {
+    width: "min(420px, 80%)",
+    height: "2px",
+    margin: "0 auto 16px",
+    background: "linear-gradient(90deg, transparent, #c9a24b, transparent)",
+  },
+  certLine: {
+    fontFamily: SERIF,
+    fontSize: "clamp(0.85rem, 2.4vw, 1.02rem)",
+    color: "#4b4f66",
+    maxWidth: "560px",
+    margin: "0 auto",
+    lineHeight: 1.6,
+  },
   certCareer: {
-    fontSize: "clamp(1.3rem, 3.5vw, 2rem)",
-    fontWeight: 800,
-    color: "#4f46e5",
-    margin: "8px 0",
-  },
-  certMeta: { fontSize: "0.9rem", color: "#4b4f66", marginBottom: "28px" },
-  certFooter: {
-    display: "flex",
-    justifyContent: "space-between",
-    flexWrap: "wrap",
-    gap: "16px",
-    borderTop: "1px solid #e6dfc8",
-    paddingTop: "18px",
-    textAlign: "left",
-  },
-  certFooterItem: { display: "flex", flexDirection: "column", gap: "4px" },
-  certFooterLabel: {
-    fontSize: "0.68rem",
+    margin: "10px 0 4px",
+    fontFamily: SERIF,
     fontWeight: 700,
-    letterSpacing: "0.1em",
-    textTransform: "uppercase",
-    color: "#7d8299",
+    fontSize: "clamp(1.3rem, 4vw, 2.1rem)",
+    color: "#3730a3",
+    lineHeight: 1.2,
+    wordBreak: "break-word",
   },
-  certFooterValue: { fontSize: "0.92rem", color: "#1b1d2e", wordBreak: "break-all" },
-  certVerify: { fontSize: "0.72rem", color: "#7d8299", marginTop: "18px", wordBreak: "break-all" },
-  certDisclaimer: { fontSize: "0.68rem", color: "#9a9db0", marginTop: "10px", lineHeight: 1.5 },
+  certMeta: {
+    fontSize: "0.82rem",
+    fontWeight: 600,
+    letterSpacing: "0.04em",
+    color: "#6b6f86",
+    fontFamily: "Inter, system-ui, sans-serif",
+  },
+  footerGrid: {
+    display: "grid",
+    gridTemplateColumns: "1fr auto 1fr",
+    alignItems: "end",
+    gap: "16px",
+    marginTop: "24px",
+  },
+  footerLabel: {
+    display: "block",
+    fontSize: "0.64rem",
+    fontWeight: 700,
+    letterSpacing: "0.14em",
+    textTransform: "uppercase",
+    color: "#8a8da3",
+    marginBottom: "4px",
+    fontFamily: "Inter, system-ui, sans-serif",
+  },
+  footerValue: {
+    display: "block",
+    fontSize: "0.92rem",
+    color: "#1e1b4b",
+    wordBreak: "break-all",
+    fontFamily: SERIF,
+  },
+  sealWrap: { position: "relative", width: "92px", height: "112px", margin: "0 auto" },
+  ribbonL: {
+    position: "absolute",
+    top: "58px",
+    left: "20px",
+    width: "22px",
+    height: "48px",
+    background: "linear-gradient(180deg, #4338ca, #312e81)",
+    transform: "rotate(14deg)",
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%)",
+  },
+  ribbonR: {
+    position: "absolute",
+    top: "58px",
+    left: "50px",
+    width: "22px",
+    height: "48px",
+    background: "linear-gradient(180deg, #4338ca, #312e81)",
+    transform: "rotate(-14deg)",
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%)",
+  },
+  sealOuter: {
+    position: "absolute",
+    top: 0,
+    left: "6px",
+    width: "80px",
+    height: "80px",
+    borderRadius: "50%",
+    background: "linear-gradient(135deg, #f6e27a, #c9a24b 50%, #8a6a1c)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    boxShadow: "0 4px 12px rgba(138,106,28,0.35)",
+  },
+  sealInner: {
+    width: "62px",
+    height: "62px",
+    borderRadius: "50%",
+    border: "2px dashed rgba(255,255,255,0.75)",
+    background: "radial-gradient(circle at 30% 30%, #fff3b0, #d4af37)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  verify: {
+    marginTop: "18px",
+    fontSize: "0.7rem",
+    color: "#8a8da3",
+    wordBreak: "break-all",
+    fontFamily: "Inter, system-ui, sans-serif",
+  },
+  disclaimer: {
+    marginTop: "8px",
+    fontSize: "0.66rem",
+    color: "#9a9db0",
+    lineHeight: 1.5,
+    maxWidth: "620px",
+    marginLeft: "auto",
+    marginRight: "auto",
+    fontFamily: "Inter, system-ui, sans-serif",
+  },
 }
 
 export default Certificate

@@ -46,7 +46,7 @@ const STEPS = [
     ],
     target: {
       tags: HEADING_TAGS,
-      pattern: /welcome|hello|good (morning|afternoon|evening)/i,
+      pattern: /welcome|hello|good (morning|afternoon|evening|night)/i,
       grow: true,
     },
   },
