@@ -280,7 +280,7 @@ function Certificate() {
 
                 <div style={styles.certBody} className="fx-cert-body">
                   <div style={styles.brandRow}>
-                    <span style={styles.brandMark}>F</span>
+                    <img src="/logo.png" alt="Futurixia" style={styles.certLogo} />
                     <span style={styles.brandName}>Futurixia</span>
                   </div>
                   <p style={styles.kicker}>Career Roadmap Achievement</p>
@@ -468,6 +468,11 @@ const styles = {
     textAlign: "center",
   },
   brandRow: { display: "flex", alignItems: "center", justifyContent: "center", gap: "10px" },
+  certLogo: {
+    height: "92px",
+    width: "auto",
+    display: "block",
+  },
   brandMark: {
     display: "flex",
     alignItems: "center",

@@ -388,7 +388,7 @@ function Report() {
             {reportReady && (
               <div style={s.paper} className="fx-report">
                 <div style={s.paperHead} className="fx-avoid">
-                  <div style={s.brand}>Futurixia</div>
+                  <img src="/logo.png" alt="Futurixia" style={{ height: "78px", width: "auto", display: "block", marginBottom: "6px" }} />
                   <div style={s.kicker}>Personal Career Report</div>
                   <h2 style={s.studentName}>{profile.full_name}</h2>
                   <p style={s.metaLine}>

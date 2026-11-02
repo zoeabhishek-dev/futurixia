@@ -25,6 +25,7 @@ import { supabase } from "../supabaseClient"
 import { getPersonalizedRoadmap } from "../lib/personalization"
 import ContactModal from "../components/ContactModal"
 import PricingModal from "../components/PricingModal"
+import Logo from "../components/Logo"
 
 const PLAN_LABELS = { free: "Free plan", pro: "Pro plan", pro_max: "Pro Max plan" }
 
@@ -251,7 +252,10 @@ function Dashboard() {
   if (loading) {
     return (
       <div style={styles.center}>
-        <p>Loading your dashboard...</p>
+        <div style={{ textAlign: "center" }}>
+          <Logo height={120} mobileHeight={100} style={{ margin: "0 auto 14px" }} />
+          <p>Loading your dashboard...</p>
+        </div>
       </div>
     )
   }
@@ -302,7 +306,7 @@ function Dashboard() {
       <style>{css}</style>
 
       <nav style={styles.nav} className="fxd-nav">
-        <div style={styles.logo}>Futurixia</div>
+        <Logo height={56} mobileHeight={44} />
 
         <div style={styles.navActions}>
           <button style={styles.tourBtn} onClick={startTour} aria-label="Take the tour" title="Take the tour">

@@ -180,7 +180,7 @@ select option {
   width: 250%;
   height: 0;
   padding-bottom: 250%;
-  background: conic-gradient(from 0deg, #6366f1, #22d3ee, #34d399, #fbbf24, #f472b6, #a78bfa, #6366f1);
+  background: conic-gradient(from 0deg, #2563eb, #3b82f6, #22d3ee, #3b82f6, #6366f1, #8b5cf6, #6366f1, #2563eb);
   transform: translate(-50%, -50%) rotate(0deg);
   opacity: 0.7;
   z-index: -2;
@@ -206,7 +206,7 @@ select option {
 }
 
 .fx-glow-live {
-  filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.28));
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.32));
 }
 
 .fx-glow-hover {
@@ -216,7 +216,7 @@ select option {
 .fx-glow-hover:hover,
 .fx-glow-hover:focus-within,
 .fx-glow-on {
-  filter: drop-shadow(0 0 14px rgba(34, 211, 238, 0.4));
+  filter: drop-shadow(0 0 14px rgba(59, 130, 246, 0.45));
 }
 
 @keyframes fx-glow-rotate {
@@ -231,5 +231,21 @@ select option {
   }
   .fx-glow-hover {
     transition: none;
+  }
+}
+
+.fx-logo-img {
+  display: block;
+  height: var(--fx-logo-h, 56px);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media (max-width: 560px) {
+  .fx-logo-img {
+    height: var(--fx-logo-hm, 44px);
   }
 }

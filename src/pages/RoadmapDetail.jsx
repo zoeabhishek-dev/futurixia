@@ -117,6 +117,7 @@ import {
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import PricingModal from "../components/PricingModal"
+import Logo from "../components/Logo"
 import CareerDay from "../components/CareerDay"
 import { usePageMeta, trimText } from "../lib/seo"
 import FeedbackBox from "../components/FeedbackBox"
@@ -694,7 +695,7 @@ function RoadmapDetail() {
           <ArrowLeft size={16} />
           All Careers
         </button>
-        <div style={styles.logo}>Futurixia</div>
+        <Logo height={52} mobileHeight={42} />
         <span style={{ width: 110 }} />
       </nav>
 

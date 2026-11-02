@@ -3,6 +3,7 @@ import { useNavigate, useLocation, Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import { Eye, EyeOff, Mail, Lock, ArrowLeft, Loader2, CheckCircle2 } from "lucide-react"
 import { supabase } from "../supabaseClient"
+import Logo from "../components/Logo"
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -210,7 +211,9 @@ function Auth() {
           Back to home
         </Link>
 
-        <div style={styles.logo}>Futurixia</div>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: "8px" }}>
+          <Logo height={112} mobileHeight={92} />
+        </div>
         <h1 style={styles.title}>{titles[mode]}</h1>
         <p style={styles.subtitle}>{subtitles[mode]}</p>
 

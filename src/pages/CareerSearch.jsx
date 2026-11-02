@@ -107,6 +107,7 @@ import {
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import ContactModal from "../components/ContactModal"
+import Logo from "../components/Logo"
 
 const ICONS = {
   Code2, Stethoscope, Rocket, Scale, Plane, Shield, GraduationCap, Wrench,
@@ -317,7 +318,7 @@ function CareerSearch() {
           <ArrowLeft size={16} />
           {isLoggedIn ? "Dashboard" : "Home"}
         </button>
-        <div style={styles.logo}>Futurixia</div>
+        <Logo height={52} mobileHeight={42} />
         {isLoggedIn ? (
           <span style={{ width: 110 }} />
         ) : (

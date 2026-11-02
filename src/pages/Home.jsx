@@ -5,6 +5,7 @@ import { supabase } from "../supabaseClient"
 import ContactModal from "../components/ContactModal"
 import InfoModal from "../components/InfoModal"
 import PricingModal from "../components/PricingModal"
+import Logo from "../components/Logo"
 import "../App.css"
 import {
   Rocket,
@@ -154,7 +155,9 @@ function Home() {
 
       {/* NAVBAR */}
       <nav className="navbar">
-        <Link to="/" className="nav-logo">Futurixia</Link>
+        <Link to="/" aria-label="Futurixia home" style={{ display: "inline-flex", alignItems: "center", lineHeight: 0 }}>
+          <Logo height={64} mobileHeight={50} />
+        </Link>
         <div className="nav-links">
           <a href="#how">How it Works</a>
           <a href="#careers">Careers</a>
@@ -422,7 +425,7 @@ function Home() {
       <footer className="footer">
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="nav-logo">Futurixia</div>
+            <Logo height={110} mobileHeight={92} />
             <p>Guiding students to their dream careers, worldwide.</p>
             <div className="footer-socials">
               <a
