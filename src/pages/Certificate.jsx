@@ -281,7 +281,6 @@ function Certificate() {
                 <div style={styles.certBody} className="fx-cert-body">
                   <div style={styles.brandRow}>
                     <img src="/logo.png" alt="Futurixia" style={styles.certLogo} />
-                    <span style={styles.brandName}>Futurixia</span>
                   </div>
                   <p style={styles.kicker}>Career Roadmap Achievement</p>
 

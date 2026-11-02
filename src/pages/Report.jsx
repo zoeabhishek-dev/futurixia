@@ -388,7 +388,7 @@ function Report() {
             {reportReady && (
               <div style={s.paper} className="fx-report">
                 <div style={s.paperHead} className="fx-avoid">
-                  <img src="/logo.png" alt="Futurixia" style={{ height: "78px", width: "auto", display: "block", marginBottom: "6px" }} />
+                  <img src="/logo.png" alt="Futurixia" style={{ height: "78px", width: "auto", display: "block", margin: "0 auto 6px" }} />
                   <div style={s.kicker}>Personal Career Report</div>
                   <h2 style={s.studentName}>{profile.full_name}</h2>
                   <p style={s.metaLine}>
@@ -791,6 +791,7 @@ const s = {
     lineHeight: 1.6,
   },
   paperHead: {
+    textAlign: "center",
     borderBottom: "3px solid #6366f1",
     paddingBottom: "18px",
     marginBottom: "10px",
@@ -803,6 +804,7 @@ const s = {
     textTransform: "uppercase",
     color: "#0891b2",
     margin: "2px 0 14px",
+    paddingLeft: "0.18em",
   },
   studentName: { fontSize: "1.7rem", fontWeight: 800, color: "#1b1d2e", wordBreak: "break-word" },
   metaLine: { color: "#4b4f66", fontSize: "0.9rem", marginTop: "4px" },
