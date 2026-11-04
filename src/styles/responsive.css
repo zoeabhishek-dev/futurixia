@@ -249,3 +249,49 @@ select option {
     height: var(--fx-logo-hm, 44px);
   }
 }
+
+.fx-markdone {
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.fx-markdone:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+.fx-markdone:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.fx-markdone:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
+@keyframes fx-markdone-pulse {
+  0%, 100% {
+    box-shadow: 0 6px 18px rgba(99, 102, 241, 0.45), 0 0 0 0 rgba(34, 211, 238, 0.55);
+  }
+  70% {
+    box-shadow: 0 6px 18px rgba(99, 102, 241, 0.45), 0 0 0 10px rgba(34, 211, 238, 0);
+  }
+}
+
+.fx-markdone-pulse {
+  animation: fx-markdone-pulse 2s ease-out infinite;
+}
+
+@media (max-width: 560px) {
+  .fx-markdone {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-markdone,
+  .fx-markdone-pulse {
+    transition: none;
+    animation: none;
+  }
+}

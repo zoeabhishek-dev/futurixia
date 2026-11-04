@@ -158,7 +158,7 @@ const STEPS = [
       "Quick facts: salary range, job demand and your progress bar.",
       "Read Full Career Information: education, exams, skills and more.",
       "A Day in This Career: a realistic day, the hard parts and a safe activity to try.",
-      "Your roadmap: tap Mark Done on each step, and use Jump to My Next Step.",
+      "Your roadmap: tap Mark as Done after each step so your progress is saved, and use Jump to My Next Step.",
       "Show details and free resources: videos, websites and guidance for each step (Pro).",
       "Compare: put two careers side by side from the Careers list.",
       "Was this helpful? Tell us what to improve.",

@@ -252,9 +252,38 @@ function Dashboard() {
   if (loading) {
     return (
       <div style={styles.center}>
-        <div style={{ textAlign: "center" }}>
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            padding: "0 20px",
+            zIndex: 5,
+            background: "#05070f",
+          }}
+        >
+          <Logo height={120} mobileHeight={100} style={{ margin: "0 auto 14px" }} />
+          <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            padding: "0 20px",
+            zIndex: 5,
+            background: "#05070f",
+          }}
+        >
           <Logo height={120} mobileHeight={100} style={{ margin: "0 auto 14px" }} />
           <p>Loading your dashboard...</p>
+        </div>
         </div>
       </div>
     )

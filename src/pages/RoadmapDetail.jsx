@@ -191,6 +191,7 @@ function RoadmapDetail() {
   const [myCountry, setMyCountry] = useState(null)
   const [myTier, setMyTier] = useState(null)
   const [showPricing, setShowPricing] = useState(false)
+  const [toast, setToast] = useState("")
   const [relatedCareers, setRelatedCareers] = useState([])
   const [showCareerInfo, setShowCareerInfo] = useState(false)
 
@@ -395,12 +396,29 @@ function RoadmapDetail() {
     }
 
     setSavingStepId(null)
+    setToast(isCompleted ? "Step marked as not done" : "Saved! Step marked as done")
+    setTimeout(() => setToast(""), 2400)
   }
 
   if (loading) {
     return (
       <div style={styles.centerPage}>
-        <p>Loading roadmap...</p>
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "10px",
+            background: "#05070f",
+            zIndex: 5,
+          }}
+        >
+          <Logo height={110} mobileHeight={92} />
+          <p>Loading roadmap...</p>
+        </div>
       </div>
     )
   }
@@ -561,14 +579,28 @@ function RoadmapDetail() {
               <button
                 style={{
                   ...styles.checkBtn,
-                  background: isDone ? "rgba(34,197,94,0.18)" : "rgba(255,255,255,0.07)",
-                  color: isDone ? "#4ade80" : "#9599b0",
+                  background: isDone
+                    ? "rgba(34,197,94,0.2)"
+                    : userId
+                    ? "linear-gradient(90deg, #6366f1, #22d3ee)"
+                    : "rgba(255,255,255,0.1)",
+                  color: isDone ? "#4ade80" : "#ffffff",
+                  padding: "10px 18px",
+                  fontSize: "0.85rem",
+                  fontWeight: 800,
+                  boxShadow: isDone
+                    ? "inset 0 0 0 1px rgba(74,222,128,0.5)"
+                    : userId
+                    ? "0 6px 18px rgba(99,102,241,0.45)"
+                    : "none",
                 }}
+                className={`fx-markdone${isFocus && !isDone && userId ? " fx-markdone-pulse" : ""}`}
                 onClick={() => toggleStep(step.id)}
+                aria-label={isDone ? "Mark this step as not done" : "Mark this step as done"}
                 disabled={savingStepId === step.id}
               >
-                {isDone ? <CheckCircle2 size={14} /> : <Circle size={14} />}
-                {isDone ? "Done" : userId ? "Mark Done" : "Log In to Track"}
+                <CheckCircle2 size={16} />
+                {savingStepId === step.id ? "Saving..." : isDone ? "Done" : userId ? "Mark as Done" : "Log In to Save Progress"}
               </button>
             </div>
 
@@ -948,6 +980,16 @@ function RoadmapDetail() {
           </div>
         )}
 
+        {userId && completedCount === 0 && (
+          <div style={styles.markTip} role="note">
+            <CheckCircle2 size={18} color="#4ade80" style={{ flexShrink: 0, marginTop: 2 }} />
+            <span>
+              <strong>Tip:</strong> when you finish a step, tap <strong>Mark as Done</strong>. Your
+              progress is saved only when you tap it.
+            </span>
+          </div>
+        )}
+
         <div style={styles.timeline}>
           {combinedSteps.map((step, i) =>
             renderStepCard(
@@ -994,6 +1036,12 @@ function RoadmapDetail() {
           question="Was this career page helpful?"
         />
       </div>
+
+      {toast && (
+        <div role="status" style={styles.toast}>
+          {toast}
+        </div>
+      )}
 
       <PricingModal
         isOpen={showPricing}
@@ -1543,6 +1591,33 @@ const styles = {
     fontSize: "0.88rem",
     fontWeight: 700,
     cursor: "pointer",
+  },
+  markTip: {
+    display: "flex",
+    gap: "12px",
+    alignItems: "flex-start",
+    background: "rgba(99,102,241,0.12)",
+    borderRadius: "14px",
+    padding: "14px 16px",
+    margin: "0 0 22px",
+    color: "#e0e1ff",
+    fontSize: "0.88rem",
+    lineHeight: 1.55,
+    boxShadow: "inset 0 0 0 1px rgba(99,102,241,0.35)",
+  },
+  toast: {
+    position: "fixed",
+    left: "50%",
+    bottom: "24px",
+    transform: "translateX(-50%)",
+    background: "#0f1120",
+    color: "#ffffff",
+    padding: "12px 22px",
+    borderRadius: "30px",
+    fontSize: "0.88rem",
+    fontWeight: 700,
+    boxShadow: "0 10px 30px rgba(0,0,0,0.5), 0 0 0 1px rgba(74,222,128,0.5)",
+    zIndex: 120,
   },
   noSteps: {
     textAlign: "center",

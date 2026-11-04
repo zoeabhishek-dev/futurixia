@@ -476,7 +476,7 @@ function Home() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 Futurixia — Guiding students to their dream careers, worldwide.</p>
+          <p>© {new Date().getFullYear()} Futurixia — Guiding students to their dream careers, worldwide.</p>
           <button
             onClick={() => setShowContactModal(true)}
             style={{
