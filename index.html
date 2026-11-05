@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Futurixia | Career Guidance and Personalized Roadmaps for Students</title>
   <meta name="description" content="Explore 100+ careers, see what a day in the job is really like, and follow a personalized step-by-step roadmap based on your stage, interests and skills." />
-<meta name="theme-color" content="#05070f" />
+<meta name="theme-color" content="#06100c" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Futurixia" />
 <meta property="og:title" content="Futurixia | Career Guidance and Personalized Roadmaps for Students" />
@@ -17,7 +17,13 @@
 <meta property="og:image" content="https://futurixia-delta.vercel.app/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://futurixia-delta.vercel.app/og-image.png" />
-</head>
+<script>
+      try {
+        var t = localStorage.getItem("fx_theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

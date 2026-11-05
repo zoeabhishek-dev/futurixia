@@ -14,6 +14,7 @@ import {
   Award,
   Lock,
   HelpCircle,
+  Palette,
   Lightbulb,
   UserCircle,
   FileText,
@@ -25,6 +26,8 @@ import { supabase } from "../supabaseClient"
 import { getPersonalizedRoadmap } from "../lib/personalization"
 import ContactModal from "../components/ContactModal"
 import PricingModal from "../components/PricingModal"
+import ThemePicker from "../components/ThemePicker"
+import { useTheme } from "../lib/theme"
 import Logo from "../components/Logo"
 
 const PLAN_LABELS = { free: "Free plan", pro: "Pro plan", pro_max: "Pro Max plan" }
@@ -87,6 +90,8 @@ function Dashboard() {
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false)
   const [showContactModal, setShowContactModal] = useState(false)
   const [showPricing, setShowPricing] = useState(false)
+  const [showThemes, setShowThemes] = useState(false)
+  const { plan, canChoose } = useTheme()
   const [showRequestModal, setShowRequestModal] = useState(false)
   const [activeCareer, setActiveCareer] = useState(null)
   const [progressPercent, setProgressPercent] = useState(0)
@@ -310,7 +315,7 @@ function Dashboard() {
 
   const interestTags = profile.interests?.split(", ").filter(Boolean) || []
   const skillTags = profile.skills?.split(", ").filter(Boolean) || []
-  const tier = profile.subscription_tier || "free"
+  const tier = plan || profile.subscription_tier || "free"
   const firstName = (profile.full_name || "").trim().split(" ")[0] || "there"
   const headline = greetingFor()
 
@@ -338,6 +343,18 @@ function Dashboard() {
         <Logo height={56} mobileHeight={44} />
 
         <div style={styles.navActions}>
+          {canChoose && (
+            <button
+              style={styles.tourBtn}
+              onClick={() => setShowThemes(true)}
+              aria-label="Choose a theme"
+              title="Choose a theme"
+            >
+              <Palette size={16} />
+              <span className="fxd-tour-label">Themes</span>
+            </button>
+          )}
+
           <button style={styles.tourBtn} onClick={startTour} aria-label="Take the tour" title="Take the tour">
             <HelpCircle size={16} />
             <span className="fxd-tour-label">Take the tour</span>
@@ -494,7 +511,7 @@ function Dashboard() {
                     <div style={styles.completionActions}>
                       <span style={styles.completionBadge}>Successfully Completed</span>
 
-                      {profile.subscription_tier === "pro_max" ? (
+                      {tier === "pro_max" ? (
                         <button
                           style={styles.certBtn}
                           onClick={() => navigate(`/certificate/${entry.careers?.slug}`)}
@@ -613,6 +630,8 @@ function Dashboard() {
       <ContactModal mode="request" isOpen={showRequestModal} onClose={() => setShowRequestModal(false)} />
 
       <ContactModal mode="general" isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
+
+      <ThemePicker isOpen={showThemes} onClose={() => setShowThemes(false)} />
 
       <PricingModal
         isOpen={showPricing}

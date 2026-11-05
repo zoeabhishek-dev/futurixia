@@ -1,0 +1,111 @@
+/* Futurixia themes. Every colour in the app reads from these variables. */
+
+html,
+body {
+  background-color: var(--fx-bg);
+}
+
+/* Forest & Emerald: Free plan and the public pages (default) */
+:root,
+html[data-theme="forest_emerald"] {
+  --fx-bg: #06100c;
+  --fx-surface: #0c1a14;
+  --fx-surface-rgb: 12, 26, 20;
+  --fx-primary: #047857;
+  --fx-primary-rgb: 4, 120, 87;
+  --fx-primary-dark: #065f46;
+  --fx-primary-light: #059669;
+  --fx-secondary: #0d9488;
+  --fx-secondary-rgb: 13, 148, 136;
+  --fx-tertiary: #14b8a6;
+  --fx-accent-soft: #6ee7b7;
+  --fx-accent-softer: #a7f3d0;
+  --fx-accent-softest: #d1fae5;
+  --fx-secondary-soft: #5eead4;
+  --fx-glow-1: #10b981;
+  --fx-glow-2: #34d399;
+  --fx-glow-3: #2dd4bf;
+  --fx-glow-rgb: 52, 211, 153;
+  --fx-muted: #8fa89c;
+  --fx-muted-2: #a6bdb2;
+  --fx-text-2: #c5d8ce;
+  --fx-muted-3: #6f8a7d;
+}
+
+/* Charcoal & Orange: Pro plan */
+html[data-theme="charcoal_orange"] {
+  --fx-bg: #0e0e10;
+  --fx-surface: #18181b;
+  --fx-surface-rgb: 24, 24, 27;
+  --fx-primary: #c2410c;
+  --fx-primary-rgb: 194, 65, 12;
+  --fx-primary-dark: #9a3412;
+  --fx-primary-light: #ea580c;
+  --fx-secondary: #b45309;
+  --fx-secondary-rgb: 180, 83, 9;
+  --fx-tertiary: #f59e0b;
+  --fx-accent-soft: #fdba74;
+  --fx-accent-softer: #fed7aa;
+  --fx-accent-softest: #ffedd5;
+  --fx-secondary-soft: #fcd34d;
+  --fx-glow-1: #f97316;
+  --fx-glow-2: #fb923c;
+  --fx-glow-3: #fbbf24;
+  --fx-glow-rgb: 249, 115, 22;
+  --fx-muted: #a1a1aa;
+  --fx-muted-2: #b4b4bb;
+  --fx-text-2: #d4d4d8;
+  --fx-muted-3: #71717a;
+}
+
+/* Plum & Rose: Pro Max choice */
+html[data-theme="plum_rose"] {
+  --fx-bg: #12081a;
+  --fx-surface: #1d1028;
+  --fx-surface-rgb: 29, 16, 40;
+  --fx-primary: #a21caf;
+  --fx-primary-rgb: 162, 28, 175;
+  --fx-primary-dark: #86198f;
+  --fx-primary-light: #c026d3;
+  --fx-secondary: #be185d;
+  --fx-secondary-rgb: 190, 24, 93;
+  --fx-tertiary: #fb7185;
+  --fx-accent-soft: #f0abfc;
+  --fx-accent-softer: #f5d0fe;
+  --fx-accent-softest: #fae8ff;
+  --fx-secondary-soft: #fda4af;
+  --fx-glow-1: #d946ef;
+  --fx-glow-2: #f472b6;
+  --fx-glow-3: #fb7185;
+  --fx-glow-rgb: 217, 70, 239;
+  --fx-muted: #a995b5;
+  --fx-muted-2: #bba9c6;
+  --fx-text-2: #dccfe4;
+  --fx-muted-3: #85729a;
+}
+
+/* Black & Gold: Pro Max default */
+html[data-theme="black_gold"] {
+  --fx-bg: #050505;
+  --fx-surface: #121212;
+  --fx-surface-rgb: 18, 18, 18;
+  --fx-primary: #a16207;
+  --fx-primary-rgb: 161, 98, 7;
+  --fx-primary-dark: #854d0e;
+  --fx-primary-light: #ca8a04;
+  --fx-secondary: #b45309;
+  --fx-secondary-rgb: 180, 83, 9;
+  --fx-tertiary: #facc15;
+  --fx-accent-soft: #fde047;
+  --fx-accent-softer: #fef08a;
+  --fx-accent-softest: #fef9c3;
+  --fx-secondary-soft: #fcd34d;
+  --fx-glow-1: #eab308;
+  --fx-glow-2: #facc15;
+  --fx-glow-3: #f59e0b;
+  --fx-glow-rgb: 234, 179, 8;
+  --fx-muted: #a3a3a3;
+  --fx-muted-2: #b8b8b8;
+  --fx-text-2: #d6d6d6;
+  --fx-muted-3: #737373;
+}

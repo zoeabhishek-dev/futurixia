@@ -15,12 +15,15 @@ import VerifyCertificate from "./pages/VerifyCertificate"
 import Coach from "./pages/Coach"
 import Report from "./pages/Report"
 import RouteMeta from "./components/RouteMeta"
+import { ThemeProvider } from "./lib/theme"
+import "./styles/themes.css"
 import WelcomeTour from "./components/WelcomeTour"
 import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   return (
     <>
+      <ThemeProvider>
       <RouteMeta />
       <ScrollToTop />
       <WelcomeTour />
@@ -40,6 +43,7 @@ function App() {
         <Route path="/coach" element={<Coach />} />
         <Route path="/report" element={<Report />} />
       </Routes>
+    </ThemeProvider>
     </>
   )
 }
