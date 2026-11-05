@@ -47,7 +47,7 @@ const styles = {
   },
   card: {
     position: "relative",
-    background: "#0f1120",
+    background: "var(--fx-surface)",
     borderRadius: "22px",
     padding: "34px",
     maxWidth: "480px",
@@ -72,7 +72,7 @@ const styles = {
     cursor: "pointer",
   },
   title: { fontSize: "1.3rem", fontWeight: 800, color: "#fff", marginBottom: "16px" },
-  body: { color: "#c9cbdb", fontSize: "0.9rem", lineHeight: 1.7 },
+  body: { color: "var(--fx-text-2)", fontSize: "0.9rem", lineHeight: 1.7 },
 }
 
 export default InfoModal

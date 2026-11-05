@@ -482,7 +482,7 @@ function Home() {
             style={{
               marginTop: "16px",
               background: "rgba(255,255,255,0.07)",
-              color: "#e0e1ff",
+              color: "var(--fx-accent-softest)",
               border: "none",
               padding: "10px 22px",
               borderRadius: "30px",
@@ -507,7 +507,7 @@ function Home() {
             left: "50%",
             bottom: "28px",
             transform: "translateX(-50%)",
-            background: "#0f1120",
+            background: "var(--fx-surface)",
             color: "#fff",
             padding: "12px 20px",
             borderRadius: "30px",

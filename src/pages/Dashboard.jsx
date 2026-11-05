@@ -58,8 +58,8 @@ function Ring({ percent }) {
     <svg width="88" height="88" viewBox="0 0 88 88" role="img" aria-label={`${percent} percent complete`}>
       <defs>
         <linearGradient id="fxRing" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#6366f1" />
-          <stop offset="100%" stopColor="#22d3ee" />
+          <stop offset="0%" stopColor="var(--fx-primary)" />
+          <stop offset="100%" stopColor="var(--fx-secondary)" />
         </linearGradient>
       </defs>
       <circle cx="44" cy="44" r={radius} fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="8" />
@@ -268,7 +268,7 @@ function Dashboard() {
             textAlign: "center",
             padding: "0 20px",
             zIndex: 5,
-            background: "#05070f",
+            background: "var(--fx-bg)",
           }}
         >
           <Logo height={120} mobileHeight={100} style={{ margin: "0 auto 14px" }} />
@@ -283,7 +283,7 @@ function Dashboard() {
             textAlign: "center",
             padding: "0 20px",
             zIndex: 5,
-            background: "#05070f",
+            background: "var(--fx-bg)",
           }}
         >
           <Logo height={120} mobileHeight={100} style={{ margin: "0 auto 14px" }} />
@@ -297,7 +297,7 @@ function Dashboard() {
   if (loadError) {
     return (
       <div style={styles.center}>
-        <p style={{ maxWidth: 320, textAlign: "center", color: "#a9adc4" }}>
+        <p style={{ maxWidth: 320, textAlign: "center", color: "var(--fx-muted-2)" }}>
           We could not load your dashboard right now. Please check your connection and try
           refreshing the page.
         </p>
@@ -320,9 +320,9 @@ function Dashboard() {
   const headline = greetingFor()
 
   const stats = [
-    { icon: ListChecks, value: totalDone, label: "Steps completed", color: "#67e8f9" },
+    { icon: ListChecks, value: totalDone, label: "Steps completed", color: "var(--fx-secondary-soft)" },
     { icon: Trophy, value: completionHistory.length, label: "Roadmaps completed", color: "#fde047" },
-    { icon: Target, value: activeCareer ? `${progressPercent}%` : "0%", label: "Current progress", color: "#a5b4fc" },
+    { icon: Target, value: activeCareer ? `${progressPercent}%` : "0%", label: "Current progress", color: "var(--fx-accent-soft)" },
     { icon: TrendingUp, value: skillTags.length, label: "Skills listed", color: "#86efac" },
   ]
 
@@ -439,7 +439,7 @@ function Dashboard() {
                   {nextStep ? (
                     <div style={styles.nextStepBox}>
                       <div style={styles.nextStepIconWrap}>
-                        <Target size={18} color="#67e8f9" />
+                        <Target size={18} color="var(--fx-secondary-soft)" />
                       </div>
                       <div style={{ flex: 1, minWidth: 0 }}>
                         <span style={styles.nextStepLabel}>Your Next Step</span>
@@ -470,7 +470,7 @@ function Dashboard() {
               ) : (
                 <div style={styles.placeholderCard} onClick={() => navigate("/careers")}>
                   <div style={styles.placeholderIcon}>
-                    <Compass size={26} color="#99f6ff" />
+                    <Compass size={26} color="var(--fx-secondary-soft)" />
                   </div>
                   <div style={{ flex: 1 }}>
                     <h2 style={{ marginBottom: 6, fontSize: "1.15rem" }}>Explore Careers and Get Your Roadmap</h2>
@@ -478,7 +478,7 @@ function Dashboard() {
                       Search any career and see a personalized, step-by-step path to get there.
                     </p>
                   </div>
-                  <ArrowRight size={20} color="#c7d2fe" />
+                  <ArrowRight size={20} color="var(--fx-accent-softer)" />
                 </div>
               )}
             </div>
@@ -590,7 +590,7 @@ function Dashboard() {
             {recentActivity.length > 0 && (
               <div style={{ ...styles.sectionCard, order: 7 }}>
                 <h3 style={styles.sectionTitle}>
-                  <Clock size={16} style={{ marginRight: 8, verticalAlign: "-3px", color: "#67e8f9" }} />
+                  <Clock size={16} style={{ marginRight: 8, verticalAlign: "-3px", color: "var(--fx-secondary-soft)" }} />
                   Recent Activity
                 </h3>
 
@@ -675,8 +675,8 @@ const css = `
 .fxd-col { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
 .fxd-tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .fxd-tile { transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease; }
-.fxd-tile:hover { transform: translateY(-3px); background: linear-gradient(135deg, #2563eb 0%, #3b82f6 55%, #38bdf8 100%) !important; box-shadow: 0 12px 28px rgba(37,99,235,0.5), inset 0 1px 0 rgba(255,255,255,0.3) !important; }
-.fxd-tile:active { transform: translateY(0) scale(0.97); box-shadow: 0 4px 10px rgba(37,99,235,0.4), inset 0 1px 0 rgba(255,255,255,0.2) !important; }
+.fxd-tile:hover { transform: translateY(-3px); background: linear-gradient(135deg, var(--fx-primary) 0%, var(--fx-primary-light) 55%, var(--fx-secondary) 100%) !important; box-shadow: 0 12px 28px rgba(var(--fx-primary-rgb),0.5), inset 0 1px 0 rgba(255,255,255,0.3) !important; }
+.fxd-tile:active { transform: translateY(0) scale(0.97); box-shadow: 0 4px 10px rgba(var(--fx-primary-rgb),0.4), inset 0 1px 0 rgba(255,255,255,0.2) !important; }
 .fxd-tile:focus-visible { outline: 3px solid #ffffff; outline-offset: 3px; }
 .fxd-tile:hover .fxd-arrow { transform: translateX(4px); }
 @media (max-width: 900px) {
@@ -702,7 +702,7 @@ const styles = {
   page: {
     minHeight: "100vh",
     background:
-      "radial-gradient(900px 500px at 15% -10%, rgba(99,102,241,0.18), transparent 60%), radial-gradient(700px 420px at 100% 0%, rgba(34,211,238,0.12), transparent 60%), #05070f",
+      "radial-gradient(900px 500px at 15% -10%, rgba(var(--fx-primary-rgb),0.18), transparent 60%), radial-gradient(700px 420px at 100% 0%, rgba(var(--fx-secondary-rgb),0.12), transparent 60%), var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
   },
@@ -711,7 +711,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
   },
@@ -726,7 +726,7 @@ const styles = {
   logo: {
     fontSize: "1.4rem",
     fontWeight: 800,
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     WebkitTextFillColor: "transparent",
@@ -736,8 +736,8 @@ const styles = {
     display: "flex",
     alignItems: "center",
     gap: "6px",
-    background: "rgba(99,102,241,0.18)",
-    color: "#c7d2fe",
+    background: "rgba(var(--fx-primary-rgb),0.18)",
+    color: "var(--fx-accent-softer)",
     border: "none",
     padding: "10px 16px",
     borderRadius: "30px",
@@ -768,7 +768,7 @@ const styles = {
     gap: "24px",
   },
   hero: {
-    background: "linear-gradient(135deg, rgba(99,102,241,0.22), rgba(34,211,238,0.1))",
+    background: "linear-gradient(135deg, rgba(var(--fx-primary-rgb),0.22), rgba(var(--fx-secondary-rgb),0.1))",
     borderRadius: "24px",
     padding: "30px 32px",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.1)",
@@ -781,7 +781,7 @@ const styles = {
     width: "62px",
     height: "62px",
     borderRadius: "50%",
-    background: "linear-gradient(135deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(135deg, var(--fx-primary), var(--fx-secondary))",
     fontSize: "1.6rem",
     fontWeight: 800,
     flexShrink: 0,
@@ -810,7 +810,7 @@ const styles = {
     alignItems: "center",
     gap: "6px",
     background: "rgba(255,255,255,0.1)",
-    color: "#e0e1ff",
+    color: "var(--fx-accent-softest)",
     fontSize: "0.74rem",
     fontWeight: 700,
     padding: "5px 12px",
@@ -818,7 +818,7 @@ const styles = {
   },
   planBadgePaid: { background: "rgba(253,224,71,0.16)", color: "#fde047" },
   upgradeBtn: {
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "6px 14px",
@@ -831,8 +831,8 @@ const styles = {
   tagsRow: { display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "20px" },
   tagsRowTight: { display: "flex", flexWrap: "wrap", gap: "8px" },
   tag: {
-    background: "rgba(99,102,241,0.2)",
-    color: "#c7d2fe",
+    background: "rgba(var(--fx-primary-rgb),0.2)",
+    color: "var(--fx-accent-softer)",
     padding: "6px 14px",
     borderRadius: "20px",
     fontSize: "0.82rem",
@@ -856,7 +856,7 @@ const styles = {
     marginBottom: "6px",
   },
   statValue: { fontSize: "1.6rem", fontWeight: 800 },
-  statLabel: { color: "#9599b0", fontSize: "0.78rem" },
+  statLabel: { color: "var(--fx-muted)", fontSize: "0.78rem" },
   progressCard: {
     background: "rgba(255,255,255,0.05)",
     borderRadius: "22px",
@@ -873,21 +873,21 @@ const styles = {
   sectionLabel: {
     fontSize: "0.72rem",
     fontWeight: 700,
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     textTransform: "uppercase",
     letterSpacing: "0.06em",
   },
   progressTitle: { fontSize: "1.5rem", fontWeight: 800, margin: "6px 0 8px" },
   categoryChip: {
     display: "inline-block",
-    background: "rgba(34,211,238,0.12)",
-    color: "#67e8f9",
+    background: "rgba(var(--fx-secondary-rgb),0.12)",
+    color: "var(--fx-secondary-soft)",
     fontSize: "0.72rem",
     fontWeight: 700,
     padding: "4px 12px",
     borderRadius: "20px",
   },
-  stepCount: { color: "#9599b0", fontSize: "0.82rem", marginTop: "10px" },
+  stepCount: { color: "var(--fx-muted)", fontSize: "0.82rem", marginTop: "10px" },
   nextStepBox: {
     display: "flex",
     gap: "14px",
@@ -904,13 +904,13 @@ const styles = {
     width: "40px",
     height: "40px",
     borderRadius: "12px",
-    background: "rgba(34,211,238,0.14)",
+    background: "rgba(var(--fx-secondary-rgb),0.14)",
     flexShrink: 0,
   },
   nextStepLabel: {
     fontSize: "0.72rem",
     fontWeight: 700,
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     textTransform: "uppercase",
     letterSpacing: "0.05em",
   },
@@ -921,7 +921,7 @@ const styles = {
     justifyContent: "center",
     gap: "8px",
     width: "100%",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "14px",
@@ -948,7 +948,7 @@ const styles = {
     width: "54px",
     height: "54px",
     borderRadius: "16px",
-    background: "rgba(34,211,238,0.14)",
+    background: "rgba(var(--fx-secondary-rgb),0.14)",
     flexShrink: 0,
   },
   sectionCard: {
@@ -963,13 +963,13 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     gap: "4px",
-    background: "linear-gradient(135deg, #1d4ed8 0%, #2563eb 60%, #3b82f6 100%)",
+    background: "linear-gradient(135deg, var(--fx-primary-dark) 0%, var(--fx-primary) 60%, var(--fx-primary-light) 100%)",
     color: "#ffffff",
     textDecoration: "none",
     padding: "14px 40px 14px 14px",
     minHeight: "108px",
     borderRadius: "16px",
-    boxShadow: "0 6px 16px rgba(37,99,235,0.35), inset 0 1px 0 rgba(255,255,255,0.22)",
+    boxShadow: "0 6px 16px rgba(var(--fx-primary-rgb),0.35), inset 0 1px 0 rgba(255,255,255,0.22)",
   },
   tileIcon: {
     display: "flex",
@@ -1025,13 +1025,13 @@ const styles = {
     flexShrink: 0,
   },
   completionCareerName: { fontSize: "0.95rem", fontWeight: 700, color: "#fff" },
-  completionMeta: { fontSize: "0.78rem", color: "#9599b0", marginTop: "2px" },
+  completionMeta: { fontSize: "0.78rem", color: "var(--fx-muted)", marginTop: "2px" },
   completionActions: { display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "8px" },
   certBtn: {
     display: "inline-flex",
     alignItems: "center",
     gap: "6px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "8px 14px",
@@ -1047,7 +1047,7 @@ const styles = {
     alignItems: "center",
     gap: "6px",
     background: "rgba(255,255,255,0.07)",
-    color: "#c7d2fe",
+    color: "var(--fx-accent-softer)",
     border: "none",
     padding: "8px 14px",
     borderRadius: "20px",
@@ -1080,15 +1080,15 @@ const styles = {
     boxShadow: "0 0 0 4px rgba(74,222,128,0.15)",
   },
   activityText: { display: "block", fontSize: "0.88rem", color: "#d7d9e6", wordBreak: "break-word" },
-  activityTime: { display: "block", fontSize: "0.72rem", color: "#7d8299", marginTop: "2px" },
+  activityTime: { display: "block", fontSize: "0.72rem", color: "var(--fx-muted-3)", marginTop: "2px" },
   contactBox: { textAlign: "center", marginTop: "6px" },
-  contactText: { color: "#9599b0", fontSize: "0.85rem", marginBottom: "14px" },
+  contactText: { color: "var(--fx-muted)", fontSize: "0.85rem", marginBottom: "14px" },
   contactBtn: {
     display: "inline-flex",
     alignItems: "center",
     gap: "8px",
     background: "rgba(255,255,255,0.07)",
-    color: "#e0e1ff",
+    color: "var(--fx-accent-softest)",
     border: "none",
     padding: "12px 24px",
     borderRadius: "30px",
@@ -1098,11 +1098,11 @@ const styles = {
     boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
     fontFamily: "inherit",
   },
-  generalContactText: { marginTop: "14px", color: "#7d8299", fontSize: "0.8rem" },
+  generalContactText: { marginTop: "14px", color: "var(--fx-muted-3)", fontSize: "0.8rem" },
   inlineLinkBtn: {
     background: "none",
     border: "none",
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     fontSize: "0.8rem",
     fontWeight: 700,
     textDecoration: "underline",
@@ -1110,7 +1110,7 @@ const styles = {
     padding: 0,
     fontFamily: "inherit",
   },
-  subtext: { color: "#a9adc4", fontSize: "0.92rem", marginTop: "6px" },
+  subtext: { color: "var(--fx-muted-2)", fontSize: "0.92rem", marginTop: "6px" },
   modalOverlay: {
     position: "fixed",
     inset: 0,
@@ -1123,7 +1123,7 @@ const styles = {
     padding: "20px",
   },
   modalCard: {
-    background: "#0f1120",
+    background: "var(--fx-surface)",
     borderRadius: "22px",
     padding: "34px",
     maxWidth: "380px",
@@ -1142,7 +1142,7 @@ const styles = {
     margin: "0 auto 18px",
   },
   modalTitle: { fontSize: "1.2rem", fontWeight: 800, marginBottom: "8px" },
-  modalText: { color: "#a9adc4", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "26px" },
+  modalText: { color: "var(--fx-muted-2)", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "26px" },
   modalActions: { display: "flex", gap: "12px" },
   modalCancelBtn: {
     flex: 1,

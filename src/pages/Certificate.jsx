@@ -17,7 +17,7 @@ import PricingModal from "../components/PricingModal"
 function Spinner() {
   return (
     <div style={{ display: "flex", justifyContent: "center", marginBottom: "12px" }}>
-      <Loader2 size={26} color="#a5b4fc" style={{ animation: "fxspin 0.9s linear infinite" }} />
+      <Loader2 size={26} color="var(--fx-accent-soft)" style={{ animation: "fxspin 0.9s linear infinite" }} />
     </div>
   )
 }
@@ -210,8 +210,8 @@ function Certificate() {
 
         {status === "locked" && (
           <div style={styles.messageCard} className="no-print">
-            <div style={{ ...styles.iconCircle, background: "rgba(99,102,241,0.16)" }}>
-              <Lock size={24} color="#a5b4fc" />
+            <div style={{ ...styles.iconCircle, background: "rgba(var(--fx-primary-rgb),0.16)" }}>
+              <Lock size={24} color="var(--fx-accent-soft)" />
             </div>
             <h1 style={styles.messageTitle}>Certificates are part of Pro Max</h1>
             <p style={styles.messageText}>
@@ -354,7 +354,7 @@ const styles = {
   page: {
     position: "relative",
     minHeight: "100vh",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
     padding: "24px 16px 60px",
@@ -387,7 +387,7 @@ const styles = {
   messageCard: {
     width: "100%",
     maxWidth: "440px",
-    background: "rgba(15,17,32,0.88)",
+    background: "rgba(var(--fx-surface-rgb),0.88)",
     borderRadius: "22px",
     padding: "34px 28px",
     textAlign: "center",
@@ -403,13 +403,13 @@ const styles = {
     margin: "0 auto 16px",
   },
   messageTitle: { fontSize: "1.3rem", fontWeight: 800, marginBottom: "8px" },
-  messageText: { color: "#a9adc4", fontSize: "0.9rem", lineHeight: 1.6, marginBottom: "20px" },
+  messageText: { color: "var(--fx-muted-2)", fontSize: "0.9rem", lineHeight: 1.6, marginBottom: "20px" },
   primaryBtn: {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
     gap: "8px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "13px 24px",
@@ -436,7 +436,7 @@ const styles = {
     fontFamily: "inherit",
   },
   actionsRow: { display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" },
-  printTip: { color: "#7d8299", fontSize: "0.78rem", textAlign: "center", marginTop: "-8px" },
+  printTip: { color: "var(--fx-muted-3)", fontSize: "0.78rem", textAlign: "center", marginTop: "-8px" },
 
   certOuter: {
     width: "100%",
@@ -449,7 +449,7 @@ const styles = {
   certPaper: {
     position: "relative",
     background:
-      "radial-gradient(circle at 50% 0%, rgba(99,102,241,0.08), transparent 55%), radial-gradient(circle at 100% 100%, rgba(201,162,75,0.12), transparent 45%), #fffdf6",
+      "radial-gradient(circle at 50% 0%, rgba(var(--fx-primary-rgb),0.08), transparent 55%), radial-gradient(circle at 100% 100%, rgba(201,162,75,0.12), transparent 45%), #fffdf6",
     borderRadius: "13px",
     color: "#1e1b4b",
     overflow: "hidden",

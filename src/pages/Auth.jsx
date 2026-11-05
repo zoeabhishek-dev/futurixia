@@ -222,7 +222,7 @@ function Auth() {
             Email
           </label>
           <div style={styles.inputWrap}>
-            <Mail size={17} color="#9599b0" />
+            <Mail size={17} color="var(--fx-muted)" />
             <input
               id="auth-email"
               type="email"
@@ -241,7 +241,7 @@ function Auth() {
                 Password
               </label>
               <div style={styles.inputWrap}>
-                <Lock size={17} color="#9599b0" />
+                <Lock size={17} color="var(--fx-muted)" />
                 <input
                   id="auth-password"
                   type={showPassword ? "text" : "password"}
@@ -276,11 +276,11 @@ function Auth() {
               {mode === "signup" && (
                 <>
                   <p style={styles.hint}>
-                    <span style={{ color: password.length >= 8 ? "#4ade80" : "#9599b0" }}>
+                    <span style={{ color: password.length >= 8 ? "#4ade80" : "var(--fx-muted)" }}>
                       {password.length >= 8 ? "✓" : "•"} At least 8 characters
                     </span>
                     <br />
-                    <span style={{ color: hasLetterAndNumber ? "#4ade80" : "#9599b0" }}>
+                    <span style={{ color: hasLetterAndNumber ? "#4ade80" : "var(--fx-muted)" }}>
                       {hasLetterAndNumber ? "✓" : "•"} A letter and a number
                     </span>
                   </p>
@@ -289,7 +289,7 @@ function Auth() {
                     Confirm password
                   </label>
                   <div style={styles.inputWrap}>
-                    <Lock size={17} color="#9599b0" />
+                    <Lock size={17} color="var(--fx-muted)" />
                     <input
                       id="auth-confirm"
                       type={showPassword ? "text" : "password"}
@@ -404,7 +404,7 @@ const styles = {
   page: {
     position: "relative",
     minHeight: "100vh",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
     display: "flex",
@@ -418,7 +418,7 @@ const styles = {
     zIndex: 1,
     width: "100%",
     maxWidth: "420px",
-    background: "rgba(15,17,32,0.88)",
+    background: "rgba(var(--fx-surface-rgb),0.88)",
     backdropFilter: "blur(14px)",
     borderRadius: "24px",
     padding: "32px 28px",
@@ -428,7 +428,7 @@ const styles = {
     display: "inline-flex",
     alignItems: "center",
     gap: "6px",
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     fontSize: "0.82rem",
     textDecoration: "none",
     marginBottom: "18px",
@@ -436,19 +436,19 @@ const styles = {
   logo: {
     fontSize: "1.4rem",
     fontWeight: 800,
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     WebkitTextFillColor: "transparent",
     marginBottom: "10px",
   },
   title: { fontSize: "1.5rem", fontWeight: 800, marginBottom: "6px" },
-  subtitle: { color: "#a9adc4", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "22px" },
+  subtitle: { color: "var(--fx-muted-2)", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "22px" },
   label: {
     display: "block",
     fontSize: "0.78rem",
     fontWeight: 700,
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     marginBottom: "6px",
     marginTop: "14px",
   },
@@ -475,7 +475,7 @@ const styles = {
   eyeBtn: {
     background: "transparent",
     border: "none",
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     cursor: "pointer",
     display: "flex",
     alignItems: "center",
@@ -485,7 +485,7 @@ const styles = {
   linkBtn: {
     background: "none",
     border: "none",
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     fontSize: "0.85rem",
     fontWeight: 700,
     cursor: "pointer",
@@ -514,7 +514,7 @@ const styles = {
     justifyContent: "center",
     width: "100%",
     marginTop: "20px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "14px",
@@ -527,7 +527,7 @@ const styles = {
   btnDisabled: { opacity: 0.65, cursor: "not-allowed" },
   divider: { display: "flex", alignItems: "center", gap: "12px", margin: "20px 0" },
   dividerLine: { flex: 1, height: "1px", background: "rgba(255,255,255,0.12)" },
-  dividerText: { color: "#7d8299", fontSize: "0.78rem" },
+  dividerText: { color: "var(--fx-muted-3)", fontSize: "0.78rem" },
   googleBtn: {
     display: "flex",
     alignItems: "center",
@@ -567,12 +567,12 @@ const styles = {
   },
   switchRow: {
     textAlign: "center",
-    color: "#a9adc4",
+    color: "var(--fx-muted-2)",
     fontSize: "0.88rem",
     marginTop: "22px",
   },
   legalNote: {
-    color: "#7d8299",
+    color: "var(--fx-muted-3)",
     fontSize: "0.72rem",
     lineHeight: 1.5,
     textAlign: "center",

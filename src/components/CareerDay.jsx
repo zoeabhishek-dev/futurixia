@@ -265,7 +265,7 @@ function CareerDay({ career, userId }) {
         <div style={c.panel} id="career-day-panel">
           {status === "loading" && (
             <div style={c.centerBox}>
-              <Loader2 size={24} color="#a5b4fc" style={{ animation: "fxspin 0.9s linear infinite" }} />
+              <Loader2 size={24} color="var(--fx-accent-soft)" style={{ animation: "fxspin 0.9s linear infinite" }} />
               <p style={c.mutedText}>Loading...</p>
             </div>
           )}
@@ -281,7 +281,7 @@ function CareerDay({ career, userId }) {
 
           {status === "missing" && (
             <div style={c.centerBox}>
-              <Info size={24} color="#a5b4fc" />
+              <Info size={24} color="var(--fx-accent-soft)" />
               <p style={c.mutedText}>
                 We have not written "A Day in This Career" for {career.title} yet. We are adding
                 careers one at a time, and we would rather show nothing than guess.
@@ -344,7 +344,7 @@ function CareerDay({ career, userId }) {
                   <ul style={c.list}>
                     {responsibilities.map((r) => (
                       <li key={r} style={c.listItem}>
-                        <CheckCircle2 size={15} color="#67e8f9" style={{ flexShrink: 0, marginTop: 3 }} />
+                        <CheckCircle2 size={15} color="var(--fx-secondary-soft)" style={{ flexShrink: 0, marginTop: 3 }} />
                         <span>{r}</span>
                       </li>
                     ))}
@@ -374,7 +374,7 @@ function CareerDay({ career, userId }) {
               {data.workEnvironment && (
                 <Section title="Work environment">
                   <div style={c.envBox}>
-                    <MapPin size={16} color="#a5b4fc" style={{ flexShrink: 0, marginTop: 3 }} />
+                    <MapPin size={16} color="var(--fx-accent-soft)" style={{ flexShrink: 0, marginTop: 3 }} />
                     <p style={c.text}>{data.workEnvironment}</p>
                   </div>
                 </Section>
@@ -568,7 +568,7 @@ const c = {
     gap: "8px",
     width: "100%",
     background: "rgba(255,255,255,0.05)",
-    color: "#c7d2fe",
+    color: "var(--fx-accent-softer)",
     border: "none",
     padding: "14px",
     borderRadius: "16px",
@@ -580,7 +580,7 @@ const c = {
   },
   panel: {
     marginTop: "16px",
-    background: "rgba(15,17,32,0.6)",
+    background: "rgba(var(--fx-surface-rgb),0.6)",
     borderRadius: "18px",
     padding: "22px 20px",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.06)",
@@ -589,8 +589,8 @@ const c = {
   notice: {
     display: "flex",
     gap: "10px",
-    background: "rgba(99,102,241,0.1)",
-    color: "#c7d2fe",
+    background: "rgba(var(--fx-primary-rgb),0.1)",
+    color: "var(--fx-accent-softer)",
     borderRadius: "12px",
     padding: "12px 14px",
     fontSize: "0.82rem",
@@ -603,7 +603,7 @@ const c = {
     fontWeight: 700,
     letterSpacing: "0.05em",
     textTransform: "uppercase",
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     marginBottom: "12px",
   },
   grid: {
@@ -618,16 +618,16 @@ const c = {
     fontWeight: 700,
     letterSpacing: "0.06em",
     textTransform: "uppercase",
-    color: "#67e8f9",
+    color: "var(--fx-secondary-soft)",
     marginBottom: "6px",
   },
-  text: { color: "#c9cbdb", fontSize: "0.88rem", lineHeight: 1.65, wordBreak: "break-word" },
-  mutedText: { color: "#a9adc4", fontSize: "0.88rem", lineHeight: 1.6, marginTop: "8px" },
+  text: { color: "var(--fx-text-2)", fontSize: "0.88rem", lineHeight: 1.65, wordBreak: "break-word" },
+  mutedText: { color: "var(--fx-muted-2)", fontSize: "0.88rem", lineHeight: 1.6, marginTop: "8px" },
   timeline: {
     listStyle: "none",
     margin: 0,
     padding: "0 0 0 22px",
-    borderLeft: "2px solid rgba(99,102,241,0.45)",
+    borderLeft: "2px solid rgba(var(--fx-primary-rgb),0.45)",
   },
   timelineItem: { position: "relative", marginBottom: "16px" },
   dot: {
@@ -637,27 +637,27 @@ const c = {
     width: "14px",
     height: "14px",
     borderRadius: "50%",
-    background: "#22d3ee",
-    boxShadow: "0 0 0 4px #0f1120",
+    background: "var(--fx-secondary)",
+    boxShadow: "0 0 0 4px var(--fx-surface)",
   },
   timeCard: { background: "rgba(255,255,255,0.05)", borderRadius: "14px", padding: "14px 16px" },
   timePill: {
     display: "inline-flex",
     alignItems: "center",
     gap: "6px",
-    background: "rgba(34,211,238,0.12)",
-    color: "#67e8f9",
+    background: "rgba(var(--fx-secondary-rgb),0.12)",
+    color: "var(--fx-secondary-soft)",
     fontSize: "0.74rem",
     fontWeight: 700,
     padding: "4px 10px",
     borderRadius: "20px",
   },
   itemTitle: { fontSize: "1rem", fontWeight: 700, color: "#fff", margin: "8px 0 6px" },
-  why: { color: "#a9adc4", fontSize: "0.84rem", lineHeight: 1.6, marginTop: "8px" },
+  why: { color: "var(--fx-muted-2)", fontSize: "0.84rem", lineHeight: 1.6, marginTop: "8px" },
   chips: { display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "10px" },
   chip: {
-    background: "rgba(99,102,241,0.18)",
-    color: "#c7d2fe",
+    background: "rgba(var(--fx-primary-rgb),0.18)",
+    color: "var(--fx-accent-softer)",
     fontSize: "0.76rem",
     fontWeight: 600,
     padding: "5px 12px",
@@ -667,7 +667,7 @@ const c = {
   listItem: {
     display: "flex",
     gap: "10px",
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "0.88rem",
     lineHeight: 1.6,
     marginBottom: "8px",
@@ -689,11 +689,11 @@ const c = {
   rewardBox: { background: "rgba(74,222,128,0.07)", borderRadius: "12px", padding: "14px 16px" },
   tradeoffBox: { background: "rgba(255,155,155,0.07)", borderRadius: "12px", padding: "14px 16px" },
   plainList: { margin: 0, paddingLeft: "18px" },
-  plainItem: { color: "#c9cbdb", fontSize: "0.86rem", lineHeight: 1.6, marginBottom: "6px" },
+  plainItem: { color: "var(--fx-text-2)", fontSize: "0.86rem", lineHeight: 1.6, marginBottom: "6px" },
   activityBox: { background: "rgba(253,224,71,0.06)", borderRadius: "14px", padding: "16px 18px" },
   activityHead: { display: "flex", alignItems: "center", gap: "10px" },
   steps: { margin: "10px 0 12px", paddingLeft: "20px" },
-  stepItem: { color: "#c9cbdb", fontSize: "0.88rem", lineHeight: 1.65, marginBottom: "6px" },
+  stepItem: { color: "var(--fx-text-2)", fontSize: "0.88rem", lineHeight: 1.65, marginBottom: "6px" },
   safety: { color: "#fde68a", fontSize: "0.84rem", lineHeight: 1.6, marginTop: "8px" },
   checkLabel: {
     display: "flex",
@@ -705,8 +705,8 @@ const c = {
     marginTop: "14px",
     cursor: "pointer",
   },
-  checkInput: { width: "18px", height: "18px", accentColor: "#6366f1", cursor: "pointer" },
-  footNote: { color: "#7d8299", fontSize: "0.74rem", lineHeight: 1.6, marginTop: "12px" },
+  checkInput: { width: "18px", height: "18px", accentColor: "var(--fx-primary)", cursor: "pointer" },
+  footNote: { color: "var(--fx-muted-3)", fontSize: "0.74rem", lineHeight: 1.6, marginTop: "12px" },
   savedNote: { color: "#86efac", fontSize: "0.78rem", marginTop: "10px" },
   errorText: { color: "#ff9b9b", fontSize: "0.85rem", lineHeight: 1.5, marginTop: "12px" },
   fieldset: { border: "none", padding: 0, margin: "18px 0 0", minWidth: 0 },
@@ -719,22 +719,22 @@ const c = {
     borderRadius: "12px",
     padding: "11px 14px",
     marginBottom: "8px",
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "0.88rem",
     cursor: "pointer",
   },
   radioLabelOn: {
-    background: "rgba(99,102,241,0.2)",
+    background: "rgba(var(--fx-primary-rgb),0.2)",
     color: "#fff",
-    boxShadow: "inset 0 0 0 1px rgba(99,102,241,0.6)",
+    boxShadow: "inset 0 0 0 1px rgba(var(--fx-primary-rgb),0.6)",
   },
-  radioInput: { width: "17px", height: "17px", accentColor: "#6366f1", cursor: "pointer", flexShrink: 0 },
+  radioInput: { width: "17px", height: "17px", accentColor: "var(--fx-primary)", cursor: "pointer", flexShrink: 0 },
   primaryBtn: {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
     marginTop: "14px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "12px 24px",
@@ -750,7 +750,7 @@ const c = {
     justifyContent: "center",
     marginTop: "12px",
     background: "rgba(255,255,255,0.08)",
-    color: "#e0e1ff",
+    color: "var(--fx-accent-softest)",
     border: "none",
     padding: "10px 20px",
     borderRadius: "30px",
@@ -760,7 +760,7 @@ const c = {
     boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
     fontFamily: "inherit",
   },
-  feedback: { background: "rgba(99,102,241,0.08)", borderRadius: "14px", padding: "16px 18px" },
+  feedback: { background: "rgba(var(--fx-primary-rgb),0.08)", borderRadius: "14px", padding: "16px 18px" },
 }
 
 export default CareerDay

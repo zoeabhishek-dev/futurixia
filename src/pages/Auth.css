@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
-  background: #05070f;
+  background: var(--fx-bg);
   overflow: hidden;
 }
 
@@ -16,7 +16,7 @@
   font-size: 1.6rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  background: linear-gradient(90deg, var(--fx-primary), var(--fx-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 36px;
@@ -76,7 +76,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #9599b0;
+  color: var(--fx-muted);
   font-size: 0.85rem;
   margin: 24px 0;
 }
@@ -105,7 +105,7 @@
 }
 
 .input-group svg {
-  color: #9599b0;
+  color: var(--fx-muted);
   flex-shrink: 0;
 }
 
@@ -142,7 +142,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  background: linear-gradient(90deg, var(--fx-primary), var(--fx-secondary));
   color: #fff;
   border: none;
   padding: 14px 20px;
@@ -150,7 +150,7 @@
   font-size: 0.98rem;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 15px 35px rgba(var(--fx-primary-rgb), 0.3);
   transition: transform 0.15s ease;
   margin-top: 6px;
 }
@@ -176,13 +176,13 @@
 
 .auth-switch {
   text-align: center;
-  color: #9599b0;
+  color: var(--fx-muted);
   font-size: 0.9rem;
   margin-top: 24px;
 }
 
 .auth-switch span {
-  color: #a5b4fc;
+  color: var(--fx-accent-soft);
   font-weight: 600;
   cursor: pointer;
 }

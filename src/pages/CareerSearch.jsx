@@ -349,7 +349,7 @@ function CareerSearch() {
           style={styles.searchBox}
           className="fx-search-box"
         >
-          <Search size={18} color="#9599b0" />
+          <Search size={18} color="var(--fx-muted)" />
           <input
             type="text"
             placeholder="Search careers (e.g. Doctor, Software Engineer, Pilot...)"
@@ -542,10 +542,10 @@ function CareerSearch() {
 
 const css = `
 .fxs-chip { transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, transform 0.15s ease; }
-.fxs-chip:hover { background: rgba(99,102,241,0.22) !important; color: #ffffff !important; }
+.fxs-chip:hover { background: rgba(var(--fx-primary-rgb),0.22) !important; color: #ffffff !important; }
 .fxs-chip:active { transform: scale(0.96); }
-.fxs-chip-on:hover { background: linear-gradient(90deg, #6366f1, #22d3ee) !important; }
-.fxs-chip:focus-visible { outline: 2px solid #22d3ee; outline-offset: 2px; }
+.fxs-chip-on:hover { background: linear-gradient(90deg, var(--fx-primary), var(--fx-secondary)) !important; }
+.fxs-chip:focus-visible { outline: 2px solid var(--fx-secondary); outline-offset: 2px; }
 @media (max-width: 640px) {
   .fxs-bar { left: 12px !important; right: 12px !important; transform: none !important; width: auto !important; bottom: calc(12px + env(safe-area-inset-bottom, 0px)) !important; flex-direction: column; align-items: stretch !important; border-radius: 22px !important; }
 }
@@ -556,7 +556,7 @@ const styles = {
   page: {
     position: "relative",
     minHeight: "100vh",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
     overflow: "hidden",
@@ -585,7 +585,7 @@ const styles = {
   logo: {
     fontSize: "1.3rem",
     fontWeight: 800,
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
   },
@@ -604,12 +604,12 @@ const styles = {
     width: "54px",
     height: "54px",
     borderRadius: "16px",
-    background: "rgba(99,102,241,0.16)",
-    color: "#a5b4fc",
+    background: "rgba(var(--fx-primary-rgb),0.16)",
+    color: "var(--fx-accent-soft)",
     margin: "0 auto 18px",
   },
   h1: { fontSize: "2.1rem", fontWeight: 800, marginBottom: "10px" },
-  subtext: { color: "#a9adc4", fontSize: "1rem", lineHeight: 1.5 },
+  subtext: { color: "var(--fx-muted-2)", fontSize: "1rem", lineHeight: 1.5 },
   searchBox: {
     display: "flex",
     alignItems: "center",
@@ -652,7 +652,7 @@ const styles = {
   },
   categoryPill: {
     background: "rgba(255,255,255,0.06)",
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     border: "none",
     padding: "9px 18px",
     borderRadius: "30px",
@@ -663,19 +663,19 @@ const styles = {
     transition: "background 0.2s ease, color 0.2s ease",
   },
   categoryPillActive: {
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#ffffff",
     boxShadow: "none",
   },
-  resultCount: { textAlign: "center", color: "#9599b0", fontSize: "0.82rem", marginBottom: "22px" },
-  loadingText: { textAlign: "center", color: "#9599b0" },
+  resultCount: { textAlign: "center", color: "var(--fx-muted)", fontSize: "0.82rem", marginBottom: "22px" },
+  loadingText: { textAlign: "center", color: "var(--fx-muted)" },
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
     gap: "24px",
   },
   card: {
-    background: "rgba(15,17,32,0.85)",
+    background: "rgba(var(--fx-surface-rgb),0.85)",
     borderRadius: "20px",
     padding: "30px 26px",
     cursor: "pointer",
@@ -683,7 +683,7 @@ const styles = {
     transition: "box-shadow 0.3s ease",
   },
   cardSelected: {
-    boxShadow: "0 0 0 1px rgba(34,211,238,0.5), 0 10px 40px rgba(0,0,0,0.35)",
+    boxShadow: "0 0 0 1px rgba(var(--fx-secondary-rgb),0.5), 0 10px 40px rgba(0,0,0,0.35)",
   },
   cardTopRow: {
     display: "flex",
@@ -696,7 +696,7 @@ const styles = {
     alignItems: "center",
     gap: "7px",
     background: "rgba(255,255,255,0.07)",
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     border: "none",
     padding: "6px 12px 6px 7px",
     borderRadius: "30px",
@@ -707,9 +707,9 @@ const styles = {
     fontFamily: "inherit",
   },
   chipOn: {
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#ffffff",
-    boxShadow: "0 4px 14px rgba(34,211,238,0.28)",
+    boxShadow: "0 4px 14px rgba(var(--fx-secondary-rgb),0.28)",
   },
   chipIcon: {
     display: "flex",
@@ -729,7 +729,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     gap: "16px",
-    background: "rgba(15,17,32,0.96)",
+    background: "rgba(var(--fx-surface-rgb),0.96)",
     backdropFilter: "blur(14px)",
     padding: "12px 14px 12px 18px",
     borderRadius: "40px",
@@ -742,8 +742,8 @@ const styles = {
     display: "inline-flex",
     alignItems: "center",
     gap: "8px",
-    background: "rgba(99,102,241,0.22)",
-    color: "#e0e1ff",
+    background: "rgba(var(--fx-primary-rgb),0.22)",
+    color: "var(--fx-accent-softest)",
     fontSize: "0.8rem",
     fontWeight: 700,
     padding: "7px 8px 7px 14px",
@@ -762,14 +762,14 @@ const styles = {
     cursor: "pointer",
     padding: 0,
   },
-  barHint: { color: "#9599b0", fontSize: "0.8rem", fontWeight: 600 },
+  barHint: { color: "var(--fx-muted)", fontSize: "0.8rem", fontWeight: 600 },
   barActions: { display: "flex", alignItems: "center", gap: "10px", justifyContent: "flex-end" },
   compareBarBtn: {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
     gap: "6px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "10px 20px",
@@ -782,7 +782,7 @@ const styles = {
   barBtnOff: { opacity: 0.4, cursor: "not-allowed" },
   compareBarClear: {
     background: "rgba(255,255,255,0.08)",
-    color: "#e0e1ff",
+    color: "var(--fx-accent-softest)",
     border: "none",
     padding: "10px 16px",
     borderRadius: "30px",
@@ -798,30 +798,30 @@ const styles = {
     width: "48px",
     height: "48px",
     borderRadius: "14px",
-    background: "rgba(34,211,238,0.14)",
-    color: "#99f6ff",
+    background: "rgba(var(--fx-secondary-rgb),0.14)",
+    color: "var(--fx-secondary-soft)",
   },
   cardCategory: {
     fontSize: "0.72rem",
     fontWeight: 700,
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     textTransform: "uppercase",
     letterSpacing: "0.06em",
   },
   cardTitle: { fontSize: "1.15rem", fontWeight: 700, margin: "8px 0 8px" },
-  cardDesc: { color: "#a9adc4", fontSize: "0.88rem", lineHeight: 1.5, marginBottom: "18px" },
+  cardDesc: { color: "var(--fx-muted-2)", fontSize: "0.88rem", lineHeight: 1.5, marginBottom: "18px" },
   cardLink: {
     display: "inline-flex",
     alignItems: "center",
     gap: "6px",
-    color: "#c7d2fe",
+    color: "var(--fx-accent-softer)",
     fontSize: "0.85rem",
     fontWeight: 700,
   },
   noResults: {
     gridColumn: "1 / -1",
     textAlign: "center",
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     padding: "40px 0",
     display: "flex",
     flexDirection: "column",
@@ -834,12 +834,12 @@ const styles = {
     fontWeight: 700,
     letterSpacing: "0.06em",
     textTransform: "uppercase",
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
   },
   suggestRow: { display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "10px" },
   suggestBtn: {
-    background: "rgba(99,102,241,0.2)",
-    color: "#e0e1ff",
+    background: "rgba(var(--fx-primary-rgb),0.2)",
+    color: "var(--fx-accent-softest)",
     border: "none",
     padding: "9px 18px",
     borderRadius: "30px",
@@ -852,7 +852,7 @@ const styles = {
     display: "inline-flex",
     alignItems: "center",
     gap: "8px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "12px 24px",

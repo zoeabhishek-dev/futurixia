@@ -39,7 +39,7 @@ html {
 .blob-a {
   width: 500px;
   height: 500px;
-  background: #6366f1;
+  background: var(--fx-primary);
   top: -10%;
   left: -5%;
   animation: driftA 22s ease-in-out infinite;
@@ -48,7 +48,7 @@ html {
 .blob-b {
   width: 460px;
   height: 460px;
-  background: #22d3ee;
+  background: var(--fx-secondary);
   top: 30%;
   right: -10%;
   animation: driftB 26s ease-in-out infinite;
@@ -57,7 +57,7 @@ html {
 .blob-c {
   width: 420px;
   height: 420px;
-  background: #8b5cf6;
+  background: var(--fx-tertiary);
   bottom: -12%;
   left: 30%;
   animation: driftC 30s ease-in-out infinite;

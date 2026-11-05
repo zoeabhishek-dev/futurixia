@@ -129,7 +129,7 @@ function ResetPassword() {
                 New password
               </label>
               <div style={styles.inputWrap}>
-                <Lock size={17} color="#9599b0" />
+                <Lock size={17} color="var(--fx-muted)" />
                 <input
                   id="new-password"
                   type={showPassword ? "text" : "password"}
@@ -153,7 +153,7 @@ function ResetPassword() {
                 Confirm new password
               </label>
               <div style={styles.inputWrap}>
-                <Lock size={17} color="#9599b0" />
+                <Lock size={17} color="var(--fx-muted)" />
                 <input
                   id="confirm-new-password"
                   type={showPassword ? "text" : "password"}
@@ -210,7 +210,7 @@ const styles = {
   page: {
     position: "relative",
     minHeight: "100vh",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
     display: "flex",
@@ -224,7 +224,7 @@ const styles = {
     zIndex: 1,
     width: "100%",
     maxWidth: "420px",
-    background: "rgba(15,17,32,0.88)",
+    background: "rgba(var(--fx-surface-rgb),0.88)",
     backdropFilter: "blur(14px)",
     borderRadius: "24px",
     padding: "32px 28px",
@@ -233,14 +233,14 @@ const styles = {
   logo: {
     fontSize: "1.4rem",
     fontWeight: 800,
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     WebkitTextFillColor: "transparent",
     marginBottom: "14px",
   },
   title: { fontSize: "1.5rem", fontWeight: 800, marginBottom: "6px" },
-  subtitle: { color: "#a9adc4", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "22px" },
+  subtitle: { color: "var(--fx-muted-2)", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "22px" },
   centerBlock: { textAlign: "center" },
   iconCircle: {
     display: "flex",
@@ -255,7 +255,7 @@ const styles = {
     display: "block",
     fontSize: "0.78rem",
     fontWeight: 700,
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     marginBottom: "6px",
     marginTop: "14px",
   },
@@ -282,7 +282,7 @@ const styles = {
   eyeBtn: {
     background: "transparent",
     border: "none",
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     cursor: "pointer",
     display: "flex",
     alignItems: "center",
@@ -295,7 +295,7 @@ const styles = {
     justifyContent: "center",
     width: "100%",
     marginTop: "20px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "14px",
@@ -309,7 +309,7 @@ const styles = {
   backLink: {
     display: "inline-block",
     marginTop: "18px",
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     fontSize: "0.85rem",
     fontWeight: 700,
   },

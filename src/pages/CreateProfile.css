@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
-  background: #05070f;
+  background: var(--fx-bg);
   overflow: hidden;
   color: #fff;
   font-family: 'Inter', system-ui, sans-serif;
@@ -48,12 +48,12 @@
   font-size: 0.85rem;
   font-weight: 700;
   background: rgba(255, 255, 255, 0.08);
-  color: #9599b0;
+  color: var(--fx-muted);
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .progress-dot-active {
-  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  background: linear-gradient(90deg, var(--fx-primary), var(--fx-secondary));
   color: #fff;
 }
 
@@ -72,7 +72,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #a5b4fc;
+  color: var(--fx-accent-soft);
   margin-bottom: 6px;
 }
 
@@ -140,7 +140,7 @@ select.field-input option {
 }
 
 .country-select-trigger svg {
-  color: #9599b0;
+  color: var(--fx-muted);
   flex-shrink: 0;
 }
 
@@ -153,7 +153,7 @@ select.field-input option {
   top: calc(100% + 8px);
   left: 0;
   right: 0;
-  background: #0f1120;
+  background: var(--fx-surface);
   border-radius: 16px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
   z-index: 20;
@@ -207,7 +207,7 @@ select.field-input option {
 }
 
 .country-option-active {
-  color: #99f6ff;
+  color: var(--fx-secondary-soft);
   font-weight: 600;
 }
 
@@ -259,7 +259,7 @@ select.field-input option {
 }
 
 .chip-selected {
-  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  background: linear-gradient(90deg, var(--fx-primary), var(--fx-secondary));
   color: #ffffff;
   box-shadow: none;
 }
@@ -290,16 +290,16 @@ select.field-input option {
   align-items: center;
   justify-content: center;
   width: 42px;
-  background: rgba(99, 102, 241, 0.25);
+  background: rgba(var(--fx-primary-rgb), 0.25);
   border: none;
   border-radius: 12px;
-  color: #c7d2fe;
+  color: var(--fx-accent-softer);
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 .add-btn:hover {
-  background: rgba(99, 102, 241, 0.4);
+  background: rgba(var(--fx-primary-rgb), 0.4);
 }
 
 .custom-tags {
@@ -313,8 +313,8 @@ select.field-input option {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: rgba(34, 211, 238, 0.15);
-  color: #99f6ff;
+  background: rgba(var(--fx-secondary-rgb), 0.15);
+  color: var(--fx-secondary-soft);
   padding: 7px 12px;
   border-radius: 20px;
   font-size: 0.82rem;
@@ -362,7 +362,7 @@ select.field-input option {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  background: linear-gradient(90deg, var(--fx-primary), var(--fx-secondary));
   color: #fff;
   border: none;
   padding: 12px 26px;
@@ -371,7 +371,7 @@ select.field-input option {
   font-weight: 700;
   cursor: pointer;
   margin-left: auto;
-  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 12px 30px rgba(var(--fx-primary-rgb), 0.3);
   transition: transform 0.15s ease;
 }
 

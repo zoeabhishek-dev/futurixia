@@ -56,7 +56,7 @@ function CareerCompare() {
     if (!career) {
       return (
         <button style={styles.emptySlot} onClick={() => setPickerOpenFor(slotLabel)}>
-          <Search size={20} color="#9599b0" />
+          <Search size={20} color="var(--fx-muted)" />
           <span>Choose a career</span>
         </button>
       )
@@ -174,7 +174,7 @@ function CareerCompare() {
                 </button>
               ))}
               {filteredPickerList.length === 0 && (
-                <p style={{ color: "#9599b0", padding: "16px", textAlign: "center" }}>
+                <p style={{ color: "var(--fx-muted)", padding: "16px", textAlign: "center" }}>
                   No careers found.
                 </p>
               )}
@@ -187,23 +187,23 @@ function CareerCompare() {
 }
 
 const styles = {
-  page: { position: "relative", minHeight: "100vh", background: "#05070f", color: "#fff", fontFamily: "Inter, system-ui, sans-serif", overflow: "hidden" },
-  centerPage: { minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#05070f", color: "#fff" },
+  page: { position: "relative", minHeight: "100vh", background: "var(--fx-bg)", color: "#fff", fontFamily: "Inter, system-ui, sans-serif", overflow: "hidden" },
+  centerPage: { minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--fx-bg)", color: "#fff" },
   nav: { position: "relative", zIndex: 1, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "22px 40px" },
   backBtn: { display: "flex", alignItems: "center", gap: "6px", background: "rgba(255,255,255,0.07)", color: "#d4d7e5", border: "none", padding: "10px 18px", borderRadius: "30px", cursor: "pointer", fontSize: "0.85rem", fontWeight: 600 },
-  logo: { fontSize: "1.3rem", fontWeight: 800, background: "linear-gradient(90deg, #6366f1, #22d3ee)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" },
+  logo: { fontSize: "1.3rem", fontWeight: 800, background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" },
   content: { position: "relative", zIndex: 1, maxWidth: "800px", margin: "0 auto", padding: "20px 24px 100px" },
   heading: { textAlign: "center", maxWidth: "560px", margin: "20px auto 36px" },
-  headingIcon: { display: "flex", alignItems: "center", justifyContent: "center", width: "54px", height: "54px", borderRadius: "16px", background: "rgba(99,102,241,0.16)", color: "#a5b4fc", margin: "0 auto 18px" },
+  headingIcon: { display: "flex", alignItems: "center", justifyContent: "center", width: "54px", height: "54px", borderRadius: "16px", background: "rgba(var(--fx-primary-rgb),0.16)", color: "var(--fx-accent-soft)", margin: "0 auto 18px" },
   h1: { fontSize: "1.8rem", fontWeight: 800, marginBottom: "10px" },
-  subtext: { color: "#a9adc4", fontSize: "0.95rem", lineHeight: 1.6 },
+  subtext: { color: "var(--fx-muted-2)", fontSize: "0.95rem", lineHeight: 1.6 },
   slotsRow: { display: "flex", alignItems: "stretch", gap: "16px", marginBottom: "36px", flexWrap: "wrap", justifyContent: "center" },
-  emptySlot: { display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", background: "rgba(255,255,255,0.05)", border: "2px dashed rgba(255,255,255,0.15)", borderRadius: "18px", padding: "30px 40px", cursor: "pointer", color: "#c9cbdb", fontSize: "0.9rem", fontWeight: 600, flex: "1 1 220px" },
-  filledSlot: { display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", background: "rgba(99,102,241,0.1)", borderRadius: "18px", padding: "26px 30px", flex: "1 1 220px", textAlign: "center" },
+  emptySlot: { display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", background: "rgba(255,255,255,0.05)", border: "2px dashed rgba(255,255,255,0.15)", borderRadius: "18px", padding: "30px 40px", cursor: "pointer", color: "var(--fx-text-2)", fontSize: "0.9rem", fontWeight: 600, flex: "1 1 220px" },
+  filledSlot: { display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", background: "rgba(var(--fx-primary-rgb),0.1)", borderRadius: "18px", padding: "26px 30px", flex: "1 1 220px", textAlign: "center" },
   slotTitle: { fontSize: "1.1rem", fontWeight: 800, color: "#fff" },
-  changeBtn: { background: "rgba(255,255,255,0.09)", color: "#e0e1ff", border: "none", padding: "6px 16px", borderRadius: "20px", fontSize: "0.78rem", fontWeight: 700, cursor: "pointer" },
+  changeBtn: { background: "rgba(255,255,255,0.09)", color: "var(--fx-accent-softest)", border: "none", padding: "6px 16px", borderRadius: "20px", fontSize: "0.78rem", fontWeight: 700, cursor: "pointer" },
   vsText: {
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     fontWeight: 700,
     fontSize: "0.9rem",
     display: "flex",
@@ -215,7 +215,7 @@ const styles = {
   rowLabel: {
     fontSize: "0.78rem",
     fontWeight: 700,
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     textTransform: "uppercase",
     letterSpacing: "0.05em",
     display: "block",
@@ -231,7 +231,7 @@ const styles = {
     position: "relative",
   },
   cell: {
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "0.86rem",
     lineHeight: 1.6,
     margin: 0,
@@ -240,15 +240,15 @@ const styles = {
     borderLeft: "1px solid rgba(255,255,255,0.35)",
     paddingLeft: "20px",
   },
-  hintText: { textAlign: "center", color: "#9599b0", padding: "20px 0" },
+  hintText: { textAlign: "center", color: "var(--fx-muted)", padding: "20px 0" },
   overlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", backdropFilter: "blur(4px)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 150, padding: "20px" },
-  pickerCard: { background: "#0f1120", borderRadius: "22px", padding: "24px", maxWidth: "420px", width: "100%", maxHeight: "70vh", display: "flex", flexDirection: "column", boxShadow: "0 30px 80px rgba(0,0,0,0.5)" },
+  pickerCard: { background: "var(--fx-surface)", borderRadius: "22px", padding: "24px", maxWidth: "420px", width: "100%", maxHeight: "70vh", display: "flex", flexDirection: "column", boxShadow: "0 30px 80px rgba(0,0,0,0.5)" },
   pickerHeader: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "14px" },
   closeBtn: { background: "rgba(255,255,255,0.08)", border: "none", borderRadius: "50%", width: "32px", height: "32px", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", cursor: "pointer" },
   pickerInput: { width: "100%", background: "rgba(255,255,255,0.07)", border: "none", outline: "none", color: "#fff", fontSize: "0.9rem", padding: "12px 16px", borderRadius: "14px", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.1)", marginBottom: "12px", fontFamily: "inherit" },
   pickerList: { overflowY: "auto", flex: 1 },
-  pickerItem: { width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", background: "transparent", border: "none", color: "#e0e1ff", padding: "12px 10px", borderRadius: "10px", cursor: "pointer", fontSize: "0.88rem", textAlign: "left" },
-  pickerItemCategory: { color: "#7d8299", fontSize: "0.75rem" },
+  pickerItem: { width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", background: "transparent", border: "none", color: "var(--fx-accent-softest)", padding: "12px 10px", borderRadius: "10px", cursor: "pointer", fontSize: "0.88rem", textAlign: "left" },
+  pickerItemCategory: { color: "var(--fx-muted-3)", fontSize: "0.75rem" },
 }
 
 export default CareerCompare

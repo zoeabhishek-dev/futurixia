@@ -175,9 +175,9 @@ function ContactModal({ isOpen, onClose, mode = "general", initialCareerName = "
               <>
                 <div style={styles.iconWrap}>
                   {mode === "request" ? (
-                    <Compass size={22} color="#a5b4fc" />
+                    <Compass size={22} color="var(--fx-accent-soft)" />
                   ) : (
-                    <Mail size={22} color="#a5b4fc" />
+                    <Mail size={22} color="var(--fx-accent-soft)" />
                   )}
                 </div>
                 <h3 style={styles.title} id="contact-modal-title">
@@ -335,7 +335,7 @@ const styles = {
   },
   card: {
     position: "relative",
-    background: "#0f1120",
+    background: "var(--fx-surface)",
     borderRadius: "22px",
     padding: "34px",
     maxWidth: "420px",
@@ -366,16 +366,16 @@ const styles = {
     width: "54px",
     height: "54px",
     borderRadius: "16px",
-    background: "rgba(99,102,241,0.16)",
+    background: "rgba(var(--fx-primary-rgb),0.16)",
     marginBottom: "16px",
   },
   title: { fontSize: "1.3rem", fontWeight: 800, color: "#fff", marginBottom: "8px" },
-  subtext: { color: "#a9adc4", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "22px" },
+  subtext: { color: "var(--fx-muted-2)", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "22px" },
   fieldLabel: {
     display: "block",
     fontSize: "0.78rem",
     fontWeight: 700,
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     marginBottom: "6px",
     marginTop: "14px",
   },
@@ -398,7 +398,7 @@ const styles = {
     justifyContent: "center",
     gap: "8px",
     width: "100%",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "14px",

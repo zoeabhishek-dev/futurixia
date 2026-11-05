@@ -120,7 +120,7 @@ function FeedbackBox({ careerId, section, question }) {
               <ThumbsDown size={16} />
               No
             </button>
-            {saving && <Loader2 size={18} color="#a5b4fc" style={{ animation: "fxspin 0.9s linear infinite" }} />}
+            {saving && <Loader2 size={18} color="var(--fx-accent-soft)" style={{ animation: "fxspin 0.9s linear infinite" }} />}
           </div>
         </>
       )}
@@ -204,7 +204,7 @@ const s = {
     alignItems: "center",
     gap: "8px",
     background: "rgba(255,255,255,0.08)",
-    color: "#e0e1ff",
+    color: "var(--fx-accent-softest)",
     border: "none",
     padding: "10px 22px",
     borderRadius: "30px",
@@ -219,13 +219,13 @@ const s = {
     alignItems: "center",
     gap: "10px",
     flexWrap: "wrap",
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "0.9rem",
   },
   linkBtn: {
     background: "none",
     border: "none",
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     fontSize: "0.82rem",
     fontWeight: 700,
     cursor: "pointer",
@@ -237,7 +237,7 @@ const s = {
     display: "block",
     fontSize: "0.78rem",
     fontWeight: 700,
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     margin: "14px 0 6px",
   },
   textarea: {
@@ -262,12 +262,12 @@ const s = {
     marginTop: "8px",
     flexWrap: "wrap",
   },
-  counter: { color: "#7d8299", fontSize: "0.72rem" },
+  counter: { color: "var(--fx-muted-3)", fontSize: "0.72rem" },
   sendBtn: {
     display: "inline-flex",
     alignItems: "center",
     gap: "8px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "9px 18px",
@@ -278,7 +278,7 @@ const s = {
     fontFamily: "inherit",
   },
   disabled: { opacity: 0.55, cursor: "not-allowed" },
-  privacy: { color: "#7d8299", fontSize: "0.72rem", marginTop: "10px", lineHeight: 1.5 },
+  privacy: { color: "var(--fx-muted-3)", fontSize: "0.72rem", marginTop: "10px", lineHeight: 1.5 },
   sentNote: { color: "#86efac", fontSize: "0.85rem", marginTop: "12px" },
   error: { color: "#ff9b9b", fontSize: "0.82rem", marginTop: "12px" },
 }

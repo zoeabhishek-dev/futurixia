@@ -410,7 +410,7 @@ function Coach() {
 
         {pageStatus === "loading" && (
           <div style={styles.messageCard}>
-            <Loader2 size={26} color="#a5b4fc" style={{ animation: "fxspin 0.9s linear infinite" }} />
+            <Loader2 size={26} color="var(--fx-accent-soft)" style={{ animation: "fxspin 0.9s linear infinite" }} />
             <p style={styles.messageText}>Loading your Smart Coach...</p>
           </div>
         )}
@@ -429,8 +429,8 @@ function Coach() {
 
         {pageStatus === "locked" && (
           <div style={styles.messageCard}>
-            <div style={{ ...styles.iconCircle, background: "rgba(99,102,241,0.16)" }}>
-              <Lock size={24} color="#a5b4fc" />
+            <div style={{ ...styles.iconCircle, background: "rgba(var(--fx-primary-rgb),0.16)" }}>
+              <Lock size={24} color="var(--fx-accent-soft)" />
             </div>
             <h1 style={styles.messageTitle}>Smart Coach is part of Pro Max</h1>
             <p style={styles.messageText}>
@@ -484,7 +484,7 @@ function Coach() {
 
             {selectedSlug && stepsLoading && (
               <div style={styles.messageCard}>
-                <Loader2 size={24} color="#a5b4fc" style={{ animation: "fxspin 0.9s linear infinite" }} />
+                <Loader2 size={24} color="var(--fx-accent-soft)" style={{ animation: "fxspin 0.9s linear infinite" }} />
                 <p style={styles.messageText}>Building your plan...</p>
               </div>
             )}
@@ -509,7 +509,7 @@ function Coach() {
               <>
                 <div style={styles.card}>
                   <div style={styles.cardHead}>
-                    <Target size={18} color="#67e8f9" />
+                    <Target size={18} color="var(--fx-secondary-soft)" />
                     <h2 style={styles.cardTitle}>Your progress</h2>
                   </div>
                   <div style={styles.progressTop}>
@@ -734,7 +734,7 @@ const styles = {
   page: {
     position: "relative",
     minHeight: "100vh",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
     padding: "24px 16px 70px",
@@ -767,7 +767,7 @@ const styles = {
     alignSelf: "center",
     width: "100%",
     maxWidth: "440px",
-    background: "rgba(15,17,32,0.88)",
+    background: "rgba(var(--fx-surface-rgb),0.88)",
     borderRadius: "22px",
     padding: "34px 28px",
     textAlign: "center",
@@ -783,14 +783,14 @@ const styles = {
     margin: "0 auto 16px",
   },
   messageTitle: { fontSize: "1.3rem", fontWeight: 800, marginBottom: "8px" },
-  messageText: { color: "#a9adc4", fontSize: "0.9rem", lineHeight: 1.6, marginTop: "10px" },
+  messageText: { color: "var(--fx-muted-2)", fontSize: "0.9rem", lineHeight: 1.6, marginTop: "10px" },
   primaryBtn: {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
     gap: "8px",
     marginTop: "18px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "13px 24px",
@@ -807,26 +807,26 @@ const styles = {
     width: "54px",
     height: "54px",
     borderRadius: "16px",
-    background: "rgba(99,102,241,0.16)",
-    color: "#a5b4fc",
+    background: "rgba(var(--fx-primary-rgb),0.16)",
+    color: "var(--fx-accent-soft)",
     margin: "0 auto 16px",
   },
   h1: { fontSize: "1.7rem", fontWeight: 800, marginBottom: "8px" },
-  subtext: { color: "#a9adc4", fontSize: "0.95rem", lineHeight: 1.6 },
+  subtext: { color: "var(--fx-muted-2)", fontSize: "0.95rem", lineHeight: 1.6 },
   card: {
-    background: "rgba(15,17,32,0.88)",
+    background: "rgba(var(--fx-surface-rgb),0.88)",
     borderRadius: "22px",
     padding: "24px 22px",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.08)",
   },
   emptyCard: {
-    background: "rgba(15,17,32,0.6)",
+    background: "rgba(var(--fx-surface-rgb),0.6)",
     borderRadius: "18px",
     padding: "22px",
     textAlign: "center",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.06)",
   },
-  emptyText: { color: "#9599b0", fontSize: "0.9rem", lineHeight: 1.6 },
+  emptyText: { color: "var(--fx-muted)", fontSize: "0.9rem", lineHeight: 1.6 },
   errorText: { color: "#ff9b9b", fontSize: "0.88rem", lineHeight: 1.5 },
   cardHead: { display: "flex", alignItems: "center", gap: "10px", marginBottom: "14px" },
   cardTitle: { fontSize: "1.05rem", fontWeight: 800 },
@@ -834,7 +834,7 @@ const styles = {
     display: "block",
     fontSize: "0.78rem",
     fontWeight: 700,
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     marginBottom: "8px",
   },
   select: {
@@ -851,8 +851,8 @@ const styles = {
   },
   progressTop: { display: "flex", alignItems: "baseline", gap: "12px", flexWrap: "wrap" },
   bigNumber: { fontSize: "2rem", fontWeight: 800, color: "#fff" },
-  mutedText: { color: "#a9adc4", fontSize: "0.88rem", lineHeight: 1.6 },
-  mutedSmall: { color: "#9599b0", fontSize: "0.8rem", lineHeight: 1.5, marginTop: "4px" },
+  mutedText: { color: "var(--fx-muted-2)", fontSize: "0.88rem", lineHeight: 1.6 },
+  mutedSmall: { color: "var(--fx-muted)", fontSize: "0.8rem", lineHeight: 1.5, marginTop: "4px" },
   barTrack: {
     width: "100%",
     height: "10px",
@@ -863,7 +863,7 @@ const styles = {
   },
   barFill: {
     height: "100%",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     borderRadius: "10px",
   },
   doneBox: {
@@ -881,7 +881,7 @@ const styles = {
     fontWeight: 700,
     letterSpacing: "0.05em",
     textTransform: "uppercase",
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     margin: "20px 0 10px",
   },
   nextRow: { display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "12px" },
@@ -892,7 +892,7 @@ const styles = {
     width: "26px",
     height: "26px",
     borderRadius: "50%",
-    background: "rgba(99,102,241,0.3)",
+    background: "rgba(var(--fx-primary-rgb),0.3)",
     fontSize: "0.78rem",
     fontWeight: 800,
     flexShrink: 0,
@@ -904,7 +904,7 @@ const styles = {
     gap: "8px",
     marginTop: "8px",
     background: "rgba(255,255,255,0.08)",
-    color: "#e0e1ff",
+    color: "var(--fx-accent-softest)",
     border: "none",
     padding: "10px 18px",
     borderRadius: "30px",
@@ -932,7 +932,7 @@ const styles = {
     marginBottom: "10px",
   },
   missingSkill: { color: "#fff", fontSize: "0.9rem", fontWeight: 600, wordBreak: "break-word" },
-  footNote: { color: "#7d8299", fontSize: "0.74rem", lineHeight: 1.5, marginTop: "14px" },
+  footNote: { color: "var(--fx-muted-3)", fontSize: "0.74rem", lineHeight: 1.5, marginTop: "14px" },
   summaryRow: { display: "flex", flexWrap: "wrap", gap: "10px", margin: "18px 0 6px" },
   summaryBox: {
     flex: "1 1 150px",
@@ -946,7 +946,7 @@ const styles = {
     fontWeight: 700,
     letterSpacing: "0.06em",
     textTransform: "uppercase",
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     marginBottom: "4px",
   },
   summaryValue: { fontSize: "0.95rem", color: "#fff" },
@@ -957,7 +957,7 @@ const styles = {
     gap: "8px",
     width: "100%",
     marginTop: "16px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "14px",
@@ -973,24 +973,24 @@ const styles = {
     padding: "14px 16px",
     marginBottom: "10px",
   },
-  weekTitle: { color: "#a5b4fc", fontSize: "0.82rem", fontWeight: 700, marginBottom: "8px" },
+  weekTitle: { color: "var(--fx-accent-soft)", fontSize: "0.82rem", fontWeight: 700, marginBottom: "8px" },
   weekItem: { display: "flex", alignItems: "flex-start", gap: "10px", padding: "5px 0" },
   weekDot: {
     width: "6px",
     height: "6px",
     borderRadius: "50%",
-    background: "#67e8f9",
+    background: "var(--fx-secondary-soft)",
     flexShrink: 0,
     marginTop: "7px",
   },
-  weekItemText: { flex: 1, color: "#c9cbdb", fontSize: "0.86rem", lineHeight: 1.5, wordBreak: "break-word" },
-  weekHours: { color: "#9599b0", fontSize: "0.78rem", flexShrink: 0, marginTop: "2px" },
+  weekItemText: { flex: 1, color: "var(--fx-text-2)", fontSize: "0.86rem", lineHeight: 1.5, wordBreak: "break-word" },
+  weekHours: { color: "var(--fx-muted)", fontSize: "0.78rem", flexShrink: 0, marginTop: "2px" },
   toggleBtn: {
     display: "inline-flex",
     alignItems: "center",
     gap: "6px",
     background: "rgba(255,255,255,0.07)",
-    color: "#c7d2fe",
+    color: "var(--fx-accent-softer)",
     border: "none",
     padding: "9px 16px",
     borderRadius: "20px",

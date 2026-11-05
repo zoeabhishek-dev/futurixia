@@ -273,7 +273,7 @@ function Report() {
 
         {pageStatus === "loading" && (
           <div style={s.messageCard} className="no-print">
-            <Loader2 size={26} color="#a5b4fc" style={{ animation: "fxspin 0.9s linear infinite" }} />
+            <Loader2 size={26} color="var(--fx-accent-soft)" style={{ animation: "fxspin 0.9s linear infinite" }} />
             <p style={s.messageText}>Preparing your report...</p>
           </div>
         )}
@@ -290,8 +290,8 @@ function Report() {
 
         {pageStatus === "locked" && (
           <div style={s.messageCard} className="no-print">
-            <div style={{ ...s.iconCircle, background: "rgba(99,102,241,0.16)" }}>
-              <Lock size={24} color="#a5b4fc" />
+            <div style={{ ...s.iconCircle, background: "rgba(var(--fx-primary-rgb),0.16)" }}>
+              <Lock size={24} color="var(--fx-accent-soft)" />
             </div>
             <h1 style={s.messageTitle}>The career report is part of Pro Max</h1>
             <p style={s.messageText}>
@@ -366,7 +366,7 @@ function Report() {
 
             {selectedSlug && stepsLoading && (
               <div style={s.messageCard} className="no-print">
-                <Loader2 size={24} color="#a5b4fc" style={{ animation: "fxspin 0.9s linear infinite" }} />
+                <Loader2 size={24} color="var(--fx-accent-soft)" style={{ animation: "fxspin 0.9s linear infinite" }} />
                 <p style={s.messageText}>Building your report...</p>
               </div>
             )}
@@ -650,7 +650,7 @@ const s = {
   page: {
     position: "relative",
     minHeight: "100vh",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
     padding: "24px 16px 70px",
@@ -683,7 +683,7 @@ const s = {
     alignSelf: "center",
     width: "100%",
     maxWidth: "440px",
-    background: "rgba(15,17,32,0.88)",
+    background: "rgba(var(--fx-surface-rgb),0.88)",
     borderRadius: "22px",
     padding: "34px 28px",
     textAlign: "center",
@@ -699,14 +699,14 @@ const s = {
     margin: "0 auto 16px",
   },
   messageTitle: { fontSize: "1.3rem", fontWeight: 800, marginBottom: "8px" },
-  messageText: { color: "#a9adc4", fontSize: "0.9rem", lineHeight: 1.6, marginTop: "10px" },
+  messageText: { color: "var(--fx-muted-2)", fontSize: "0.9rem", lineHeight: 1.6, marginTop: "10px" },
   primaryBtn: {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
     gap: "8px",
     marginTop: "18px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "13px 24px",
@@ -716,7 +716,7 @@ const s = {
     cursor: "pointer",
   },
   controls: {
-    background: "rgba(15,17,32,0.88)",
+    background: "rgba(var(--fx-surface-rgb),0.88)",
     borderRadius: "22px",
     padding: "26px 24px",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.08)",
@@ -729,17 +729,17 @@ const s = {
     width: "54px",
     height: "54px",
     borderRadius: "16px",
-    background: "rgba(99,102,241,0.16)",
-    color: "#a5b4fc",
+    background: "rgba(var(--fx-primary-rgb),0.16)",
+    color: "var(--fx-accent-soft)",
     margin: "0 auto 14px",
   },
   h1: { fontSize: "1.6rem", fontWeight: 800, marginBottom: "8px" },
-  subtext: { color: "#a9adc4", fontSize: "0.92rem", lineHeight: 1.6 },
+  subtext: { color: "var(--fx-muted-2)", fontSize: "0.92rem", lineHeight: 1.6 },
   label: {
     display: "block",
     fontSize: "0.78rem",
     fontWeight: 700,
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     margin: "16px 0 8px",
   },
   select: {
@@ -761,7 +761,7 @@ const s = {
     gap: "8px",
     width: "100%",
     marginTop: "20px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "14px",
@@ -772,13 +772,13 @@ const s = {
     fontFamily: "inherit",
   },
   emptyCard: {
-    background: "rgba(15,17,32,0.6)",
+    background: "rgba(var(--fx-surface-rgb),0.6)",
     borderRadius: "18px",
     padding: "22px",
     textAlign: "center",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.06)",
   },
-  emptyText: { color: "#9599b0", fontSize: "0.9rem", lineHeight: 1.6 },
+  emptyText: { color: "var(--fx-muted)", fontSize: "0.9rem", lineHeight: 1.6 },
   errorText: { color: "#ff9b9b", fontSize: "0.88rem", lineHeight: 1.5 },
 
   paper: {
@@ -792,7 +792,7 @@ const s = {
   },
   paperHead: {
     textAlign: "center",
-    borderBottom: "3px solid #6366f1",
+    borderBottom: "3px solid var(--fx-primary)",
     paddingBottom: "18px",
     marginBottom: "10px",
   },
@@ -836,7 +836,7 @@ const s = {
     fontWeight: 700,
     letterSpacing: "0.08em",
     textTransform: "uppercase",
-    color: "#7d8299",
+    color: "var(--fx-muted-3)",
   },
   factValue: { fontSize: "0.92rem", fontWeight: 600, color: "#1b1d2e", wordBreak: "break-word" },
   smallLabel: {
@@ -849,7 +849,7 @@ const s = {
   },
   text: { color: "#2e3147", fontSize: "0.92rem", lineHeight: 1.65, wordBreak: "break-word" },
   note: { color: "#6b6f86", fontSize: "0.78rem", lineHeight: 1.55, marginTop: "10px" },
-  muted: { color: "#7d8299", fontSize: "0.82rem" },
+  muted: { color: "var(--fx-muted-3)", fontSize: "0.82rem" },
   link: { color: "#4f46e5", fontSize: "0.8rem", wordBreak: "break-all" },
   infoBlock: { marginTop: "8px" },
   listLine: { color: "#2e3147", fontSize: "0.9rem", lineHeight: 1.6, margin: "3px 0", wordBreak: "break-word" },
@@ -864,7 +864,7 @@ const s = {
   },
   barFill: {
     height: "100%",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     borderRadius: "10px",
   },
   weekBlock: {
@@ -878,7 +878,7 @@ const s = {
     marginTop: "30px",
     paddingTop: "14px",
     borderTop: "1px solid #e5e7f5",
-    color: "#7d8299",
+    color: "var(--fx-muted-3)",
     fontSize: "0.72rem",
     lineHeight: 1.6,
   },

@@ -412,7 +412,7 @@ function RoadmapDetail() {
             alignItems: "center",
             justifyContent: "center",
             gap: "10px",
-            background: "#05070f",
+            background: "var(--fx-bg)",
             zIndex: 5,
           }}
         >
@@ -426,7 +426,7 @@ function RoadmapDetail() {
   if (loadError) {
     return (
       <div style={styles.centerPage}>
-        <p style={{ maxWidth: 320, textAlign: "center", color: "#a9adc4" }}>
+        <p style={{ maxWidth: 320, textAlign: "center", color: "var(--fx-muted-2)" }}>
           We could not load this roadmap right now. Please check your connection and try refreshing the page.
         </p>
       </div>
@@ -503,7 +503,7 @@ function RoadmapDetail() {
 
   const renderStepCard = (step, displayNumber, isFirstCoreStep) => {
     const Icon = STEP_TYPE_ICONS[step.step_type] || CheckCircle2
-    const color = STEP_TYPE_COLORS[step.step_type] || "#a5b4fc"
+    const color = STEP_TYPE_COLORS[step.step_type] || "var(--fx-accent-soft)"
     const isDone = completedStepIds.has(step.id)
     const isFocus = focusStep ? focusStep.id === step.id : false
     const isExpanded = expandedIds.has(step.id)
@@ -582,7 +582,7 @@ function RoadmapDetail() {
                   background: isDone
                     ? "rgba(34,197,94,0.2)"
                     : userId
-                    ? "linear-gradient(90deg, #6366f1, #22d3ee)"
+                    ? "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))"
                     : "rgba(255,255,255,0.1)",
                   color: isDone ? "#4ade80" : "#ffffff",
                   padding: "10px 18px",
@@ -591,7 +591,7 @@ function RoadmapDetail() {
                   boxShadow: isDone
                     ? "inset 0 0 0 1px rgba(74,222,128,0.5)"
                     : userId
-                    ? "0 6px 18px rgba(99,102,241,0.45)"
+                    ? "0 6px 18px rgba(var(--fx-primary-rgb),0.45)"
                     : "none",
                 }}
                 className={`fx-markdone${isFocus && !isDone && userId ? " fx-markdone-pulse" : ""}`}
@@ -1056,7 +1056,7 @@ const styles = {
   page: {
     position: "relative",
     minHeight: "100vh",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
     overflow: "hidden",
@@ -1068,7 +1068,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     gap: "16px",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
   },
@@ -1098,7 +1098,7 @@ const styles = {
   logo: {
     fontSize: "1.3rem",
     fontWeight: 800,
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     WebkitTextFillColor: "transparent",
@@ -1111,7 +1111,7 @@ const styles = {
     padding: "20px 24px 100px",
   },
   heroCard: {
-    background: "rgba(15,17,32,0.85)",
+    background: "rgba(var(--fx-surface-rgb),0.85)",
     borderRadius: "24px",
     padding: "44px 40px 40px",
     textAlign: "center",
@@ -1125,14 +1125,14 @@ const styles = {
     width: "64px",
     height: "64px",
     borderRadius: "18px",
-    background: "rgba(99,102,241,0.16)",
-    color: "#a5b4fc",
+    background: "rgba(var(--fx-primary-rgb),0.16)",
+    color: "var(--fx-accent-soft)",
     margin: "0 auto 20px",
   },
   category: {
     fontSize: "0.75rem",
     fontWeight: 700,
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     textTransform: "uppercase",
     letterSpacing: "0.08em",
   },
@@ -1143,7 +1143,7 @@ const styles = {
     color: "#ffffff",
   },
   desc: {
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "1rem",
     lineHeight: 1.6,
     maxWidth: "500px",
@@ -1170,7 +1170,7 @@ const styles = {
   statLabel: {
     fontSize: "0.72rem",
     fontWeight: 700,
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     textTransform: "uppercase",
     letterSpacing: "0.05em",
   },
@@ -1194,7 +1194,7 @@ const styles = {
   salarySource: {
     marginTop: "8px",
     fontSize: "0.72rem",
-    color: "#7d8299",
+    color: "var(--fx-muted-3)",
     fontStyle: "italic",
   },
   progressSection: {
@@ -1212,7 +1212,7 @@ const styles = {
   },
   progressBarFill: {
     height: "100%",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     borderRadius: "10px",
   },
   progressLabelRow: {
@@ -1224,7 +1224,7 @@ const styles = {
     flexWrap: "wrap",
   },
   progressLabel: {
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     fontSize: "0.82rem",
   },
   completeBadge: {
@@ -1243,7 +1243,7 @@ const styles = {
     display: "inline-flex",
     alignItems: "center",
     gap: "8px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "12px 24px",
@@ -1257,7 +1257,7 @@ const styles = {
     alignItems: "center",
     gap: "8px",
     background: "rgba(255,255,255,0.07)",
-    color: "#c7d2fe",
+    color: "var(--fx-accent-softer)",
     border: "none",
     padding: "12px 24px",
     borderRadius: "30px",
@@ -1289,7 +1289,7 @@ const styles = {
   introMissingNote: {
     marginTop: "20px",
     fontSize: "0.8rem",
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     fontStyle: "italic",
   },
   infoPanel: {
@@ -1302,7 +1302,7 @@ const styles = {
     gap: "8px",
     width: "100%",
     background: "rgba(255,255,255,0.05)",
-    color: "#c7d2fe",
+    color: "var(--fx-accent-softer)",
     border: "none",
     padding: "14px",
     borderRadius: "16px",
@@ -1313,7 +1313,7 @@ const styles = {
   },
   infoBody: {
     marginTop: "16px",
-    background: "rgba(15,17,32,0.6)",
+    background: "rgba(var(--fx-surface-rgb),0.6)",
     borderRadius: "18px",
     padding: "24px",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.06)",
@@ -1324,11 +1324,11 @@ const styles = {
   infoSectionTitle: {
     fontSize: "0.85rem",
     fontWeight: 700,
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     marginBottom: "6px",
   },
   infoSectionText: {
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "0.88rem",
     lineHeight: 1.6,
   },
@@ -1351,7 +1351,7 @@ const styles = {
     cursor: "pointer",
     fontSize: "0.85rem",
     fontWeight: 600,
-    color: "#e0e1ff",
+    color: "var(--fx-accent-softest)",
     boxShadow: "0 0 0 1px rgba(255,255,255,0.08)",
   },
   roadmapHeading: {
@@ -1362,7 +1362,7 @@ const styles = {
     margin: "0 0 30px",
   },
   stageBanner: {
-    background: "rgba(99,102,241,0.1)",
+    background: "rgba(var(--fx-primary-rgb),0.1)",
     borderRadius: "16px",
     padding: "16px 20px",
     marginBottom: "28px",
@@ -1371,13 +1371,13 @@ const styles = {
   stageBannerLabel: {
     fontSize: "0.8rem",
     fontWeight: 700,
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     textTransform: "uppercase",
     letterSpacing: "0.05em",
   },
   stageBannerText: {
     marginTop: "6px",
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "0.88rem",
     lineHeight: 1.5,
   },
@@ -1386,7 +1386,7 @@ const styles = {
     alignItems: "center",
     gap: "6px",
     marginTop: "12px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "10px 20px",
@@ -1399,7 +1399,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     gap: "8px",
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     fontSize: "0.85rem",
     fontWeight: 700,
     textTransform: "uppercase",
@@ -1437,7 +1437,7 @@ const styles = {
   },
   stepCard: {
     flex: 1,
-    background: "rgba(15,17,32,0.85)",
+    background: "rgba(var(--fx-surface-rgb),0.85)",
     borderRadius: "18px",
     padding: "22px 24px",
     marginBottom: "24px",
@@ -1445,7 +1445,7 @@ const styles = {
     transition: "opacity 0.2s ease",
   },
   stepCardFocus: {
-    boxShadow: "0 0 0 2px rgba(34,211,238,0.55), 0 10px 30px rgba(0,0,0,0.35)",
+    boxShadow: "0 0 0 2px rgba(var(--fx-secondary-rgb),0.55), 0 10px 30px rgba(0,0,0,0.35)",
   },
   stepCardTop: {
     display: "flex",
@@ -1486,8 +1486,8 @@ const styles = {
   estimatedTimePill: {
     display: "inline-block",
     marginTop: "10px",
-    background: "rgba(34,211,238,0.12)",
-    color: "#67e8f9",
+    background: "rgba(var(--fx-secondary-rgb),0.12)",
+    color: "var(--fx-secondary-soft)",
     fontSize: "0.78rem",
     fontWeight: 700,
     padding: "5px 12px",
@@ -1499,7 +1499,7 @@ const styles = {
     gap: "6px",
     marginTop: "12px",
     background: "rgba(255,255,255,0.07)",
-    color: "#c7d2fe",
+    color: "var(--fx-accent-softer)",
     border: "none",
     padding: "8px 14px",
     borderRadius: "20px",
@@ -1510,7 +1510,7 @@ const styles = {
   resourceGroupLabel: {
     fontSize: "0.75rem",
     fontWeight: 700,
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     marginBottom: "4px",
   },
   resourceLink: {
@@ -1518,7 +1518,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-between",
     gap: "10px",
-    color: "#67e8f9",
+    color: "var(--fx-secondary-soft)",
     textDecoration: "none",
     fontSize: "0.85rem",
     padding: "8px 0",
@@ -1533,38 +1533,38 @@ const styles = {
   enrichedLabel: {
     fontSize: "0.72rem",
     fontWeight: 700,
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     textTransform: "uppercase",
     letterSpacing: "0.05em",
   },
   enrichedText: {
     marginTop: "6px",
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "0.85rem",
     lineHeight: 1.5,
   },
   whyBox: {
     marginTop: "12px",
-    background: "rgba(99,102,241,0.08)",
+    background: "rgba(var(--fx-primary-rgb),0.08)",
     borderRadius: "10px",
     padding: "10px 14px",
   },
   whyLabel: {
     fontSize: "0.72rem",
     fontWeight: 700,
-    color: "#a5b4fc",
+    color: "var(--fx-accent-soft)",
     textTransform: "uppercase",
     letterSpacing: "0.05em",
   },
   whyList: {
     margin: "6px 0 0",
     paddingLeft: "18px",
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "0.85rem",
     lineHeight: 1.5,
   },
   upgradeBanner: {
-    background: "rgba(99,102,241,0.1)",
+    background: "rgba(var(--fx-primary-rgb),0.1)",
     borderRadius: "18px",
     padding: "26px 24px",
     textAlign: "center",
@@ -1578,12 +1578,12 @@ const styles = {
     marginBottom: "6px",
   },
   upgradeBannerText: {
-    color: "#c9cbdb",
+    color: "var(--fx-text-2)",
     fontSize: "0.85rem",
     marginBottom: "16px",
   },
   upgradeBannerBtn: {
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "12px 28px",
@@ -1596,21 +1596,21 @@ const styles = {
     display: "flex",
     gap: "12px",
     alignItems: "flex-start",
-    background: "rgba(99,102,241,0.12)",
+    background: "rgba(var(--fx-primary-rgb),0.12)",
     borderRadius: "14px",
     padding: "14px 16px",
     margin: "0 0 22px",
-    color: "#e0e1ff",
+    color: "var(--fx-accent-softest)",
     fontSize: "0.88rem",
     lineHeight: 1.55,
-    boxShadow: "inset 0 0 0 1px rgba(99,102,241,0.35)",
+    boxShadow: "inset 0 0 0 1px rgba(var(--fx-primary-rgb),0.35)",
   },
   toast: {
     position: "fixed",
     left: "50%",
     bottom: "24px",
     transform: "translateX(-50%)",
-    background: "#0f1120",
+    background: "var(--fx-surface)",
     color: "#ffffff",
     padding: "12px 22px",
     borderRadius: "30px",
@@ -1621,7 +1621,7 @@ const styles = {
   },
   noSteps: {
     textAlign: "center",
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     padding: "40px 0",
   },
 }

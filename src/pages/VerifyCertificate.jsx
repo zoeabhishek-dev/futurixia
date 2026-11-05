@@ -68,7 +68,7 @@ function VerifyCertificate() {
 
         <form onSubmit={handleSubmit}>
           <div style={styles.inputWrap}>
-            <Search size={17} color="#9599b0" />
+            <Search size={17} color="var(--fx-muted)" />
             <input
               type="text"
               placeholder="For example FX-3A9C0B7D12EF"
@@ -152,7 +152,7 @@ const styles = {
   page: {
     position: "relative",
     minHeight: "100vh",
-    background: "#05070f",
+    background: "var(--fx-bg)",
     color: "#fff",
     fontFamily: "Inter, system-ui, sans-serif",
     display: "flex",
@@ -166,7 +166,7 @@ const styles = {
     zIndex: 1,
     width: "100%",
     maxWidth: "460px",
-    background: "rgba(15,17,32,0.88)",
+    background: "rgba(var(--fx-surface-rgb),0.88)",
     backdropFilter: "blur(14px)",
     borderRadius: "24px",
     padding: "32px 28px",
@@ -176,7 +176,7 @@ const styles = {
     display: "inline-flex",
     alignItems: "center",
     gap: "6px",
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     fontSize: "0.82rem",
     textDecoration: "none",
     marginBottom: "18px",
@@ -184,14 +184,14 @@ const styles = {
   logo: {
     fontSize: "1.4rem",
     fontWeight: 800,
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     WebkitTextFillColor: "transparent",
     marginBottom: "10px",
   },
   title: { fontSize: "1.5rem", fontWeight: 800, marginBottom: "6px" },
-  subtitle: { color: "#a9adc4", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "22px" },
+  subtitle: { color: "var(--fx-muted-2)", fontSize: "0.9rem", lineHeight: 1.5, marginBottom: "22px" },
   inputWrap: {
     display: "flex",
     alignItems: "center",
@@ -218,7 +218,7 @@ const styles = {
     justifyContent: "center",
     width: "100%",
     marginTop: "16px",
-    background: "linear-gradient(90deg, #6366f1, #22d3ee)",
+    background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))",
     color: "#fff",
     border: "none",
     padding: "14px",
@@ -249,11 +249,11 @@ const styles = {
     fontWeight: 700,
     letterSpacing: "0.08em",
     textTransform: "uppercase",
-    color: "#9599b0",
+    color: "var(--fx-muted)",
     marginBottom: "2px",
   },
-  smallText: { color: "#c9cbdb", fontSize: "0.85rem", lineHeight: 1.5 },
-  disclaimer: { color: "#7d8299", fontSize: "0.72rem", lineHeight: 1.5, marginTop: "22px" },
+  smallText: { color: "var(--fx-text-2)", fontSize: "0.85rem", lineHeight: 1.5 },
+  disclaimer: { color: "var(--fx-muted-3)", fontSize: "0.72rem", lineHeight: 1.5, marginTop: "22px" },
 }
 
 export default VerifyCertificate
