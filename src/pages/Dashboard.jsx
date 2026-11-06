@@ -327,7 +327,7 @@ function Dashboard() {
   ]
 
   const tiles = [
-    { to: "/careers", icon: Compass, title: "Explore Careers", sub: "Browse 100+ careers" },
+    { to: "/careers", icon: Compass, title: "Explore Careers", sub: "Browse 100+ careers", featured: true },
     { to: "/discover", icon: Lightbulb, title: "Discovery Quiz", sub: "Find careers that fit you" },
     { to: "/compare", icon: Scale, title: "Compare Careers", sub: "Two careers side by side" },
     { to: "/report", icon: FileText, title: "My Report", sub: "Printable career report" },
@@ -552,7 +552,12 @@ function Dashboard() {
                 {tiles.map((tile) => {
                   const Icon = tile.icon
                   return (
-                    <Link key={tile.title} to={tile.to} style={styles.tile} className="fxd-tile">
+                    <Link
+                      key={tile.title}
+                      to={tile.to}
+                      style={styles.tile}
+                      className={`fxd-tile${tile.featured ? " fxd-tile-featured" : ""}`}
+                    >
                       <span style={styles.tileIcon}>
                         <Icon size={18} />
                       </span>

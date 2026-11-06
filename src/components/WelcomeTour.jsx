@@ -170,8 +170,8 @@ const STEPS = [
     body: ["Futurixia has three plans, and a lock icon marks anything that needs an upgrade:"],
     bullets: [
       "Free: every career, the full roadmap, the quiz, compare, progress tracking, your history and the personal career report.",
-      "Pro: adds free resources, videos and detailed guidance on every step, with the Charcoal and Orange theme.",
-      "Pro Max: adds certificates, the Smart Coach, the Black and Gold theme and a Themes button to choose any of the four themes.",
+      "Pro: adds free resources, videos and detailed guidance on every step, plus a Themes button to choose your colours.",
+      "Pro Max: adds certificates and the Smart Coach, and starts with the Black and Gold theme.",
       "You can see the plans any time from the Pricing link in the footer of the home page.",
     ],
   },

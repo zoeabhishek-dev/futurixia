@@ -623,6 +623,7 @@ function RoadmapDetail() {
             {isPro && (
               <button
                 style={styles.detailsToggle}
+                className="fx-details-link"
                 onClick={() => toggleExpanded(step.id)}
                 aria-expanded={isExpanded}
               >
@@ -684,6 +685,7 @@ function RoadmapDetail() {
                           target="_blank"
                           rel="noopener noreferrer"
                           style={styles.resourceLink}
+                          className="fx-resource-link"
                         >
                           <span>
                             {r.title}

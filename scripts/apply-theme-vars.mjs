@@ -27,6 +27,8 @@ const HEX = [
   ["#a9adc4", "var(--fx-muted-2)"],
   ["#c9cbdb", "var(--fx-text-2)"],
   ["#7d8299", "var(--fx-muted-3)"],
+  ["#0a0a12", "var(--fx-bg)"],
+  ["#d4d7e5", "var(--fx-text-2)"],
 ]
 
 const RGB = [
@@ -35,6 +37,9 @@ const RGB = [
   [[34, 211, 238], "--fx-secondary-rgb"],
   [[37, 99, 235], "--fx-primary-rgb"],
   [[59, 130, 246], "--fx-primary-rgb"],
+  [[5, 7, 15], "--fx-bg-rgb"],
+  [[10, 10, 20], "--fx-surface-rgb"],
+  [[165, 180, 252], "--fx-accent-soft-rgb"],
 ]
 
 function walk(dir, out = []) {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import {
   ArrowLeft,
@@ -9,10 +9,13 @@ import {
   Lock,
   AlertTriangle,
   CheckCircle2,
+  Download,
+  X,
   Award,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import PricingModal from "../components/PricingModal"
+import { toPng } from "html-to-image"
 
 function Spinner() {
   return (
@@ -53,6 +56,10 @@ function Certificate() {
   const [copied, setCopied] = useState(false)
   const [showPricing, setShowPricing] = useState(false)
   const [country, setCountry] = useState(null)
+  const certRef = useRef(null)
+  const [saving, setSaving] = useState(false)
+  const [savedImage, setSavedImage] = useState(null)
+  const [saveError, setSaveError] = useState("")
 
   useEffect(() => {
     const load = async () => {
@@ -161,6 +168,61 @@ function Certificate() {
     }
   }
 
+  const buildImage = async () => {
+    const node = certRef.current
+    if (!node) throw new Error("Certificate is not ready yet")
+    const options = {
+      cacheBust: true,
+      pixelRatio: Math.min(3, Math.max(2, 2400 / node.offsetWidth)),
+      backgroundColor: "#fffdf6",
+      style: { borderRadius: "0", boxShadow: "none", margin: "0", maxWidth: "none" },
+    }
+    await toPng(node, options)
+    return toPng(node, options)
+  }
+
+  const makeImage = async () => {
+    setSaveError("")
+    setSaving(true)
+    try {
+      const dataUrl = await buildImage()
+      setSavedImage(dataUrl)
+    } catch (err) {
+      setSaveError("We could not create the picture on this device. Please try again, or use Print / PDF.")
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const saveToDevice = async () => {
+    if (!savedImage || !cert) return
+    const fileName = `Futurixia-Certificate-${cert.id}.png`
+    const isIOS =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
+    try {
+      const blob = await (await fetch(savedImage)).blob()
+      const file = new File([blob], fileName, { type: "image/png" })
+
+      if (isIOS && navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: "My Futurixia certificate" })
+        return
+      }
+
+      const url = URL.createObjectURL(blob)
+      const link = document.createElement("a")
+      link.href = url
+      link.download = fileName
+      document.body.appendChild(link)
+      link.click()
+      link.remove()
+      setTimeout(() => URL.revokeObjectURL(url), 4000)
+    } catch (err) {
+      if (err && err.name === "AbortError") return
+      setSaveError("We could not save it automatically. Press and hold the picture and choose Save image.")
+    }
+  }
+
   const issuedDate = cert
     ? new Date(cert.issued_at).toLocaleDateString(undefined, {
         year: "numeric",
@@ -252,9 +314,13 @@ function Certificate() {
         {status === "ready" && cert && (
           <>
             <div className="no-print" style={styles.actionsRow}>
-              <button style={styles.primaryBtn} onClick={() => window.print()}>
+              <button style={styles.primaryBtn} onClick={makeImage} disabled={saving}>
+                <Download size={16} />
+                {saving ? "Preparing picture..." : "Save to Photos"}
+              </button>
+              <button style={styles.secondaryBtn} onClick={() => window.print()}>
                 <Printer size={16} />
-                Print or Save as PDF
+                Print / PDF
               </button>
               <button style={styles.secondaryBtn} onClick={shareCertificate}>
                 <Share2 size={16} />
@@ -267,10 +333,13 @@ function Certificate() {
             </div>
 
             <p className="no-print" style={styles.printTip}>
-              Tip: when printing, switch off "Headers and footers" for a clean certificate.
+              Tip: tap Save to Photos to keep your certificate as a full-screen picture in your gallery.
+              {saveError && (
+                <span style={{ display: "block", marginTop: 6, color: "#fca5a5" }}>{saveError}</span>
+              )}
             </p>
 
-            <div style={styles.certOuter} className="fx-cert">
+            <div style={styles.certOuter} className="fx-cert" ref={certRef}>
               <div style={styles.certPaper}>
                 <div style={styles.innerBorder} aria-hidden="true" />
                 <Corner pos="tl" />
@@ -338,6 +407,28 @@ function Certificate() {
           </>
         )}
       </div>
+
+      {savedImage && (
+        <div
+          className="no-print"
+          style={styles.previewOverlay}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Certificate picture"
+        >
+          <button style={styles.previewClose} onClick={() => setSavedImage(null)} aria-label="Close preview">
+            <X size={20} />
+          </button>
+          <img src={savedImage} alt="Your Futurixia certificate" style={styles.previewImg} />
+          <div style={styles.previewBar}>
+            <button style={styles.primaryBtn} onClick={saveToDevice}>
+              <Download size={16} />
+              Save to Photos
+            </button>
+            <p style={styles.previewHint}>Or press and hold the certificate and choose Save image.</p>
+          </div>
+        </div>
+      )}
 
       <PricingModal
         isOpen={showPricing}
@@ -436,6 +527,41 @@ const styles = {
     fontFamily: "inherit",
   },
   actionsRow: { display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" },
+  previewOverlay: {
+    position: "fixed",
+    inset: 0,
+    zIndex: 300,
+    background: "#000000",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "12px",
+  },
+  previewImg: {
+    maxWidth: "100%",
+    maxHeight: "calc(100dvh - 130px)",
+    objectFit: "contain",
+    borderRadius: "4px",
+  },
+  previewClose: {
+    position: "absolute",
+    top: "12px",
+    right: "12px",
+    width: "40px",
+    height: "40px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "rgba(255,255,255,0.14)",
+    color: "#ffffff",
+    border: "none",
+    borderRadius: "50%",
+    cursor: "pointer",
+    zIndex: 2,
+  },
+  previewBar: { display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", marginTop: "14px" },
+  previewHint: { color: "#a3a3a3", fontSize: "0.76rem", textAlign: "center" },
   printTip: { color: "var(--fx-muted-3)", fontSize: "0.78rem", textAlign: "center", marginTop: "-8px" },
 
   certOuter: {

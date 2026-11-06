@@ -109,3 +109,24 @@ html[data-theme="black_gold"] {
   --fx-text-2: #d6d6d6;
   --fx-muted-3: #737373;
 }
+
+:root,
+html[data-theme="forest_emerald"] {
+  --fx-bg-rgb: 6, 16, 12;
+  --fx-accent-soft-rgb: 110, 231, 183;
+}
+
+html[data-theme="charcoal_orange"] {
+  --fx-bg-rgb: 14, 14, 16;
+  --fx-accent-soft-rgb: 253, 186, 116;
+}
+
+html[data-theme="plum_rose"] {
+  --fx-bg-rgb: 18, 8, 26;
+  --fx-accent-soft-rgb: 240, 171, 252;
+}
+
+html[data-theme="black_gold"] {
+  --fx-bg-rgb: 5, 5, 5;
+  --fx-accent-soft-rgb: 253, 224, 71;
+}

@@ -305,3 +305,39 @@ select option {
     gap: 5px;
   }
 }
+
+.fx-resource-link,
+.fx-resource-link:visited {
+  color: #60a5fa !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+.fx-resource-link:hover {
+  color: #93c5fd !important;
+}
+
+.fx-details-link {
+  color: #60a5fa !important;
+}
+
+.fx-details-link:hover {
+  color: #93c5fd !important;
+}
+
+:root {
+  --fx-explore-1: #1e40af;
+  --fx-explore-2: #1d6ae5;
+  --fx-explore-3: #0ea5e9;
+  --fx-explore-rgb: 29, 106, 229;
+}
+
+.fxd-tile-featured {
+  background: linear-gradient(135deg, var(--fx-explore-1), var(--fx-explore-2) 55%, var(--fx-explore-3)) !important;
+  box-shadow: 0 8px 22px rgba(var(--fx-explore-rgb), 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+.fxd-tile.fxd-tile-featured:hover {
+  background: linear-gradient(135deg, var(--fx-explore-2), var(--fx-explore-3)) !important;
+  box-shadow: 0 14px 30px rgba(var(--fx-explore-rgb), 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+}

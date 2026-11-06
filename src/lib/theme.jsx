@@ -81,7 +81,7 @@ export function ThemeProvider({ children }) {
       plan: state.plan,
       theme: state.theme,
       ready: state.ready,
-      canChoose: state.plan === "pro_max",
+      canChoose: state.plan === "pro" || state.plan === "pro_max",
       setTheme,
     }),
     [state, setTheme]
