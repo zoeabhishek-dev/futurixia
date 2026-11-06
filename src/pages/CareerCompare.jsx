@@ -190,7 +190,7 @@ const styles = {
   page: { position: "relative", minHeight: "100vh", background: "var(--fx-bg)", color: "#fff", fontFamily: "Inter, system-ui, sans-serif", overflow: "hidden" },
   centerPage: { minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--fx-bg)", color: "#fff" },
   nav: { position: "relative", zIndex: 1, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "22px 40px" },
-  backBtn: { display: "flex", alignItems: "center", gap: "6px", background: "rgba(255,255,255,0.07)", color: "#d4d7e5", border: "none", padding: "10px 18px", borderRadius: "30px", cursor: "pointer", fontSize: "0.85rem", fontWeight: 600 },
+  backBtn: { display: "flex", alignItems: "center", gap: "6px", background: "rgba(255,255,255,0.07)", color: "var(--fx-text-2)", border: "none", padding: "10px 18px", borderRadius: "30px", cursor: "pointer", fontSize: "0.85rem", fontWeight: 600 },
   logo: { fontSize: "1.3rem", fontWeight: 800, background: "linear-gradient(90deg, var(--fx-primary), var(--fx-secondary))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" },
   content: { position: "relative", zIndex: 1, maxWidth: "800px", margin: "0 auto", padding: "20px 24px 100px" },
   heading: { textAlign: "center", maxWidth: "560px", margin: "20px auto 36px" },

@@ -7,7 +7,7 @@
   --bg-panel: rgba(255, 255, 255, 0.06);
 
   --ink: #ffffff;
-  --ink-soft: #d4d7e5;
+  --ink-soft: var(--fx-text-2);
   --ink-faint: var(--fx-muted);
 
   --indigo: var(--fx-primary);
@@ -137,7 +137,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(5, 7, 15, 0.7);
+  background: rgba(var(--fx-bg-rgb), 0.7);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
@@ -263,7 +263,7 @@ a {
   font-size: 0.82rem;
   font-weight: 600;
   margin-bottom: 28px;
-  box-shadow: inset 0 0 0 1px rgba(165, 180, 252, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(var(--fx-accent-soft-rgb), 0.35);
 }
 
 .hero-title {
@@ -376,7 +376,7 @@ a {
 
 .career-chip:hover {
   background: rgba(var(--fx-primary-rgb), 0.22);
-  box-shadow: inset 0 0 0 1px rgba(165, 180, 252, 0.5);
+  box-shadow: inset 0 0 0 1px rgba(var(--fx-accent-soft-rgb), 0.5);
 }
 
 .career-chip svg {
@@ -786,7 +786,7 @@ a {
     gap: 14px;
     position: relative;
     z-index: 20;
-    background: rgba(10,10,20,0.97);
+    background: rgba(var(--fx-surface-rgb),0.97);
     backdrop-filter: blur(14px);
     padding: 20px 24px 28px;
     margin: 0 16px;

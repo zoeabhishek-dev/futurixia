@@ -574,7 +574,7 @@ const styles = {
     alignItems: "center",
     gap: "6px",
     background: "rgba(255,255,255,0.07)",
-    color: "#d4d7e5",
+    color: "var(--fx-text-2)",
     border: "none",
     padding: "10px 18px",
     borderRadius: "30px",

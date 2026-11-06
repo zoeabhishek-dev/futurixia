@@ -1081,7 +1081,7 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "22px 40px",
-    background: "rgba(5,7,15,0.75)",
+    background: "rgba(var(--fx-bg-rgb),0.75)",
     backdropFilter: "blur(14px)",
   },
   backBtn: {
