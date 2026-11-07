@@ -16,6 +16,11 @@ import Coach from "./pages/Coach"
 import Report from "./pages/Report"
 import RouteMeta from "./components/RouteMeta"
 import { ThemeProvider } from "./lib/theme"
+import Privacy from "./pages/Privacy"
+import Terms from "./pages/Terms"
+import AccountSettings from "./pages/AccountSettings"
+import ConsentGate from "./components/ConsentGate"
+import AuthNotice from "./components/AuthNotice"
 import "./styles/themes.css"
 import WelcomeTour from "./components/WelcomeTour"
 import ScrollToTop from "./components/ScrollToTop"
@@ -27,6 +32,8 @@ function App() {
       <RouteMeta />
       <ScrollToTop />
       <WelcomeTour />
+      <ConsentGate />
+      <AuthNotice />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Auth />} />
@@ -42,6 +49,9 @@ function App() {
         <Route path="/verify/:certId" element={<VerifyCertificate />} />
         <Route path="/coach" element={<Coach />} />
         <Route path="/report" element={<Report />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/terms" element={<Terms />} />
+      <Route path="/settings" element={<AccountSettings />} />
       </Routes>
     </ThemeProvider>
     </>

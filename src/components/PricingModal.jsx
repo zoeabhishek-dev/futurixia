@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { X, Check, Crown, Palette } from "lucide-react"
+import { Link } from "react-router-dom"
 import { PLANS, formatPrice } from "../lib/plans"
 import { useTheme } from "../lib/theme"
 
@@ -101,6 +102,18 @@ function PricingModal({ isOpen, onClose }) {
             )
           })}
         </div>
+
+        <p style={{ textAlign: "center", color: "var(--fx-muted-2)", fontSize: "0.8rem", marginTop: "16px" }}>
+          See our{" "}
+          <Link to="/terms" style={{ color: "#60a5fa" }}>
+            Terms of Service
+          </Link>{" "}
+          and{" "}
+          <Link to="/privacy" style={{ color: "#60a5fa" }}>
+            Privacy Policy
+          </Link>
+          .
+        </p>
 
         {notice && (
           <p role="status" style={styles.notice}>

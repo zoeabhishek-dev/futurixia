@@ -15,6 +15,7 @@ import {
   Lock,
   HelpCircle,
   Palette,
+  Settings,
   Lightbulb,
   UserCircle,
   FileText,
@@ -359,6 +360,16 @@ function Dashboard() {
             <HelpCircle size={16} />
             <span className="fxd-tour-label">Take the tour</span>
           </button>
+
+          <Link
+            to="/settings"
+            style={{ ...styles.tourBtn, textDecoration: "none" }}
+            aria-label="Account settings"
+            title="Account settings"
+          >
+            <Settings size={16} />
+            <span className="fxd-tour-label">Settings</span>
+          </Link>
 
           <button style={styles.logoutBtn} onClick={() => setShowLogoutConfirm(true)}>
             <LogOut size={16} />
