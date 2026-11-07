@@ -18,6 +18,32 @@ const USER_TABLES = [
   ["profiles", "id"],
 ]
 
+// Removes spaces, quotes and a trailing slash that are easy to copy by mistake.
+function clean(value) {
+  return String(value || "")
+    .trim()
+    .replace(/^["']+|["']+$/g, "")
+    .trim()
+}
+
+function cleanUrl(value) {
+  return clean(value).replace(/\/(rest|auth)\/v1.*$/i, "").replace(/\/+$/, "")
+}
+
+// Tells which kind of key was pasted, so a wrong key is reported clearly.
+function keyRole(key) {
+  if (key.startsWith("sb_secret_")) return "service_role"
+  if (key.startsWith("sb_publishable_")) return "anon"
+  const parts = key.split(".")
+  if (parts.length !== 3) return "unknown"
+  try {
+    const json = Buffer.from(parts[1].replace(/-/g, "+").replace(/_/g, "/"), "base64").toString("utf8")
+    return JSON.parse(json).role || "unknown"
+  } catch (err) {
+    return "unknown"
+  }
+}
+
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store")
 
@@ -26,17 +52,25 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed." })
   }
 
-  const url = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL
-  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+  const url = cleanUrl(process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL)
+  const serviceKey = clean(process.env.SUPABASE_SERVICE_ROLE_KEY)
 
   if (!url || !serviceKey) {
-    return res.status(500).json({ error: "Account deletion is not set up on the server yet. Please contact us." })
+    return res.status(500).json({
+      error: "Account deletion is not set up on the server yet (a Vercel setting is missing, or the site was not redeployed after adding it).",
+    })
+  }
+
+  if (keyRole(serviceKey) === "anon") {
+    return res.status(500).json({
+      error: "The server key is the public (anon) key. In Vercel, SUPABASE_SERVICE_ROLE_KEY must be the service_role (secret) key.",
+    })
   }
 
   const authHeader = req.headers.authorization || ""
   const token = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : ""
   if (!token) {
-    return res.status(401).json({ error: "Please log in again and retry." })
+    return res.status(401).json({ error: "Please log out, log in again and retry." })
   }
 
   let body = req.body
@@ -58,7 +92,20 @@ export default async function handler(req, res) {
   // The person to delete is taken from the verified token, never from the request body.
   const { data: userData, error: userError } = await admin.auth.getUser(token)
   if (userError || !userData || !userData.user) {
-    return res.status(401).json({ error: "Your session has expired. Please log in again and retry." })
+    const detail = String((userError && userError.message) || "").toLowerCase()
+    console.error("delete-account: could not verify the session:", detail || "no user returned")
+
+    if (detail.includes("api key") || detail.includes("apikey")) {
+      return res.status(500).json({
+        error: "The server key for account deletion is not accepted by Supabase. Please re-copy the service_role key into Vercel.",
+      })
+    }
+    if (detail.includes("fetch") || detail.includes("network") || detail.includes("enotfound") || detail.includes("econn")) {
+      return res.status(500).json({
+        error: "The server could not reach the database. Please check SUPABASE_URL in Vercel.",
+      })
+    }
+    return res.status(401).json({ error: "Your session has expired. Please log out, log in again and retry." })
   }
   const userId = userData.user.id
 
@@ -66,7 +113,7 @@ export default async function handler(req, res) {
     for (const [table, column] of USER_TABLES) {
       const { error } = await admin.from(table).delete().eq(column, userId)
       if (error) {
-        // Log on the server only. The cascade below still removes the rows if this table is unavailable.
+        // Logged on the server only. The cascade below still removes the rows if this table is unavailable.
         console.error(`delete-account: could not clear ${table}:`, error.message)
       }
     }

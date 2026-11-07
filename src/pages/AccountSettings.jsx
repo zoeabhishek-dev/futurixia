@@ -98,8 +98,8 @@ function AccountSettings() {
         body: JSON.stringify({ confirm: "DELETE" }),
       })
       const result = await response.json().catch(() => ({}))
-      if (!response.ok) {
-        throw new Error(result.error || "We could not delete your account. Please try again or contact us.")
+      if (!response.ok || result.ok !== true) {
+        throw new Error(result.error || "The deletion service did not answer. It only works on the live website, not on localhost. Please try again there or contact us.")
       }
 
       try {
