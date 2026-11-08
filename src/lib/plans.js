@@ -4,7 +4,7 @@ export const PLANS = [
     name: "Free",
     price: 0,
     tagline: "Everything you need to start",
-    theme: "Aurora theme",
+    theme: "Crimson theme",
     features: [
       "Browse 100+ careers",
       "Full step-by-step roadmap for every career",

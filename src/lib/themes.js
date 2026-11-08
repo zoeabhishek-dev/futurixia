@@ -1,12 +1,12 @@
-export const DEFAULT_THEME = "aurora"
+export const DEFAULT_THEME = "crimson"
 
 export const THEMES = [
   {
-    id: "aurora",
-    name: "Aurora",
-    blurb: "Bright blue and violet with a neon glow. Made for dreamers.",
-    bg: "#0a0716",
-    swatch: ["#2f6bff", "#7c4dff", "#22d3ff"],
+    id: "crimson",
+    name: "Crimson",
+    blurb: "Deep crimson with warm champagne highlights. Bold and academic.",
+    bg: "#12070a",
+    swatch: ["#b91c1c", "#9f1239", "#e8b87a"],
   },
   {
     id: "forest_emerald",
@@ -39,7 +39,7 @@ export const THEMES = [
 ]
 
 export const PLAN_DEFAULT_THEME = {
-  free: "aurora",
+  free: "crimson",
   pro: "charcoal_orange",
   pro_max: "black_gold",
 }

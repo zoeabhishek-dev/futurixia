@@ -51,7 +51,7 @@ export function getTermsSections(L, plans) {
       body: [
         "Futurixia offers these plans. Prices are in Indian rupees (₹).",
         planLines,
-        "Free accounts use the Aurora theme. Pro and Pro Max accounts can change their theme from the dashboard. Features can be added, changed or removed over time; we will update this page when that happens.",
+        "Free accounts use the Crimson theme. Pro and Pro Max accounts can change their theme from the dashboard. Features can be added, changed or removed over time; we will update this page when that happens.",
       ],
     },
     {

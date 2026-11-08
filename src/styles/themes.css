@@ -5,41 +5,33 @@ body {
   background-color: var(--fx-bg);
 }
 
-/* Aurora: Free plan and the public pages (default) */
+/* Crimson: Free plan and the public pages (default) */
 :root,
-html[data-theme="aurora"] {
-  --fx-bg: #0a0716;
-  --fx-bg-rgb: 10, 7, 22;
-  --fx-surface: #15103a;
-  --fx-surface-rgb: 21, 16, 58;
-  --fx-primary: #2f6bff;
-  --fx-primary-rgb: 47, 107, 255;
-  --fx-primary-dark: #1f4fd6;
-  --fx-primary-light: #5b8cff;
-  --fx-secondary: #7c4dff;
-  --fx-secondary-rgb: 124, 77, 255;
-  --fx-tertiary: #22d3ff;
-  --fx-accent-soft: #a5b8ff;
-  --fx-accent-soft-rgb: 165, 184, 255;
-  --fx-accent-softer: #c9d4ff;
-  --fx-accent-softest: #e6ebff;
-  --fx-secondary-soft: #7cebff;
-  --fx-glow-1: #2f6bff;
-  --fx-glow-2: #7c4dff;
-  --fx-glow-3: #00d4ff;
-  --fx-glow-rgb: 100, 110, 255;
-  --fx-muted: #9a96b8;
-  --fx-muted-2: #b2aed0;
-  --fx-text-2: #d3d0ea;
-  --fx-muted-3: #78749a;
-}
-
-/* On the Aurora theme the Explore Careers button is green, so it stands out from the blue and violet buttons */
-html[data-theme="aurora"] {
-  --fx-explore-1: #047857;
-  --fx-explore-2: #059669;
-  --fx-explore-3: #10b981;
-  --fx-explore-rgb: 5, 150, 105;
+html[data-theme="crimson"] {
+  --fx-bg: #12070a;
+  --fx-bg-rgb: 18, 7, 10;
+  --fx-surface: #1f0e13;
+  --fx-surface-rgb: 31, 14, 19;
+  --fx-primary: #b91c1c;
+  --fx-primary-rgb: 185, 28, 28;
+  --fx-primary-dark: #991b1b;
+  --fx-primary-light: #dc2626;
+  --fx-secondary: #9f1239;
+  --fx-secondary-rgb: 159, 18, 57;
+  --fx-tertiary: #d9a066;
+  --fx-accent-soft: #fca5a5;
+  --fx-accent-soft-rgb: 252, 165, 165;
+  --fx-accent-softer: #fecaca;
+  --fx-accent-softest: #fee2e2;
+  --fx-secondary-soft: #f5d0a9;
+  --fx-glow-1: #dc2626;
+  --fx-glow-2: #fb7185;
+  --fx-glow-3: #e8b87a;
+  --fx-glow-rgb: 220, 38, 38;
+  --fx-muted: #a89a9d;
+  --fx-muted-2: #bfb2b5;
+  --fx-text-2: #e3d8d9;
+  --fx-muted-3: #857578;
 }
 
 /* Forest & Emerald: a choice for Pro and Pro Max */
