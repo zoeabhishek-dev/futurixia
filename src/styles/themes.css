@@ -5,10 +5,47 @@ body {
   background-color: var(--fx-bg);
 }
 
-/* Forest & Emerald: Free plan and the public pages (default) */
+/* Aurora: Free plan and the public pages (default) */
 :root,
+html[data-theme="aurora"] {
+  --fx-bg: #0a0716;
+  --fx-bg-rgb: 10, 7, 22;
+  --fx-surface: #15103a;
+  --fx-surface-rgb: 21, 16, 58;
+  --fx-primary: #2f6bff;
+  --fx-primary-rgb: 47, 107, 255;
+  --fx-primary-dark: #1f4fd6;
+  --fx-primary-light: #5b8cff;
+  --fx-secondary: #7c4dff;
+  --fx-secondary-rgb: 124, 77, 255;
+  --fx-tertiary: #22d3ff;
+  --fx-accent-soft: #a5b8ff;
+  --fx-accent-soft-rgb: 165, 184, 255;
+  --fx-accent-softer: #c9d4ff;
+  --fx-accent-softest: #e6ebff;
+  --fx-secondary-soft: #7cebff;
+  --fx-glow-1: #2f6bff;
+  --fx-glow-2: #7c4dff;
+  --fx-glow-3: #00d4ff;
+  --fx-glow-rgb: 100, 110, 255;
+  --fx-muted: #9a96b8;
+  --fx-muted-2: #b2aed0;
+  --fx-text-2: #d3d0ea;
+  --fx-muted-3: #78749a;
+}
+
+/* On the Aurora theme the Explore Careers button is green, so it stands out from the blue and violet buttons */
+html[data-theme="aurora"] {
+  --fx-explore-1: #047857;
+  --fx-explore-2: #059669;
+  --fx-explore-3: #10b981;
+  --fx-explore-rgb: 5, 150, 105;
+}
+
+/* Forest & Emerald: a choice for Pro and Pro Max */
 html[data-theme="forest_emerald"] {
   --fx-bg: #06100c;
+  --fx-bg-rgb: 6, 16, 12;
   --fx-surface: #0c1a14;
   --fx-surface-rgb: 12, 26, 20;
   --fx-primary: #047857;
@@ -19,6 +56,7 @@ html[data-theme="forest_emerald"] {
   --fx-secondary-rgb: 13, 148, 136;
   --fx-tertiary: #14b8a6;
   --fx-accent-soft: #6ee7b7;
+  --fx-accent-soft-rgb: 110, 231, 183;
   --fx-accent-softer: #a7f3d0;
   --fx-accent-softest: #d1fae5;
   --fx-secondary-soft: #5eead4;
@@ -32,9 +70,10 @@ html[data-theme="forest_emerald"] {
   --fx-muted-3: #6f8a7d;
 }
 
-/* Charcoal & Orange: Pro plan */
+/* Charcoal & Orange: Pro plan default */
 html[data-theme="charcoal_orange"] {
   --fx-bg: #0e0e10;
+  --fx-bg-rgb: 14, 14, 16;
   --fx-surface: #18181b;
   --fx-surface-rgb: 24, 24, 27;
   --fx-primary: #c2410c;
@@ -45,6 +84,7 @@ html[data-theme="charcoal_orange"] {
   --fx-secondary-rgb: 180, 83, 9;
   --fx-tertiary: #f59e0b;
   --fx-accent-soft: #fdba74;
+  --fx-accent-soft-rgb: 253, 186, 116;
   --fx-accent-softer: #fed7aa;
   --fx-accent-softest: #ffedd5;
   --fx-secondary-soft: #fcd34d;
@@ -58,9 +98,10 @@ html[data-theme="charcoal_orange"] {
   --fx-muted-3: #71717a;
 }
 
-/* Plum & Rose: Pro Max choice */
+/* Plum & Rose */
 html[data-theme="plum_rose"] {
   --fx-bg: #12081a;
+  --fx-bg-rgb: 18, 8, 26;
   --fx-surface: #1d1028;
   --fx-surface-rgb: 29, 16, 40;
   --fx-primary: #a21caf;
@@ -71,6 +112,7 @@ html[data-theme="plum_rose"] {
   --fx-secondary-rgb: 190, 24, 93;
   --fx-tertiary: #fb7185;
   --fx-accent-soft: #f0abfc;
+  --fx-accent-soft-rgb: 240, 171, 252;
   --fx-accent-softer: #f5d0fe;
   --fx-accent-softest: #fae8ff;
   --fx-secondary-soft: #fda4af;
@@ -87,6 +129,7 @@ html[data-theme="plum_rose"] {
 /* Black & Gold: Pro Max default */
 html[data-theme="black_gold"] {
   --fx-bg: #050505;
+  --fx-bg-rgb: 5, 5, 5;
   --fx-surface: #121212;
   --fx-surface-rgb: 18, 18, 18;
   --fx-primary: #a16207;
@@ -97,6 +140,7 @@ html[data-theme="black_gold"] {
   --fx-secondary-rgb: 180, 83, 9;
   --fx-tertiary: #facc15;
   --fx-accent-soft: #fde047;
+  --fx-accent-soft-rgb: 253, 224, 71;
   --fx-accent-softer: #fef08a;
   --fx-accent-softest: #fef9c3;
   --fx-secondary-soft: #fcd34d;
@@ -108,25 +152,4 @@ html[data-theme="black_gold"] {
   --fx-muted-2: #b8b8b8;
   --fx-text-2: #d6d6d6;
   --fx-muted-3: #737373;
-}
-
-:root,
-html[data-theme="forest_emerald"] {
-  --fx-bg-rgb: 6, 16, 12;
-  --fx-accent-soft-rgb: 110, 231, 183;
-}
-
-html[data-theme="charcoal_orange"] {
-  --fx-bg-rgb: 14, 14, 16;
-  --fx-accent-soft-rgb: 253, 186, 116;
-}
-
-html[data-theme="plum_rose"] {
-  --fx-bg-rgb: 18, 8, 26;
-  --fx-accent-soft-rgb: 240, 171, 252;
-}
-
-html[data-theme="black_gold"] {
-  --fx-bg-rgb: 5, 5, 5;
-  --fx-accent-soft-rgb: 253, 224, 71;
 }

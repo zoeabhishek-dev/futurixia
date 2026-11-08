@@ -1,6 +1,13 @@
-export const DEFAULT_THEME = "forest_emerald"
+export const DEFAULT_THEME = "aurora"
 
 export const THEMES = [
+  {
+    id: "aurora",
+    name: "Aurora",
+    blurb: "Bright blue and violet with a neon glow. Made for dreamers.",
+    bg: "#0a0716",
+    swatch: ["#2f6bff", "#7c4dff", "#22d3ff"],
+  },
   {
     id: "forest_emerald",
     name: "Forest & Emerald",
@@ -32,7 +39,7 @@ export const THEMES = [
 ]
 
 export const PLAN_DEFAULT_THEME = {
-  free: "forest_emerald",
+  free: "aurora",
   pro: "charcoal_orange",
   pro_max: "black_gold",
 }

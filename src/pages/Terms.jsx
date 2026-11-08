@@ -1,6 +1,6 @@
 import LegalLayout from "../components/LegalLayout"
 import { LEGAL } from "../lib/legalInfo"
-import { PLANS } from "../lib/plans"
+import { PLANS } from "../lib/plans";
 import { getTermsSections } from "../legal/termsContent"
 
 function Terms() {

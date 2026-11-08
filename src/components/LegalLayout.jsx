@@ -122,6 +122,9 @@ function LegalLayout({ title, intro, sections }) {
             <Link to="/terms" className="fx-legal-link">
               Terms of Service
             </Link>
+            <Link to="/founder" className="fx-legal-link">
+              Founder
+            </Link>
             <button style={styles.contactBtn} onClick={() => setShowContact(true)}>
               <Mail size={15} />
               Contact us

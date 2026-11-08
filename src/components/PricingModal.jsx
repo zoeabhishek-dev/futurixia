@@ -103,13 +103,13 @@ function PricingModal({ isOpen, onClose }) {
           })}
         </div>
 
-        <p style={{ textAlign: "center", color: "var(--fx-muted-2)", fontSize: "0.8rem", marginTop: "16px" }}>
+        <p style={styles.legalLine}>
           See our{" "}
-          <Link to="/terms" style={{ color: "#60a5fa" }}>
+          <Link to="/terms" style={styles.legalLink}>
             Terms of Service
           </Link>{" "}
           and{" "}
-          <Link to="/privacy" style={{ color: "#60a5fa" }}>
+          <Link to="/privacy" style={styles.legalLink}>
             Privacy Policy
           </Link>
           .
@@ -222,6 +222,13 @@ const styles = {
     color: "var(--fx-muted-2)",
     cursor: "default",
   },
+  legalLine: {
+    textAlign: "center",
+    color: "var(--fx-muted-2)",
+    fontSize: "0.8rem",
+    marginTop: "16px",
+  },
+  legalLink: { color: "#60a5fa" },
   notice: {
     marginTop: "18px",
     textAlign: "center",

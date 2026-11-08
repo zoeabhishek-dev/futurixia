@@ -5,6 +5,8 @@ import { supabase } from "../supabaseClient"
 import ContactModal from "../components/ContactModal"
 import InfoModal from "../components/InfoModal"
 import PricingModal from "../components/PricingModal"
+import JsonLd from "../components/JsonLd"
+import { homeJsonLd } from "../lib/structuredData"
 import Logo from "../components/Logo"
 import "../App.css"
 import {
@@ -146,6 +148,7 @@ function Home() {
 
   return (
     <div className="app">
+      <JsonLd id="fx-jsonld-home" data={homeJsonLd()} />
       {/* ANIMATED BACKGROUND LAYER */}
       <div className="aurora-bg">
         <div className="aurora-blob blob-a" />
@@ -456,6 +459,7 @@ function Home() {
           <div className="footer-col">
             <h4>Company</h4>
             <a href="#" onClick={openInfo("about")}>About Us</a>
+            <Link to="/founder">Founder</Link>
             <a
               href="#"
               onClick={(e) => {

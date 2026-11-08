@@ -9,6 +9,11 @@ const PUBLIC_PAGES = {
     description:
       "Search and filter over 100 careers by category. See salary ranges, skills and a step-by-step roadmap for each one.",
   },
+  "/founder": {
+    title: "Abhishek Zoe – Founder & CEO of Futurixia",
+    description:
+      "Learn about Abhishek Zoe, Founder and CEO of Futurixia, and his vision for making career guidance more accessible to students worldwide.",
+  },
   "/discover": {
     title: "Career Discovery Quiz | Futurixia",
     description:
