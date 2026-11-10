@@ -17,6 +17,8 @@ import Report from "./pages/Report"
 import RouteMeta from "./components/RouteMeta"
 import { ThemeProvider } from "./lib/theme"
 import Privacy from "./pages/Privacy"
+import Achievements from "./pages/Achievements"
+import XpToast from "./components/XpToast"
 import Founder from "./pages/Founder"
 import Terms from "./pages/Terms"
 import AccountSettings from "./pages/AccountSettings"
@@ -34,6 +36,7 @@ function App() {
       <ScrollToTop />
       <WelcomeTour />
       <ConsentGate />
+      <XpToast />
       <AuthNotice />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -51,6 +54,7 @@ function App() {
         <Route path="/coach" element={<Coach />} />
         <Route path="/report" element={<Report />} />
       <Route path="/privacy" element={<Privacy />} />
+      <Route path="/achievements" element={<Achievements />} />
       <Route path="/founder" element={<Founder />} />
       <Route path="/terms" element={<Terms />} />
       <Route path="/settings" element={<AccountSettings />} />

@@ -13,6 +13,7 @@ import {
   MapPin,
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
+import { syncGamification } from "../lib/gamify"
 import FeedbackBox from "./FeedbackBox"
 
 const QUESTIONS = [
@@ -193,6 +194,7 @@ function CareerDay({ career, userId }) {
       return false
     }
     setSaveState("saved")
+    syncGamification()
     return true
   }
 

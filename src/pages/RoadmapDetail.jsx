@@ -117,6 +117,7 @@ import {
 } from "lucide-react"
 import { supabase } from "../supabaseClient"
 import PricingModal from "../components/PricingModal"
+import { syncGamification, trackCareerView } from "../lib/gamify"
 import Logo from "../components/Logo"
 import CareerDay from "../components/CareerDay"
 import { usePageMeta, trimText } from "../lib/seo"
@@ -226,6 +227,7 @@ function RoadmapDetail() {
         }
 
         setCareer(careerData)
+        trackCareerView(careerData.id)
 
         if (careerData.related_career_slugs) {
           const slugList = careerData.related_career_slugs
@@ -398,6 +400,7 @@ function RoadmapDetail() {
     setSavingStepId(null)
     setToast(isCompleted ? "Step marked as not done" : "Saved! Step marked as done")
     setTimeout(() => setToast(""), 2400)
+    syncGamification()
   }
 
   if (loading) {

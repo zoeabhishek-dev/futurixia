@@ -28,6 +28,7 @@ import { getPersonalizedRoadmap } from "../lib/personalization"
 import ContactModal from "../components/ContactModal"
 import PricingModal from "../components/PricingModal"
 import ThemePicker from "../components/ThemePicker"
+import GamePanel from "../components/GamePanel"
 import { useTheme } from "../lib/theme"
 import Logo from "../components/Logo"
 
@@ -371,10 +372,7 @@ function Dashboard() {
             <span className="fxd-tour-label">Settings</span>
           </Link>
 
-          <button style={styles.logoutBtn} onClick={() => setShowLogoutConfirm(true)}>
-            <LogOut size={16} />
-            Log Out
-          </button>
+          
         </div>
       </nav>
 
@@ -429,6 +427,8 @@ function Dashboard() {
             )
           })}
         </div>
+
+        <GamePanel continueTo={activeCareer ? `/career/${activeCareer.slug}` : "/careers"} />
 
         <div className="fxd-layout">
           <div className="fxd-col">

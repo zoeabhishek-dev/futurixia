@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react"
 import { useNavigate, useSearchParams } from "react-router-dom"
 import { ArrowLeft, Lock, Printer, Loader2, AlertTriangle, FileText } from "lucide-react"
 import { supabase } from "../supabaseClient"
+import { trackReportView } from "../lib/gamify"
 import PricingModal from "../components/PricingModal"
 import {
   getPersonalizedRoadmap,
@@ -63,6 +64,10 @@ function Report() {
   const [stepsLoading, setStepsLoading] = useState(false)
   const [stepsError, setStepsError] = useState(false)
   const [hoursPerWeek, setHoursPerWeek] = useState(readStoredHours)
+
+  useEffect(() => {
+    trackReportView()
+  }, [])
   const [showPricing, setShowPricing] = useState(false)
 
   useEffect(() => {

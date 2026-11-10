@@ -6,6 +6,7 @@ import {
   ShieldCheck,
   FileText,
   Trash2,
+  LogOut,
   AlertTriangle,
   Loader2,
   Crown,
@@ -82,6 +83,11 @@ function AccountSettings() {
     setTyped("")
     setUnderstood(false)
     setError("")
+  }
+
+  const handleLogout = async () => {
+    await supabase.auth.signOut()
+    navigate("/")
   }
 
   const deleteAccount = async () => {
@@ -205,6 +211,18 @@ function AccountSettings() {
               Terms of Service
             </Link>
           </div>
+        </section>
+
+        <section style={styles.card}>
+          <h2 style={styles.h2}>Log out</h2>
+          <p style={styles.text}>Sign out of Futurixia on this device. Your progress stays saved.</p>
+          <button
+            style={{ ...styles.ghostBtn, border: "none", cursor: "pointer", fontFamily: "inherit" }}
+            onClick={handleLogout}
+          >
+            <LogOut size={16} />
+            Log out
+          </button>
         </section>
 
         <section style={{ ...styles.card, ...styles.danger }}>

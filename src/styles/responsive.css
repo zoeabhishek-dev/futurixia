@@ -326,10 +326,10 @@ select option {
 }
 
 :root {
-  --fx-explore-1: #1e40af;
-  --fx-explore-2: #1d6ae5;
-  --fx-explore-3: #0ea5e9;
-  --fx-explore-rgb: 29, 106, 229;
+  --fx-explore-1: #047857;
+  --fx-explore-2: #059669;
+  --fx-explore-3: #10b981;
+  --fx-explore-rgb: 5, 150, 105;
 }
 
 .fxd-tile-featured {
