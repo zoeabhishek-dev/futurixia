@@ -34,6 +34,18 @@ function AccountSettings() {
   const [expires, setExpires] = useState(null)
   const [tier, setTier] = useState("free")
 
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false)
+  const [loggingOut, setLoggingOut] = useState(false)
+
+  useEffect(() => {
+    if (!showLogoutConfirm) return undefined
+    const onKey = (e) => {
+      if (e.key === "Escape" && !loggingOut) setShowLogoutConfirm(false)
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [showLogoutConfirm, loggingOut])
+
   const [showDelete, setShowDelete] = useState(false)
   const [typed, setTyped] = useState("")
   const [understood, setUnderstood] = useState(false)
@@ -86,6 +98,7 @@ function AccountSettings() {
   }
 
   const handleLogout = async () => {
+    setLoggingOut(true)
     await supabase.auth.signOut()
     navigate("/")
   }
@@ -218,7 +231,7 @@ function AccountSettings() {
           <p style={styles.text}>Sign out of Futurixia on this device. Your progress stays saved.</p>
           <button
             style={{ ...styles.ghostBtn, border: "none", cursor: "pointer", fontFamily: "inherit" }}
-            onClick={handleLogout}
+            onClick={() => setShowLogoutConfirm(true)}
           >
             <LogOut size={16} />
             Log out
@@ -236,6 +249,41 @@ function AccountSettings() {
           </button>
         </section>
       </main>
+
+      {showLogoutConfirm && (
+        <div style={styles.overlay} onClick={() => !loggingOut && setShowLogoutConfirm(false)}>
+          <div
+            style={{ ...styles.modal, boxShadow: "0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(248,113,113,0.55)" }}
+            role="alertdialog"
+            aria-modal="true"
+            aria-labelledby="fx-logout-title"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div style={{ ...styles.warnIcon, background: "rgba(248,113,113,0.16)" }}>
+              <AlertTriangle size={24} color="#f87171" />
+            </div>
+            <h2 id="fx-logout-title" style={{ ...styles.modalTitle, color: "#fca5a5" }}>
+              Are you sure you want to log out?
+            </h2>
+            <p style={styles.text}>
+              You will need to log in again to see your dashboard, missions and progress. Your progress stays saved.
+            </p>
+            <div style={styles.btnRow}>
+              <button style={styles.cancelBtn} onClick={() => setShowLogoutConfirm(false)} disabled={loggingOut}>
+                Cancel
+              </button>
+              <button style={styles.confirmBtn} onClick={handleLogout} disabled={loggingOut}>
+                {loggingOut ? (
+                  <Loader2 size={15} style={{ animation: "fxspin 0.9s linear infinite" }} />
+                ) : (
+                  <LogOut size={15} />
+                )}
+                {loggingOut ? "Logging out..." : "Yes, log out"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {showDelete && (
         <div style={styles.overlay} onClick={() => !deleting && closeDelete()}>
